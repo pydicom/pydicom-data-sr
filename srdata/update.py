@@ -247,7 +247,18 @@ def update_package(dst: Path) -> None:
 
 
 def build_snomed(concepts) -> None:
-    pass
+    scheme_designator = "SCT"
+    snomed_codes = get_table_o1()
+    for code, srt_code, meaning in snomed_codes:
+        name = keyword_from_meaning(meaning)
+        if name not in concepts[scheme_designator]:
+            concepts[scheme_designator][name] = {code: (meaning, [])}
+        else:
+            prior = concepts[scheme_designator][name]
+            if code not in prior:
+                prior[code] = (meaning, [])
+
+    return snomed_codes, concepts
 
 
 def generate_concepts(dst: Path):
@@ -321,6 +332,8 @@ def generate_concepts(dst: Path):
                     cid_concepts[scheme_designator].append(name)
 
             cid_lists[cid] = cid_concepts
+
+    snomed, concepts = build_snomed(concepts)
 
 
 def update_hashes(dst: Path) -> None:
@@ -434,10 +447,22 @@ def write_snomed_mapping(snomed_codes) -> None:
         f.write("}")
 
 
-def get_table_o1():
-    logger.info('process Table O1')
+def get_table_o1(src: Optional[Path] = None, dst: Optional[Path] = None):
+    LOGGER.info('Processing Part 16, Table O1')
 
-    root = BeautifulSoup(_download_html(TABLE_O1))
+    data = ''
+    if src and src.exists():
+        with open(src, 'rb') as f:
+            data = f.read()
+
+    if not data:
+        data = requests.get(TABLE_O1).content
+
+        if dst:
+            with open(dst, 'wb') as f:
+                f.write(data)
+
+    root = BeautifulSoup(data, "html.parser")
     namespaces = {'w3': root.tag.split('}')[0].strip('{')}
     body = root.find('w3:body', namespaces=namespaces)
     table = body.findall('.//w3:tbody', namespaces=namespaces)[0]
@@ -453,10 +478,24 @@ def get_table_o1():
     return data
 
 
-def get_table_d1():
-    logger.info('process Table D1')
+def get_table_d1(src: Optional[Path] = None, dst: Optional[Path] = None):
+    LOGGER.info('Processing Part 16, Table D1')
 
-    root = _parse_html(_download_html(TABLE_D1))
+    data = ''
+    if src and src.exists():
+        with open(src, 'rb') as f:
+            data = f.read()
+
+    if not data:
+        data = requests.get(TABLE_D1).content
+
+        if dst:
+            with open(dst, 'wb') as f:
+                f.write(data)
+
+    doc = BeautifulSoup(data, "html.parser")
+    #print(doc)
+    #print(doc.)
     namespaces = {'w3': root.tag.split('}')[0].strip('{')}
     body = root.find('w3:body', namespaces=namespaces)
     table = body.findall('.//w3:tbody', namespaces=namespaces)[0]
@@ -506,6 +545,12 @@ def _setup_argparser():
         action="store_true",
         default=False,
     )
+    dev_opts.add_argument(
+        "--debug-snomed",
+        help="SNOMED debugging",
+        action="store_true",
+        default=False,
+    )
 
     return parser.parse_args()
 
@@ -521,6 +566,10 @@ if __name__ == "__main__":
 
         dst = Path(__file__).parent.resolve() / "temp"
         dst.mkdir(exist_ok=True)
+
+        if cli_args.debug_snomed:
+            get_table_o1(dst / "part16_o1.html", dst / "part16_o1.html")
+            #get_table_d1(dst / "part16_d1.html", dst / "part16_d1.html")
 
         result = download_and_compare(
             dst, cli_args.download, cli_args.checksum
