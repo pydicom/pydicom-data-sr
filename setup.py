@@ -8,7 +8,7 @@ PROJECT_DIR = Path(__file__).parent.resolve(strict=True)
 
 def get_version() -> str:
     """Return the package version as a str"""
-    VERSION_FILE = PROJECT_DIR / "srdata" / "_version.py"
+    VERSION_FILE = PROJECT_DIR / "sr" / "_version.py"
     _globals = {}
     with open(VERSION_FILE) as f:
         exec(f.read(), _globals)
