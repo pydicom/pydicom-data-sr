@@ -1,12 +1,14 @@
-
 from datetime import datetime
 import logging
 from pathlib import Path
+from pprint import pprint
 from tempfile import TemporaryDirectory
 import time
 from typing import Optional, List
 
 from sr import (
+    PACKAGE_DIR,
+    SR_TABLES,
     HASH_FILE,
     SNOMED_FILE,
     CID_FILE,
@@ -36,6 +38,7 @@ TABLE_D1 = PART_16 + "/chapter_D.html#table_D-1"
 def run(
     src: Optional[Path] = None,
     force_download: bool = False,
+    force_regeneration: bool = False,
 ) -> bool:
 
     have_data = False
@@ -63,12 +66,12 @@ def run(
         total_time = time.time() - start_time
         LOGGER.info(f"Source files downloaded in {total_time:.1f} s")
 
-    cid_paths = list(src.glob('*.json'))
-    table_paths = list(src.glob('part16_*.html'))
+    cid_paths = list(src.glob("*.json"))
+    table_paths = list(src.glob("part16_*.html"))
     paths = sorted(cid_paths + table_paths)
 
     # 1. Compare the data in `src` against the reference hashes
-    if compare_checksums(paths, HASH_FILE):
+    if compare_checksums(paths, HASH_FILE) and not force_regeneration:
         LOGGER.info("No change in source data found, exiting...")
         return False
 
@@ -79,17 +82,20 @@ def run(
     table_d1 = src / "part16_d1.html"
 
     # Rebuild the data tables
-    tables = process_source_data(cid_paths, table_o1, table_d1)
+    snomed, concepts, cid_lists, name_for_cid = process_source_data(
+        cid_paths, table_o1, table_d1
+    )
 
     # Update the version file - fail early
-    #write_version_file()
+    # write_version_file()
 
     # Recalculate the hashes
-    #write_hash_file(paths)
+    write_hash_file(paths)
 
-    # write_snomed_file(tables[0])
-    # write_cid_file(tables[0])
-    # write_concepts_file(tables[0])
+    # Write out the data tables
+    write_snomed_file(snomed)
+    write_cid_file(cid_lists, name_for_cid)
+    write_concept_files(concepts)
 
     return True
 
@@ -103,10 +109,11 @@ def write_hash_file(paths: List[Path]) -> None:
         f.write("{\n")
         if checksums:
             for path, _hash in sorted(checksums[:-1], key=lambda x: x[0]):
-                f.write(f"    \"{path.name}\": \"{_hash}\",\n")
+                f.write(f'    "{path.name}": "{_hash}",\n')
 
             # The last line in the JSON dict can't have a trailing comma
-            f.write(f"    \"{path.name}\": \"{_hash}\"\n")
+            path, _hash = checksums[-1]
+            f.write(f'    "{path.name}": "{_hash}"\n')
         else:
             LOGGER.warning("No checksums available to write to 'hashes.json'")
 
@@ -115,8 +122,10 @@ def write_hash_file(paths: List[Path]) -> None:
     LOGGER.info(f"'hashes.json' written with {len(checksums)} entries")
 
 
-def write_snomed_file(snomed_codes: List[str, str, str]) -> None:
-    """"""
+def write_snomed_file(snomed_codes: List[str]) -> None:
+    """Write the snomed data to file."""
+
+    LOGGER.info(f"Writing data to '{SNOMED_FILE}'")
 
     with open(SNOMED_FILE, "w", encoding="utf8") as f:
         lines = [
@@ -129,26 +138,30 @@ def write_snomed_file(snomed_codes: List[str, str, str]) -> None:
         f.writelines(lines)
 
         f.write("mapping = {}\n")
-        f.write("\nmapping['SCT'] = {{\n")
+        f.write("\nmapping['SCT'] = {\n")
         for sct, srt, meaning in snomed_codes:
-            f.write(f"    \"{sct}\": \"{srt}\",\n")
+            f.write(f'    "{sct}": "{srt}",\n')
 
         f.write("}\n")
-        f.write("\nmapping[\"SRT\"] = {{\n")
+        f.write('\nmapping["SRT"] = {\n')
 
         for sct, srt, meaning in snomed_codes:
-            f.write(f"     \"{srt}\": \"{sct}\",\n")
+            f.write(f'     "{srt}": "{sct}",\n')
 
         f.write("}\n")
 
 
 def write_cid_file(cid_lists, name_for_cid) -> None:
-    with open(CID_FILE, 'w', encoding="utf8") as f:
+    """Write the CID data to file."""
+
+    LOGGER.info(f"Writing data to '{CID_FILE}'")
+
+    with open(CID_FILE, "w", encoding="utf8") as f:
         lines = [
-            '# Dict with cid number as keys; value format is:\n',
-            '#   {scheme designator: <list of keywords for current cid>\n',
-            '#    scheme_designator: ...}\n',
-            '\n',
+            "# Dict with cid number as keys; value format is:\n",
+            "#   {scheme designator: <list of keywords for current cid>\n",
+            "#    scheme_designator: ...}\n",
+            "\n",
         ]
         f.writelines(lines)
         f.write("name_for_cid = {}\n")
@@ -156,41 +169,54 @@ def write_cid_file(cid_lists, name_for_cid) -> None:
         for cid, value in cid_lists.items():
             f.write(f"\nname_for_cid[{cid}] = '{name_for_cid[cid]}'\n")
             f.write(f"cid_concepts[{cid}] = {{\n")
-            for kk, vv in value:
-                f.write(f"    \"{kk}\": [\n")
-                for item in vv:
-                    f.write(f"        \"{value}\",")
+
+            for scheme, items in value.items():
+                f.write(f'    "{scheme}": [\n')
+                for item in items:
+                    f.write(f'        "{item}",\n')
                 f.write("    ],\n")
 
-            f.write(f"}}")
+            f.write("}\n")
 
 
-def write_concepts_file(concepts) -> None:
-    with open(CONCEPTS_FILE, 'w', encoding="utf8") as f:
-        lines = [
-            '# Dict with scheme designator keys; value format is:\n',
-            '#   {keyword: {code1: (meaning, cid_list), code2: ...}\n',
-            '#\n',
-            '# Most keyword identifiers map to a single code, but not all\n',
-            '\n',
-        ]
-        f.writelines(lines)
-        f.write("concepts = {}\n")
-        for scheme, value in concepts.items():
-            f.write(f"\nconcepts['{scheme}'] = \\\n")
-            pprint(value, f)
+def write_concept_files(concepts) -> None:
+    """Write the CID concepts to file."""
+
+    LOGGER.info(f"Writing concept data files...")
+
+    scheme_imports = []
+    for scheme, value in concepts.items():
+        filename = f"_concepts_{scheme}"
+        dictname = f"concepts_{scheme}"
+        scheme_imports.append((scheme, filename, dictname))
+        p = (SR_TABLES / filename).with_suffix(".py")
+        with open(p, "w", encoding="utf8") as f:
+            f.write(f"{scheme}_concepts = \\\n")
+            pprint(value, f)  # black will be run on the output anyway
+
+    # Write the main concepts file
+    imports = sorted(scheme_imports, key=lambda x: x[0])
+    with open(CONCEPTS_FILE, "w", encoding="utf8") as f:
+        f.write("\n")
+        for scheme, fname, dname in imports:
+            # from sr._cid_concepts_scheme import scheme_concepts
+            f.write(f"from sr.tables.{fname} import {dname}\n")
+
+        f.write("\n\n")
+        f.write("concepts = {\n")
+        for scheme, _, dname in imports:
+            f.write(f"    \"{scheme}\": {dname},\n")
+        f.write("}\n")
 
 
 def write_version_file() -> None:
     new_version = datetime.now().strftime("%Y.%m.%d")
 
     if new_version == __version__:
-        raise RuntimeError(
-            "Error updating the package: no change in version number"
-        )
+        raise RuntimeError("Error updating the package: no change in version number")
 
-    with open(VERSION_FILE, 'w') as f:
+    with open(VERSION_FILE, "w") as f:
         f.write("\n")
-        f.write(f"__version__: str = \"{new_version}\"\n")
+        f.write(f'__version__: str = "{new_version}"\n')
 
     LOGGER.info(f"Package version updated to '{new_version}'")

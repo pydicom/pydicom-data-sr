@@ -1,4 +1,3 @@
-
 import ftplib
 import hashlib
 import json
@@ -6,6 +5,8 @@ import logging
 from multiprocessing import Pool, cpu_count
 from pathlib import Path
 from typing import Tuple, List, Optional
+
+import requests
 
 
 LOGGER = logging.getLogger(__name__)
@@ -67,12 +68,13 @@ def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
 
 
 def download_file(url, dst) -> None:
+    LOGGER.info(f"Downloading '{url}'")
     data = requests.get(url).content
 
     if not data:
         raise RuntimeError(f"Unable to download the file from '{url}'")
 
-    with open(dst, 'wb') as f:
+    with open(dst, "wb") as f:
         f.write(data)
 
 
@@ -122,7 +124,7 @@ def compare_checksums(paths: List[Path], hash_file: Path) -> bool:
     # Removed source files
     removed = previous - current
     for name in removed:
-        #LOGGER.info(f"Source file removed: '{name}'")
+        # LOGGER.info(f"Source file removed: '{name}'")
         has_changed = True
 
     # Check for a change in checksums
