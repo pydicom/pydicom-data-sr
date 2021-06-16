@@ -57,8 +57,8 @@ def run(
         start_time = time.time()
 
         download_cid_files((CID_HOST, CID_PATH), src)
-        download_file(TABLE_D1, dst / "part16_d1.html")
-        download_file(TABLE_O1, dst / "part16_o1.html")
+        download_file(TABLE_D1, src / "part16_d1.html")
+        download_file(TABLE_O1, src / "part16_o1.html")
 
         total_time = time.time() - start_time
         LOGGER.info(f"Source files downloaded in {total_time:.1f} s")

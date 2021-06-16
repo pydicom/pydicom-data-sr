@@ -55,7 +55,7 @@ def process_source_data(
 
             # e.g. for 'dicom-cid-2-AnatomicModifier' -> cid = 2
             cid = int(match.group(1))
-            concept_name = data['name']
+            concept_name: str = data['name']
 
             cid_concepts = {}
             for group in data['compose']['include']:
@@ -125,6 +125,7 @@ def process_table_o1(concepts, table: Path):
     with open(table, 'rb') as f:
         doc = BeautifulSoup(f.read(), "html.parser")
 
+    codes = []
     data = doc.find_all('table')[2]
     for row in data.tbody.find_all('tr'):
         [code, srt_code, meaning] = [
@@ -138,6 +139,8 @@ def process_table_o1(concepts, table: Path):
             if code not in prior:
                 prior[code] = (meaning, [])
 
+        codes.append([code, srt_code, meaning])
+
     return codes, concepts
 
 
@@ -148,6 +151,7 @@ def process_table_d1(concepts, table: Path):
     with open(table, 'rb') as f:
         doc = BeautifulSoup(f.read(), "html.parser")
 
+    codes = []
     data = doc.find_all('table')[2]
     for row in data.tbody.find_all('tr'):
         [code, meaning, definition, notes] = [
@@ -161,10 +165,12 @@ def process_table_d1(concepts, table: Path):
             if code not in prior:
                 prior[code] = (meaning, [])
 
+        codes.append([code, meaning, definition, notes])
+
     return codes, concepts
 
 
-def keyword_from_meaning(name):
+def keyword_from_meaning(name: str) -> str:
     """Return a camel case valid python identifier"""
     # Try to adhere to keyword scheme in DICOM (CP850)
 
@@ -218,7 +224,7 @@ def camel_case(s: str) -> str:
     )
 
     return "".join(
-        word.capitalize() if word != word.upper() and word not in leave_alone else word
-        for word in re.split(r"\W", s, flags=re.UNICODE)
-        if word.isalnum()
+        w.capitalize() if w != w.upper() and w not in leave_alone else w
+        for w in re.split(r"\W", s, flags=re.UNICODE)
+        if w.isalnum()
     )

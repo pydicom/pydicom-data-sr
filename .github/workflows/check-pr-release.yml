@@ -1,0 +1,25 @@
+name: check-pull-request
+
+#on:
+#  schedule:
+#    - cron: '48 22 * * 0'
+
+
+jobs:
+
+  check-pr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Check source data
+      run: |
+        pip install .[dev]
+        python sr/main.py
+    - name: Commit changes
+      run: |
