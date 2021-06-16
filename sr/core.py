@@ -205,7 +205,7 @@ def write_concept_files(concepts) -> None:
         f.write("\n\n")
         f.write("concepts = {\n")
         for scheme, _, dname in imports:
-            f.write(f"    \"{scheme}\": {dname},\n")
+            f.write(f'    "{scheme}": {dname},\n')
         f.write("}\n")
 
 

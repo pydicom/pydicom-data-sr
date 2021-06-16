@@ -1,4 +1,3 @@
-
 from sr.tables._concepts_BARI import concepts_BARI
 from sr.tables._concepts_DCM import concepts_DCM
 from sr.tables._concepts_FMA import concepts_FMA
