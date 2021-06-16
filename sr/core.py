@@ -128,25 +128,24 @@ def write_snomed_file(snomed_codes: List[str]) -> None:
     LOGGER.info(f"Writing data to '{SNOMED_FILE}'")
 
     with open(SNOMED_FILE, "w", encoding="utf8") as f:
-        lines = [
+        f.writelines([
             "# Dict with scheme designator keys; value format is:\n",
             "#   {concept_id1: snomed_id1, concept_id2: ...}\n",
             "# or\n",
             "#   {snomed_id1: concept_id1, snomed_id2: ...}\n",
             "\n",
-        ]
-        f.writelines(lines)
+        ])
 
         f.write("mapping = {}\n")
         f.write("\nmapping['SCT'] = {\n")
-        for sct, srt, meaning in snomed_codes:
+        for sct, srt, meaning in sorted(snomed_codes, key=lambda x: x[0]):
             f.write(f'    "{sct}": "{srt}",\n')
 
         f.write("}\n")
         f.write('\nmapping["SRT"] = {\n')
 
-        for sct, srt, meaning in snomed_codes:
-            f.write(f'     "{srt}": "{sct}",\n')
+        for sct, srt, meaning in sorted(snomed_codes, key=lambda x: x[1]):
+            f.write(f'    "{srt}": "{sct}",\n')
 
         f.write("}\n")
 
@@ -172,7 +171,7 @@ def write_cid_file(cid_lists, name_for_cid) -> None:
 
             for scheme, items in value.items():
                 f.write(f'    "{scheme}": [\n')
-                for item in items:
+                for item in sorted(items):
                     f.write(f'        "{item}",\n')
                 f.write("    ],\n")
 
@@ -192,7 +191,8 @@ def write_concept_files(concepts) -> None:
         p = (SR_TABLES / filename).with_suffix(".py")
         with open(p, "w", encoding="utf8") as f:
             f.write(f"{scheme}_concepts = \\\n")
-            pprint(value, f)  # black will be run on the output anyway
+            # FIXME: don't use pprint
+            pprint(value, f)
 
     # Write the main concepts file
     imports = sorted(scheme_imports, key=lambda x: x[0])
