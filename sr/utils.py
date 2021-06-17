@@ -38,7 +38,9 @@ def _fetch_uri(address: Tuple[Path, str, Path], timeout: int = 150) -> Path:
     return filename
 
 
-def download_cid_files(address: Tuple[str, str], dst: Path, workers: int = 64) -> List[Path]:
+def download_cid_files(
+    address: Tuple[str, str], dst: Path, workers: int = 64
+) -> List[Path]:
     """Download CID files from the DICOM FTP server.
 
     Parameters

@@ -72,7 +72,7 @@ def process_source_data(
     cid_lists: CIDListType = {}
     name_for_cid: NameForCIDType = {}
 
-    for path in sorted(cid_paths, key=lambda x: int(x.stem.split('_')[-1])):
+    for path in sorted(cid_paths, key=lambda x: int(x.stem.split("_")[-1])):
         with open(path, "r") as f:
             data = json.loads(f.read())
 
