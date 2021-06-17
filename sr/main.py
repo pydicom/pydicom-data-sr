@@ -59,7 +59,7 @@ def run(
     have_data = False
 
     if isinstance(src, Path) and src.exists():
-        have_data = True
+        have_data = bool(list(src.glob('*')))
     elif src is None:
         t = TemporaryDirectory()
         src = Path(t.name)
