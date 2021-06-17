@@ -1,7 +1,11 @@
-# Dict with scheme designator keys; value format is:
-#   {concept_id1: snomed_id1, concept_id2: ...}
-# or
-#   {snomed_id1: concept_id1, snomed_id2: ...}
+# Auto-generated on 20210617 17:081623913727.
+# -*- coding: utf-8 -*-
+
+# Dict with scheme designator keys; format is:
+# mapping = {
+#   'SCT': {concept_id1: snomed_id1, concept_id2: ...},
+#   'SRT': {snomed_id1: concept_id1, snomed_id2: ...},
+# }
 
 mapping = {}
 

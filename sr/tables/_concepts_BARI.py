@@ -1,50 +1,53 @@
-BARI_concepts = {
+# Auto-generated on 20210617 17:081623913727.
+# -*- coding: utf-8 -*-
+
+concepts_BARI = {
     "PosteriorDescendingSeptalPerforators": {
         "9": (
-            "Posterior descending septal " "perforators",
-            [3604, 3015, 7151, 6109, 9514, 8134, 6102, 7192, 3827, 3014, 6117],
-        )
+            "Posterior descending septal perforators",
+            [3014, 3015, 3604, 3827, 6102, 6109, 6117, 7151, 7192, 8134, 9514],
+        ),
     },
     "RamusLaterals": {
         "28A": (
             "Ramus Laterals",
-            [3604, 3015, 7151, 6109, 9514, 8134, 6102, 7192, 3827, 3014, 6117],
-        )
+            [3014, 3015, 3604, 3827, 6102, 6109, 6117, 7151, 7192, 8134, 9514],
+        ),
     },
     "_1stDiagonalCoronaryArteryLaterals": {
         "15A": (
-            "1st Diagonal Coronary Artery " "Laterals",
-            [3604, 3015, 7151, 6109, 9514, 8134, 6102, 7192, 3827, 3014, 6117],
-        )
+            "1st Diagonal Coronary Artery Laterals",
+            [3014, 3015, 3604, 3827, 6102, 6109, 6117, 7151, 7192, 8134, 9514],
+        ),
     },
     "_1stMarginalCoronaryArteryLaterals": {
         "20A": (
-            "1st Marginal Coronary Artery " "Laterals",
-            [3604, 3015, 7151, 6109, 9514, 8134, 6102, 7192, 3827, 3014, 6117],
-        )
+            "1st Marginal Coronary Artery Laterals",
+            [3014, 3015, 3604, 3827, 6102, 6109, 6117, 7151, 7192, 8134, 9514],
+        ),
     },
     "_2ndDiagonalCoronaryArteryLaterals": {
         "16A": (
-            "2nd Diagonal Coronary Artery " "Laterals",
-            [3604, 3015, 7151, 6109, 9514, 8134, 6102, 7192, 3827, 3014, 6117],
-        )
+            "2nd Diagonal Coronary Artery Laterals",
+            [3014, 3015, 3604, 3827, 6102, 6109, 6117, 7151, 7192, 8134, 9514],
+        ),
     },
     "_2ndMarginalCoronaryArteryLaterals": {
         "21A": (
-            "2nd Marginal Coronary Artery " "Laterals",
-            [3604, 3015, 7151, 6109, 9514, 8134, 6102, 7192, 3827, 3014, 6117],
-        )
+            "2nd Marginal Coronary Artery Laterals",
+            [3014, 3015, 3604, 3827, 6102, 6109, 6117, 7151, 7192, 8134, 9514],
+        ),
     },
     "_3rdDiagonalCoronaryArteryLaterals": {
         "29A": (
-            "3rd Diagonal Coronary Artery " "Laterals",
-            [3604, 3015, 7151, 6109, 9514, 8134, 6102, 7192, 3827, 3014, 6117],
-        )
+            "3rd Diagonal Coronary Artery Laterals",
+            [3014, 3015, 3604, 3827, 6102, 6109, 6117, 7151, 7192, 8134, 9514],
+        ),
     },
     "_3rdMarginalCoronaryArteryLaterals": {
         "22A": (
-            "3rd Marginal Coronary Artery " "Laterals",
-            [3604, 3015, 7151, 6109, 9514, 8134, 6102, 7192, 3827, 3014, 6117],
-        )
+            "3rd Marginal Coronary Artery Laterals",
+            [3014, 3015, 3604, 3827, 6102, 6109, 6117, 7151, 7192, 8134, 9514],
+        ),
     },
 }

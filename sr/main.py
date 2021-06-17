@@ -327,7 +327,6 @@ def write_version_file(dicom_version: str) -> None:
         raise RuntimeError("Error updating the package: no change in version number")
 
     with open(VERSION_FILE, "w") as f:
-        f.write("\n")
         f.write(f'__version__: str = "{new_version}"\n')
         f.write(f'__dicom_version__: str = "{dicom_version}"\n')
 

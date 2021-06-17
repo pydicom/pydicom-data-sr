@@ -1,3 +1,6 @@
+# Auto-generated on 20210617 17:081623913727.
+# -*- coding: utf-8 -*-
+
 from sr.tables._concepts_BARI import concepts_BARI
 from sr.tables._concepts_DCM import concepts_DCM
 from sr.tables._concepts_FMA import concepts_FMA
