@@ -21,36 +21,7 @@
 # Build/dist files
 dist/*
 build/*
-pydicom.egg-info/*
+*.egg-info
 distribute*.egg
 distribute*.tar.gz
-py3source
-.tox/*
-
-# Docs build
-docs/_build/*
-doc/_build/*
-doc/auto_examples/*
-doc/generated/*
-doc/reference/generated/*
-
-# coverage.py files
-.coverage
-
-# PyCharm IDE files
-*.idea*
-
-
-# jupyter notebooks
-*.ipynb
-.ipynb_checkpoints/*
-tests/test_pixel.py
-
-# mypy
-pydicom/.mypy_cache/*
-
-# vscode
-.vscode/*
-
-# virtualenv
-env/
+__pycache__
