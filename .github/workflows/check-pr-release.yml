@@ -27,7 +27,6 @@ jobs:
         black sr/*py
         black sr/tables/*.py
         git diff --output=gitdiff.txt
-    - name:
     - name: Upload artifacts
       if: ${{ success() }}
       uses: actions/upload-artifact@v2
