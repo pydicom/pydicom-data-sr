@@ -35,14 +35,29 @@ FHIR_LOOKUP = {
 
 
 def process_source_data(
-    cid_paths: List[Path],
-    snomed_table: Path,
-    dicom_table: Path,
+    cid_paths: List[Path], table_o1: Path, table_d1: Path,
 ) -> None:
+    """Process the downloaded souce data and generate the tables.
+
+    Parameters
+    ----------
+    cid_paths : List[pathlib.Path]
+        A list of paths to the CID *.json files.
+    table_o1 : pathlib.Path
+        The path to the Part 16, Table O-1 HTML file, contains the
+        'SNOMED Concept ID to SNOMED ID Mapping' data.
+    table_d1 : pathlib.Path
+        The path to the Part 16, Table D-1 HTML file, contains the
+        'DICOM Controlled Terminology Definitions' data.
+
+    Returns
+    -------
+    """
     CID_REGEX = re.compile("^dicom-cid-([0-9]+)-[a-zA-Z]+")
     concepts = {}
     cid_lists = {}
-    name_for_cid = {}
+    # The
+    name_for_cid: Dict[int, str] = {}
 
     for path in cid_paths:
         with open(path, "r") as f:
@@ -66,6 +81,7 @@ def process_source_data(
                         f"The DICOM scheme designator for the '{system}' FHIR "
                         "system has not been specified"
                     )
+
                 if scheme_designator not in concepts:
                     concepts[scheme_designator] = dict()
 
@@ -109,22 +125,42 @@ def process_source_data(
 
             cid_lists[cid] = cid_concepts
 
-    snomed, concepts = process_table_o1(concepts, snomed_table)
-    dicom, concepts = process_table_d1(concepts, dicom_table)
+    snomed, concepts = process_table_o1(concepts, table_o1)
+    dicom, concepts = process_table_d1(concepts, table_d1)
 
     cid_lists = {k: v for k, v in sorted(cid_lists.items(), key=lambda x: x[0])}
 
     return snomed, concepts, cid_lists, name_for_cid
 
 
-def process_table_o1(concepts, table: Path):
+def process_table_o1(
+    concepts, table: Path
+) -> Tuple[List[Tuple[str, str, str]]]:
+    """Process the SNOMED table
+
+    Parameters
+    ----------
+    concepts :
+    table : pathlib.Path
+        The path to the Part 16, Table O-1 HTML file, contains the
+        'SNOMED Concept ID to SNOMED ID Mapping' data.
+
+    Returns
+    -------
+    codes : List[Tuple[str, str, str]]
+        A list of SNOMED codes as (Concept ID, SNOMED ID, SNOMED Fully
+        Specified Name).
+    concepts :
+        FIXME
+    """
     LOGGER.info(f"Processing 'SCT' table from '{table.name}'")
     scheme = "SCT"
 
     with open(table, "rb") as f:
         doc = BeautifulSoup(f.read(), "html.parser")
 
-    codes = []
+    # List[(Concept ID, SNOMED ID, SNOMED Fully Specified Name)]
+    codes: List[Tuple[str, str, str]] = []
     data = doc.find_all("table")[2]
     for row in data.tbody.find_all("tr"):
         [code, srt_code, meaning] = [
@@ -138,19 +174,39 @@ def process_table_o1(concepts, table: Path):
             if code not in prior:
                 prior[code] = (meaning, [])
 
-        codes.append([code, srt_code, meaning])
+        codes.append((code, srt_code, meaning))
 
     return codes, concepts
 
 
-def process_table_d1(concepts, table: Path):
+def process_table_d1(
+    concepts, table: Path
+) -> Tuple[List[Tuple[str, str, str, str]]]:
+    """Process the DICOM table
+
+    Parameters
+    ----------
+    concepts :
+    table : pathlib.Path
+        The path to the Part 16, Table D-1 HTML file, contains the
+        'DICOM Controlled Terminology Definitions' data.
+
+    Returns
+    -------
+    codes : List[Tuple[str, str, str, str]]
+        A list of code values and meanings as (Code Value, Code Meaning,
+        Definition, Notes).
+    concepts :
+        FIXME
+    """
     LOGGER.info(f"Processing 'DCM' table from '{table.name}'")
     scheme = "DCM"
 
     with open(table, "rb") as f:
         doc = BeautifulSoup(f.read(), "html.parser")
 
-    codes = []
+    # (Code Value, Code Meaning, Definition, Notes)
+    codes: List[Tuple[str, str, str, str]] = []
     data = doc.find_all("table")[2]
     for row in data.tbody.find_all("tr"):
         [code, meaning, definition, notes] = [
@@ -164,13 +220,13 @@ def process_table_d1(concepts, table: Path):
             if code not in prior:
                 prior[code] = (meaning, [])
 
-        codes.append([code, meaning, definition, notes])
+        codes.append((code, meaning, definition, notes))
 
     return codes, concepts
 
 
 def keyword_from_meaning(name: str) -> str:
-    """Return a camel case valid python identifier"""
+    """Return a camel case valid Python identifier"""
     # Try to adhere to keyword scheme in DICOM (CP850)
 
     # singular/plural alternative forms are made plural
@@ -227,3 +283,14 @@ def camel_case(s: str) -> str:
         for w in re.split(r"\W", s, flags=re.UNICODE)
         if w.isalnum()
     )
+
+
+def get_dicom_version(path: Path) -> str:
+    """Return the DICOM version from a Part 16, Table O-1 HTML file"""
+    with open(path, "rb") as f:
+        doc = BeautifulSoup(f.read(), "html.parser")
+        table = doc.find_all("table")[0]
+        version = table.tbody.th.get_text().strip().split()[2]
+
+        LOGGER.debug(f"DICOM version is '{version}'")
+        return version

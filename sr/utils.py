@@ -1,10 +1,10 @@
+from concurrent.futures import ThreadPoolExecutor
 import ftplib
 import hashlib
 import json
 import logging
-from multiprocessing import Pool, cpu_count
 from pathlib import Path
-from typing import Tuple, List, Optional
+from typing import Tuple, List, Optional, Iterator
 
 import requests
 
@@ -12,23 +12,25 @@ import requests
 LOGGER = logging.getLogger(__name__)
 
 
-def _fetch_uri(address: Tuple[Path, str, Path]) -> Path:
-    """Download a file.
+def _fetch_uri(address: Tuple[Path, str, Path], timeout: int = 60) -> Path:
+    """Download a file from an FTP server.
 
     Parameters
     ----------
     address : Tuple[Path, str, Path]
         The (destination directory, host, URI) of the file to download.
+    timeout : int, optional
+        The connection timeout to use, default 60 s.
 
     Returns
     -------
     pathlib.Path
-        The path to the downloaded file.
+        The path where the downloaded file was written.
     """
     dst, host, uri = address
     filename = dst / uri.name
 
-    ftp = ftplib.FTP(host, timeout=60)
+    ftp = ftplib.FTP(host, timeout=timeout)
     ftp.login("anonymous")
     with open(filename, "wb") as f:
         ftp.retrbinary(f"RETR {uri}", f.write)
@@ -36,6 +38,7 @@ def _fetch_uri(address: Tuple[Path, str, Path]) -> Path:
     return filename
 
 
+# FIXME: switch to concurrent.futures.ThreadPoolExecutor
 def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
     """Download CID files from the DICOM FTP server.
 
@@ -64,18 +67,35 @@ def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
 
     LOGGER.info(f"Downloading {len(uris)} *.json CID files from '{path}'...")
 
-    return Pool(cpu_count()).map(_fetch_uri, uris)
+    with ThreadPoolExecutor(max_workers=32) as pool:
+        result = pool(_fetch_uri, uris)
+
+    # Check we have downloaded all the files
+    if len(uris) != len(list(dst.glob("*.json"))):
+        raise RuntimeError("The download of the CID files was not completed")
+
+    return list(result)
 
 
-def download_file(url, dst) -> None:
+def download_file(url: str, dst: Path) -> None:
+    """Use requests to download the data at `url` and write it to `dst`.
+
+    Parameters
+    ----------
+    url : str
+        The URL of the data to be downloaded.
+    dst : pathlib.Path
+        The path where the data should be written.
+    """
     LOGGER.info(f"Downloading '{url}'")
-    data = requests.get(url).content
-
-    if not data:
-        raise RuntimeError(f"Unable to download the file from '{url}'")
+    r = requests.get(url)
+    if r.status_code != 200 or not r.content:
+        raise RuntimeError(
+            f"An error occurred downloading from '{url}': {r.status_code}"
+        )
 
     with open(dst, "wb") as f:
-        f.write(data)
+        f.write(r.content)
 
 
 def _hash_func(path: Path) -> str:
@@ -83,24 +103,40 @@ def _hash_func(path: Path) -> str:
     return path, hashlib.md5(open(path, "rb").read()).hexdigest()
 
 
-def calculate_checksums(paths: List[Path]) -> List[Tuple[Path, str]]:
-    """Return calculated checksums for `paths`.
+def calculate_checksums(paths: List[Path]) -> Iterator[Tuple[Path, str]]:
+    """Yield calculated checksums for `paths`.
 
     Parameters
     ----------
     paths : list of pathlib.Path
         A list of paths to calculate checksums for.
 
-    Returns
+    Yields
     -------
-    list of Tuple[Path, str]
-        A list of (Path, hash str).
+    Tuple[Path, str]
+        The (Path, hash str).
     """
-    return Pool(cpu_count()).map(_hash_func, paths)
+    with ThreadPoolExecutor(max_workers=32) as pool:
+        return pool.map(_hash_func, paths)
 
 
 def compare_checksums(paths: List[Path], hash_file: Path) -> bool:
-    """Return ``False`` if the checksums don"t match the reference."""
+    """Return ``False`` if the checksums don"t match the reference.
+
+    Parameters
+    ----------
+    paths : List[Path]
+        A list of paths to the files that are being compared against the
+        reference hashes.
+    hash_file : Path
+        The path to the JSON file containing the reference hashes.
+
+    Returns
+    -------
+    bool
+        ``True`` if the checksums match the reference, ``False`` otehrwise.
+    """
+
     LOGGER.info(f"Performing checksum comparsion on source files")
 
     # True if the source files have changed

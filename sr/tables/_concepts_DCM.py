@@ -1,17 +1,23 @@
 DCM_concepts = {
     "": {"...": ("...", []), "126330": ("tau_m", [7469, 4107, 218, 7180])},
-    "AAPM204APDimension": {"113935": ("AAPM 204 AP Dimension", [10023])},
+    "AAPM204APDimension": {
+        "113935": ("AAPM 204 AP Dimension", [10023])
+    },
     "AAPM204EffectiveDiameterEstimatedFromPatientAge": {
         "113937": (
-            "AAPM 204 " "Effective " "Diameter " "Estimated " "From Patient " "Age",
+            "AAPM 204 Effective Diameter Estimated From Patient Age",
             [10023],
         )
     },
-    "AAPM204LateralDimension": {"113934": ("AAPM 204 Lateral Dimension", [10023])},
-    "AAPM204SumOfLateralAndAPDimension": {
-        "113936": ("AAPM 204 Sum of Lateral and " "AP Dimension", [10023])
+    "AAPM204LateralDimension": {
+        "113934": ("AAPM 204 Lateral Dimension", [10023])
     },
-    "AAPM220": {"113987": ("AAPM 220", [])},
+    "AAPM204SumOfLateralAndAPDimension": {
+        "113936": ("AAPM 204 Sum of Lateral and AP Dimension", [10023])
+    },
+    "AAPM220": {
+        "113987": ("AAPM 220", [])
+    },
     "ACDConstant": {"111768": ("ACD Constant", [4237])},
     "ACRAccreditationPhantomCT": {
         "113682": ("ACR Accreditation Phantom - CT", [4051, 4052])
@@ -20,36 +26,36 @@ DCM_concepts = {
         "113686": ("ACR Accreditation Phantom - ECT", [4051, 4052])
     },
     "ACRAccreditationPhantomECTPET": {
-        "113688": ("ACR Accreditation Phantom - " "ECT/PET", [4051, 4052])
+        "113688": ("ACR Accreditation Phantom - ECT/PET", [4051, 4052])
     },
     "ACRAccreditationPhantomMR": {
         "113683": ("ACR Accreditation Phantom - MR", [4051, 4052])
     },
     "ACRAccreditationPhantomMammography": {
-        "113684": ("ACR Accreditation Phantom " "- Mammography", [4051, 4052])
+        "113684": ("ACR Accreditation Phantom - Mammography", [4051, 4052])
     },
     "ACRAccreditationPhantomPET": {
         "113687": ("ACR Accreditation Phantom - PET", [4051, 4052])
     },
     "ACRAccreditationPhantomPETFaceplate": {
-        "113689": ("ACR Accreditation Phantom " "- PET Faceplate", [4051, 4052])
+        "113689": ("ACR Accreditation Phantom - PET Faceplate", [4051, 4052])
     },
     "ACRAccreditationPhantomStereotacticBreastBiopsy": {
         "113685": (
-            "ACR " "Accreditation " "Phantom - " "Stereotactic " "Breast Biopsy",
+            "ACR Accreditation Phantom - Stereotactic Breast Biopsy",
             [4051, 4052],
         )
     },
     "ACRGuidelinePerformanceOfAdultCTColonography": {
         "112248": (
-            "ACR Guideline, " "Performance of " "Adult CT " "Colonography",
+            "ACR Guideline, Performance of Adult CT Colonography",
             [6208],
         )
     },
     "ACRPositionStatement": {"112036": ("ACR Position Statement", [6136, 6208])},
     "ACRStandardCTMedicalPhysicsPerformanceMonitoring": {
         "112249": (
-            "ACR " "Standard, CT " "medical " "physics " "performance " "monitoring",
+            "ACR Standard, CT medical physics performance monitoring",
             [6208],
         )
     },
@@ -72,7 +78,7 @@ DCM_concepts = {
     "AbdominalRadiology": {"128170": ("Abdominal Radiology", [7030])},
     "AbdominalRespiratoryEffort": {"130432": ("Abdominal Respiratory Effort", [3005])},
     "AbdominalRespiratoryInductance": {
-        "130428": ("Abdominal Respiratory " "Inductance", [3005])
+        "130428": ("Abdominal Respiratory Inductance", [3005])
     },
     "AbdominalRespiratoryPVDF": {"130430": ("Abdominal Respiratory PVDF", [3005])},
     "AblationOff": {"109038": ("Ablation off", [3339])},
@@ -80,7 +86,7 @@ DCM_concepts = {
     "AbnormalCalcifications": {"112063": ("Abnormal calcifications", [6101])},
     "AbnormalDischarge": {"111491": ("Abnormal discharge", [6062])},
     "AbnormalDistributionOfAnatomicStructure": {
-        "112028": ("Abnormal Distribution " "of Anatomic Structure", [])
+        "112028": ("Abnormal Distribution of Anatomic Structure", [])
     },
     "AbnormalInterstitialPattern": {
         "112004": ("Abnormal interstitial pattern", [6106, 6102, 6104])
@@ -104,20 +110,20 @@ DCM_concepts = {
         "126391": ("Absolute Regional Blood Volume", [7469, 218, 4108, 7180])
     },
     "AbsoluteValuesOfVentricularMeasurements": {
-        "122608": ("Absolute Values Of " "Ventricular " "Measurements", [])
+        "122608": ("Absolute Values Of Ventricular Measurements", [])
     },
     "AbsorbedDose": {"128513": ("Absorbed Dose", [7469, 218, 7180, 10070])},
     "AccessControlDecision": {"110147": ("Access Control Decision", [401, 403])},
     "AccessionNumber": {"121022": ("Accession Number", [])},
     "AccessoryTray": {"130124": ("Accessory Tray", [9520, 9518])},
     "AccumulatedAverageGlandularDose": {
-        "111637": ("Accumulated Average Glandular " "Dose (mammo)", [10050])
+        "111637": ("Accumulated Average Glandular Dose (mammo)", [10050])
     },
     "AccumulatedCtdivolForwardEstimate": {
-        "113906": ("Accumulated CTDIvol Forward " "Estimate", [])
+        "113906": ("Accumulated CTDIvol Forward Estimate", [])
     },
     "AccumulatedDLPForwardEstimate": {
-        "113905": ("Accumulated DLP Forward " "Estimate", [])
+        "113905": ("Accumulated DLP Forward Estimate", [])
     },
     "AccumulatedDoseData": {"130500": ("Accumulated Dose Data", [])},
     "AccumulatedXRayDoseData": {"113702": ("Accumulated X-Ray Dose Data", [])},
@@ -135,7 +141,7 @@ DCM_concepts = {
     "AcquisitionDeviceID": {"122143": ("Acquisition Device ID", [])},
     "AcquisitionDeviceType": {"122142": ("Acquisition Device Type", [])},
     "AcquisitionDoseAreaProductTotal": {
-        "113727": ("Acquisition Dose Area Product " "Total", [10050])
+        "113727": ("Acquisition Dose Area Product Total", [10050])
     },
     "AcquisitionDoseRPTotal": {"113729": ("Acquisition Dose (RP) Total", [])},
     "AcquisitionDuration": {"121142": ("Acquisition Duration", [])},
@@ -144,7 +150,7 @@ DCM_concepts = {
         "125023": ("Acquisition Equipment Alignment", [7100])
     },
     "AcquisitionFramesCorrespondingToVolume": {
-        "121346": ("Acquisition frames " "corresponding to " "volume", [7201])
+        "121346": ("Acquisition frames corresponding to volume", [7201])
     },
     "AcquisitionNumber": {"113608": ("Acquisition Number", [10022])},
     "AcquisitionPlane": {"113764": ("Acquisition Plane", [])},
@@ -152,7 +158,7 @@ DCM_concepts = {
     "AcquisitionTime": {"126202": ("Acquisition Time", [])},
     "ActionOnFluid": {"111456": ("Action on fluid", [])},
     "ActiveIngredientUndilutedConcentration": {
-        "121380": ("Active Ingredient " "Undiluted " "Concentration", [4050])
+        "121380": ("Active Ingredient Undiluted Concentration", [4050])
     },
     "ActivityMeasurementDevice": {"113540": ("Activity Measurement Device", [])},
     "ActivityWorkload": {"122709": ("Activity workload", [])},
@@ -170,46 +176,39 @@ DCM_concepts = {
     "Addendum": {"121078": ("Addendum", [])},
     "AdditionalEvaluationRequestedFromAbnormalScreeningExam": {
         "111419": (
-            "Additional "
-            "evaluation "
-            "requested "
-            "from "
-            "abnormal "
-            "screening "
-            "exam",
-            [6051],
+            "Additional evaluation requested from abnormal screening exam", [6051],
         )
     },
     "AdditionalEvaluationRequestedFromPriorStudy": {
-        "111415": ("Additional " "evaluation " "requested from " "prior study", [6051])
+        "111415": ("Additional evaluation requested from prior study", [6051])
     },
     "AdditionalProjections": {"111135": ("Additional projections", [6028, 6029])},
     "AdditionalTeachingFileInformation": {
-        "128712": ("Additional Teaching File " "Information", [7018])
+        "128712": ("Additional Teaching File Information", [7018])
     },
     "Adenolipoma": {"111248": ("Adenolipoma", [])},
     "Adenomyoepithelioma": {"111250": ("Adenomyoepithelioma", [])},
     "AdhocMeasurements": {"125303": ("Adhoc Measurements", [])},
     "AdiabaticTissueHomogeneityATHModel": {
-        "126346": ("Adiabatic Tissue " "Homogeneity (ATH) Model", [4106, 4101])
+        "126346": ("Adiabatic Tissue Homogeneity (ATH) Model", [4106, 4101])
     },
     "AdministeredActivity": {"113507": ("Administered activity", [10050])},
     "AdministrationDiscontinued": {"130220": ("Administration discontinued", [])},
     "AdministrationMode": {"130181": ("Administration Mode", [])},
     "AdministrationStepType": {"130250": ("Administration Step Type", [])},
     "AdministratorOfRadiologyDepartment": {
-        "128673": ("Administrator of Radiology " "Department", [7452, 7450])
+        "128673": ("Administrator of Radiology Department", [7452, 7450])
     },
     "AdultCongenitalCardiacUltrasoundReport": {
-        "125197": ("Adult Congenital " "Cardiac Ultrasound " "Report", [12245])
+        "125197": ("Adult Congenital Cardiac Ultrasound Report", [12245])
     },
     "AdultEchocardiographyProcedureReport": {
-        "125200": ("Adult Echocardiography " "Procedure Report", [])
+        "125200": ("Adult Echocardiography Procedure Report", [])
     },
     "AdvancedLevel": {"128727": ("Advanced level", [7016])},
     "AdventitialDissection": {"122397": ("Adventitial Dissection", [3492])},
     "AdverseEventDetectionDatetime": {
-        "130215": ("Adverse Event Detection " "DateTime", [])
+        "130215": ("Adverse Event Detection DateTime", [])
     },
     "AerobicIndex": {"122772": ("Aerobic index", [3238])},
     "AgatstonScoreThreshold": {"122657": ("Agatston Score Threshold", [])},
@@ -221,7 +220,7 @@ DCM_concepts = {
     "AgeEnded": {"111525": ("Age Ended", [])},
     "AgeStarted": {"111524": ("Age Started", [])},
     "AgeWhenFirstMenstrualPeriodOccurred": {
-        "111518": ("Age when first menstrual " "period occurred", [])
+        "111518": ("Age when first menstrual period occurred", [])
     },
     "AgeWhenHysterectomyPerformed": {"111521": ("Age when hysterectomy performed", [])},
     "AgeWhenLeftOvaryRemoved": {"111522": ("Age when left ovary removed", [])},
@@ -235,7 +234,7 @@ DCM_concepts = {
     "AirDetected": {"130175": ("Air detected", [71])},
     "AirFluidLevel": {"112104": ("Air-fluid level", [6102, 6103])},
     "AirKermaAtOutputMeasurementPoint": {
-        "130515": ("Air Kerma at Output " "Measurement Point", [])
+        "130515": ("Air Kerma at Output Measurement Point", [])
     },
     "AirSpace": {"112147": ("Air space", [6123])},
     "Airflow": {"130421": ("Airflow", [3005])},
@@ -256,22 +255,22 @@ DCM_concepts = {
     "AlgorithmParameters": {"111002": ("Algorithm Parameters", [])},
     "AlgorithmVersion": {"111003": ("Algorithm Version", [])},
     "AlgorithmicAttenuationCorrection": {
-        "122726": ("Algorithmic Attenuation " "Correction", [3112])
+        "122726": ("Algorithmic Attenuation Correction", [3112])
     },
     "AllAlgorithmsSucceededWithFindings": {
-        "111242": ("All algorithms succeeded; " "with findings", [6047])
+        "111242": ("All algorithms succeeded; with findings", [6047])
     },
     "AllAlgorithmsSucceededWithoutFindings": {
-        "111241": ("All algorithms " "succeeded; without " "findings", [6047])
+        "111241": ("All algorithms succeeded; without findings", [6047])
     },
     "AllPlanes": {"113890": ("All Planes", [10003])},
     "AlphaGeudValue": {"130095": ("alpha gEUD Value", [])},
     "AlternatePhotometricInterpretationImage": {
-        "121328": ("Alternate Photometric " "Interpretation image", [7205])
+        "121328": ("Alternate Photometric Interpretation image", [7205])
     },
     "AlternateSOPClassInstance": {"121326": ("Alternate SOP Class instance", [7205])},
     "AlternativeDoseAlertBehaviorActive": {
-        "113915": ("Alternative dose alert " "behavior active", [])
+        "113915": ("Alternative dose alert behavior active", [])
     },
     "AmbientRoomEnvironment": {"109112": ("Ambient room environment", [3000])},
     "AmbiguousSex": {"121104": ("Ambiguous sex", [7455])},
@@ -283,7 +282,7 @@ DCM_concepts = {
         "109204": ("American Rare Breed Association", [7481])
     },
     "AnalysisOrMeasurementsForCurrentProcedure": {
-        "122073": ("Analysis or " "measurements for " "current procedure", [3407])
+        "122073": ("Analysis or measurements for current procedure", [3407])
     },
     "AnalysisPerformed": {"111004": ("Analysis Performed", [])},
     "AnalysisQualityRating": {"111693": ("Analysis Quality Rating", [])},
@@ -308,7 +307,7 @@ DCM_concepts = {
     "AngularSecondMomentOfGLCM": {"126065": ("Angular Second Moment of GLCM", [])},
     "AngularViewingEvaluation": {"109709": ("Angular viewing evaluation", [8300])},
     "AnimalHandlingDuringSpecifiedPhase": {
-        "127005": ("Animal handling during " "specified phase", [])
+        "127005": ("Animal handling during specified phase", [])
     },
     "AnimalHousing": {"127120": ("Animal housing", [])},
     "AnimalHousingRoom": {"127370": ("Animal housing room", [603])},
@@ -373,13 +372,13 @@ DCM_concepts = {
     },
     "ApprovedForExperimentalUse": {"128611": ("Approved for experimental use", [800])},
     "ApprovedForUseAtTheInstitution": {
-        "128603": ("Approved for use at the " "institution", [800])
+        "128603": ("Approved for use at the institution", [800])
     },
     "ApprovedForUseInTheClinicalTrial": {
-        "128604": ("Approved for use in the " "clinical trial", [800])
+        "128604": ("Approved for use in the clinical trial", [800])
     },
     "ApprovedForUseOnPregnantPatients": {
-        "128605": ("Approved for use on pregnant " "patients", [800])
+        "128605": ("Approved for use on pregnant patients", [800])
     },
     "ApproximateSpatialLocation": {
         "121226": ("Approximate spatial location", [7553, 7551])
@@ -399,7 +398,7 @@ DCM_concepts = {
         "125210": ("Area by Pressure Half-Time", [12229, 12227])
     },
     "AreaEqualsFlow44Point5SqrtGradientMmhg": {
-        "122262": ("Area = Flow / 44.5 * " "sqrt(Gradient[mmHg])", [])
+        "122262": ("Area = Flow / 44.5 * sqrt(Gradient[mmHg])", [])
     },
     "AreaLengthBiplane": {"125204": ("Area-Length Biplane", [12228, 12227])},
     "AreaLengthDodge": {"122559": ("Area Length Dodge", [3453])},
@@ -427,7 +426,7 @@ DCM_concepts = {
     "ArteriovenousDifference": {"122229": ("Arteriovenous difference", [])},
     "ArtifactsOtherThanGridOrDetectorArtifact": {
         "111215": (
-            "Artifact(s) other " "than grid or " "detector artifact",
+            "Artifact(s) other than grid or detector artifact",
             [6041, 6135, 7011],
         )
     },
@@ -476,10 +475,10 @@ DCM_concepts = {
     "AutomatedOptical": {"111843": ("Automated Optical", [4253])},
     "AutomatedSlideStainer": {"STAIN": ("Automated Slide Stainer", [33, 32, 30])},
     "AutomaticProgrammedAdministrationPhase": {
-        "130168": ("Automatic Programmed " "Administration Phase", [62])
+        "130168": ("Automatic Programmed Administration Phase", [62])
     },
     "AutomaticProgrammedDelayPhase": {
-        "130169": ("Automatic Programmed Delay " "Phase", [62])
+        "130169": ("Automatic Programmed Delay Phase", [62])
     },
     "AutomaticProgrammedWaitPhase": {
         "130263": ("Automatic Programmed Wait Phase", [62])
@@ -492,13 +491,13 @@ DCM_concepts = {
     },
     "Autorefraction": {"AR": ("Autorefraction", [29, 33, 30])},
     "AutorefractionMeasurementsSOPInstance": {
-        "111784": ("Autorefraction " "Measurements SOP " "Instance", [4240])
+        "111784": ("Autorefraction Measurements SOP Instance", [4240])
     },
     "AutorefractionVisualAcuity": {"111685": ("Autorefraction Visual Acuity", [4216])},
     "AverageBreastFeedingPeriod": {"111544": ("Average breast feeding period", [])},
     "AverageCalcificationDistanceInACalcificationCluster": {
         "112200": (
-            "Average " "calcification " "distance " "in a " "calcification " "cluster",
+            "Average calcification distance in a calcification cluster",
             [6142],
         )
     },
@@ -513,14 +512,14 @@ DCM_concepts = {
     "AxillaryNodalMetastases": {"111301": ("Axillary nodal metastases", [6030, 6033])},
     "AxillaryNodeHyperplasia": {"111253": ("Axillary node hyperplasia", [6030, 6031])},
     "AxillaryNodeWithCalcifications": {
-        "111252": ("Axillary node with " "calcifications", [6030, 6031])
+        "111252": ("Axillary node with calcifications", [6030, 6031])
     },
     "AxillaryNodeWithLymphoma": {
         "111300": ("Axillary node with lymphoma", [6030, 6033])
     },
     "AzygoesophagealRecessInterface": {
         "112090": (
-            "Azygoesophageal recess " "interface",
+            "Azygoesophageal recess interface",
             [7151, 6109, 9514, 6113, 6102, 7192, 6148],
         )
     },
@@ -552,40 +551,40 @@ DCM_concepts = {
     },
     "BSA1Point219": {"122572": ("BSA^1.219", [3455])},
     "BSAEquals0Point0004688WT0Point8168To0Point0154LogWT": {
-        "122246": ("BSA = " "0.0004688*WT^(0.8168-0.0154*log(WT))", [3663])
+        "122246": ("BSA = 0.0004688*WT^(0.8168-0.0154*log(WT))", [3663])
     },
     "BSAEquals0Point003207WT0Point7285To0Point0188LogWTHT0Point3": {
-        "122240": ("BSA " "= " "0.003207*WT^(0.7285-0.0188*log(WT))*HT^0.3", [3663])
+        "122240": ("BSA = 0.003207*WT^(0.7285-0.0188*log(WT))*HT^0.3", [3663])
     },
     "BSAEquals0Point007184WT0Point425HT0Point725": {
-        "122241": ("BSA = " "0.007184*WT^0.425*HT^0.725", [3663])
+        "122241": ("BSA = 0.007184*WT^0.425*HT^0.725", [3663])
     },
     "BSAEquals0Point007358WT0Point425HT0Point725": {
-        "122266": ("BSA = " "0.007358*WT^0.425*HT^0.725", [3663])
+        "122266": ("BSA = 0.007358*WT^0.425*HT^0.725", [3663])
     },
     "BSAEquals0Point008883WT0Point444HT0Point663": {
-        "122268": ("BSA = " "0.008883*WT^0.444*HT^0.663", [3663])
+        "122268": ("BSA = 0.008883*WT^0.444*HT^0.663", [3663])
     },
     "BSAEquals0Point009568WT0Point473HT0Point655": {
-        "122270": ("BSA = " "0.009568*WT^0.473*HT^0.655", [3663])
+        "122270": ("BSA = 0.009568*WT^0.473*HT^0.655", [3663])
     },
     "BSAEquals0Point010265WT0Point423HT0Point651": {
-        "122267": ("BSA = " "0.010265*WT^0.423*HT^0.651", [3663])
+        "122267": ("BSA = 0.010265*WT^0.423*HT^0.651", [3663])
     },
     "BSAEquals0Point0235WT0Point51456HT0Point42246": {
-        "122242": ("BSA = " "0.0235*WT^0.51456\u200b*HT^0.42246", [])
+        "122242": ("BSA = 0.0235*WT^0.51456\u200b*HT^0.42246", [])
     },
     "BSAEquals0Point0235WT0Point51456Htcm0Point42246": {
-        "122242": ("BSA = " "0.0235*WT^0.51456*HTcm^0.42246", [3663])
+        "122242": ("BSA = 0.0235*WT^0.51456*HTcm^0.42246", [3663])
     },
     "BSAEquals0Point024265WT0Point5378HT0Point3964": {
-        "122243": ("BSA = " "0.024265*WT^0.5378\u200b*HT^0.3964", [])
+        "122243": ("BSA = 0.024265*WT^0.5378\u200b*HT^0.3964", [])
     },
     "BSAEquals0Point024265WT0Point5378Htcm0Point3964": {
-        "122243": ("BSA = " "0.024265*WT^0.5378*HTcm^0.3964", [3663])
+        "122243": ("BSA = 0.024265*WT^0.5378*HTcm^0.3964", [3663])
     },
     "BSAEquals0Point038189WT0Point423HT0Point362": {
-        "122269": ("BSA = " "0.038189*WT^0.423*HT^0.362", [3663])
+        "122269": ("BSA = 0.038189*WT^0.423*HT^0.362", [3663])
     },
     "BSAEquals13210Point3433WT": {"122245": ("BSA = 1321+0.3433*WT", [3663])},
     "BSAEqualsHTWT360Point5": {"122244": ("BSA = (HT*WT/36)^0.5", [3663])},
@@ -596,7 +595,7 @@ DCM_concepts = {
         "125040": ("Background", [7151, 7165, 7196, 7169, 7168, 7194, 7159])
     },
     "BackgroundForLesionToBackgroundSUVRatio": {
-        "126040": ("Background for Lesion " "to Background SUV " "Ratio", [7466])
+        "126040": ("Background for Lesion to Background SUV Ratio", [7466])
     },
     "Backscatter": {"128411": ("Backscatter", [10069])},
     "BarcodeValue": {"130231": ("Barcode Value", [])},
@@ -617,7 +616,7 @@ DCM_concepts = {
     "BaselineStenosisMeasurement": {"122107": ("Baseline Stenosis Measurement", [])},
     "BaselineTIMIFlow": {"122109": ("Baseline TIMI Flow", [])},
     "BasicApplicationConfidentialityProfile": {
-        "113100": ("Basic Application " "Confidentiality " "Profile", [7050])
+        "113100": ("Basic Application Confidentiality Profile", [7050])
     },
     "BasicVoiceAudio": {"AU": ("Basic Voice Audio", [33, 32])},
     "BatWingDistribution": {"112154": ("Bat's wing distribution", [6128])},
@@ -631,7 +630,7 @@ DCM_concepts = {
     "BeamPosition": {"130524": ("Beam Position", [])},
     "BeamShapingNote": {"130023": ("Beam Shaping Note", [])},
     "BeamTargetingToleranceViolation": {
-        "130468": ("Beam Targeting Tolerance " "Violation", [9566])
+        "130468": ("Beam Targeting Tolerance Violation", [9566])
     },
     "BeatDetected": {
         "109018": ("Beat detected (accepted)", [3337]),
@@ -648,7 +647,7 @@ DCM_concepts = {
     "BeginOxygenAdministration": {"121161": ("Begin oxygen administration", [3530])},
     "BeginPacing": {"121166": ("Begin Pacing", [3552])},
     "BeginTransferringDICOMInstances": {
-        "110102": ("Begin Transferring DICOM " "Instances", [400])
+        "110102": ("Begin Transferring DICOM Instances", [400])
     },
     "BeginVentilation": {"121168": ("Begin Ventilation", [3551])},
     "BeginningOfTimePeriod": {"130533": ("Beginning of Time Period", [10073])},
@@ -661,7 +660,7 @@ DCM_concepts = {
     "BestOverallResponse": {"112049": ("Best Overall Response", [])},
     "Bevacizumab89Zr": {"126516": ("Bevacizumab ^89^Zr", [4021])},
     "BiExponentialIVIMDiffusionModel": {
-        "113251": ("Bi-exponential (IVIM) " "diffusion model", [7273])
+        "113251": ("Bi-exponential (IVIM) diffusion model", [7273])
     },
     "BiPlaneAngiography": {"122060": ("Bi-plane Angiography", [3748])},
     "BillingCode": {"121147": ("Billing Code", [])},
@@ -675,7 +674,7 @@ DCM_concepts = {
         "111143": ("Biopsy should be considered", [6028, 6029])
     },
     "BiopsyShouldBeStronglyConsidered": {
-        "111148": ("Biopsy should be strongly " "considered", [6028, 6029])
+        "111148": ("Biopsy should be strongly considered", [6028, 6029])
     },
     "Bioptome": {"122052": ("Bioptome", [3429])},
     "BiosafetyConditions": {"127010": ("Biosafety conditions", [])},
@@ -712,7 +711,7 @@ DCM_concepts = {
         )
     },
     "BloodVelocityVsTimeOfCardiacCycle": {
-        "122667": ("Blood velocity vs. time of " "cardiac cycle", [])
+        "122667": ("Blood velocity vs. time of cardiac cycle", [])
     },
     "BloodVesselVascularInvasion": {
         "111303": ("Blood vessel (vascular) invasion", [6030, 6033])
@@ -737,15 +736,15 @@ DCM_concepts = {
     "BorderShape": {"112015": ("Border shape", [])},
     "Borderline": {"111848": ("Borderline", [4254])},
     "BorderlineAndGeneralReductionInSensitivity": {
-        "111851": ("Borderline and " "general reduction " "in sensitivity", [4254])
+        "111851": ("Borderline and general reduction in sensitivity", [4254])
     },
     "BorgCR10Scale": {"122735": ("Borg CR10 Scale", [3239])},
     "BorgRPEScale": {"122734": ("Borg RPE Scale", [3239])},
     "BottomZLocationOfReconstructableVolume": {
-        "113896": ("Bottom Z Location of " "Reconstructable Volume", [])
+        "113896": ("Bottom Z Location of Reconstructable Volume", [])
     },
     "BottomZLocationOfScanningLength": {
-        "113898": ("Bottom Z Location of Scanning " "Length", [])
+        "113898": ("Bottom Z Location of Scanning Length", [])
     },
     "BowtieFilter": {"130354": ("Bowtie Filter", [9548])},
     "BrachytherapyChannel": {
@@ -769,7 +768,7 @@ DCM_concepts = {
     "BreastImagingReport": {"111400": ("Breast Imaging Report", [7000])},
     "BreastImagingSubjectMatter": {"128738": ("Breast imaging subject matter", [7017])},
     "BreastOutlineIncludingPectoralMuscleTissue": {
-        "111007": ("Breast Outline " "including Pectoral " "Muscle Tissue", [])
+        "111007": ("Breast Outline including Pectoral Muscle Tissue", [])
     },
     "BreastThickness": {"128405": ("Breast Thickness", [10069])},
     "BreastTissueDensity": {"112191": ("Breast tissue density", [6142])},
@@ -782,32 +781,32 @@ DCM_concepts = {
     "ButterflyFilter": {"113652": ("Butterfly filter", [10007])},
     "ByVentilator": {"121163": ("By ventilator", [])},
     "C0InadequateStudyAwaitingPriorComparisons": {
-        "112240": ("C0 - Inadequate " "Study/Awaiting " "Prior Comparisons", [6200])
+        "112240": ("C0 - Inadequate Study/Awaiting Prior Comparisons", [6200])
     },
     "C1NormalColonOrBenignLesion": {
-        "112241": ("C1 - Normal Colon or Benign " "Lesion", [6200])
+        "112241": ("C1 - Normal Colon or Benign Lesion", [6200])
     },
     "C2IntermediatePolypOrIndeterminateFinding": {
-        "112242": ("C2 - Intermediate " "Polyp or " "Indeterminate " "Finding", [6200])
+        "112242": ("C2 - Intermediate Polyp or Indeterminate Finding", [6200])
     },
     "C3PolypPossiblyAdvancedAdenoma": {
-        "112243": ("C3 - Polyp, Possibly Advanced " "Adenoma", [6200])
+        "112243": ("C3 - Polyp, Possibly Advanced Adenoma", [6200])
     },
     "C4ColonicMassLikelyMalignant": {
-        "112244": ("C4 - Colonic Mass, Likely " "Malignant", [6200])
+        "112244": ("C4 - Colonic Mass, Likely Malignant", [6200])
     },
     "CADOperatingPoint": {"111071": ("CAD Operating Point", [])},
     "CADOperatingPointDescription": {"111081": ("CAD Operating Point Description", [])},
     "CADOperatingPointTable": {"111093": ("CAD Operating Point Table", [])},
     "CADProcessingAndFindingsSummary": {
-        "111017": ("CAD Processing and Findings " "Summary", [])
+        "111017": ("CAD Processing and Findings Summary", [])
     },
     "CArmMount": {"113955": ("C-Arm Mount", [10031])},
     "CCNippleNotCenteredOnImage": {
         "111203": ("CC Nipple not centered on image", [6041])
     },
     "CCNotAllMedialTissueVisualized": {
-        "111202": ("CC Not all medial tissue " "visualized", [6041])
+        "111202": ("CC Not all medial tissue visualized", [6041])
     },
     "CCPosteriorNippleLineDoesNotMeasureWithin1cmOfMLO": {
         "111204": (
@@ -826,7 +825,7 @@ DCM_concepts = {
     "CFXRegionInLAOProjection": {"122472": ("CFX Region in LAO Projection", [3461])},
     "CHARMED": {"113234": ("CHARMED", [7261])},
     "CKDEPIFormulaEstimationOfGFR": {
-        "113571": ("CKD-EPI Formula estimation of " "GFR", [10047])
+        "113571": ("CKD-EPI Formula estimation of GFR", [10047])
     },
     "CKMBBaseline": {"122180": ("CK-MB baseline", [])},
     "CKMBPeak": {"122181": ("CK-MB peak", [])},
@@ -843,10 +842,10 @@ DCM_concepts = {
     "CO2TrendMainStream": {"130441": ("CO2 Trend Main-stream", [3005])},
     "CO2TrendSideStream": {"130442": ("CO2 Trend Side-stream", [3005])},
     "CO2WaveformEndTidalMainStream": {
-        "130435": ("CO2 Waveform End-tidal " "Main-stream", [3005])
+        "130435": ("CO2 Waveform End-tidal Main-stream", [3005])
     },
     "CO2WaveformEndTidalSideStream": {
-        "130437": ("CO2 Waveform End-tidal " "Side-stream", [3005])
+        "130437": ("CO2 Waveform End-tidal Side-stream", [3005])
     },
     "CO2WaveformMainStream": {"130439": ("CO2 Waveform Main-stream", [3005])},
     "CO2WaveformSideStream": {"130440": ("CO2 Waveform Side-stream", [3005])},
@@ -873,10 +872,10 @@ DCM_concepts = {
     "CalcificationDescriptor": {"112030": ("Calcification Descriptor", [])},
     "CalcificationDistribution": {"111008": ("Calcification Distribution", [])},
     "CalcificationExtentAsPercentOfSurface": {
-        "112018": ("Calcification extent as " "percent of surface", [6142])
+        "112018": ("Calcification extent as percent of surface", [6142])
     },
     "CalcificationExtentAsPercentOfVolume": {
-        "112019": ("Calcification extent as " "percent of volume", [6142])
+        "112019": ("Calcification extent as percent of volume", [6142])
     },
     "CalcificationType": {"111009": ("Calcification Type", [])},
     "CalcificationsOutsideOfAMass": {
@@ -911,11 +910,11 @@ DCM_concepts = {
     "CalibrationResponsibleParty": {"113724": ("Calibration Responsible Party", [])},
     "CalibrationUncertainty": {"113763": ("Calibration Uncertainty", [])},
     "CanadianBorderCollieAssociation": {
-        "109207": ("Canadian Border Collie " "Association", [7481])
+        "109207": ("Canadian Border Collie Association", [7481])
     },
     "CanadianKennelClub": {"109208": ("Canadian Kennel Club", [7481])},
     "CanadianLivestockRecordsAssociation": {
-        "109209": ("Canadian Livestock " "Records Association", [7481])
+        "109209": ("Canadian Livestock Records Association", [7481])
     },
     "CancerElsewhere": {"111480": ("Cancer elsewhere", [6055])},
     "CanineFederationOfCanada": {"109210": ("Canine Federation of Canada", [7481])},
@@ -924,10 +923,10 @@ DCM_concepts = {
         "111305": ("Carcinoma in ectopic breast", [6030, 6033])
     },
     "CarcinomaInPregnancyAndLactation": {
-        "111310": ("Carcinoma in pregnancy and " "lactation", [6030, 6033])
+        "111310": ("Carcinoma in pregnancy and lactation", [6030, 6033])
     },
     "CarcinomaWithEndocrineDifferentiation": {
-        "111306": ("Carcinoma with " "endocrine " "differentiation", [6030, 6033])
+        "111306": ("Carcinoma with endocrine differentiation", [6030, 6033])
     },
     "CarcinomaWithMetaplasia": {"111308": ("Carcinoma with metaplasia", [])},
     "Carcinosarcoma": {"111311": ("Carcinosarcoma", [])},
@@ -937,19 +936,19 @@ DCM_concepts = {
     "Cardiosphere": {"125901": ("CARDIOsphere", [12030])},
     "CardiovascularAnalysisReport": {"122600": ("Cardiovascular Analysis Report", [])},
     "CardiovascularImagingSubjectMatter": {
-        "128730": ("Cardiovascular imaging " "subject matter", [7017])
+        "128730": ("Cardiovascular imaging subject matter", [7017])
     },
     "CardiovascularRadiology": {"128172": ("Cardiovascular Radiology", [7030])},
     "CarinaAngle": {"112086": ("Carina angle", [7151, 6109, 9514, 6102, 7192, 6111])},
     "CarrierGas": {"127330": ("Carrier gas", [621])},
     "CarrierTemperatureSensor": {"127240": ("Carrier temperature sensor", [636])},
     "CartilaginousAndOsseousChange": {
-        "111309": ("Cartilaginous and osseous " "change", [6030, 6033])
+        "111309": ("Cartilaginous and osseous change", [6030, 6033])
     },
     "CaseSensitivity": {"111088": ("Case Sensitivity", [6048])},
     "CaseSpecificity": {"111090": ("Case Specificity", [6048])},
     "CassetteBasedProjectionRadiographySystem": {
-        "113959": ("Cassette-based " "Projection " "Radiography System", [10032])
+        "113959": ("Cassette-based Projection Radiography System", [10032])
     },
     "Cast": {"130114": ("Cast", [7151, 7193, 9505, 7157, 9520, 9513])},
     "CathLabProcedureLog": {"121120": ("Cath Lab Procedure Log", [3400])},
@@ -959,10 +958,10 @@ DCM_concepts = {
         "109057": ("Catheterization Procedure Phase", [])
     },
     "Caudal10DegreeDistalCranioproximalOblique": {
-        "123019": ("Caudal 10 degree " "distal-cranioproximal " "oblique", [7484])
+        "123019": ("Caudal 10 degree distal-cranioproximal oblique", [7484])
     },
     "CavityExtentAsPercentOfVolume": {
-        "112017": ("Cavity extent as percent of " "volume", [6142])
+        "112017": ("Cavity extent as percent of volume", [6142])
     },
     "Center": {"111010": ("Center", [219])},
     "CenterOfGravity": {"122475": ("Center of Gravity", [3458])},
@@ -990,7 +989,7 @@ DCM_concepts = {
     "ChangMethod": {"122721": ("Chang method", [3117])},
     "ChangeInPatientAnatomy": {"130464": ("Change in Patient Anatomy", [9565])},
     "ChangeOfProcedureForCorrectCharging": {
-        "110509": ("Change of procedure for " "correct charging", [9300, 9301, 9303])
+        "110509": ("Change of procedure for correct charging", [9300, 9301, 9303])
     },
     "CheckedInStatus": {"121388": ("Checked-In Status", [])},
     "Checkerboard": {"114216": ("Checkerboard", [8202])},
@@ -1002,13 +1001,13 @@ DCM_concepts = {
         "113081": ("Choline/Creatine Ratio", [7186, 7469, 218, 4033, 4032, 7180])
     },
     "ChoriocapillarisStructuralReflectanceMap": {
-        "128274": ("Choriocapillaris " "structural " "reflectance map", [4271])
+        "128274": ("Choriocapillaris structural reflectance map", [4271])
     },
     "ChoriocapillarisVasculatureFlow": {
-        "128273": ("Choriocapillaris vasculature " "flow", [4271])
+        "128273": ("Choriocapillaris vasculature flow", [4271])
     },
     "ChoroidStructuralReflectanceMap": {
-        "128276": ("Choroid structural " "reflectance map", [4271])
+        "128276": ("Choroid structural reflectance map", [4271])
     },
     "ChoroidVasculatureFlow": {"128275": ("Choroid vasculature flow", [4271])},
     "ChromaticityEvaluation": {"109705": ("Chromaticity evaluation", [8300])},
@@ -1027,7 +1026,7 @@ DCM_concepts = {
     "CleanGraphicsOption": {"113103": ("Clean Graphics Option", [7050])},
     "CleanPixelDataOption": {"113101": ("Clean Pixel Data Option", [7050])},
     "CleanRecognizableVisualFeaturesOption": {
-        "113102": ("Clean Recognizable " "Visual Features Option", [7050])
+        "113102": ("Clean Recognizable Visual Features Option", [7050])
     },
     "CleanStructuredContentOption": {
         "113104": ("Clean Structured Content Option", [7050])
@@ -1037,7 +1036,7 @@ DCM_concepts = {
     "ClinicalFinding": {"111402": ("Clinical finding", [6051])},
     "ClinicalInterpretation": {"122147": ("Clinical Interpretation", [])},
     "ClinicalTrialSubmissionInputUsed": {
-        "128223": ("Clinical Trial Submission " "Input Used", [7010])
+        "128223": ("Clinical Trial Submission Input Used", [7010])
     },
     "ClockfaceOrRegion": {"111014": ("Clockface or region", [])},
     "ClusterAnalysis": {"123107": ("Cluster Analysis", [7162])},
@@ -1048,12 +1047,12 @@ DCM_concepts = {
     "CmabU3689Zr": {"126746": ("cMAb U36 ^89^Zr", [4021])},
     "Coalescent": {"112157": ("Coalescent", [6128])},
     "CockroftGaultFormulaEstimationOfGFR": {
-        "113570": ("Cockroft-Gault Formula " "estimation of GFR", [10047])
+        "113570": ("Cockroft-Gault Formula estimation of GFR", [10047])
     },
     "CoilMarker": {"129301": ("Coil Marker", [7112, 7111])},
     "Coin": {"112178": ("Coin", [7151, 6138, 6404, 7193, 6102, 6203, 6202])},
     "CollectionOfPresentationStates": {
-        "113022": ("Collection of Presentation " "States", [7010])
+        "113022": ("Collection of Presentation States", [7010])
     },
     "CollimatedFieldArea": {"113790": ("Collimated Field Area", [])},
     "CollimatedFieldHeight": {"113788": ("Collimated Field Height", [])},
@@ -1068,12 +1067,12 @@ DCM_concepts = {
     "ColumnAngulation": {"113770": ("Column Angulation", [])},
     "CombinationImplant": {"111484": ("Combination implant", [6058, 6059])},
     "CombinedPosteriorEnhancementAndShadowing": {
-        "111370": ("Combined posterior " "enhancement and " "shadowing", [6155])
+        "111370": ("Combined posterior enhancement and shadowing", [6155])
     },
     "Comment": {"121106": ("Comment", [12101])},
     "CompactFlash": {"110034": ("Compact Flash", [405])},
     "ComparativeAverage10YearCHDRisk": {
-        "122231": ("Comparative Average10 Year " "CHD Risk", [3667])
+        "122231": ("Comparative Average10 Year CHD Risk", [3667])
     },
     "ComparativeLow10YearCHDRisk": {
         "122232": ("Comparative Low10 Year CHD Risk", [3667])
@@ -1085,7 +1084,7 @@ DCM_concepts = {
     "ComparisonWithPriorExamDone": {"122140": ("Comparison with Prior Exam Done", [])},
     "CompleteAcquisitionContent": {"113034": ("Complete Acquisition Content", [7010])},
     "CompleteRenderingForPresentation": {
-        "121332": ("Complete Rendering for " "Presentation", [7006])
+        "121332": ("Complete Rendering for Presentation", [7006])
     },
     "CompleteStudyContent": {"113032": ("Complete Study Content", [7010])},
     "Complex": {"111363": ("Complex", [6154])},
@@ -1099,7 +1098,7 @@ DCM_concepts = {
     "ComponentVolume": {"130239": ("Component Volume", [])},
     "ComposedFromPriorDoses": {"121370": ("Composed from prior doses", [7220])},
     "ComposedFromPriorDosesAndCurrentPlan": {
-        "121371": ("Composed from prior " "doses and current plan", [7220])
+        "121371": ("Composed from prior doses and current plan", [7220])
     },
     "CompositeFeature": {"111015": ("Composite Feature", [])},
     "CompositeFeatureModifier": {"112023": ("Composite Feature Modifier", [])},
@@ -1118,7 +1117,7 @@ DCM_concepts = {
     "ComputerAidedDetection": {"110004": ("Computer Aided Detection", [9231])},
     "ComputerAidedDiagnosis": {"110003": ("Computer Aided Diagnosis", [9231])},
     "ComputerAssistedDetectionDiagnosis": {
-        "CAD": ("Computer Assisted " "Detection/Diagnosis", [30])
+        "CAD": ("Computer Assisted Detection/Diagnosis", [30])
     },
     "Concentration": {"122093": ("Concentration", [3410])},
     "ConcentricCircleBScanPattern": {
@@ -1128,7 +1127,7 @@ DCM_concepts = {
     "Conclusion": {"121077": ("Conclusion", [7002, 6053])},
     "Conclusions": {"121076": ("Conclusions", [])},
     "ConditionEffectiveDoseMeasured": {
-        "113816": ("Condition Effective Dose " "measured", [])
+        "113816": ("Condition Effective Dose measured", [])
     },
     "ConePresent": {"130457": ("Cone Present", [])},
     "Conepresent": {"130457": ("ConePresent", [9564])},
@@ -1138,17 +1137,17 @@ DCM_concepts = {
     "ConformalityShell": {"130062": ("Conformality Shell", [9535])},
     "ConjunctiveTerm": {"122154": ("Conjunctive Term", [])},
     "ConnectedImplantationPlanComponent": {
-        "112374": ("Connected Implantation " "Plan Component", [])
+        "112374": ("Connected Implantation Plan Component", [])
     },
     "ConsistentWithLabelingOfTheDevice": {
-        "128602": ("Consistent with labeling of " "the device", [800])
+        "128602": ("Consistent with labeling of the device", [800])
     },
     "ConstantAngleAcquisition": {"113805": ("Constant Angle Acquisition", [10013])},
     "ConsultationWith": {"122044": ("Consultation With", [3404])},
     "ConsumableCatheterType": {"130257": ("Consumable Catheter Type", [])},
     "ConsumableIsNew": {"130224": ("Consumable is New", [])},
     "ConsumableReturnedToInventory": {
-        "122077": ("Consumable returned to " "inventory", [3408])
+        "122077": ("Consumable returned to inventory", [3408])
     },
     "ConsumableTakenFromInventory": {
         "122076": ("Consumable taken from inventory", [3408])
@@ -1160,14 +1159,14 @@ DCM_concepts = {
     "ContinentalKennelClub": {"109211": ("Continental Kennel Club", [7481])},
     "ContinuityEquation": {"125212": ("Continuity Equation", [12229, 12227])},
     "ContinuityEquationByMeanVelocity": {
-        "125213": ("Continuity Equation by Mean " "Velocity", [12229, 12227])
+        "125213": ("Continuity Equation by Mean Velocity", [12229, 12227])
     },
     "ContinuityEquationByPeakVelocity": {
-        "125214": ("Continuity Equation by Peak " "Velocity", [12229, 12227])
+        "125214": ("Continuity Equation by Peak Velocity", [12229, 12227])
     },
     "ContinuityEquationByVelocityTimeIntegral": {
         "125215": (
-            "Continuity Equation " "by Velocity Time " "Integral",
+            "Continuity Equation by Velocity Time Integral",
             [12229, 12227],
         )
     },
@@ -1180,20 +1179,20 @@ DCM_concepts = {
     "ContouringInputUsed": {"128219": ("Contouring Input Used", [7010])},
     "ContrastAdministered": {"122086": ("Contrast administered", [3409])},
     "ContrastAgentAngioMRSignalIntensity": {
-        "110801": ("Contrast Agent Angio MR " "Signal Intensity", [7469, 218, 7180])
+        "110801": ("Contrast Agent Angio MR Signal Intensity", [7469, 218, 7180])
     },
     "ContrastBolusAgent": {"123011": ("Contrast/Bolus Agent", [])},
     "ContrastBolusIngredientOpaque": {
-        "121381": ("Contrast/Bolus Ingredient " "Opaque", [4050])
+        "121381": ("Contrast/Bolus Ingredient Opaque", [4050])
     },
     "ContrastEnd": {"122085": ("Contrast end", [3409])},
     "ContrastLongitudinalRelaxivity": {
-        "126380": ("Contrast Longitudinal " "Relaxivity", [4111])
+        "126380": ("Contrast Longitudinal Relaxivity", [4111])
     },
     "ContrastOfGLCM": {"126063": ("Contrast of GLCM", [])},
     "ContrastPhase": {"109058": ("Contrast Phase", [])},
     "ContrastReactionProphylacticAgent": {
-        "130259": ("Contrast Reaction " "Prophylactic Agent", [76])
+        "130259": ("Contrast Reaction Prophylactic Agent", [76])
     },
     "ContrastStart": {"122084": ("Contrast start", [3409])},
     "ContrastTransverseRelaxivity": {"130188": ("Contrast Transverse Relaxivity", [])},
@@ -1203,7 +1202,7 @@ DCM_concepts = {
         "111111": ("Cooper's ligament changes", [6014, 6054, 6056, 6016, 6015])
     },
     "CoordinateAlignmentImageSeries": {
-        "128187": ("Coordinate Alignment Image " "Series", [7010, 7023])
+        "128187": ("Coordinate Alignment Image Series", [7010, 7023])
     },
     "CopiedFromImageAttributes": {
         "113866": ("Copied From Image Attributes", [10021, 10020])
@@ -1211,7 +1210,7 @@ DCM_concepts = {
     "CornCobBedding": {"127232": ("Corn cob bedding", [605])},
     "CornealAxialPowerMap": {"111940": ("Corneal axial power map", [4268])},
     "CornealBirefringenceCompensation": {
-        "111923": ("Corneal birefringence " "compensation", [4261])
+        "111923": ("Corneal birefringence compensation", [4261])
     },
     "CornealElevationMap": {"111943": ("Corneal elevation map", [4268])},
     "CornealInstantaneousPowerMap": {
@@ -1221,31 +1220,31 @@ DCM_concepts = {
     "CornealWavefrontMap": {"111944": ("Corneal wavefront map", [4268])},
     "CoronaRadiata": {"112105": ("Corona radiata", [6102, 6103])},
     "CoronaryArteryBypassDuringThisAdmission": {
-        "122164": ("Coronary Artery " "Bypass During This " "Admission", [])
+        "122164": ("Coronary Artery Bypass During This Admission", [])
     },
     "CoronaryFlowReserve": {"122217": ("Coronary Flow reserve", [3620])},
     "CoronaryLesionGreaterThanEquals50PercentStenosis": {
-        "122171": ("Coronary " "lesion > = " "50% stenosis", [3726])
+        "122171": ("Coronary lesion > = 50% stenosis", [3726])
     },
     "CorrectedSinusNodeRecoveryTime": {
-        "122237": ("Corrected Sinus Node Recovery " "Time", [])
+        "122237": ("Corrected Sinus Node Recovery Time", [])
     },
     "CorrectionFactor": {"128452": ("Correction Factor", [10069])},
     "CorrectionOfCongenitalCardiovascularDeformity": {
-        "121439": ("Correction of " "congenital " "cardiovascular " "deformity", [])
+        "121439": ("Correction of congenital cardiovascular deformity", [])
     },
     "CorrelatesToMRIFindings": {"111383": ("Correlates to MRI findings", [6158])},
     "CorrelatesToMammographyFindings": {
-        "111382": ("Correlates to mammography " "findings", [6158])
+        "111382": ("Correlates to mammography findings", [6158])
     },
     "CorrelatesToOtherImagingFindings": {
-        "111385": ("Correlates to other imaging " "findings", [6158])
+        "111385": ("Correlates to other imaging findings", [6158])
     },
     "CorrelatesToPhysicalExamFindings": {
-        "111381": ("Correlates to physical exam " "findings", [6158])
+        "111381": ("Correlates to physical exam findings", [6158])
     },
     "CorrelatesToUltrasoundFindings": {
-        "111384": ("Correlates to ultrasound " "findings", [6158])
+        "111384": ("Correlates to ultrasound findings", [6158])
     },
     "CorrelationOfGLCM": {"126066": ("Correlation of GLCM", [])},
     "CorrelationToOtherFindings": {"111380": ("Correlation to other Findings", [])},
@@ -1264,17 +1263,17 @@ DCM_concepts = {
     "Crosstable": {"111069": ("Crosstable", [502, 4011])},
     "CtdifreeairCalculationFactor": {"113836": ("CTDIfreeair Calculation Factor", [])},
     "CtdifreeairToEConversionViaMCComputation": {
-        "113801": ("CTDIfreeair to E " "conversion via MC " "computation", [10011])
+        "113801": ("CTDIfreeair to E conversion via MC computation", [10011])
     },
     "CtdifreeairToEConversionViaMeasurement": {
-        "113803": ("CTDIfreeair to E " "conversion via " "measurement", [10011])
+        "113803": ("CTDIfreeair to E conversion via measurement", [10011])
     },
     "CtdivolAlertValue": {"113904": ("CTDIvol Alert Value", [])},
     "CtdivolAlertValueConfigured": {"113902": ("CTDIvol Alert Value Configured", [])},
     "CtdivolForwardEstimate": {"113914": ("CTDIvol Forward Estimate", [])},
     "CtdivolNotificationValue": {"113912": ("CTDIvol Notification Value", [])},
     "CtdivolNotificationValueConfigured": {
-        "113910": ("CTDIvol Notification Value " "Configured", [])
+        "113910": ("CTDIvol Notification Value Configured", [])
     },
     "CtdiwPhantomType": {"113835": ("CTDIw Phantom Type", [])},
     "Cu3689Zr": {"126515": ("cU36 ^89^Zr", [4021])},
@@ -1301,7 +1300,7 @@ DCM_concepts = {
     "CurveFitParameter": {"128453": ("Curve Fit Parameter", [10069])},
     "CurveFittedReference": {"122489": ("Curve Fitted Reference", [3465])},
     "CurvedLinearUltrasoundTransducerGeometry": {
-        "125253": ("Curved linear " "ultrasound " "transducer geometry", [12033])
+        "125253": ("Curved linear ultrasound transducer geometry", [12033])
     },
     "CurvedMultiplanarReformatting": {
         "113073": ("Curved multiplanar reformatting", [7203])
@@ -1331,14 +1330,14 @@ DCM_concepts = {
     "DLPFrontProjectionSystem": {"109996": ("DLP Front Projection System", [8303])},
     "DLPNotificationValue": {"113911": ("DLP Notification Value", [])},
     "DLPNotificationValueConfigured": {
-        "113909": ("DLP Notification Value " "Configured", [])
+        "113909": ("DLP Notification Value Configured", [])
     },
     "DLPRearProjectionSystem": {"109995": ("DLP Rear Projection System", [8303])},
     "DLPToEConversionViaMCComputation": {
-        "113800": ("DLP to E conversion via MC " "computation", [10011])
+        "113800": ("DLP to E conversion via MC computation", [10011])
     },
     "DLPToEConversionViaMeasurement": {
-        "113802": ("DLP to E conversion via " "measurement", [10011])
+        "113802": ("DLP to E conversion via measurement", [10011])
     },
     "DN3089Zr": {"126747": ("DN30 ^89^Zr", [4021])},
     "DOT": {"113236": ("DOT", [7261])},
@@ -1363,7 +1362,7 @@ DCM_concepts = {
     "DatetimeOfLastEvaluation": {"111536": ("DateTime of last evaluation", [])},
     "DatetimeOfProcessing": {"111702": ("DateTime of processing", [])},
     "DatetimeOfRecordingOfLogEntry": {
-        "121125": ("DateTime of Recording of Log " "Entry", [])
+        "121125": ("DateTime of Recording of Log Entry", [])
     },
     "DatetimeProblemObserved": {"111535": ("DateTime problem observed", [])},
     "DatetimeProblemResolved": {"121433": ("DateTime Problem Resolved", [])},
@@ -1373,40 +1372,40 @@ DCM_concepts = {
     "DeathDuringCatheterization": {"122167": ("Death During Catheterization", [3413])},
     "DeathDuringThisAdmission": {"122166": ("Death During This Admission", [])},
     "DeepRetinaStructuralReflectanceMap": {
-        "128270": ("Deep retina structural " "reflectance map", [4271])
+        "128270": ("Deep retina structural reflectance map", [4271])
     },
     "DeepRetinaVasculatureFlow": {"128269": ("Deep retina vasculature flow", [4271])},
     "DeformableModels": {"123111": ("Deformable Models", [7162])},
     "DeformedForRegistration": {"125027": ("Deformed for Registration", [7203])},
     "DegreeOfFreedomExactRotationalTranslationValue": {
         "112379": (
-            "Degree of " "Freedom Exact " "Rotational " "Translation " "Value",
+            "Degree of Freedom Exact Rotational Translation Value",
             [],
         )
     },
     "DegreeOfFreedomExactTranslationalValue": {
-        "112376": ("Degree of Freedom " "Exact Translational " "Value", [])
+        "112376": ("Degree of Freedom Exact Translational Value", [])
     },
     "DegreeOfFreedomID": {"112363": ("Degree of Freedom ID", [])},
     "DegreeOfFreedomMaximumRotationalValue": {
-        "112381": ("Degree of Freedom " "Maximum Rotational " "Value", [])
+        "112381": ("Degree of Freedom Maximum Rotational Value", [])
     },
     "DegreeOfFreedomMaximumTranslationalValue": {
-        "112378": ("Degree of Freedom " "Maximum " "Translational Value", [])
+        "112378": ("Degree of Freedom Maximum Translational Value", [])
     },
     "DegreeOfFreedomMinimumRotationalValue": {
-        "112380": ("Degree of Freedom " "Minimum Rotational " "Value", [])
+        "112380": ("Degree of Freedom Minimum Rotational Value", [])
     },
     "DegreeOfFreedomMinimumTranslationalValue": {
-        "112377": ("Degree of Freedom " "Minimum " "Translational Value", [])
+        "112377": ("Degree of Freedom Minimum Translational Value", [])
     },
     "DegreeOfThrombus": {"122131": ("Degree of Thrombus", [])},
     "DegreesOfFreedomSpecification": {
-        "112362": ("Degrees of Freedom " "Specification", [])
+        "112362": ("Degrees of Freedom Specification", [])
     },
     "DelayExportUntilClinicalInformationIsAvailable": {
         "128716": (
-            "Delay export " "until clinical " "information is " "available",
+            "Delay export until clinical information is available",
             [7015],
         )
     },
@@ -1424,13 +1423,13 @@ DCM_concepts = {
         )
     },
     "DelayExportUntilExpertReviewIsAvailable": {
-        "128722": ("Delay export until " "expert review is " "available", [7015])
+        "128722": ("Delay export until expert review is available", [7015])
     },
     "DelayExportUntilFinalReportIsAvailable": {
-        "128715": ("Delay export until " "final report is " "available", [7015])
+        "128715": ("Delay export until final report is available", [7015])
     },
     "DelayExportUntilHistopathologyIsAvailable": {
-        "128718": ("Delay export until " "histopathology is " "available", [7015])
+        "128718": ("Delay export until histopathology is available", [7015])
     },
     "DelayExportUntilOtherLaboratoryResultsAreAvailable": {
         "128719": (
@@ -1449,15 +1448,15 @@ DCM_concepts = {
         "128721": ("Delay export until patient dies", [7015])
     },
     "DelayExportUntilPatientIsDischarged": {
-        "128720": ("Delay export until " "patient is discharged", [7015])
+        "128720": ("Delay export until patient is discharged", [7015])
     },
     "DelayedRedistributionState": {"109094": ("Delayed Redistribution State", [3101])},
     "DeliveryRateToleranceViolation": {
-        "130470": ("Delivery Rate Tolerance " "Violation", [9566])
+        "130470": ("Delivery Rate Tolerance Violation", [9566])
     },
     "DeliveryVerificationNote": {"130031": ("Delivery Verification Note", [])},
     "DensitometricLuminalCrossSectionalAreaGraph": {
-        "122517": ("Densitometric " "Luminal " "Cross-sectional " "Area Graph", [])
+        "122517": ("Densitometric Luminal Cross-sectional Area Graph", [])
     },
     "DensitometricMethod": {"122474": ("Densitometric method", [3470])},
     "Density": {"111103": ("Density", []), "112118": ("Density", [6102, 6104])},
@@ -1471,10 +1470,10 @@ DCM_concepts = {
     "DerivedEffectiveDiameter": {"113933": ("Derived Effective Diameter", [])},
     "DerivedFiducial": {"112357": ("Derived Fiducial", [])},
     "DerivedFromHumanReadableReports": {
-        "113868": ("Derived From Human-Readable " "Reports", [10021, 10020])
+        "113868": ("Derived From Human-Readable Reports", [10021, 10020])
     },
     "DerivedHemodynamicMeasurements": {
-        "122126": ("Derived Hemodynamic " "Measurements", [])
+        "122126": ("Derived Hemodynamic Measurements", [])
     },
     "DerivedImagingMeasurements": {"126011": ("Derived Imaging Measurements", [])},
     "DerivedNonValveArea": {"122160": ("Derived Non-Valve Area", [3614, 3615])},
@@ -1492,7 +1491,7 @@ DCM_concepts = {
     "DetectorType": {"113947": ("Detector Type", [])},
     "Deterministic": {"113211": ("Deterministic", [7262])},
     "DeterministicTrackingAlgorithm": {
-        "113211": ("Deterministic Tracking " "Algorithm", [])
+        "113211": ("Deterministic Tracking Algorithm", [])
     },
     "DeviationIndex": {"113847": ("Deviation Index", [])},
     "Device": {"121007": ("Device", [270])},
@@ -1506,13 +1505,13 @@ DCM_concepts = {
     "DeviceName": {"113877": ("Device Name", [])},
     "DeviceObserverManufacturer": {"121014": ("Device Observer Manufacturer", [])},
     "DeviceObserverManufacturerClassUID": {
-        "121061": ("Device Observer " "Manufacturer Class UID", [])
+        "121061": ("Device Observer Manufacturer Class UID", [])
     },
     "DeviceObserverModelName": {"121015": ("Device Observer Model Name", [])},
     "DeviceObserverName": {"121013": ("Device Observer Name", [])},
     "DeviceObserverPhysicalLocationDuringObservation": {
         "121017": (
-            "Device " "Observer " "Physical " "Location " "During " "Observation",
+            "Device Observer Physical Location During Observation",
             [],
         )
     },
@@ -1526,7 +1525,7 @@ DCM_concepts = {
     "DeviceSubjectName": {"121193": ("Device Subject Name", [])},
     "DeviceSubjectPhysicalLocationDuringObservation": {
         "121197": (
-            "Device Subject " "Physical " "Location " "during " "observation",
+            "Device Subject Physical Location during observation",
             [],
         )
     },
@@ -1567,7 +1566,7 @@ DCM_concepts = {
     "DiastolicPressureAverage": {"109020": ("Diastolic pressure, average", [])},
     "DiastolicPressureNadir": {"109021": ("Diastolic pressure nadir", [])},
     "DiastolicSystolicVelocityRatio": {
-        "122218": ("Diastolic/Systolic velocity " "ratio", [3620])
+        "122218": ("Diastolic/Systolic velocity ratio", [3620])
     },
     "Dictation": {"110011": ("Dictation", [])},
     "DifferenceAverageOfGLCM": {"128784": ("Difference Average of GLCM", [])},
@@ -1582,19 +1581,19 @@ DCM_concepts = {
     "DifferenceInTypeOfContent": {"112169": ("Difference in Type of Content", [])},
     "DifferenceVarianceOfGLCM": {"128785": ("Difference Variance of GLCM", [])},
     "DifferentialDiagnosisImpression": {
-        "111023": ("Differential " "Diagnosis/Impression", [])
+        "111023": ("Differential Diagnosis/Impression", [])
     },
     "DifferentialInterferenceContrast": {
-        "111748": ("Differential interference " "contrast", [8123])
+        "111748": ("Differential interference contrast", [8123])
     },
     "DifferentialSignal": {"109006": ("Differential signal", [3240])},
     "DifficultPhysicalClinicalExamination": {
-        "111479": ("Difficult " "physical/clinical " "examination", [6055])
+        "111479": ("Difficult physical/clinical examination", [6055])
     },
     "DiffuseDirectIllumination": {"111625": ("Diffuse direct illumination", [4203])},
     "DiffuselyIncreasedVascularityInSurroundingTissue": {
         "111377": (
-            "Diffusely " "increased " "vascularity " "in " "surrounding " "tissue",
+            "Diffusely increased vascularity in surrounding tissue",
             [6157],
         )
     },
@@ -1617,20 +1616,20 @@ DCM_concepts = {
     "DirectDetector": {"113948": ("Direct Detector", [10030])},
     "DirectlyMeasured": {"125316": ("Directly measured", [12303, 12227])},
     "DisagreementWithPriorFindings": {
-        "122776": ("Disagreement with prior " "findings", [3217])
+        "122776": ("Disagreement with prior findings", [3217])
     },
     "DisapprovedForAnyUse": {"128609": ("Disapproved for any use", [800])},
     "DisapprovedForExperimentalUse": {
-        "128612": ("Disapproved for experimental " "use", [800])
+        "128612": ("Disapproved for experimental use", [800])
     },
     "DisapprovedForUseAtTheInstitution": {
-        "128623": ("Disapproved for use at the " "institution", [800])
+        "128623": ("Disapproved for use at the institution", [800])
     },
     "DisapprovedForUseInTheClinicalTrial": {
-        "128624": ("Disapproved for use in " "the clinical trial", [800])
+        "128624": ("Disapproved for use in the clinical trial", [800])
     },
     "DisapprovedForUseOnPregnantPatients": {
-        "128617": ("Disapproved for use on " "pregnant patients", [800])
+        "128617": ("Disapproved for use on pregnant patients", [800])
     },
     "DiscCentered": {"111901": ("Disc centered", [4207])},
     "DiscFovea": {"111934": ("Disc-Fovea", [4266])},
@@ -1640,26 +1639,26 @@ DCM_concepts = {
     "DischargeSummary": {"121115": ("Discharge Summary", [])},
     "DiscontinuedForUnspecifiedReason": {
         "110513": (
-            "Discontinued for unspecified " "reason",
+            "Discontinued for unspecified reason",
             [9300, 9301, 9302, 9561, 9303],
         )
     },
     "DiscontinuedProcedureStepRescheduled": {
-        "110528": ("Discontinued Procedure " "Step rescheduled", [9300])
+        "110528": ("Discontinued Procedure Step rescheduled", [9300])
     },
     "DiscontinuedProcedureStepReschedulingRecommended": {
         "110529": (
-            "Discontinued " "Procedure " "Step " "rescheduling " "recommended",
+            "Discontinued Procedure Step rescheduling recommended",
             [9300],
         )
     },
     "DissectionClassification": {"122387": ("Dissection Classification", [])},
     "DissectionWithEntireSpecimenSubmission": {
-        "111726": ("Dissection with entire " "specimen submission", [8110])
+        "111726": ("Dissection with entire specimen submission", [8110])
     },
     "DissectionWithRepresentativeSectionsSubmission": {
         "111727": (
-            "Dissection " "with " "representative " "sections " "submission",
+            "Dissection with representative sections submission",
             [8110],
         )
     },
@@ -1678,7 +1677,7 @@ DCM_concepts = {
     "DistanceSourceToDetector": {"113750": ("Distance Source to Detector", [10008])},
     "DistanceSourceToIsocenter": {"113748": ("Distance Source to Isocenter", [10008])},
     "DistanceSourceToReferencePoint": {
-        "113737": ("Distance Source to Reference " "Point", [10008])
+        "113737": ("Distance Source to Reference Point", [10008])
     },
     "DistanceSourceToTablePlane": {
         "113792": ("Distance Source to Table Plane", [10008])
@@ -1686,7 +1685,7 @@ DCM_concepts = {
     "DistinctlyDefined": {"112138": ("Distinctly defined", [6120])},
     "DistortedImplant": {"111506": ("Distorted implant", [6072])},
     "DistributedDiffusionCoefficient": {
-        "113298": ("Distributed Diffusion " "Coefficient", [7469, 218, 7272, 7180])
+        "113298": ("Distributed Diffusion Coefficient", [7469, 218, 7272, 7180])
     },
     "DistributionDescriptor": {"112006": ("Distribution Descriptor", [])},
     "DistributionRepresentation": {"128413": ("Distribution Representation", [])},
@@ -1707,7 +1706,7 @@ DCM_concepts = {
     "DoseAreaProduct": {"122130": ("Dose Area Product", [])},
     "DoseAreaProductTotal": {"113722": ("Dose Area Product Total", [10050])},
     "DoseCalculationBoundingVolume": {
-        "130065": ("Dose Calculation Bounding " "Volume", [9535])
+        "130065": ("Dose Calculation Bounding Volume", [9535])
     },
     "DoseCalculationImageSeries": {
         "128186": ("Dose Calculation Image Series", [7010, 7023])
@@ -1744,17 +1743,17 @@ DCM_concepts = {
     "DuringTransport": {"127102": ("During transport", [634])},
     "DuringVoiding": {"109137": ("During voiding", [91])},
     "DwConversionFactorCoefficients": {
-        "113991": ("Dw Conversion Factor " "Coefficients", [])
+        "113991": ("Dw Conversion Factor Coefficients", [])
     },
     "DynamicContrastMRMeasurementReport": {
-        "126002": ("Dynamic Contrast MR " "Measurement Report", [7021])
+        "126002": ("Dynamic Contrast MR Measurement Report", [7021])
     },
     "DynamicLight": {"111630": ("Dynamic light", [4203])},
     "DynamicWedge": {"130348": ("Dynamic Wedge", [9546])},
     "DyssynchronyIndex": {"125325": ("Dyssynchrony Index", [12304])},
     "E4G1089Zr": {"126519": ("E4G10 ^89^Zr", [4021])},
     "ECGBasedGatingSignalProcessed": {
-        "109002": ("ECG-based gating signal, " "processed", [3090])
+        "109002": ("ECG-based gating signal, processed", [3090])
     },
     "ECGGlobalMeasurements": {"122158": ("ECG Global Measurements", [])},
     "ECGLeadMeasurements": {"122159": ("ECG Lead Measurements", [])},
@@ -1778,7 +1777,7 @@ DCM_concepts = {
     "EffectiveAtomicNumber": {"129320": ("Effective Atomic Number", [301])},
     "EffectiveDose": {"113839": ("Effective Dose", [10050])},
     "EffectiveDoseConversionFactor": {
-        "113840": ("Effective Dose Conversion " "Factor", [])
+        "113840": ("Effective Dose Conversion Factor", [])
     },
     "EffectiveDosePhantomType": {"113817": ("Effective Dose Phantom Type", [])},
     "EffectiveOrificeArea": {"125326": ("Effective Orifice Area", [12304])},
@@ -1794,16 +1793,16 @@ DCM_concepts = {
     "ElectronFixedAperture": {"130343": ("Electron Fixed Aperture", [9541, 9545])},
     "Electrooculography": {"EOG": ("Electrooculography", [29, 33, 30])},
     "ElementalCompositionAtomicMassFraction": {
-        "130094": ("Elemental Composition " "Atomic Mass Fraction", [])
+        "130094": ("Elemental Composition Atomic Mass Fraction", [])
     },
     "ElevationBasedCornealTomographer": {
-        "111945": ("Elevation-based corneal " "tomographer", [4210])
+        "111945": ("Elevation-based corneal tomographer", [4210])
     },
     "Eligibility": {"126075": ("Eligibility", [6146])},
     "EligibilityReader": {"129001": ("Eligibility Reader", [7453])},
     "EligibleForReimbursement": {"128613": ("Eligible for reimbursement", [800])},
     "EligibleForReimbursementOnPerPatientBasis": {
-        "128614": ("Eligible for " "reimbursement on " "per patient basis", [800])
+        "128614": ("Eligible for reimbursement on per patient basis", [800])
     },
     "Elliptic": {"112134": ("Elliptic", [6119])},
     "Email": {"110031": ("Email", [405])},
@@ -1824,14 +1823,14 @@ DCM_concepts = {
     "EndProcedureActionItem": {"121131": ("End Procedure Action Item", [])},
     "EndVentilation": {"121169": ("End Ventilation", [3551])},
     "EndingFlowRateOfAdministration": {
-        "130209": ("Ending Flow Rate of " "administration", [])
+        "130209": ("Ending Flow Rate of administration", [])
     },
     "Endoleak": {"122680": ("endoleak", [3813])},
     "EndorectalTransducer": {"125264": ("Endorectal Transducer", [12035])},
     "Endoscopy": {"ES": ("Endoscopy", [29, 33, 30])},
     "EndovaginalTransducer": {"125263": ("Endovaginal Transducer", [12035])},
     "EnhancedMultiFrameConversionEquipment": {
-        "109106": ("Enhanced Multi-frame " "Conversion Equipment", [7005])
+        "109106": ("Enhanced Multi-frame Conversion Equipment", [7005])
     },
     "EnrichmentManufacturer": {"127191": ("Enrichment manufacturer", [])},
     "EnrichmentMaterial": {"127190": ("Enrichment material", [])},
@@ -1843,7 +1842,7 @@ DCM_concepts = {
     },
     "EntranceExposureAtRP": {"111636": ("Entrance Exposure at RP", [10050])},
     "EntranceExposureToA4Point2cmBreastThickness": {
-        "113865": ("Entrance exposure " "to a 4.2 cm " "breast thickness", [10025])
+        "113865": ("Entrance exposure to a 4.2 cm breast thickness", [10025])
     },
     "EnvironmentalExposureHistory": {"111547": ("Environmental Exposure History", [])},
     "EnvironmentalFactor": {"111548": ("Environmental Factor", [])},
@@ -1853,7 +1852,7 @@ DCM_concepts = {
     "EquationCitation": {"121421": ("Equation Citation", [228])},
     "EquidistantMethod": {"122574": ("Equidistant method", [3456])},
     "EquipmentBroughtToProcedureRoom": {
-        "122047": ("Equipment brought to " "procedure room", [3427])
+        "122047": ("Equipment brought to procedure room", [3427])
     },
     "EquipmentChange": {"110516": ("Equipment change", [9300, 9301])},
     "EquipmentFailure": {
@@ -1863,7 +1862,7 @@ DCM_concepts = {
     "EquipmentIdentification": {"121122": ("Equipment Identification", [])},
     "EquipmentLandmark": {"128750": ("Equipment Landmark", [])},
     "EquipmentLandmarkToPatientFiducialZDistance": {
-        "128756": ("Equipment " "Landmark to " "Patient Fiducial " "Z Distance", [])
+        "128756": ("Equipment Landmark to Patient Fiducial Z Distance", [])
     },
     "EquipmentLandmarkXPosition": {"128752": ("Equipment Landmark X Position", [])},
     "EquipmentLandmarkZPosition": {"128753": ("Equipment Landmark Z Position", [])},
@@ -1871,7 +1870,7 @@ DCM_concepts = {
     "EquipmentReady": {"122048": ("Equipment ready", [3427])},
     "EquipmentRemoved": {"122049": ("Equipment removed", [3427])},
     "Equivalent2GrayFractionsModel": {
-        "130130": ("Equivalent 2-Gray Fractions " "Model", [9539])
+        "130130": ("Equivalent 2-Gray Fractions Model", [9539])
     },
     "EquivalentAttenuatorMaterial": {"128465": ("Equivalent Attenuator Material", [])},
     "EquivalentAttenuatorThickness": {
@@ -1881,7 +1880,7 @@ DCM_concepts = {
     "EquivalentDose": {"128512": ("Equivalent Dose", [7469, 218, 7180, 10070])},
     "EquivalentKReading": {"111756": ("Equivalent K-reading", [4242, 4235])},
     "EquivalentMeaningOfConceptName": {
-        "121050": ("Equivalent Meaning of Concept " "Name", [9000])
+        "121050": ("Equivalent Meaning of Concept Name", [9000])
     },
     "EquivalentMeaningOfValue": {"121051": ("Equivalent Meaning of Value", [])},
     "ErgometerPower": {"122704": ("Ergometer power", [])},
@@ -1889,11 +1888,11 @@ DCM_concepts = {
     "EsophagealPressure": {"130425": ("Esophageal Pressure", [3005])},
     "Estimated": {"121427": ("Estimated", [])},
     "EstimatedExtravasationActivity": {
-        "113506": ("Estimated Extravasation " "Activity", [])
+        "113506": ("Estimated Extravasation Activity", [])
     },
     "EstimatedExtravasationVolume": {"130214": ("Estimated Extravasation Volume", [])},
     "EstimatedFromWaterEquivalentDiameter": {
-        "113988": ("Estimated from Water " "Equivalent Diameter", [10023])
+        "113988": ("Estimated from Water Equivalent Diameter", [10023])
     },
     "EstimatedNormalFlow": {"122555": ("Estimated Normal Flow", [])},
     "EstimatedTimeframe": {"111395": ("Estimated Timeframe", [])},
@@ -1904,7 +1903,7 @@ DCM_concepts = {
     "ExcellentImageQuality": {"122740": ("Excellent image quality", [3114])},
     "ExcursionDistance": {"125327": ("Excursion Distance", [12304])},
     "ExerciseDurationAfterStressAgentInjection": {
-        "122711": ("Exercise duration " "after stress agent " "injection", [])
+        "122711": ("Exercise duration after stress agent injection", [])
     },
     "ExerciserDevicePresent": {"127193": ("Exerciser device present", [])},
     "ExogenousSubstance": {"127400": ("Exogenous substance", [])},
@@ -1919,7 +1918,7 @@ DCM_concepts = {
         "130068": ("Extended Patient Anatomy Model", [9507])
     },
     "ExtendedRenderingForPresentation": {
-        "121334": ("Extended Rendering for " "Presentation", [7006])
+        "121334": ("Extended Rendering for Presentation", [7006])
     },
     "ExtendedToftsModel": {"126341": ("Extended Tofts Model", [4106, 4101])},
     "ExternalBodyModel": {"130047": ("External Body Model", [9501, 9502])},
@@ -1929,7 +1928,7 @@ DCM_concepts = {
     "ExternalTransducer": {"125261": ("External Transducer", [12035])},
     "ExtraAbdominalDesmoid": {"111260": ("Extra abdominal desmoid", [])},
     "ExtractionOfIndividualSubjectFromGroup": {
-        "113131": ("Extraction of " "individual subject " "from group", [7203])
+        "113131": ("Extraction of individual subject from group", [7203])
     },
     "Extravasation": {"111428": ("Extravasation", [6057, 6054])},
     "ExtravasationVisibleInImage": {
@@ -1950,16 +1949,16 @@ DCM_concepts = {
     "FalseMarkersPerImage": {"111086": ("False Markers per Image", [6048])},
     "FalsePositiveDefectFinding": {"122748": ("False Positive defect finding", [3113])},
     "FamilyHistoryFetalMalformationSyndrome": {
-        "111574": ("Family history, fetal " "malformation/syndrome", [6087, 6088])
+        "111574": ("Family history, fetal malformation/syndrome", [6087, 6088])
     },
     "FamilyHistoryOfMelanomaInSitu": {
-        "130481": ("Family history of melanoma in " "situ", [])
+        "130481": ("Family history of melanoma in situ", [])
     },
     "FamilyHistoryOfNonMelanomaSkinCancer": {
-        "130480": ("Family history of " "non-melanoma skin cancer", [])
+        "130480": ("Family history of non-melanoma skin cancer", [])
     },
     "FamilyHistoryOfProstateCancer": {
-        "111562": ("Family history of prostate " "cancer", [6087, 6081])
+        "111562": ("Family history of prostate cancer", [6087, 6081])
     },
     "FamilyHistoryUnknown": {"111563": ("Family history unknown", [6087, 6081])},
     "FamilyMemberWithRiskFactor": {"111537": ("Family Member with Risk Factor", [])},
@@ -1967,28 +1966,28 @@ DCM_concepts = {
         "113292": ("Fast Diffusion Coefficient", [7469, 218, 7272, 7180])
     },
     "FastDiffusionCoefficientFraction": {
-        "113293": ("Fast Diffusion Coefficient " "Fraction", [7469, 218, 7272, 7180])
+        "113293": ("Fast Diffusion Coefficient Fraction", [7469, 218, 7272, 7180])
     },
     "FastMode": {"114211": ("Fast mode", [8202])},
     "FastingDuration": {"113550": ("Fasting Duration", [])},
     "FatFraction": {"129100": ("Fat fraction", [7469, 218, 7180])},
     "FeatureDetectedOnImagesFromMultipleModalities": {
         "111159": (
-            "Feature " "detected on " "images from " "multiple " "modalities",
+            "Feature detected on images from multiple modalities",
             [6036],
         )
     },
     "FeatureDetectedOnMultipleImages": {
-        "111158": ("Feature detected on multiple " "images", [6036])
+        "111158": ("Feature detected on multiple images", [6036])
     },
     "FeatureDetectedOnOnlyOneOfTheImages": {
-        "111157": ("Feature detected on only " "one of the images", [6036])
+        "111157": ("Feature detected on only one of the images", [6036])
     },
     "FeatureDetectedOnTheOnlyImage": {
-        "111156": ("Feature detected on the only " "image", [6036])
+        "111156": ("Feature detected on the only image", [6036])
     },
     "FederationOfInternationalCanines": {
-        "109213": ("Federation of International " "Canines", [7481])
+        "109213": ("Federation of International Canines", [7481])
     },
     "FeedManufacturer": {"127200": ("Feed manufacturer", [])},
     "FeedProductCode": {"127202": ("Feed product code", [])},
@@ -2005,10 +2004,10 @@ DCM_concepts = {
         "112308": ("Femoral Head Ball Component", [7308, 7307])
     },
     "FemoralHeadConeTaperComponent": {
-        "112309": ("Femoral Head Cone Taper " "Component", [7308, 7307])
+        "112309": ("Femoral Head Cone Taper Component", [7308, 7307])
     },
     "FemoralHeadResurfacingComponent": {
-        "112317": ("Femoral Head Resurfacing " "Component", [7308, 7307])
+        "112317": ("Femoral Head Resurfacing Component", [7308, 7307])
     },
     "FemoralStem": {"112310": ("Femoral Stem", [7308, 7307])},
     "FemoralStemComponent": {"112313": ("Femoral Stem Component", [7308, 7307])},
@@ -2070,10 +2069,10 @@ DCM_concepts = {
     "FirstChordOfAbnormalRegion": {"122452": ("First Chord of Abnormal Region", [])},
     "FirstMammogramEver": {"111404": ("First mammogram ever", [])},
     "FirstMeasureOfInformationCorrelationOfGLCM": {
-        "128798": ("First Measure of " "Information " "Correlation of " "GLCM", [])
+        "128798": ("First Measure of Information Correlation of GLCM", [])
     },
     "FirstPassLeakageProfileFPLPModel": {
-        "126343": ("First Pass Leakage Profile " "(FPLP) Model", [4106, 4101])
+        "126343": ("First Pass Leakage Profile (FPLP) Model", [4106, 4101])
     },
     "FixationOrPositioningDevice": {
         "130044": ("Fixation or Positioning Device", [9502])
@@ -2085,19 +2084,19 @@ DCM_concepts = {
     "FixedLaserSetupPoint": {"130360": ("Fixed Laser Setup Point", [9554])},
     "FlashDoesnTIncludeCassetteScreenDetectorIdentification": {
         "111191": (
-            "Flash " "doesn't " "include " "cassette/screen/detector " "identification",
+            "Flash doesn't include cassette/screen/detector identification",
             [6041],
         )
     },
     "FlashDoesnTIncludeDateOfExamination": {
-        "111188": ("Flash doesn't include " "date of examination", [6041])
+        "111188": ("Flash doesn't include date of examination", [6041])
     },
     "FlashDoesnTIncludeFacilityNameAndLocation": {
-        "111189": ("Flash doesn't " "include facility " "name and location", [6041])
+        "111189": ("Flash doesn't include facility name and location", [6041])
     },
     "FlashDoesnTIncludeMammographyUnitIdentification": {
         "111192": (
-            "Flash doesn't " "include " "mammography " "unit " "identification",
+            "Flash doesn't include mammography unit identification",
             [6041],
         )
     },
@@ -2115,10 +2114,10 @@ DCM_concepts = {
         )
     },
     "FlashDoesnTIncludeTechnologistIdentification": {
-        "111190": ("Flash doesn't " "include " "technologist " "identification", [6041])
+        "111190": ("Flash doesn't include technologist identification", [6041])
     },
     "FlashIsIllegibleDoesNotFitOrIsLopsided": {
-        "111186": ("Flash is illegible, " "does not fit, or is " "lopsided", [6041])
+        "111186": ("Flash is illegible, does not fit, or is lopsided", [6041])
     },
     "FlashIsNotNearEdgeOfFilm": {"111185": ("Flash is not near edge of film", [6041])},
     "FlatFilter": {"113653": ("Flat filter", [10007])},
@@ -2152,7 +2151,7 @@ DCM_concepts = {
     "FluoroMode": {"113732": ("Fluoro Mode", [])},
     "FluoromisonidazoleFMISOF18": {"126708": ("Fluoromisonidazole (FMISO) F^18^", [])},
     "FluoroscopyGuidedProjectionRadiographySystem": {
-        "113957": ("Fluoroscopy-Guided " "Projection " "Radiography " "System", [10032])
+        "113957": ("Fluoroscopy-Guided Projection Radiography System", [10032])
     },
     "FluorotrioprideF18": {"126707": ("Fluorotriopride F^18^", [4021])},
     "FlurpiridazF18": {"126718": ("Flurpiridaz F^18^", [4021])},
@@ -2161,13 +2160,13 @@ DCM_concepts = {
     "FocalSpotSize": {"113766": ("Focal Spot Size", [])},
     "FocusedGrid": {"111642": ("Focused grid", [10017])},
     "FollowUpAtShortInterval111Months": {
-        "111142": ("Follow-up at short interval " "(1-11 months)", [6028, 6029])
+        "111142": ("Follow-up at short interval (1-11 months)", [6028, 6029])
     },
     "FollowUpAtShortIntervalFromPriorStudy": {
-        "111416": ("Follow-up at short " "interval from prior " "study", [6051])
+        "111416": ("Follow-up at short interval from prior study", [6051])
     },
     "FollowUpPostBiopsyAsDirectedByClinician": {
-        "111121": ("Follow-up post biopsy " "as directed by " "clinician", [6028])
+        "111121": ("Follow-up post biopsy as directed by clinician", [6028])
     },
     "FoodTreat": {"127391": ("Food treat", [609])},
     "FootToHead": {"110869": ("Foot To Head", [7185])},
@@ -2221,13 +2220,13 @@ DCM_concepts = {
         "113209": ("Fractional Kurtosis Anisotropy", [7263])
     },
     "FractionalOccupancySegmentation": {
-        "110855": ("Fractional Occupancy " "Segmentation", [7469, 218, 7180])
+        "110855": ("Fractional Occupancy Segmentation", [7469, 218, 7180])
     },
     "FractionalProbabilisticSegmentation": {
-        "110854": ("Fractional Probabilistic " "Segmentation", [7469, 218, 7180])
+        "110854": ("Fractional Probabilistic Segmentation", [7469, 218, 7180])
     },
     "FractionationBasedOrTemporallyBasedMethods": {
-        "130127": ("Fractionation-based " "or " "temporally-based " "methods", [9537])
+        "130127": ("Fractionation-based or temporally-based methods", [9537])
     },
     "FrameExtractingEquipment": {"109105": ("Frame Extracting Equipment", [7005])},
     "FrameOfReferenceIdentity": {"125021": ("Frame of Reference Identity", [7100])},
@@ -2247,7 +2246,7 @@ DCM_concepts = {
     "FullCardiacCycle": {"125324": ("Full Cardiac Cycle", [12307])},
     "FullFidelityImage": {"121327": ("Full fidelity image", [7205])},
     "FunctionalConditionPresentDuringAcquisition": {
-        "130324": ("Functional " "condition present " "during " "acquisition", [])
+        "130324": ("Functional condition present during acquisition", [])
     },
     "FunctionalImage": {"121339": ("Functional image", [7201])},
     "Fundoscopy": {"FS": ("Fundoscopy", [])},
@@ -2257,64 +2256,64 @@ DCM_concepts = {
     "GTVPrimary": {"130052": ("GTV Primary", [9534])},
     "Galactocele": {"111269": ("Galactocele", [])},
     "GammaCapillaryTransitTimeGCCTModel": {
-        "126345": ("Gamma Capillary Transit " "Time (GCCT) Model", [])
+        "126345": ("Gamma Capillary Transit Time (GCCT) Model", [])
     },
     "GammaCapillaryTransitTimeGCTTModel": {
-        "126345": ("Gamma Capillary Transit " "Time (GCTT) Model", [4106, 4101])
+        "126345": ("Gamma Capillary Transit Time (GCTT) Model", [4106, 4101])
     },
     "GammaDistributionMode": {
         "113297": ("Gamma Distribution Mode", [7469, 218, 7272, 7180])
     },
     "GammaDistributionModel": {"113253": ("Gamma distribution model", [7273])},
     "GammaDistributionScaleParameter": {
-        "113295": ("Gamma Distribution Scale " "Parameter", [7469, 218, 7272, 7180])
+        "113295": ("Gamma Distribution Scale Parameter", [7469, 218, 7272, 7180])
     },
     "GammaDistributionShapeParameter": {
-        "113296": ("Gamma Distribution Shape " "Parameter", [7469, 218, 7272, 7180])
+        "113296": ("Gamma Distribution Shape Parameter", [7469, 218, 7272, 7180])
     },
     "GanglionCellComplexThickness": {
         "111926": ("Ganglion cell complex thickness", [4262])
     },
     "GastrointestinalImagingSubjectMatter": {
-        "128731": ("Gastrointestinal imaging " "subject matter", [7017])
+        "128731": ("Gastrointestinal imaging subject matter", [7017])
     },
     "GaussianBlur": {"113088": ("Gaussian blur", [7203])},
     "GeneralMicroscopy": {"GM": ("General Microscopy", [29, 33, 30])},
     "GeneralReductionInSensitivity": {
-        "111850": ("General reduction in " "sensitivity", [4254])
+        "111850": ("General reduction in sensitivity", [4254])
     },
     "Generator": {"113543": ("Generator", [])},
     "Generic2DPlanning": {"112340": ("Generic 2D Planning", [7320])},
     "Generic3DPlanning": {"112341": ("Generic 3D Planning", [7320])},
     "GenericPlanningForHipReplacement": {
-        "112342": ("Generic Planning for Hip " "Replacement", [7320])
+        "112342": ("Generic Planning for Hip Replacement", [7320])
     },
     "GenericPlanningForKneeReplacement": {
-        "112343": ("Generic Planning for Knee " "Replacement", [7320])
+        "112343": ("Generic Planning for Knee Replacement", [7320])
     },
     "GeneticModifications": {"127414": ("Genetic modifications", [])},
     "GeneticModificationsDescription": {
-        "127415": ("Genetic modifications " "description", [])
+        "127415": ("Genetic modifications description", [])
     },
     "GenitourinaryImagingSubjectMatter": {
-        "128732": ("Genitourinary imaging " "subject matter", [7017])
+        "128732": ("Genitourinary imaging subject matter", [7017])
     },
     "GeometricCenterpoint": {"128137": ("Geometric Centerpoint", [1011])},
     "GeometricIsocenter": {"122486": ("Geometric Isocenter", [3452])},
     "GeometricNonIsocenter": {"122487": ("Geometric Non-Isocenter", [3452])},
     "GeometricPurposeOfRegion": {"130400": ("Geometric purpose of region", [])},
     "GeometricRadiationTransportModel": {
-        "128421": ("Geometric Radiation " "Transport Model", [10065])
+        "128421": ("Geometric Radiation Transport Model", [10065])
     },
     "GeometricalImageEvaluation": {"109708": ("Geometrical image evaluation", [8300])},
     "GlaucomaHemifieldTestAnalysis": {
-        "111855": ("Glaucoma Hemifield Test " "Analysis", [4257])
+        "111855": ("Glaucoma Hemifield Test Analysis", [4257])
     },
     "GlembatumumabVedotin89Zr": {"126724": ("Glembatumumab vedotin ^89^Zr", [4021])},
     "Global": {"113213": ("Global", [7262])},
     "GlobalTrackingAlgorithm": {"113213": ("Global Tracking Algorithm", [])},
     "GlomerularFiltrationRateBlackMDRD": {
-        "113574": ("Glomerular Filtration Rate " "black (MDRD)", [10047])
+        "113574": ("Glomerular Filtration Rate black (MDRD)", [10047])
     },
     "GlomerularFiltrationRateCreatinineBasedFormulaSchwartz": {
         "113577": (
@@ -2329,18 +2328,18 @@ DCM_concepts = {
     },
     "GlomerularFiltrationRateCystatinBasedFormula": {
         "113576": (
-            "Glomerular " "Filtration Rate " "Cystatin-based " "formula",
+            "Glomerular Filtration Rate Cystatin-based formula",
             [10047],
         )
     },
     "GlomerularFiltrationRateFemaleMDRD": {
-        "113575": ("Glomerular Filtration Rate " "female (MDRD)", [10047])
+        "113575": ("Glomerular Filtration Rate female (MDRD)", [10047])
     },
     "GlomerularFiltrationRateMDRD": {
-        "113572": ("Glomerular Filtration Rate " "(MDRD)", [10047])
+        "113572": ("Glomerular Filtration Rate (MDRD)", [10047])
     },
     "GlomerularFiltrationRateNonBlackMDRD": {
-        "113573": ("Glomerular Filtration " "Rate non-black (MDRD)", [10047])
+        "113573": ("Glomerular Filtration Rate non-black (MDRD)", [10047])
     },
     "GlucoseMeasurementDate": {"127857": ("Glucose Measurement Date", [])},
     "GlucoseMeasurementTime": {"127858": ("Glucose Measurement Time", [])},
@@ -2356,16 +2355,16 @@ DCM_concepts = {
     "GradientPressureAverage": {"122197": ("Gradient pressure, average", [3611])},
     "GradientPressurePeak": {"122198": ("Gradient pressure, peak", [3611])},
     "GradientWeightedClassActivation": {
-        "130403": ("Gradient-weighted class " "activation", [217, 7469, 218, 7180])
+        "130403": ("Gradient-weighted class activation", [217, 7469, 218, 7180])
     },
     "GraftToCitedSegmentDistalSection": {
-        "122104": ("Graft to cited segment, " "distal section", [3019])
+        "122104": ("Graft to cited segment, distal section", [3019])
     },
     "GraftToCitedSegmentMidSection": {
-        "122103": ("Graft to cited segment, mid " "section", [3019])
+        "122103": ("Graft to cited segment, mid section", [3019])
     },
     "GraftToCitedSegmentProximalSection": {
-        "122102": ("Graft to cited segment, " "proximal section", [3019])
+        "122102": ("Graft to cited segment, proximal section", [3019])
     },
     "GraftType": {"125102": ("Graft Type", [])},
     "GranularPattern": {"112128": ("Granular pattern", [6106, 6102])},
@@ -2377,13 +2376,13 @@ DCM_concepts = {
         "128809": ("Gray Level Nonuniformity in Runs", [])
     },
     "GrayLevelNonuniformityInRunsNormalized": {
-        "128810": ("Gray Level " "Nonuniformity in Runs " "Normalized", [])
+        "128810": ("Gray Level Nonuniformity in Runs Normalized", [])
     },
     "GrayLevelNonuniformityOfZoneCounts": {
-        "128829": ("Gray Level Nonuniformity " "of Zone Counts", [])
+        "128829": ("Gray Level Nonuniformity of Zone Counts", [])
     },
     "GrayLevelNonuniformityOfZoneCountsNormalized": {
-        "128830": ("Gray Level " "Nonuniformity of " "Zone Counts " "Normalized", [])
+        "128830": ("Gray Level Nonuniformity of Zone Counts Normalized", [])
     },
     "GrayLevelRunLengthMatrix": {"128776": ("Gray Level Run Length Matrix", [])},
     "GrayLevelSizeZoneMatrix": {"128777": ("Gray Level Size Zone Matrix", [])},
@@ -2402,10 +2401,10 @@ DCM_concepts = {
     "GrowthPercentileRank": {"125012": ("Growth Percentile Rank", [12017])},
     "GrowthZScore": {"125013": ("Growth Z-score", [12017])},
     "GuidewireCrossingLesionSuccessful": {
-        "122302": ("Guidewire crossing lesion " "successful", [3412, 3752])
+        "122302": ("Guidewire crossing lesion successful", [3412, 3752])
     },
     "GuidewireCrossingLesionUnsuccessful": {
-        "122301": ("Guidewire crossing lesion " "unsuccessful", [3412, 3752])
+        "122301": ("Guidewire crossing lesion unsuccessful", [3412, 3752])
     },
     "GynecologicCondition": {"111567": ("Gynecologic condition", [6087, 6088])},
     "GynecologicSurgery": {"111568": ("Gynecologic surgery", [6087, 6088])},
@@ -2448,7 +2447,7 @@ DCM_concepts = {
     "Height": {"121207": ("Height", [6165, 7470, 7469, 218])},
     "HelicalBeam": {"130108": ("Helical Beam", [9524, 9512])},
     "HemangiomaNonparenchymalSubcutaneous": {
-        "111271": ("Hemangioma - " "nonparenchymal, " "subcutaneous", [])
+        "111271": ("Hemangioma - nonparenchymal, subcutaneous", [])
     },
     "HemodynamicResistance": {"110825": ("Hemodynamic Resistance", [7469, 218, 7180])},
     "HemodynamicResistanceIndex": {"122220": ("Hemodynamic Resistance Index", [3620])},
@@ -2456,7 +2455,7 @@ DCM_concepts = {
     "HemodynamicsReport": {"122120": ("Hemodynamics Report", [])},
     "HemostasisAchieved": {"122033": ("Hemostasis achieved", [3402])},
     "HemostasisNotAchievedActivelyBleeding": {
-        "122035": ("Hemostasis not achieved " "- actively bleeding", [3402])
+        "122035": ("Hemostasis not achieved - actively bleeding", [3402])
     },
     "HemostasisNotAchievedOozing": {
         "122034": ("Hemostasis not achieved - oozing", [3402])
@@ -2467,16 +2466,16 @@ DCM_concepts = {
     "Hiatus": {"112095": ("Hiatus", [7151, 6109, 9514, 6113, 6102, 7192, 6148])},
     "High": {"111575": ("High", [6090])},
     "HighDoseFractionLinearCellKillFactor": {
-        "130090": ("High Dose Fraction " "Linear Cell Kill Factor", [])
+        "130090": ("High Dose Fraction Linear Cell Kill Factor", [])
     },
     "HighDoseFractionTransitionDose": {
-        "130092": ("High Dose Fraction Transition " "Dose", [])
+        "130092": ("High Dose Fraction Transition Dose", [])
     },
     "HighGrayLevelRunEmphasis": {"128804": ("High Gray Level Run Emphasis", [])},
     "HighGrayLevelZoneEmphasis": {"128824": ("High Gray Level Zone Emphasis", [])},
     "HighResolution": {"114210": ("High resolution", [8202])},
     "HighThresholdEmptyTileSuppression": {
-        "112720": ("High threshold empty tile " "suppression", [8133])
+        "112720": ("High threshold empty tile suppression", [8133])
     },
     "HighThyroidUptake": {"113562": ("High Thyroid Uptake", [10045, 64])},
     "HighlySuggestiveOfMalignancyTakeAppropriateAction": {
@@ -2502,19 +2501,19 @@ DCM_concepts = {
         "111420": ("History of benign breast biopsy", [6051])
     },
     "HistoryOfBreastAugmentationAsymptomatic": {
-        "111417": ("History of breast " "augmentation, " "asymptomatic", [6051])
+        "111417": ("History of breast augmentation, asymptomatic", [6051])
     },
     "HistoryOfEndometrialCancer": {
         "111551": ("History of endometrial cancer", [6087, 6081])
     },
     "HistoryOfHighRiskLesionOnPreviousBiopsy": {
-        "111553": ("History of high risk " "lesion on previous " "biopsy", [6087, 6081])
+        "111553": ("History of high risk lesion on previous biopsy", [6087, 6081])
     },
     "HistoryOfMultipleFetuses": {
         "111572": ("History of multiple fetuses", [6087, 6088])
     },
     "HistoryOfNonMelanomaSkinCancer": {
-        "130482": ("History of non-melanoma skin " "cancer", [])
+        "130482": ("History of non-melanoma skin cancer", [])
     },
     "HistoryOfOvarianCancer": {"111552": ("History of ovarian cancer", [6087, 6081])},
     "HodgesQTCorrectionAlgorithm": {
@@ -2529,7 +2528,7 @@ DCM_concepts = {
     "Homogeneous": {"112160": ("Homogeneous (uniform opacity)", [6131])},
     "HomogeneousFatEchotexture": {"111351": ("Homogeneous fat echotexture", [6151])},
     "HomogeneousFibroglandularEchotexture": {
-        "111352": ("Homogeneous " "fibroglandular " "echotexture", [6151])
+        "111352": ("Homogeneous fibroglandular echotexture", [6151])
     },
     "HoneycombPattern": {"112106": ("Honeycomb pattern", [6106, 6102, 6103])},
     "HorizontalPixelSpacing": {"111026": ("Horizontal Pixel Spacing", [])},
@@ -2554,7 +2553,7 @@ DCM_concepts = {
     "HousingUnitReuse": {"127175": ("Housing unit reuse", [])},
     "HousingUnitWidth": {"127160": ("Housing unit width", [])},
     "HumanAlphaSynucleinPreformedFibrils": {
-        "127851": ("Human alpha synuclein " "preformed fibrils", [640, 638])
+        "127851": ("Human alpha synuclein preformed fibrils", [640, 638])
     },
     "HumanTauPreformedFibrils": {"127853": ("Human Tau preformed fibrils", [640, 638])},
     "HydrationVolume": {"113551": ("Hydration Volume", [])},
@@ -2584,43 +2583,43 @@ DCM_concepts = {
     "ICRPPublication80": {"113522": ("ICRP Publication 80", [10040])},
     "IDPlate": {"111174": ("ID Plate", [])},
     "IEC61217GantryContinuousPitchAngle": {
-        "126810": ("IEC61217 Gantry Continuous " "Pitch Angle", [9401, 9402, 9570])
+        "126810": ("IEC61217 Gantry Continuous Pitch Angle", [9401, 9402, 9570])
     },
     "IEC61217GantryContinuousRollAngle": {
-        "126809": ("IEC61217 Gantry Continuous " "Roll Angle", [9401, 9402, 9570])
+        "126809": ("IEC61217 Gantry Continuous Roll Angle", [9401, 9402, 9570])
     },
     "IEC61217GantryContinuousYawAngle": {
-        "126811": ("IEC61217 Gantry Continuous " "Yaw Angle", [9401, 9402, 9570])
+        "126811": ("IEC61217 Gantry Continuous Yaw Angle", [9401, 9402, 9570])
     },
     "IEC61217PatientSupportContinuousYawAngle": {
         "126801": (
-            "IEC61217 Patient " "Support Continuous " "Yaw Angle",
+            "IEC61217 Patient Support Continuous Yaw Angle",
             [9403, 9401, 9570],
         )
     },
     "IEC61217TableTopContinuousEccentricAngle": {
         "126805": (
-            "IEC61217 Table Top " "Continuous Eccentric " "Angle",
+            "IEC61217 Table Top Continuous Eccentric Angle",
             [9403, 9401, 9570],
         )
     },
     "IEC61217TableTopContinuousPitchAngle": {
-        "126802": ("IEC61217 Table Top " "Continuous Pitch Angle", [9403, 9401, 9570])
+        "126802": ("IEC61217 Table Top Continuous Pitch Angle", [9403, 9401, 9570])
     },
     "IEC61217TableTopContinuousRollAngle": {
-        "126803": ("IEC61217 Table Top " "Continuous Roll Angle", [9403, 9401, 9570])
+        "126803": ("IEC61217 Table Top Continuous Roll Angle", [9403, 9401, 9570])
     },
     "IEC61217TableTopEccentricAxisDistance": {
-        "126804": ("IEC61217 Table Top " "Eccentric Axis Distance", [9403, 9401, 9570])
+        "126804": ("IEC61217 Table Top Eccentric Axis Distance", [9403, 9401, 9570])
     },
     "IEC61217TableTopLateralPosition": {
-        "126806": ("IEC61217 Table Top Lateral " "Position", [9403, 9401, 9570])
+        "126806": ("IEC61217 Table Top Lateral Position", [9403, 9401, 9570])
     },
     "IEC61217TableTopLongitudinalPosition": {
-        "126807": ("IEC61217 Table Top " "Longitudinal Position", [9403, 9401, 9570])
+        "126807": ("IEC61217 Table Top Longitudinal Position", [9403, 9401, 9570])
     },
     "IEC61217TableTopVerticalPosition": {
-        "126808": ("IEC61217 Table Top Vertical " "Position", [9403, 9401, 9570])
+        "126808": ("IEC61217 Table Top Vertical Position", [9403, 9401, 9570])
     },
     "IECBodyDosimetryPhantom": {"113691": ("IEC Body Dosimetry Phantom", [4051, 4052])},
     "IECHeadDosimetryPhantom": {"113690": ("IEC Head Dosimetry Phantom", [4051, 4052])},
@@ -2629,36 +2628,36 @@ DCM_concepts = {
     "ITV": {"130056": ("ITV", [9534])},
     "IVUSReport": {"122325": ("IVUS Report", [])},
     "IdentifiableEffectOnSurroundingTissues": {
-        "111371": ("Identifiable effect on " "surrounding tissues", [])
+        "111371": ("Identifiable effect on surrounding tissues", [])
     },
     "IdentificationOfTheAttenuator": {
-        "130527": ("Identification of the " "Attenuator", [])
+        "130527": ("Identification of the Attenuator", [])
     },
     "IdentificationOfTheXRaySource": {
-        "113832": ("Identification of the X-Ray " "Source", [])
+        "113832": ("Identification of the X-Ray Source", [])
     },
     "Identifier": {"125010": ("Identifier", [])},
     "IdentifierWithinPersonObserverRole": {
-        "128775": ("Identifier within Person " "Observer's Role", [])
+        "128775": ("Identifier within Person Observer's Role", [])
     },
     "IdentifyingSegment": {"112229": ("Identifying Segment", [])},
     "IfAgeGreaterThan60YearsP50Equals29Point3": {
-        "122261": ("if (age > 60y) P50 = " "29.3", [3666])
+        "122261": ("if (age > 60y) P50 = 29.3", [3666])
     },
     "IfAgeLesserThan18YearsP50Equals27Point2": {
-        "122259": ("if (age < 18y) P50 = " "27.2", [3666])
+        "122259": ("if (age < 18y) P50 = 27.2", [3666])
     },
     "IfAgeLesserThan1DayP50Equals21Point6": {
-        "122257": ("if (age < 1day) P50 = " "21.6", [3666])
+        "122257": ("if (age < 1day) P50 = 21.6", [3666])
     },
     "IfAgeLesserThan30DayP50Equals24Point6": {
-        "122258": ("if (age < 30day) P50 = " "24.6", [3666])
+        "122258": ("if (age < 30day) P50 = 24.6", [3666])
     },
     "IfAgeLesserThan40YearsP50Equals27Point4": {
-        "122260": ("if (age < 40y) P50 = " "27.4", [3666])
+        "122260": ("if (age < 40y) P50 = 27.4", [3666])
     },
     "IfPremAgeLesserThan3DaysP50Equals19Point9": {
-        "122256": ("if (prem age< " "3days) P50 = 19.9", [3666])
+        "122256": ("if (prem age< 3days) P50 = 19.9", [3666])
     },
     "Igloo": {"127220": ("Igloo", [606])},
     "IlluminationMethod": {"112706": ("Illumination Method", [])},
@@ -2673,7 +2672,7 @@ DCM_concepts = {
     "ImageArtifacts": {"111207": ("Image artifact(s)", [7011])},
     "ImageCapture": {"CAPTURE": ("Image Capture", [30])},
     "ImageContentAndFiducialBasedAlignment": {
-        "125026": ("Image Content and " "Fiducial Based " "Alignment", [7100])
+        "125026": ("Image Content and Fiducial Based Alignment", [7100])
     },
     "ImageContentBasedAlignment": {"125024": ("Image Content-based Alignment", [7100])},
     "ImageDetectedMass": {"111126": ("Image detected mass", [6055])},
@@ -2683,13 +2682,13 @@ DCM_concepts = {
     "ImageLibrary": {"111028": ("Image Library", [])},
     "ImageLibraryGroup": {"126200": ("Image Library Group", [])},
     "ImageOrientationPatientColumnX": {
-        "110907": ("Image Orientation (Patient) " "Column X", [])
+        "110907": ("Image Orientation (Patient) Column X", [])
     },
     "ImageOrientationPatientColumnY": {
-        "110908": ("Image Orientation (Patient) " "Column Y", [])
+        "110908": ("Image Orientation (Patient) Column Y", [])
     },
     "ImageOrientationPatientColumnZ": {
-        "110909": ("Image Orientation (Patient) " "Column Z", [])
+        "110909": ("Image Orientation (Patient) Column Z", [])
     },
     "ImageOrientationPatientRowX": {
         "110904": ("Image Orientation (Patient) Row X", [])
@@ -2714,96 +2713,96 @@ DCM_concepts = {
     "ImageStitching": {"113090": ("Image stitching", [7203])},
     "ImageType": {"121141": ("Image Type", [])},
     "ImageUsedAsReferenceImageForTreatment": {
-        "129204": ("Image used as Reference " "Image for Treatment", [7201])
+        "129204": ("Image used as Reference Image for Treatment", [7201])
     },
     "ImageUsedForDoseCalculation": {
         "129202": ("Image used for Dose Calculation", [7201])
     },
     "ImageUsedForTreatmentPlanning": {
-        "129201": ("Image used for Treatment " "Planning", [7201])
+        "129201": ("Image used for Treatment Planning", [7201])
     },
     "ImageView": {"111031": ("Image View", [])},
     "ImageViewModifier": {"111032": ("Image View Modifier", [])},
     "ImagedContainerLabel": {"121354": ("Imaged container label", [8120])},
     "ImagesRelatedToStandaloneObject": {
-        "121316": ("Images related to standalone " "object", [7201])
+        "121316": ("Images related to standalone object", [7201])
     },
     "Imagify": {"125903": ("Imagify", [12030])},
     "ImagingAgentAdministrationActivity": {
-        "130237": ("Imaging Agent " "Administration Activity", [])
+        "130237": ("Imaging Agent Administration Activity", [])
     },
     "ImagingAgentAdministrationAdverseEvents": {
-        "130212": ("Imaging Agent " "Administration " "Adverse Events", [])
+        "130212": ("Imaging Agent Administration Adverse Events", [])
     },
     "ImagingAgentAdministrationCompletionStatus": {
-        "130211": ("Imaging Agent " "Administration " "Completion Status", [])
+        "130211": ("Imaging Agent Administration Completion Status", [])
     },
     "ImagingAgentAdministrationConsumable": {
-        "130222": ("Imaging Agent " "Administration " "Consumable", [])
+        "130222": ("Imaging Agent Administration Consumable", [])
     },
     "ImagingAgentAdministrationConsumableType": {
-        "130223": ("Imaging Agent " "Administration " "Consumable Type", [])
+        "130223": ("Imaging Agent Administration Consumable Type", [])
     },
     "ImagingAgentAdministrationDelay": {
-        "130197": ("Imaging Agent Administration " "Delay", [])
+        "130197": ("Imaging Agent Administration Delay", [])
     },
     "ImagingAgentAdministrationGraph": {
-        "130232": ("Imaging Agent Administration " "Graph", [])
+        "130232": ("Imaging Agent Administration Graph", [])
     },
     "ImagingAgentAdministrationInjectorEventType": {
-        "130234": ("Imaging Agent " "Administration " "Injector Event " "Type", [])
+        "130234": ("Imaging Agent Administration Injector Event Type", [])
     },
     "ImagingAgentAdministrationInjectorEvents": {
-        "130233": ("Imaging Agent " "Administration " "Injector Events", [])
+        "130233": ("Imaging Agent Administration Injector Events", [])
     },
     "ImagingAgentAdministrationInjectorPhaseIdentifier": {
         "130264": (
-            "Imaging " "Agent " "Administration " "Injector " "Phase " "Identifier",
+            "Imaging Agent Administration Injector Phase Identifier",
             [],
         )
     },
     "ImagingAgentAdministrationPerformedPhaseUID": {
-        "130261": ("Imaging Agent " "Administration " "Performed Phase " "UID", [])
+        "130261": ("Imaging Agent Administration Performed Phase UID", [])
     },
     "ImagingAgentAdministrationPerformedStepUID": {
-        "130246": ("Imaging Agent " "Administration " "Performed Step UID", [])
+        "130246": ("Imaging Agent Administration Performed Step UID", [])
     },
     "ImagingAgentAdministrationPhase": {
-        "130202": ("Imaging Agent Administration " "Phase", [])
+        "130202": ("Imaging Agent Administration Phase", [])
     },
     "ImagingAgentAdministrationPhaseIdentifier": {
-        "130203": ("Imaging Agent " "Administration " "Phase Identifier", [])
+        "130203": ("Imaging Agent Administration Phase Identifier", [])
     },
     "ImagingAgentAdministrationPhaseType": {
-        "130204": ("Imaging Agent " "Administration Phase Type", [])
+        "130204": ("Imaging Agent Administration Phase Type", [])
     },
     "ImagingAgentAdministrationPhaseWithManualHold": {
-        "130265": ("Imaging Agent " "Administration " "Phase with " "Manual Hold", [])
+        "130265": ("Imaging Agent Administration Phase with Manual Hold", [])
     },
     "ImagingAgentAdministrationProtocolName": {
-        "130200": ("Imaging Agent " "Administration " "Protocol Name", [])
+        "130200": ("Imaging Agent Administration Protocol Name", [])
     },
     "ImagingAgentAdministrationStep": {
-        "130195": ("Imaging Agent Administration " "Step", [])
+        "130195": ("Imaging Agent Administration Step", [])
     },
     "ImagingAgentAdministrationStepIdentifier": {
-        "130196": ("Imaging Agent " "Administration Step " "Identifier", [])
+        "130196": ("Imaging Agent Administration Step Identifier", [])
     },
     "ImagingAgentAdministrationStepSequenceNumber": {
-        "130445": ("Imaging Agent " "Administration " "Step Sequence " "Number", [])
+        "130445": ("Imaging Agent Administration Step Sequence Number", [])
     },
     "ImagingAgentAdministrationSteps": {
-        "130192": ("Imaging Agent Administration " "Steps", [])
+        "130192": ("Imaging Agent Administration Steps", [])
     },
     "ImagingAgentAdministrationStepsDescription": {
-        "130199": ("Imaging Agent " "Administration " "Steps Description", [])
+        "130199": ("Imaging Agent Administration Steps Description", [])
     },
     "ImagingAgentComponent": {"130238": ("Imaging Agent Component", [])},
     "ImagingAgentComponentUsage": {"130191": ("Imaging Agent Component Usage", [])},
     "ImagingAgentIdentifier": {"130254": ("Imaging Agent Identifier", [])},
     "ImagingAgentInformation": {"130183": ("Imaging Agent Information", [])},
     "ImagingAgentVolumePerUnitOfPresentation": {
-        "130221": ("Imaging Agent Volume " "per Unit of " "Presentation", [])
+        "130221": ("Imaging Agent Volume per Unit of Presentation", [])
     },
     "ImagingAgentWarmed": {"130187": ("Imaging Agent Warmed", [])},
     "ImagingConditions": {"123016": ("Imaging Conditions", [])},
@@ -2820,7 +2819,7 @@ DCM_concepts = {
     "ImplantTemplate": {"112348": ("Implant Template", [])},
     "ImplantType": {"111405": ("Implant type", [])},
     "ImplantationPatientPositioning": {
-        "112368": ("Implantation Patient " "Positioning", [])
+        "112368": ("Implantation Patient Positioning", [])
     },
     "ImplantationPlan": {"112345": ("Implantation Plan", [])},
     "Import": {"110107": ("Import", [400])},
@@ -2831,36 +2830,36 @@ DCM_concepts = {
     "InHomeCage": {"127101": ("In home cage", [634])},
     "InStentNeointima": {"122357": ("In-Stent Neointima", [3491])},
     "InStentNeointimalCrossSectionalArea": {
-        "122335": ("In-Stent Neointimal " "Cross-Sectional Area", [3482])
+        "122335": ("In-Stent Neointimal Cross-Sectional Area", [3482])
     },
     "InStentNeointimalVolume": {"122374": ("In-Stent Neointimal Volume", [3485])},
     "InadequateCompression": {"111196": ("Inadequate compression", [6041])},
     "InappropriateForTheDevice": {"128618": ("Inappropriate for the device", [800])},
     "InappropriateForTheIndications": {
-        "128621": ("Inappropriate for the " "indications", [800])
+        "128621": ("Inappropriate for the indications", [800])
     },
     "InappropriateImageProcessing": {
         "111219": ("Inappropriate image processing", [6041, 6135, 7011])
     },
     "InappropriatePatientOrientation": {
-        "130461": ("Inappropriate Patient " "Orientation", [9565])
+        "130461": ("Inappropriate Patient Orientation", [9565])
     },
     "InappropriatePatientPosition": {
         "130462": ("Inappropriate Patient Position", [9565])
     },
     "IncisionMade": {"111440": ("Incision made", [])},
     "InconsistentWithLabelingOfTheDevice": {
-        "128622": ("Inconsistent with " "labeling of the device", [800])
+        "128622": ("Inconsistent with labeling of the device", [800])
     },
     "IncorrectModalityWorklistEntry": {
-        "113038": ("Incorrect Modality Worklist " "Entry", [7010])
+        "113038": ("Incorrect Modality Worklist Entry", [7010])
     },
     "IncorrectProcedureOrdered": {
         "110502": ("Incorrect procedure ordered", [9300, 9301, 9303])
     },
     "IncorrectSideOrdered": {"110512": ("Incorrect side ordered", [9300, 9301])},
     "IncorrectWorklistEntrySelected": {
-        "110514": ("Incorrect worklist entry " "selected", [9300, 9301, 9302])
+        "110514": ("Incorrect worklist entry selected", [9300, 9301, 9302])
     },
     "Index": {"121425": ("Index", [])},
     "Indexed": {"125313": ("Indexed", [12303])},
@@ -2869,7 +2868,7 @@ DCM_concepts = {
     },
     "IndicatedProblem": {"111533": ("Indicated Problem", [])},
     "IndicationsForPharmacologicalStress": {
-        "122700": ("Indications for " "Pharmacological Stress", [])
+        "122700": ("Indications for Pharmacological Stress", [])
     },
     "IndicationsForProcedure": {"121109": ("Indications for Procedure", [])},
     "IndicatorAppearanceTime": {"122192": ("Indicator appearance time", [])},
@@ -2901,10 +2900,10 @@ DCM_concepts = {
     "IndirectDetector": {"113949": ("Indirect Detector", [10030])},
     "IndividualCalcification": {"111104": ("Individual Calcification", [])},
     "IndividualImpressionRecommendation": {
-        "111034": ("Individual " "Impression/Recommendation", [])
+        "111034": ("Individual Impression/Recommendation", [])
     },
     "IndividualImpressionRecommendationAnalysis": {
-        "111233": ("Individual " "Impression / " "Recommendation " "Analysis", [6043])
+        "111233": ("Individual Impression / Recommendation Analysis", [6043])
     },
     "IneligibleForReimbursement": {"128615": ("Ineligible for reimbursement", [800])},
     "InferiorToAnterior": {"110875": ("Inferior To Anterior", [7185])},
@@ -2925,37 +2924,37 @@ DCM_concepts = {
     "InfusionSystem": {"113542": ("Infusion System", [10041])},
     "Inhomogeneous": {"112161": ("Inhomogeneous", [6131])},
     "InitialVolumeOfImagingAgentInContainer": {
-        "130205": ("Initial Volume of " "Imaging Agent in " "Container", [])
+        "130205": ("Initial Volume of Imaging Agent in Container", [])
     },
     "InjectateTemperature": {"122320": ("Injectate Temperature", [])},
     "InjectateVolume": {"122321": ("Injectate Volume", [])},
     "InjectorEventDetectionDatetime": {
-        "130235": ("Injector Event Detection " "DateTime", [])
+        "130235": ("Injector Event Detection DateTime", [])
     },
     "InnerLimitsOfFuzzyMargin": {"113662": ("Inner limits of fuzzy margin", [6166])},
     "InsideOperationalLimitsOfTheDevice": {
-        "128607": ("Inside operational limits " "of the device", [800])
+        "128607": ("Inside operational limits of the device", [800])
     },
     "InstanceNumber": {"113609": ("Instance Number", [10022])},
     "InstancesImported": {"110028": ("Instances Imported", [7008])},
     "InstitutionallyApprovedEstimates": {
-        "113529": ("Institutionally Approved " "Estimates", [10040])
+        "113529": ("Institutionally Approved Estimates", [10040])
     },
     "InstitutionallyDefinedQualityControlStandard": {
         "111240": (
-            "Institutionally " "defined quality " "control standard",
+            "Institutionally defined quality control standard",
             [6136, 6208, 6045],
         )
     },
     "InstrumentApproach": {"111431": ("Instrument Approach", [])},
     "InsufficientImplantDisplacementIncorrect": {
-        "111206": ("Insufficient implant " "displacement " "incorrect", [6041])
+        "111206": ("Insufficient implant displacement incorrect", [6041])
     },
     "InsufficientQualityForInterpretation": {
-        "110531": ("Insufficient quality for " "interpretation", [9303])
+        "110531": ("Insufficient quality for interpretation", [9303])
     },
     "IntegratedProjectionRadiographySystem": {
-        "113958": ("Integrated Projection " "Radiography System", [10032])
+        "113958": ("Integrated Projection Radiography System", [10032])
     },
     "IntegrationOfSumOfClosedAreasOnContiguousSlicesMethodForVolume": {
         "122503": (
@@ -2980,21 +2979,21 @@ DCM_concepts = {
     "InterferingTearsOrDrops": {"111695": ("Interfering Tears or Drops", [4222])},
     "Interferometry": {"114202": ("Interferometry", [8201])},
     "InterferometryBasedCornealTomographer": {
-        "111947": ("Interferometry-based " "corneal tomographer", [4210])
+        "111947": ("Interferometry-based corneal tomographer", [4210])
     },
     "InterlockOverridden": {"130454": ("Interlock Overridden", [9563])},
     "IntermediateFamilyHistoryOfBreastCancer": {
-        "111560": ("Intermediate family " "history of breast " "cancer", [6087, 6081])
+        "111560": ("Intermediate family history of breast cancer", [6087, 6081])
     },
     "IntermediateLevel": {"128726": ("Intermediate level", [7016])},
     "Intern": {"121085": ("Intern", [])},
     "InternationalProgressiveDogBreedersAlliance": {
-        "109214": ("International " "Progressive Dog " "Breeders' " "Alliance", [7481])
+        "109214": ("International Progressive Dog Breeders' Alliance", [7481])
     },
     "InterpolatedLocalReference": {"122490": ("Interpolated Local Reference", [3465])},
     "Interpretation": {"110005": ("Interpretation", [9231])},
     "InterpretationRequiresSpecialistExpertise": {
-        "110532": ("Interpretation " "requires specialist " "expertise", [9303])
+        "110532": ("Interpretation requires specialist expertise", [9303])
     },
     "InterventionAction": {"122090": ("Intervention Action", [])},
     "InterventionAttemptIdentifier": {
@@ -3003,7 +3002,7 @@ DCM_concepts = {
     "InterventionPerformed": {"122312": ("Intervention performed", [3412])},
     "InterventionalDevicePlaced": {"122311": ("Interventional device placed", [3412])},
     "InterventionalDevicePlacementUnsuccessful": {
-        "122310": ("Interventional " "device placement " "unsuccessful", [3412])
+        "122310": ("Interventional device placement unsuccessful", [3412])
     },
     "InterventionalDeviceWithdrawn": {
         "122313": ("Interventional device withdrawn", [3412])
@@ -3017,16 +3016,16 @@ DCM_concepts = {
     },
     "IntracysticPapilloma": {"111257": ("Intracystic papilloma", [])},
     "IntraductalCarcinomaHighGrade": {
-        "111341": ("Intraductal carcinoma, high " "grade", [6030, 6033])
+        "111341": ("Intraductal carcinoma, high grade", [6030, 6033])
     },
     "IntraductalCarcinomaLowGrade": {
         "111313": ("Intraductal carcinoma, low grade", [6030, 6033])
     },
     "IntraductalCarcinomaMicroPapillary": {
-        "111314": ("Intraductal carcinoma " "micro-papillary", [])
+        "111314": ("Intraductal carcinoma micro-papillary", [])
     },
     "IntraductalComedocarcinomaWithNecrosis": {
-        "111312": ("Intraductal " "comedocarcinoma with " "necrosis", [6030, 6033])
+        "111312": ("Intraductal comedocarcinoma with necrosis", [6030, 6033])
     },
     "IntralobularLines": {"112108": ("Intralobular lines", [6102, 6103])},
     "IntraluminalFillingDefect": {
@@ -3037,12 +3036,12 @@ DCM_concepts = {
         "130345": ("Intraoperative Fixed Aperture", [9541, 9545])
     },
     "IntravascularOpticalCoherenceTomography": {
-        "IVOCT": ("Intravascular Optical " "Coherence Tomography", [29, 33, 30])
+        "IVOCT": ("Intravascular Optical Coherence Tomography", [29, 33, 30])
     },
     "IntravascularTransducer": {"125265": ("Intravascular Transducer", [12035])},
     "IntravascularUltrasound": {"IVUS": ("Intravascular Ultrasound", [29, 33, 30])},
     "IntravenousExtravasationSymptoms": {
-        "113505": ("Intravenous Extravasation " "Symptoms", [])
+        "113505": ("Intravenous Extravasation Symptoms", [])
     },
     "InvasiveAndInSituCarcinoma": {
         "111316": ("Invasive and in-situ carcinoma", [6030, 6033])
@@ -3051,13 +3050,13 @@ DCM_concepts = {
     "InvasiveCribriformCarcinoma": {"111342": ("Invasive cribriform carcinoma", [])},
     "InvasiveLobularCarcinoma": {"111317": ("Invasive lobular carcinoma", [])},
     "InverseDifferenceMomentNormalizedOfGLCM": {
-        "128792": ("Inverse Difference " "Moment Normalized of " "GLCM", [])
+        "128792": ("Inverse Difference Moment Normalized of GLCM", [])
     },
     "InverseDifferenceMomentOfGLCM": {
-        "126062": ("Inverse Difference Moment of " "GLCM", [])
+        "126062": ("Inverse Difference Moment of GLCM", [])
     },
     "InverseDifferenceNormalizedOfGLCM": {
-        "128791": ("Inverse Difference " "Normalized of GLCM", [])
+        "128791": ("Inverse Difference Normalized of GLCM", [])
     },
     "InverseDifferenceOfGLCM": {"128790": ("Inverse Difference of GLCM", [])},
     "InverseVarianceOfGLCM": {"128793": ("Inverse Variance of GLCM", [])},
@@ -3087,42 +3086,42 @@ DCM_concepts = {
     "IsocenterOrigin": {"130539": ("Isocenter Origin", [10074])},
     "IsocentricPatientSupportContinuousPitchAngle": {
         "126812": (
-            "Isocentric " "Patient Support " "Continuous Pitch " "Angle",
+            "Isocentric Patient Support Continuous Pitch Angle",
             [9569, 9570],
         )
     },
     "IsocentricPatientSupportContinuousRollAngle": {
         "126813": (
-            "Isocentric " "Patient Support " "Continuous Roll " "Angle",
+            "Isocentric Patient Support Continuous Roll Angle",
             [9569, 9570],
         )
     },
     "IsocentricPatientSupportContinuousYawAngle": {
         "126814": (
-            "Isocentric Patient " "Support Continuous " "Yaw Angle",
+            "Isocentric Patient Support Continuous Yaw Angle",
             [9569, 9570],
         )
     },
     "IsocentricPatientSupportLateralPosition": {
-        "126815": ("Isocentric Patient " "Support Lateral " "Position", [9569, 9570])
+        "126815": ("Isocentric Patient Support Lateral Position", [9569, 9570])
     },
     "IsocentricPatientSupportLongitudinalPosition": {
         "126816": (
-            "Isocentric " "Patient Support " "Longitudinal " "Position",
+            "Isocentric Patient Support Longitudinal Position",
             [9569, 9570],
         )
     },
     "IsocentricPatientSupportVerticalPosition": {
-        "126817": ("Isocentric Patient " "Support Vertical " "Position", [9569, 9570])
+        "126817": ("Isocentric Patient Support Vertical Position", [9569, 9570])
     },
     "IsocentricTreatmentLocationPoint": {
-        "130073": ("Isocentric Treatment " "Location Point", [9553, 9504])
+        "130073": ("Isocentric Treatment Location Point", [9553, 9504])
     },
     "Isodose": {"128484": ("Isodose", [10063])},
     "Isoechoic": {"111365": ("Isoechoic", [6154])},
     "IssuerOfIdentifier": {"110190": ("Issuer of Identifier", [])},
     "IssuerOfParentSpecimenIdentifier": {
-        "111706": ("Issuer of Parent Specimen " "Identifier", [])
+        "111706": ("Issuer of Parent Specimen Identifier", [])
     },
     "IssuerOfSpecimenIdentifier": {"111724": ("Issuer of Specimen Identifier", [])},
     "IterativeClosestPoint": {"114213": ("Iterative Closest Point", [8203])},
@@ -3131,7 +3130,7 @@ DCM_concepts = {
     "JWire": {"111170": ("J Wire", [])},
     "JawPair": {"130330": ("Jaw Pair", [9541])},
     "JawPositionToleranceViolation": {
-        "130471": ("Jaw Position Tolerance " "Violation", [9567])
+        "130471": ("Jaw Position Tolerance Violation", [9567])
     },
     "JointAverageOfGLCM": {"128782": ("Joint Average of GLCM", [])},
     "JointEntropyOfGLCM": {"126060": ("Joint Entropy of GLCM", [])},
@@ -3145,7 +3144,7 @@ DCM_concepts = {
     "Kep": {"126313": ("kep", [7469, 4107, 218, 7180])},
     "Keratometry": {"KER": ("Keratometry", [29, 33, 30])},
     "KeratometryMeasurementsSOPInstance": {
-        "111757": ("Keratometry Measurements " "SOP Instance", [4240])
+        "111757": ("Keratometry Measurements SOP Instance", [4240])
     },
     "KerleyALine": {"112109": ("Kerley A line", [6102, 6103])},
     "KerleyBLine": {"112110": ("Kerley B line", [6102, 6103])},
@@ -3161,7 +3160,7 @@ DCM_concepts = {
     },
     "KnownBiopsyProvenMalignancyTakeAppropriateAction": {
         "111122": (
-            "Known biopsy " "proven " "malignancy - " "take " "appropriate " "action",
+            "Known biopsy proven malignancy - take appropriate action",
             [6028, 6029],
         )
     },
@@ -3175,39 +3174,39 @@ DCM_concepts = {
     "LADRegionInRAOProjection": {"122464": ("LAD Region in RAO Projection", [3460])},
     "LBWOrIUGR": {"111593": ("LBW or IUGR", [])},
     "LDLCholesterolScoreSheetForMen": {
-        "122233": ("LDL Cholesterol Score Sheet " "for Men", [3668])
+        "122233": ("LDL Cholesterol Score Sheet for Men", [3668])
     },
     "LDLCholesterolScoreSheetForWomen": {
-        "122234": ("LDL Cholesterol Score Sheet " "for Women", [3668])
+        "122234": ("LDL Cholesterol Score Sheet for Women", [3668])
     },
     "LSDI": {"113225": ("LSDI", [7260])},
     "LVWallMotionScoreIndex": {"125202": ("LV Wall Motion Score Index", [])},
     "LWHMethodForVolumeOfEllipsoid": {
-        "126029": ("LWH method for volume of " "ellipsoid", [7474])
+        "126029": ("LWH method for volume of ellipsoid", [7474])
     },
     "LabelType": {"113606": ("Label Type", [])},
     "LactatingAdenoma": {"111278": ("Lactating adenoma", [])},
     "LactationalChange": {"111279": ("Lactational change", [6030, 6031])},
     "LandmarkBasedWallMotionAnalysis": {
-        "122497": ("Landmark Based Wall Motion " "Analysis", [])
+        "122497": ("Landmark Based Wall Motion Analysis", [])
     },
     "Language": {"121045": ("Language", [])},
     "LanguageOfContentItemAndDescendants": {
-        "121049": ("Language of Content Item " "and Descendants", [])
+        "121049": ("Language of Content Item and Descendants", [])
     },
     "LanguageOfNameAndValue": {"121048": ("Language of Name and Value", [])},
     "LanguageOfValue": {"121047": ("Language of Value", [])},
     "Laparoscopy": {"LP": ("Laparoscopy", [])},
     "LargeDuctPapilloma": {"111281": ("Large duct papilloma", [6030, 6031])},
     "LargeGreaterThan38Point0cmLateralThickness": {
-        "113603": ("Large: > 38.0 cm " "lateral thickness", [7041, 7042])
+        "113603": ("Large: > 38.0 cm lateral thickness", [7041, 7042])
     },
     "LargeZoneEmphasis": {"128822": ("Large Zone Emphasis", [])},
     "LargeZoneHighGrayLevelEmphasis": {
-        "128828": ("Large Zone High Gray Level " "Emphasis", [])
+        "128828": ("Large Zone High Gray Level Emphasis", [])
     },
     "LargeZoneLowGrayLevelEmphasis": {
-        "128827": ("Large Zone Low Gray Level " "Emphasis", [])
+        "128827": ("Large Zone Low Gray Level Emphasis", [])
     },
     "LaserCrossHairs": {"128151": ("Laser Cross-hairs", [1015])},
     "LaserScan": {"LS": ("Laser Scan", [29, 33, 30])},
@@ -3225,15 +3224,15 @@ DCM_concepts = {
     },
     "LeafPairs": {"130331": ("Leaf Pairs", [9541])},
     "LeastMeanSquareLMSDeconvolution": {
-        "126310": ("Least Mean Square (LMS) " "deconvolution", [4106, 4105])
+        "126310": ("Least Mean Square (LMS) deconvolution", [4106, 4105])
     },
     "LeastSquaresFitOfMultipleSamples": {
-        "113261": ("Least squares fit of " "multiple samples", [7274])
+        "113261": ("Least squares fit of multiple samples", [7274])
     },
     "LeftAtrialEDVolume": {"122407": ("Left Atrial ED Volume", [3468, 3835])},
     "LeftAtrialESVolume": {"122408": ("Left Atrial ES Volume", [3835, 3469])},
     "LeftAtrialEjectionFractionByAngiography": {
-        "122406": ("Left Atrial Ejection " "Fraction by " "Angiography", [3467])
+        "122406": ("Left Atrial Ejection Fraction by Angiography", [3467])
     },
     "LeftContour": {"122507": ("Left Contour", [])},
     "LeftEyeRx": {"111689": ("Left Eye Rx", [])},
@@ -3254,11 +3253,11 @@ DCM_concepts = {
     "LeftToRight": {"110867": ("Left To Right", [7185])},
     "LeftToRightFlow": {"122227": ("Left to Right Flow", [])},
     "LeftVentricleMassByAreaLength": {
-        "125270": ("Left Ventricle Mass by Area " "Length", [12232, 12227])
+        "125270": ("Left Ventricle Mass by Area Length", [12232, 12227])
     },
     "LeftVentricleMassByAreaLengthAdjustedByHeight": {
         "125273": (
-            "Left Ventricle " "Mass by Area " "Length - " "adjusted by " "Height",
+            "Left Ventricle Mass by Area Length - adjusted by Height",
             [12232, 12227],
         )
     },
@@ -3267,12 +3266,12 @@ DCM_concepts = {
     },
     "LeftVentricleMassByMModeAdjustedByHeight": {
         "125271": (
-            "Left Ventricle Mass " "by M-mode - adjusted " "by Height",
+            "Left Ventricle Mass by M-mode - adjusted by Height",
             [12232, 12227],
         )
     },
     "LeftVentricleMassByTruncatedEllipse": {
-        "125222": ("Left Ventricle Mass by " "Truncated Ellipse", [12232, 12227])
+        "125222": ("Left Ventricle Mass by Truncated Ellipse", [12232, 12227])
     },
     "LeftVentricleMassByTruncatedEllipseAdjustedByHeight": {
         "125272": (
@@ -3291,11 +3290,11 @@ DCM_concepts = {
     },
     "LeftVentricularFillingTime": {"122212": ("Left Ventricular filling time", [3613])},
     "LeftVentricularPosterobasalSegment": {
-        "122582": ("Left ventricular " "posterobasal segment", [])
+        "122582": ("Left ventricular posterobasal segment", [])
     },
     "LengthLuminalSegment": {"122510": ("Length Luminal Segment", [])},
     "LengthOfReconstructableVolume": {
-        "113893": ("Length of Reconstructable " "Volume", [])
+        "113893": ("Length of Reconstructable Volume", [])
     },
     "Lensometry": {"LEN": ("Lensometry", [29, 33, 30])},
     "LesionBoundary": {"111357": ("Lesion boundary", [])},
@@ -3333,16 +3332,16 @@ DCM_concepts = {
     "LinearQuadraticModel": {"130131": ("Linear-Quadratic Model", [9539])},
     "LinearQuadraticModelForLowDoseRateBrachytherapy": {
         "130134": (
-            "Linear-Quadratic " "Model for " "Low-Dose Rate " "Brachytherapy",
+            "Linear-Quadratic Model for Low-Dose Rate Brachytherapy",
             [9539],
         )
     },
     "LinearQuadraticModelWithTimeFactor": {
-        "130132": ("Linear-Quadratic Model " "with Time Factor", [9539])
+        "130132": ("Linear-Quadratic Model with Time Factor", [9539])
     },
     "LinearSpiculation": {"113665": ("Linear spiculation", [6166])},
     "LinearUltrasoundTransducerGeometry": {
-        "125252": ("Linear ultrasound " "transducer geometry", [12033])
+        "125252": ("Linear ultrasound transducer geometry", [12033])
     },
     "LipidAndLactate": {
         "113095": ("Lipid and Lactate", [7186, 7469, 218, 4033, 4032, 7180])
@@ -3363,13 +3362,13 @@ DCM_concepts = {
     "LocationInChest": {"112013": ("Location in Chest", [])},
     "LocationOfSamplingSite": {"111709": ("Location of sampling site", [])},
     "LocationOfSamplingSiteXOffset": {
-        "111710": ("Location of sampling site X " "offset", [])
+        "111710": ("Location of sampling site X offset", [])
     },
     "LocationOfSamplingSiteYOffset": {
-        "111711": ("Location of sampling site Y " "offset", [])
+        "111711": ("Location of sampling site Y offset", [])
     },
     "LocationOfSamplingSiteZOffset": {
-        "111712": ("Location of sampling site Z " "offset", [])
+        "111712": ("Location of sampling site Z offset", [])
     },
     "LocationOfSpecimen": {"111718": ("Location of Specimen", [])},
     "LocationOfSpecimenXOffset": {"111719": ("Location of Specimen X offset", [])},
@@ -3380,16 +3379,16 @@ DCM_concepts = {
     "Logout": {"110123": ("Logout", [401, 403])},
     "LongAxisBased": {"122476": ("Long Axis Based", [3458])},
     "LongRunHighGrayLevelEmphasis": {
-        "128808": ("Long Run High Gray Level " "Emphasis", [])
+        "128808": ("Long Run High Gray Level Emphasis", [])
     },
     "LongRunLowGrayLevelEmphasis": {"128807": ("Long Run Low Gray Level Emphasis", [])},
     "LongRunsEmphasis": {"128802": ("Long Runs Emphasis", [])},
     "LongitudinalPositionZ": {"113994": ("Longitudinal Position Z", [])},
     "LongitudinalTemporalEventType": {
-        "128741": ("Longitudinal Temporal Event " "Type", [])
+        "128741": ("Longitudinal Temporal Event Type", [])
     },
     "LongitudinalTemporalOffsetFromEvent": {
-        "128740": ("Longitudinal Temporal " "Offset from Event", [])
+        "128740": ("Longitudinal Temporal Offset from Event", [])
     },
     "LossyCompressedImage": {"121325": ("Lossy compressed image", [7205])},
     "LossyCompressedPredecessor": {"121330": ("Lossy compressed predecessor", [7202])},
@@ -3412,7 +3411,7 @@ DCM_concepts = {
         "109704": ("Luminance uniformity evaluation", [8300])
     },
     "Lutetium177NAcetylaspartylglutamate": {
-        "126509": ("Lutetium^177^ " "n-acetylaspartylglutamate", [25])
+        "126509": ("Lutetium^177^ n-acetylaspartylglutamate", [25])
     },
     "LympathicVesselInvasion": {"111320": ("Lympathic vessel invasion", [6030, 6033])},
     "Lymphoma": {"111321": ("Lymphoma", [])},
@@ -3420,14 +3419,14 @@ DCM_concepts = {
     "MIRDOSE": {"113526": ("MIRDOSE", [10040])},
     "MIRDPamphlet1": {"113520": ("MIRD Pamphlet 1", [10040])},
     "MLCPositionToleranceViolation": {
-        "130472": ("MLC Position Tolerance " "Violation", [9567])
+        "130472": ("MLC Position Tolerance Violation", [9567])
     },
     "MLOEvidenceOfMotionBlur": {"111200": ("MLO Evidence of motion blur", [6041])},
     "MLOInframammaryFoldIsNotOpen": {
-        "111201": ("MLO Inframammary fold is not " "open", [6041])
+        "111201": ("MLO Inframammary fold is not open", [6041])
     },
     "MLOInsufficientPectoralMuscle": {
-        "111197": ("MLO Insufficient pectoral " "muscle", [6041])
+        "111197": ("MLO Insufficient pectoral muscle", [6041])
     },
     "MLONoFatIsVisualizedPosteriorToFibroglandularTissues": {
         "111198": (
@@ -3461,23 +3460,23 @@ DCM_concepts = {
     "MRPerfusionTimeIntegral": {"122637": ("MR Perfusion Time Integral", [])},
     "MRSignalIntensity": {"110852": ("MR signal intensity", [7469, 218, 7180])},
     "MVAEqualsFlow38Point0SqrtGradientMmhg": {
-        "122263": ("MVA = Flow / 38.0 * " "sqrt(Gradient[mmHg])", [])
+        "122263": ("MVA = Flow / 38.0 * sqrt(Gradient[mmHg])", [])
     },
     "MachineCalibrationAdjustment": {
         "130465": ("Machine Calibration Adjustment", [9565])
     },
     "MachineCapabilityLicenseExpired": {
-        "130467": ("Machine Capability License " "Expired", [9565])
+        "130467": ("Machine Capability License Expired", [9565])
     },
     "MachineNotAvailable": {"130463": ("Machine Not Available", [9565])},
     "MachineQualityAssuranceInputUsed": {
-        "128216": ("Machine Quality Assurance " "Input Used", [7010, 7025])
+        "128216": ("Machine Quality Assurance Input Used", [7010, 7025])
     },
     "Macrocalcifications": {"111345": ("Macrocalcifications", [6010, 6011])},
     "MaculaCentered": {"111900": ("Macula centered", [4207])},
     "MacularFixationTesting": {"111845": ("Macular Fixation Testing", [4253])},
     "MacularGridThicknessAndVolumeReport": {
-        "111690": ("Macular Grid Thickness " "and Volume Report", [])
+        "111690": ("Macular Grid Thickness and Volume Report", [])
     },
     "MagneticResonance": {"MR": ("Magnetic Resonance", [29, 33, 30])},
     "MagneticResonanceAngiography": {"MA": ("Magnetic resonance angiography", [])},
@@ -3505,7 +3504,7 @@ DCM_concepts = {
     "MammographyCAD": {"111411": ("Mammography CAD", [6050, 6083])},
     "MammographyCADReport": {"111036": ("Mammography CAD Report", [])},
     "MammographyQualityControlManual1999ACR": {
-        "111238": ("Mammography Quality " "Control Manual 1999, " "ACR", [6045])
+        "111238": ("Mammography Quality Control Manual 1999, ACR", [6045])
     },
     "Manifest": {"113030": ("Manifest", [7010])},
     "ManualAdministration": {"130174": ("Manual Administration", [63])},
@@ -3516,14 +3515,14 @@ DCM_concepts = {
     "ManualProcessing": {"123109": ("Manual Processing", [7162])},
     "ManualResumeFromHold": {"130268": ("Manual resume from hold", [71])},
     "ManuallyTriggeredInjectionInformation": {
-        "130172": ("Manually Triggered " "Injection Information", [])
+        "130172": ("Manually Triggered Injection Information", [])
     },
     "ManufacturerImplantTemplate": {"112371": ("Manufacturer Implant Template", [])},
     "Margetuximab89Zr": {"126740": ("Margetuximab ^89^Zr", [4021])},
     "Margins": {"111037": ("Margins", [])},
     "MarkerPlacement": {"111123": ("Marker placement", [6061, 6058, 6050, 6051, 6083])},
     "MaskImageForImageProcessingOperation": {
-        "121321": ("Mask image for image " "processing operation", [7202])
+        "121321": ("Mask image for image processing operation", [7202])
     },
     "MassAdministered": {"121383": ("Mass administered", [3410])},
     "MassInTheSkin": {"111112": ("Mass in the skin", [6014, 6054, 6056, 6016, 6015])},
@@ -3548,10 +3547,10 @@ DCM_concepts = {
     "MaxDpDtP": {"122190": ("Max dp/dt/P", [])},
     "MaxNegDpDt": {"109026": ("Max neg dp/dt", [3337])},
     "MaxVolumeNormalizedTo50mmhgPulsePressure": {
-        "122238": ("Max volume " "normalized to 50mmHg " "pulse pressure", [])
+        "122238": ("Max volume normalized to 50mmHg pulse pressure", [])
     },
     "MaximumAbsoluteVolumeAtRadiationDose": {
-        "130017": ("Maximum Absolute Volume " "at Radiation Dose", [9500, 9531])
+        "130017": ("Maximum Absolute Volume at Radiation Dose", [9500, 9531])
     },
     "MaximumAbsorbedRadiationDose": {
         "128531": ("Maximum Absorbed Radiation Dose", [10061])
@@ -3562,7 +3561,7 @@ DCM_concepts = {
     "MaximumCADOperatingPoint": {"111072": ("Maximum CAD Operating Point", [])},
     "MaximumDifference": {"126376": ("Maximum Difference", [7469, 4109, 218, 7180])},
     "MaximumEquivalentRadiationDose": {
-        "128535": ("Maximum Equivalent Radiation " "Dose", [10062])
+        "128535": ("Maximum Equivalent Radiation Dose", [10062])
     },
     "MaximumEquivalentUniformDose": {
         "130008": ("Maximum Equivalent Uniform Dose", [9500, 9529])
@@ -3574,7 +3573,7 @@ DCM_concepts = {
     },
     "MaximumOrificeArea": {"125328": ("Maximum Orifice Area", [12304])},
     "MaximumPercentVolumeAtRadiationDose": {
-        "130015": ("Maximum Percent Volume at " "Radiation Dose", [9500, 9530])
+        "130015": ("Maximum Percent Volume at Radiation Dose", [9500, 9530])
     },
     "MaximumPowerOutputAchieved": {"122716": ("Maximum Power Output Achieved", [])},
     "MaximumPressureAcceleration": {"122193": ("Maximum pressure acceleration", [])},
@@ -3623,7 +3622,7 @@ DCM_concepts = {
         "112182": ("Median Attenuation Coefficient", [6141])
     },
     "MedianEquivalentRadiationDose": {
-        "128540": ("Median Equivalent Radiation " "Dose", [10062])
+        "128540": ("Median Equivalent Radiation Dose", [10062])
     },
     "MedicalDeviceUsed": {"121436": ("Medical Device Used", [])},
     "MedicalPhysics": {"128174": ("Medical Physics", [7030])},
@@ -3632,7 +3631,7 @@ DCM_concepts = {
     "MedicationsSet": {"127320": ("Medications Set", [])},
     "Medium": {"111576": ("Medium", [6090])},
     "Medium32Point0To38Point0cmLateralThickness": {
-        "113602": ("Medium: 32.0-38.0 " "cm lateral " "thickness", [7041, 7042])
+        "113602": ("Medium: 32.0-38.0 cm lateral thickness", [7041, 7042])
     },
     "MenopausalPhase": {"111539": ("Menopausal phase", [])},
     "MenstrualCyclePhase": {"111391": ("Menstrual Cycle Phase", [])},
@@ -3642,28 +3641,28 @@ DCM_concepts = {
     "MesopicLight": {"111628": ("Mesopic light", [4203])},
     "MetabolicVolume": {"126032": ("Metabolic Volume", [7466])},
     "MetaboliteMapsFromSpectroscopyData": {
-        "113050": ("Metabolite Maps from " "spectroscopy data", [7203])
+        "113050": ("Metabolite Maps from spectroscopy data", [7203])
     },
     "MetastasisToAnIntramammaryLymphNode": {
-        "111333": ("Metastasis to an " "intramammary lymph node", [6030, 6033])
+        "111333": ("Metastasis to an intramammary lymph node", [6030, 6033])
     },
     "MetastaticCancerToTheBreast": {
         "111323": ("Metastatic cancer to the breast", [6030, 6033])
     },
     "MetastaticCancerToTheBreastFromTheColon": {
-        "111324": ("Metastatic cancer to " "the breast from the " "colon", [6030, 6033])
+        "111324": ("Metastatic cancer to the breast from the colon", [6030, 6033])
     },
     "MetastaticCancerToTheBreastFromTheLung": {
-        "111325": ("Metastatic cancer to " "the breast from the " "lung", [6030, 6033])
+        "111325": ("Metastatic cancer to the breast from the lung", [6030, 6033])
     },
     "MetastaticCancerToTheBreastFromTheOvary": {
-        "111327": ("Metastatic cancer to " "the breast from the " "ovary", [6030, 6033])
+        "111327": ("Metastatic cancer to the breast from the ovary", [6030, 6033])
     },
     "MetastaticDiseaseToAxillaryNode": {
-        "111330": ("Metastatic disease to " "axillary node", [6030, 6033])
+        "111330": ("Metastatic disease to axillary node", [6030, 6033])
     },
     "MetastaticMelanomaToTheBreast": {
-        "111326": ("Metastatic melanoma to the " "breast", [6030, 6033])
+        "111326": ("Metastatic melanoma to the breast", [6030, 6033])
     },
     "MetastaticSarcomaToTheBreast": {
         "111328": ("Metastatic sarcoma to the breast", [6030, 6033])
@@ -3683,20 +3682,20 @@ DCM_concepts = {
     "MidPeripheralInferior": {"111908": ("Mid-peripheral-inferior", [4207])},
     "MidPeripheralInferiorNasal": {"111909": ("Mid-peripheral-inferior nasal", [4207])},
     "MidPeripheralInferiorTemporal": {
-        "111907": ("Mid-peripheral-inferior " "temporal", [4207])
+        "111907": ("Mid-peripheral-inferior temporal", [4207])
     },
     "MidPeripheralNasal": {"111910": ("Mid-peripheral-nasal", [4207])},
     "MidPeripheralSuperior": {"111904": ("Mid-peripheral-superior", [4207])},
     "MidPeripheralSuperiorNasal": {"111911": ("Mid-peripheral-superior nasal", [4207])},
     "MidPeripheralSuperiorTemporal": {
-        "111905": ("Mid-peripheral-superior " "temporal", [4207])
+        "111905": ("Mid-peripheral-superior temporal", [4207])
     },
     "MidPeripheralTemporal": {"111906": ("Mid-peripheral-temporal", [4207])},
     "MiddleInnerRetinaVasculatureFlow": {
-        "128267": ("Middle inner retina " "vasculature flow", [4271])
+        "128267": ("Middle inner retina vasculature flow", [4271])
     },
     "MiddleInnerStructuralReflectanceMap": {
-        "128268": ("Middle inner structural " "reflectance map", [4271])
+        "128268": ("Middle inner structural reflectance map", [4271])
     },
     "MiddleOfTimePeriod": {"130535": ("Middle of Time Period", [10073])},
     "MidlungWindow": {
@@ -3705,7 +3704,7 @@ DCM_concepts = {
     "MiliaryPattern": {"112129": ("Miliary pattern", [6106, 6102])},
     "MinimizeMeterset": {"130018": ("Minimize Meterset", [9500, 9532])},
     "MinimumAbsoluteVolumeAtRadiationDose": {
-        "130016": ("Minimum Absolute Volume " "at Radiation Dose", [9500, 9531])
+        "130016": ("Minimum Absolute Volume at Radiation Dose", [9500, 9531])
     },
     "MinimumAbsorbedRadiationDose": {
         "128532": ("Minimum Absorbed Radiation Dose", [10061])
@@ -3716,20 +3715,20 @@ DCM_concepts = {
     "MinimumConformationNumber": {"130012": ("Minimum Conformation Number", [])},
     "MinimumConformityIndex": {"130010": ("Minimum Conformity Index", [])},
     "MinimumEquivalentRadiationDose": {
-        "128536": ("Minimum Equivalent Radiation " "Dose", [10062])
+        "128536": ("Minimum Equivalent Radiation Dose", [10062])
     },
     "MinimumEquivalentUniformDose": {
         "130007": ("Minimum Equivalent Uniform Dose", [9500, 9529])
     },
     "MinimumHealthyTissueConformityIndex": {
-        "130011": ("Minimum Healthy Tissue " "Conformity Index", [])
+        "130011": ("Minimum Healthy Tissue Conformity Index", [])
     },
     "MinimumIntensityProjection": {"113079": ("Minimum intensity projection", [7203])},
     "MinimumMeanRadiationDose": {
         "130005": ("Minimum Mean Radiation Dose", [9500, 9529])
     },
     "MinimumPercentVolumeAtRadiationDose": {
-        "130014": ("Minimum Percent Volume at " "Radiation Dose", [9500, 9530])
+        "130014": ("Minimum Percent Volume at Radiation Dose", [9500, 9530])
     },
     "MinimumRadiationDose": {"130003": ("Minimum Radiation Dose", [9500, 9529])},
     "MinimumSurfaceRadiationDose": {
@@ -3747,7 +3746,7 @@ DCM_concepts = {
     "ModelFor3DManufacturing": {"M3D": ("Model for 3D Manufacturing", [33, 32])},
     "ModelFree": {"113233": ("Model Free", [7261])},
     "ModelFreeConcentrationTimeQuantitification": {
-        "126342": ("Model-free " "concentration-time " "quantitification", [4106])
+        "126342": ("Model-free concentration-time quantitification", [4106])
     },
     "ModelMaximumAge": {"128430": ("Model Maximum Age", [])},
     "ModelMaximumHeight": {"128442": ("Model Maximum Height", [])},
@@ -3763,12 +3762,12 @@ DCM_concepts = {
     "Mold": {"130113": ("Mold", [7151, 7193, 9505, 7157, 9520, 9513])},
     "MonoExponentialApparentDiffusionCoefficient": {
         "113290": (
-            "Mono-exponential " "Apparent " "Diffusion " "Coefficient",
+            "Mono-exponential Apparent Diffusion Coefficient",
             [7469, 218, 7272, 7180],
         )
     },
     "MonoExponentialDiffusionModel": {
-        "113250": ("Mono-exponential diffusion " "model", [7273])
+        "113250": ("Mono-exponential diffusion model", [7273])
     },
     "MonoblockStem": {"112315": ("Monoblock Stem", [7308, 7307])},
     "MonoclonalAntibodyMab64Cu": {
@@ -3786,33 +3785,33 @@ DCM_concepts = {
     "MotionBlur": {"111210": ("Motion blur", [6041, 3115, 6135, 7011])},
     "MotorizedWedge": {"130347": ("Motorized Wedge", [9546])},
     "MouseAlphaSynucleinPreformedFibrils": {
-        "127852": ("Mouse alpha synuclein " "preformed fibrils", [640, 638])
+        "127852": ("Mouse alpha synuclein preformed fibrils", [640, 638])
     },
     "MouseTauPreformedFibrils": {"127854": ("Mouse Tau preformed fibrils", [640, 638])},
     "MoveableLaserPatientSetupPoint": {
-        "130071": ("Moveable Laser Patient Setup " "Point", [9504])
+        "130071": ("Moveable Laser Patient Setup Point", [9504])
     },
     "MultiEnergyProportionalWeighting": {
-        "113097": ("Multi-energy proportional " "weighting", [7203])
+        "113097": ("Multi-energy proportional weighting", [7203])
     },
     "MultiMediaCard": {"110035": ("Multi-media Card", [405])},
     "MultiScaleResolutionFiltering": {
-        "123106": ("Multi-Scale/Resolution " "Filtering", [7162])
+        "123106": ("Multi-Scale/Resolution Filtering", [7162])
     },
     "MultiShotEPI": {"113227": ("Multi Shot EPI", [])},
     "MultiTensor": {"113232": ("Multi Tensor", [7261])},
     "MultifocalIntraductalCarcinoma": {
-        "111329": ("Multifocal intraductal " "carcinoma", [6030, 6033])
+        "111329": ("Multifocal intraductal carcinoma", [6030, 6033])
     },
     "MultifocalInvasiveDuctalCarcinoma": {
-        "111332": ("Multifocal invasive ductal " "carcinoma", [6030, 6033])
+        "111332": ("Multifocal invasive ductal carcinoma", [6030, 6033])
     },
     "MultiparametricMRI": {"126020": ("Multiparametric MRI", [100])},
     "MultiparametricMRIOfProstate": {
         "126021": ("Multiparametric MRI of prostate", [100])
     },
     "MultiparametricMRIOfWholeBody": {
-        "126022": ("Multiparametric MRI of whole " "body", [100])
+        "126022": ("Multiparametric MRI of whole body", [100])
     },
     "MultiplanarReformatting": {"113072": ("Multiplanar reformatting", [7203])},
     "MultipleFillingDefect": {"111426": ("Multiple filling defect", [6057, 6054])},
@@ -3821,27 +3820,27 @@ DCM_concepts = {
         "111285": ("Multiple Intraductal Papillomas", [6030, 6031])
     },
     "MultipleLADRegionInRAOProjection": {
-        "122468": ("Multiple LAD Region in RAO " "Projection", [3461])
+        "122468": ("Multiple LAD Region in RAO Projection", [3461])
     },
     "MultiplePlanes": {"112714": ("Multiple planes", [])},
     "MultipleRCARegionInRAOProjection": {
-        "122469": ("Multiple RCA Region in RAO " "Projection", [3461])
+        "122469": ("Multiple RCA Region in RAO Projection", [3461])
     },
     "MultipleShotEPI": {"113227": ("Multiple Shot EPI", [7260])},
     "MultipleSlices": {"122562": ("Multiple Slices", [3453])},
     "MultispectralProcessing": {"123108": ("Multispectral Processing", [7162])},
     "MusculoskeletalImagingSpecialty": {
-        "128009": ("Musculoskeletal Imaging " "Specialty", [7449])
+        "128009": ("Musculoskeletal Imaging Specialty", [7449])
     },
     "MusculoskeletalImagingSubjectMatter": {
-        "128728": ("Musculoskeletal imaging " "subject matter", [7017])
+        "128728": ("Musculoskeletal imaging subject matter", [7017])
     },
     "MusculoskeletalRadiology": {"128175": ("Musculoskeletal Radiology", [7030])},
     "MyocardialBiopsy": {"122057": ("Myocardial biopsy", [3405, 3406])},
     "MyocardialPerfusionAnalysis": {"122602": ("Myocardial Perfusion Analysis", [])},
     "Myofibroblastoma": {"111283": ("Myofibroblastoma", [])},
     "MüllerMethodPlanningForHipReplacement": {
-        "112344": ("Müller Method Planning " "for Hip Replacement", [7320])
+        "112344": ("Müller Method Planning for Hip Replacement", [7320])
     },
     "NASCET": {"122655": ("NASCET", [3804])},
     "NAcetylaspartateCholineRatio": {
@@ -3852,7 +3851,7 @@ DCM_concepts = {
     },
     "NAcetylaspartateCreatineRatio": {
         "113082": (
-            "N-acetylaspartate/Creatine " "Ratio",
+            "N-acetylaspartate/Creatine Ratio",
             [7186, 7469, 218, 4033, 4032, 7180],
         )
     },
@@ -3860,10 +3859,10 @@ DCM_concepts = {
     "NIH07": {"127271": ("NIH07", [607])},
     "NIH31": {"127270": ("NIH31", [607])},
     "NMMyocardialViabilityProcedure": {
-        "122785": ("NM Myocardial Viability " "procedure", [3110])
+        "122785": ("NM Myocardial Viability procedure", [3110])
     },
     "NMTransmissionAttenuationCorrection": {
-        "122727": ("NM Transmission " "Attenuation Correction", [3112])
+        "122727": ("NM Transmission Attenuation Correction", [3112])
     },
     "NURBSRadiationTransportModel": {
         "128424": ("NURBS Radiation Transport Model", [10065])
@@ -3892,10 +3891,10 @@ DCM_concepts = {
     "NegativeInfinity": {"114001": ("Negative Infinity", [42, 43])},
     "NeighborhoodAnalysis": {"123101": ("Neighborhood Analysis", [7162])},
     "NeighbourhoodGreyToneDifferenceMatrix": {
-        "128779": ("Neighbourhood Grey Tone " "Difference Matrix", [])
+        "128779": ("Neighbourhood Grey Tone Difference Matrix", [])
     },
     "NeighbouringGreyLevelDependenceMatrix": {
-        "128780": ("Neighbouring Grey Level " "Dependence Matrix", [])
+        "128780": ("Neighbouring Grey Level Dependence Matrix", [])
     },
     "NeoplasmOfTheMammarySkin": {"111335": ("Neoplasm of the mammary skin", [])},
     "NetForwardVolume": {"122645": ("Net Forward Volume", [])},
@@ -3905,13 +3904,13 @@ DCM_concepts = {
     "NeuroimagingSubjectMatter": {"128733": ("Neuroimaging subject matter", [7017])},
     "NeurologySpecialty": {"128010": ("Neurology Specialty", [7449])},
     "NeuroradiologicImagingSpecialty": {
-        "128011": ("Neuroradiologic Imaging " "Specialty", [])
+        "128011": ("Neuroradiologic Imaging Specialty", [])
     },
     "NeuroradiologyImagingSpecialty": {
-        "128011": ("Neuroradiology Imaging " "Specialty", [7449])
+        "128011": ("Neuroradiology Imaging Specialty", [7449])
     },
     "NeutralMusculoskeletalPosition": {
-        "109136": ("Neutral musculoskeletal " "position", [92])
+        "109136": ("Neutral musculoskeletal position", [92])
     },
     "NifeneF18": {"126714": ("Nifene F^18^", [4021])},
     "NilPerOsNPOStatusConfirmed": {
@@ -3925,16 +3924,16 @@ DCM_concepts = {
     "NippleRing": {"112177": ("Nipple ring", [7151, 6138, 6404, 7193, 6102])},
     "NoAbnormality": {"111286": ("No abnormality", [6030, 6031])},
     "NoAlgorithmsSucceededWithoutFindings": {
-        "111245": ("No algorithms succeeded; " "without findings", [6047])
+        "111245": ("No algorithms succeeded; without findings", [6047])
     },
     "NoAttenuationCorrection": {"122729": ("No Attenuation Correction", [3112])},
     "NoComplications": {"111492": ("No complications", [6062])},
     "NoCornealCompensation": {"111922": ("No corneal compensation", [4261])},
     "NoCorrelationToClinicalFindings": {
-        "111387": ("No correlation to clinical " "findings", [6158])
+        "111387": ("No correlation to clinical findings", [6158])
     },
     "NoCorrelationToOtherImagingFindings": {
-        "111386": ("No correlation to other " "imaging findings", [6158])
+        "111386": ("No correlation to other imaging findings", [6158])
     },
     "NoEmptyTileSuppression": {"112721": ("No empty tile suppression", [8133])},
     "NoFilter": {"111609": ("No filter", [4204, 8124, 10007])},
@@ -3954,10 +3953,10 @@ DCM_concepts = {
         "112719": ("Nominal empty tile suppression", [8133])
     },
     "NominalRadiationSourceLocation": {
-        "130358": ("Nominal Radiation Source " "Location", [9554, 9544])
+        "130358": ("Nominal Radiation Source Location", [9554, 9544])
     },
     "NominalSingleCollimationWidth": {
-        "113826": ("Nominal Single Collimation " "Width", [])
+        "113826": ("Nominal Single Collimation Width", [])
     },
     "NominalTotalCollimationWidth": {"113827": ("Nominal Total Collimation Width", [])},
     "NonBloodyDischarge": {"111478": ("Non-bloody discharge (from nipple)", [6055])},
@@ -3966,40 +3965,40 @@ DCM_concepts = {
         "122750": ("Non-diagnostic - low heart rate", [3231])
     },
     "NonDiagnosticRestingSTAbnormalities": {
-        "122751": ("Non-diagnostic - resting " "ST abnormalities", [3231])
+        "122751": ("Non-diagnostic - resting ST abnormalities", [3231])
     },
     "NonDiagnosticVentricularPacingOrLBBB": {
-        "122752": ("Non-diagnostic - " "ventricular pacing or " "LBBB", [3231])
+        "122752": ("Non-diagnostic - ventricular pacing or LBBB", [3231])
     },
     "NonFlatteningFilterBeam": {"130356": ("Non-Flattening Filter Beam", [9549])},
     "NonImagingDopplerUltrasoundTransducerGeometry": {
         "125251": (
-            "Non-imaging " "Doppler " "ultrasound " "transducer " "geometry",
+            "Non-imaging Doppler ultrasound transducer geometry",
             [12033],
         )
     },
     "NonIonicIodinatedContrastAgent": {
-        "127855": ("Non-ionic iodinated contrast " "agent", [])
+        "127855": ("Non-ionic iodinated contrast agent", [])
     },
     "NonLesion": {"111102": ("Non-lesion", [6014, 6201, 6054, 6101, 6016])},
     "NonLesionAtBaseline": {"112076": ("Non-Lesion at Baseline", [6145])},
     "NonLesionModifier": {"112037": ("Non-lesion Modifier", [])},
     "NonSpecificVolume": {"130046": ("Non-specific Volume", [9501, 9502])},
     "NonSynchronizedRoboticTreatment": {
-        "130140": ("Non-Synchronized Robotic " "Treatment", [9523, 9524])
+        "130140": ("Non-Synchronized Robotic Treatment", [9523, 9524])
     },
     "NonTargetLesionAtBaseline": {"112075": ("Non-Target Lesion at Baseline", [6145])},
     "NonTargetLesionCompleteResponse": {
-        "112045": ("Non-Target Lesion Complete " "Response", [6144, 6143])
+        "112045": ("Non-Target Lesion Complete Response", [6144, 6143])
     },
     "NonTargetLesionIncompleteResponseOrStableDisease": {
         "112046": (
-            "Non-Target " "Lesion " "Incomplete " "Response or " "Stable " "Disease",
+            "Non-Target Lesion Incomplete Response or Stable Disease",
             [6144, 6143],
         )
     },
     "NonTargetLesionProgressiveDisease": {
-        "112047": ("Non-Target Lesion " "Progressive Disease", [6144, 6143])
+        "112047": ("Non-Target Lesion Progressive Disease", [6144, 6143])
     },
     "NonUterineLeiomyosarcoma": {"130406": ("Non-uterine leiomyosarcoma", [638, 639])},
     "NormalAxillaryNode": {"111251": ("Normal axillary node", [6030, 6031])},
@@ -4015,18 +4014,18 @@ DCM_concepts = {
     "NormalizationFactor": {"128522": ("Normalization Factor", [10069])},
     "NormalizedChordLength": {"122450": ("Normalized Chord Length", [])},
     "NormalizedValuesOfVentricularMeasurements": {
-        "122609": ("Normalized Values " "Of Ventricular " "Measurements", [])
+        "122609": ("Normalized Values Of Ventricular Measurements", [])
     },
     "NorthAmericanPurebredDogRegistry": {
-        "109216": ("North American Purebred Dog " "Registry", [7481])
+        "109216": ("North American Purebred Dog Registry", [7481])
     },
     "NoseCone": {"127060": ("Nose cone", [617])},
     "NotANumber": {"114000": ("Not a number", [42, 43])},
     "NotAllAlgorithmsSucceededWithFindings": {
-        "111244": ("Not all algorithms " "succeeded; with " "findings", [6047])
+        "111244": ("Not all algorithms succeeded; with findings", [6047])
     },
     "NotAllAlgorithmsSucceededWithoutFindings": {
-        "111243": ("Not all algorithms " "succeeded; without " "findings", [6047])
+        "111243": ("Not all algorithms succeeded; without findings", [6047])
     },
     "NotAttempted": {"111225": ("Not Attempted", [6042])},
     "NotForPresentationRenderingDeviceExpectedNotToPresent": {
@@ -4042,27 +4041,27 @@ DCM_concepts = {
         )
     },
     "NotOptimizedForTheDeviceInstance": {
-        "128620": ("Not optimized for the device " "instance", [800])
+        "128620": ("Not optimized for the device instance", [800])
     },
     "NotParallel": {"111356": ("Not parallel", [6152])},
     "NotSure": {"111399": ("Not sure", [6164])},
     "NotVisualized": {"122288": ("Not visualized", [3703])},
     "NuclearMedicine": {"NM": ("Nuclear Medicine", [29, 33, 30])},
     "NuclearMedicineImagingSubjectMatter": {
-        "128735": ("Nuclear medicine imaging " "subject matter", [7017])
+        "128735": ("Nuclear medicine imaging subject matter", [7017])
     },
     "NuclearMedicineProjectionActivity": {
-        "110820": ("Nuclear Medicine Projection " "Activity", [7469, 218, 7180])
+        "110820": ("Nuclear Medicine Projection Activity", [7469, 218, 7180])
     },
     "NuclearMedicineTomographicActivity": {
-        "110821": ("Nuclear Medicine " "Tomographic Activity", [7469, 218, 7180])
+        "110821": ("Nuclear Medicine Tomographic Activity", [7469, 218, 7180])
     },
     "NumberOfAnimalsWithinSameHousingUnit": {
-        "127143": ("Number of animals within " "same housing unit", [])
+        "127143": ("Number of animals within same housing unit", [])
     },
     "NumberOfCalcifications": {"111038": ("Number of calcifications", [])},
     "NumberOfDiseasedVesselTerritories": {
-        "122762": ("Number of diseased vessel " "territories", [])
+        "122762": ("Number of diseased vessel territories", [])
     },
     "NumberOfEctopicBeats": {"122707": ("Number of Ectopic Beats", [])},
     "NumberOfFetuses": {"121038": ("Number of Fetuses", [])},
@@ -4085,14 +4084,14 @@ DCM_concepts = {
     "NumberOfFrames": {"121140": ("Number of Frames", [])},
     "NumberOfHousingUnitsPerRack": {"127141": ("Number of housing units per rack", [])},
     "NumberOfImagesUsedForMacularMeasurements": {
-        "111691": ("Number of Images " "Used for Macular " "Measurements", [])
+        "111691": ("Number of Images Used for Macular Measurements", [])
     },
     "NumberOfInjectorHeads": {"130219": ("Number of Injector Heads", [])},
     "NumberOfLesionInterventionsAttempted": {
-        "122175": ("Number of lesion " "interventions attempted", [])
+        "122175": ("Number of lesion interventions attempted", [])
     },
     "NumberOfLesionInterventionsSuccessful": {
-        "122176": ("Number of lesion " "interventions " "successful", [])
+        "122176": ("Number of lesion interventions successful", [])
     },
     "NumberOfMalignantMelanomas": {"130483": ("Number of malignant melanomas", [])},
     "NumberOfMelanomasInSitu": {"130484": ("Number of melanomas in situ", [])},
@@ -4111,7 +4110,7 @@ DCM_concepts = {
     "NursingNote": {"121172": ("Nursing Note", [3401])},
     "NursingUnitCancel": {"110511": ("Nursing unit cancel", [9300, 9301])},
     "OBGYNUltrasoundProcedureReport": {
-        "125000": ("OB-GYN Ultrasound Procedure " "Report", [12024])
+        "125000": ("OB-GYN Ultrasound Procedure Report", [12024])
     },
     "OBGynImagingSpecialty": {"128012": ("OB/Gyn Imaging Specialty", [7449])},
     "OCTAAmplitudeDecorrelation": {"128252": ("OCT-A amplitude decorrelation", [4270])},
@@ -4131,7 +4130,7 @@ DCM_concepts = {
     "Obinituzimab89Zr": {"126721": ("Obinituzimab ^89^Zr", [4021])},
     "ObjectRemoved": {"122307": ("Object removed", [3412])},
     "ObjectSecurityAttributesChanged": {
-        "110135": ("Object Security Attributes " "Changed", [401, 403])
+        "110135": ("Object Security Attributes Changed", [401, 403])
     },
     "ObjectSetIncomplete": {"110523": ("Object Set incomplete", [9300, 9302, 9303])},
     "ObjectType": {"111039": ("Object type", [])},
@@ -4179,7 +4178,7 @@ DCM_concepts = {
     "Opacity": {"112001": ("Opacity", [6102, 6104])},
     "OpacityDescriptor": {"112027": ("Opacity Descriptor", [])},
     "OperatorDecisionToTerminateTreatment": {
-        "130450": ("Operator decision to " "terminate treatment", [])
+        "130450": ("Operator decision to terminate treatment", [])
     },
     "OperatorError": {"110519": ("Operator Error", [4222, 4221, 9561])},
     "OperatorNarrative": {"109111": ("Operator's narrative", [3000])},
@@ -4192,7 +4191,7 @@ DCM_concepts = {
     "OphthalmicRefraction": {"OPR": ("Ophthalmic Refraction", [])},
     "OphthalmicTomography": {"OPT": ("Ophthalmic Tomography", [29, 33, 30])},
     "OphthalmicTomographyBScanVolumeAnalysis": {
-        "OPTBSV": ("Ophthalmic Tomography " "B-scan Volume " "Analysis", [29, 33, 30])
+        "OPTBSV": ("Ophthalmic Tomography B-scan Volume Analysis", [29, 33, 30])
     },
     "OphthalmicTomographyEnFace": {
         "OPTENF": ("Ophthalmic Tomography En Face", [29, 33, 30])
@@ -4209,7 +4208,7 @@ DCM_concepts = {
     },
     "OpticalSurfaceScanner": {"OSS": ("Optical Surface Scanner", [29, 33, 30])},
     "OptimizedForTheDeviceInstance": {
-        "128608": ("Optimized for the device " "instance", [800])
+        "128608": ("Optimized for the device instance", [800])
     },
     "OrderRecord": {"110109": ("Order Record", [400])},
     "OrganAtRisk": {"130060": ("Organ At Risk", [9535])},
@@ -4221,10 +4220,10 @@ DCM_concepts = {
     "OriginalSource": {"111040": ("Original Source", [])},
     "OrthogonalLocationArc": {"113669": ("Orthogonal location arc", [6166])},
     "OrthogonalLocationArcInnerMargin": {
-        "113670": ("Orthogonal location arc " "inner margin", [6166])
+        "113670": ("Orthogonal location arc inner margin", [6166])
     },
     "OrthogonalLocationArcOuterMargin": {
-        "113671": ("Orthogonal location arc " "outer margin", [6166])
+        "113671": ("Orthogonal location arc outer margin", [6166])
     },
     "OsmolalityAt37C": {"130184": ("Osmolality at 37C", [])},
     "OsmolarityAt37C": {"130185": ("Osmolarity at 37C", [])},
@@ -4245,7 +4244,7 @@ DCM_concepts = {
     "OtherSex": {"121102": ("Other sex", [7455])},
     "OuterLimitsOfFuzzyMargin": {"113663": ("Outer limits of fuzzy margin", [6166])},
     "OuterRetinaStructuralReflectanceMap": {
-        "128272": ("Outer retina structural " "reflectance map", [4271])
+        "128272": ("Outer retina structural reflectance map", [4271])
     },
     "OuterRetinaVasculatureFlow": {"128271": ("Outer retina vasculature flow", [4271])},
     "OuterSurfaceOfGCL": {"128290": ("Outer surface of GCL", [7151, 9514, 7192, 4273])},
@@ -4267,24 +4266,24 @@ DCM_concepts = {
     "OutlineOfLobulations": {"113661": ("Outline of lobulations", [6166])},
     "OutlineOfSpiculations": {"113664": ("Outline of spiculations", [6166])},
     "OutputMeasurementPointPosition": {
-        "130525": ("Output Measurement Point " "Position", [])
+        "130525": ("Output Measurement Point Position", [])
     },
     "OutsideNormalLimits": {"111847": ("Outside normal limits", [4254])},
     "OutsideOperationalLimitsOfTheDevice": {
-        "128619": ("Outside operational " "limits of the device", [800])
+        "128619": ("Outside operational limits of the device", [800])
     },
     "OverExposed": {"111212": ("Over exposed", [6041, 6135, 7011])},
     "OverallAssessment": {"111413": ("Overall Assessment", [6053, 6052])},
     "OverallImageQualityEvaluation": {
-        "109701": ("Overall image quality " "evaluation", [8300])
+        "109701": ("Overall image quality evaluation", [8300])
     },
     "OverallImpressionRecommendationAnalysis": {
-        "111234": ("Overall Impression / " "Recommendation " "Analysis", [6043])
+        "111234": ("Overall Impression / Recommendation Analysis", [6043])
     },
     "OverallStudyQuality": {"122739": ("Overall study quality", [])},
     "Overflow": {"114005": ("Overflow", [42, 43])},
     "OxygenAdministrationByVentilator": {
-        "121163": ("Oxygen Administration by " "ventilator", [3531])
+        "121163": ("Oxygen Administration by ventilator", [3531])
     },
     "OxygenAdministrationRate": {"121160": ("Oxygen Administration Rate", [])},
     "OxygenConsumption": {"122239": ("Oxygen Consumption", [])},
@@ -4298,25 +4297,25 @@ DCM_concepts = {
     "PCIDuringThisProcedure": {"122129": ("PCI during this procedure", [])},
     "PETMeasurementReport": {"126003": ("PET Measurement Report", [7021])},
     "PETMyocardialPerfusionRestAndStress": {
-        "122793": ("PET Myocardial Perfusion, " "Rest and Stress", [3106])
+        "122793": ("PET Myocardial Perfusion, Rest and Stress", [3106])
     },
     "PETMyocardialPerfusionRestOnly": {
-        "122791": ("PET Myocardial Perfusion, Rest " "only", [3106])
+        "122791": ("PET Myocardial Perfusion, Rest only", [3106])
     },
     "PETMyocardialPerfusionStressOnly": {
-        "122792": ("PET Myocardial Perfusion, " "Stress only", [3106])
+        "122792": ("PET Myocardial Perfusion, Stress only", [3106])
     },
     "PETMyocardialViabilityRestAndStress": {
-        "122797": ("PET Myocardial Viability, " "Rest and Stress", [3106])
+        "122797": ("PET Myocardial Viability, Rest and Stress", [3106])
     },
     "PETMyocardialViabilityRestOnly": {
-        "122795": ("PET Myocardial Viability, Rest " "only", [3106])
+        "122795": ("PET Myocardial Viability, Rest only", [3106])
     },
     "PETMyocardialViabilityStressOnly": {
-        "122796": ("PET Myocardial Viability, " "Stress only", [3106])
+        "122796": ("PET Myocardial Viability, Stress only", [3106])
     },
     "PETRadionuclideIncubationTime": {
-        "126203": ("PET Radionuclide Incubation " "Time", [])
+        "126203": ("PET Radionuclide Incubation Time", [])
     },
     "PGreaterThan5Percent": {"111935": ("p>5%", [4265])},
     "PISARadius": {"125331": ("PISA Radius", [12304])},
@@ -4333,7 +4332,7 @@ DCM_concepts = {
     "PacedStressTest": {"121438": ("Paced stress test", [])},
     "Pacemaker": {"111171": ("Pacemaker", [])},
     "PacingElectricalStimulusVoltage": {
-        "109009": ("Pacing (electrical) stimulus, " "voltage", [3240])
+        "109009": ("Pacing (electrical) stimulus, voltage", [3240])
     },
     "PackageInsert": {"113528": ("Package Insert", [10040])},
     "Paddle": {"111172": ("Paddle", [])},
@@ -4351,7 +4350,7 @@ DCM_concepts = {
     "PapillaryMuscleExcluded": {"122620": ("Papillary Muscle Excluded", [3821])},
     "PapillaryMuscleIncluded": {"122621": ("Papillary Muscle Included", [3821])},
     "PapillaryMuscleIncludedExcluded": {
-        "122670": ("Papillary Muscle " "Included/Excluded", [])
+        "122670": ("Papillary Muscle Included/Excluded", [])
     },
     "Parallel": {"111355": ("Parallel", [6152])},
     "ParallelGrid": {"111644": ("Parallel grid", [10017])},
@@ -4368,7 +4367,7 @@ DCM_concepts = {
         "130357": ("Partial Flattening Filter Beam", [9549])
     },
     "PartialRenderingForPresentation": {
-        "121333": ("Partial Rendering for " "Presentation", [7006])
+        "121333": ("Partial Rendering for Presentation", [7006])
     },
     "PartialReport": {"121363": ("Partial report", [7009])},
     "PartiallySucceeded": {"111223": ("Partially Succeeded", [6042])},
@@ -4381,67 +4380,67 @@ DCM_concepts = {
     "Patient": {"121025": ("Patient", [271, 7450])},
     "PatientAPDimension": {"128408": ("Patient AP Dimension", [10069])},
     "PatientAdmittedToProcedureRoom": {
-        "122002": ("Patient admitted to procedure " "room", [3402])
+        "122002": ("Patient admitted to procedure room", [3402])
     },
     "PatientAdvanceDirectiveGiven": {
         "122005": ("Patient advance directive given", [3402])
     },
     "PatientAlert": {"122025": ("Patient alert", [3402])},
     "PatientAllergicToMediaContrast": {
-        "110503": ("Patient allergic to " "media/contrast", [9300, 9301, 64])
+        "110503": ("Patient allergic to media/contrast", [9300, 9301, 64])
     },
     "PatientAnatomyModel": {"130067": ("Patient Anatomy Model", [9507])},
     "PatientAsleep": {"122028": ("Patient asleep", [3402])},
     "PatientAssessmentPerformed": {"121165": ("Patient Assessment Performed", [])},
     "PatientAssistedToTable": {"122007": ("Patient assisted to table", [3402])},
     "PatientAttachedDoseControlObject": {
-        "130405": ("Patient-Attached Dose " "Control Object", [9502])
+        "130405": ("Patient-Attached Dose Control Object", [9502])
     },
     "PatientAttenuationCharacteristics": {
-        "130529": ("Patient Attenuation " "Characteristics", [])
+        "130529": ("Patient Attenuation Characteristics", [])
     },
     "PatientCalledToProcedureRoom": {
         "122001": ("Patient called to procedure room", [3402])
     },
     "PatientCharacteristics": {"121118": ("Patient Characteristics", [])},
     "PatientConditionPreventedContinuing": {
-        "110515": ("Patient condition " "prevented continuing", [9300, 60, 9301, 9561])
+        "110515": ("Patient condition prevented continuing", [9300, 60, 9301, 9561])
     },
     "PatientConnectedToContinuousMonitoring": {
-        "122009": ("Patient connected to " "continuous monitoring", [3402])
+        "122009": ("Patient connected to continuous monitoring", [3402])
     },
     "PatientCoordinateSystemOrigin": {
-        "130540": ("Patient Coordinate System " "Origin", [10074])
+        "130540": ("Patient Coordinate System Origin", [10074])
     },
     "PatientCoughed": {"122031": ("Patient coughed", [3402])},
     "PatientDataUsedDuringPlanning": {
-        "112361": ("Patient Data Used During " "Planning", [])
+        "112361": ("Patient Data Used During Planning", [])
     },
     "PatientDecisionToTerminateTreatment": {
-        "130451": ("Patient decision to " "terminate treatment", [])
+        "130451": ("Patient decision to terminate treatment", [])
     },
     "PatientDidNotArrive": {"110507": ("Patient did not arrive", [9300, 9301])},
     "PatientDied": {"110504": ("Patient died", [9300, 9301, 9561, 9303])},
     "PatientDischargedFromDepartment": {
-        "122037": ("Patient discharged from " "department", [3402])
+        "122037": ("Patient discharged from department", [3402])
     },
     "PatientDisconnectedFromContinuousMonitoring": {
-        "122032": ("Patient " "disconnected from " "continuous " "monitoring", [3402])
+        "122032": ("Patient disconnected from continuous monitoring", [3402])
     },
     "PatientDisoriented": {"122020": ("Patient disoriented", [3402])},
     "PatientElevation": {"130412": ("Patient elevation", [3034])},
     "PatientEquivalentThickness": {"111638": ("Patient Equivalent Thickness", [])},
     "PatientExposureToIonizingRadiation": {
-        "121290": ("Patient exposure to " "ionizing radiation", [])
+        "121290": ("Patient exposure to ionizing radiation", [])
     },
     "PatientGivenPostProcedureInstruction": {
-        "122036": ("Patient given " "post-procedure " "instruction", [3402])
+        "122036": ("Patient given post-procedure instruction", [3402])
     },
     "PatientGivenPreProcedureInstruction": {
-        "122003": ("Patient given " "pre-procedure instruction", [3402])
+        "122003": ("Patient given pre-procedure instruction", [3402])
     },
     "PatientHasRespiratoryDifficulty": {
-        "122030": ("Patient has respiratory " "difficulty", [3402])
+        "122030": ("Patient has respiratory difficulty", [3402])
     },
     "PatientImage": {"112354": ("Patient Image", [])},
     "PatientInformedConsentGiven": {
@@ -4464,7 +4463,7 @@ DCM_concepts = {
     "PatientPositioningNote": {"130026": ("Patient Positioning Note", [])},
     "PatientPositioningProblem": {"111209": ("Patient Positioning Problem", [4222])},
     "PatientPositioningProcedureNote": {
-        "130035": ("Patient Positioning Procedure " "Note", [])
+        "130035": ("Patient Positioning Procedure Note", [])
     },
     "PatientPregnant": {"110508": ("Patient pregnant", [9300, 9301])},
     "PatientPreppedAndDraped": {"122008": ("Patient prepped and draped", [3402])},
@@ -4472,15 +4471,15 @@ DCM_concepts = {
     "PatientPronouncedDead": {"122038": ("Patient pronounced dead", [3402])},
     "PatientRadiationDoseModel": {"128500": ("Patient Radiation Dose Model", [])},
     "PatientRadiationDoseModelData": {
-        "128425": ("Patient Radiation Dose Model " "Data", [])
+        "128425": ("Patient Radiation Dose Model Data", [])
     },
     "PatientRadiationDoseModelReference": {
-        "128426": ("Patient Radiation Dose " "Model Reference", [])
+        "128426": ("Patient Radiation Dose Model Reference", [])
     },
     "PatientRadiationDoseReport": {"128401": ("Patient Radiation Dose Report", [])},
     "PatientRecord": {"110110": ("Patient Record", [400])},
     "PatientRefusedToContinueProcedure": {
-        "110505": ("Patient refused to continue " "procedure", [9300, 9301, 9561])
+        "110505": ("Patient refused to continue procedure", [9300, 9301, 9561])
     },
     "PatientReportsChestPain": {"122023": ("Patient reports chest pain", [3402])},
     "PatientReportsDiscomfort": {"122022": ("Patient reports discomfort", [3402])},
@@ -4496,10 +4495,10 @@ DCM_concepts = {
     "PatientSetupNote": {"130028": ("Patient Setup Note", [])},
     "PatientSetupPoint": {"130069": ("Patient Setup Point", [9504])},
     "PatientSetupVerificationInputUsed": {
-        "128217": ("Patient Setup Verification " "Input Used", [7010, 7025])
+        "128217": ("Patient Setup Verification Input Used", [7010, 7025])
     },
     "PatientSetupVerificationResult": {
-        "128191": ("Patient Setup Verification " "Result", [7010, 7023])
+        "128191": ("Patient Setup Verification Result", [7010, 7023])
     },
     "PatientState": {"109054": ("Patient State", [])},
     "PatientStatusOrEvent": {"121123": ("Patient Status or Event", [3401])},
@@ -4507,12 +4506,12 @@ DCM_concepts = {
     "PatientSupportOrigin": {"130538": ("Patient Support Origin", [10074])},
     "PatientTableRelationship": {"113745": ("Patient Table Relationship", [])},
     "PatientTakenForTreatmentOrSurgery": {
-        "110506": ("Patient taken for treatment " "or surgery", [9300, 9301])
+        "110506": ("Patient taken for treatment or surgery", [9300, 9301])
     },
     "PatientTransferredFrom": {"122128": ("Patient Transferred From", [])},
     "PatientTransferredToCCU": {"122012": ("Patient transferred to CCU", [3402])},
     "PatientTransferredToHoldingArea": {
-        "122010": ("Patient transferred to " "holding area", [3402])
+        "122010": ("Patient transferred to holding area", [3402])
     },
     "PatientTransferredToMorgue": {"122039": ("Patient transferred to morgue", [3402])},
     "PatientTransferredToSurgery": {
@@ -4520,7 +4519,7 @@ DCM_concepts = {
     },
     "PatientUnresponsive": {"122029": ("Patient unresponsive", [3402])},
     "PatientWeightExceedsEquipmentLimit": {
-        "122764": ("Patient weight exceeds " "equipment limit", [3205])
+        "122764": ("Patient weight exceeds equipment limit", [3205])
     },
     "PatternProjection": {"114204": ("Pattern projection", [8201])},
     "PeakActivityWorkload": {"122717": ("Peak activity workload", [])},
@@ -4532,7 +4531,7 @@ DCM_concepts = {
     "PeakFillingTime": {"122619": ("Peak Filling Time", [])},
     "PeakFlowRateInPhaseActivity": {"130244": ("Peak Flow Rate in Phase Activity", [])},
     "PeakOfThermalCardiacOutputBolus": {
-        "109028": ("Peak of thermal cardiac " "output bolus", [3337])
+        "109028": ("Peak of thermal cardiac output bolus", [3337])
     },
     "PeakPressureInPhaseActivity": {"130245": ("Peak Pressure in Phase Activity", [])},
     "PeakStressState": {"109095": ("Peak stress state", [])},
@@ -4540,11 +4539,11 @@ DCM_concepts = {
     "PeakValueWithinROI": {"126031": ("Peak Value Within ROI", [7464])},
     "PectoralMuscleOutline": {"111045": ("Pectoral Muscle Outline", [])},
     "PediatricCardiacUltrasoundReport": {
-        "125195": ("Pediatric Cardiac Ultrasound " "Report", [12245])
+        "125195": ("Pediatric Cardiac Ultrasound Report", [12245])
     },
     "PediatricImagingSpecialty": {"128016": ("Pediatric Imaging Specialty", [7449])},
     "PediatricImagingSubjectMatter": {
-        "128737": ("Pediatric imaging subject " "matter", [7017])
+        "128737": ("Pediatric imaging subject matter", [7017])
     },
     "PediatricRadiology": {"128177": ("Pediatric Radiology", [7030])},
     "Pegdinetanib89Zr": {"126728": ("Pegdinetanib ^89^Zr", [4021])},
@@ -4553,13 +4552,13 @@ DCM_concepts = {
         "111046": ("Percent Fibroglandular Tissue", [10069])
     },
     "PercentageOfVascularCalcification": {
-        "112198": ("Percentage of Vascular " "Calcification", [6142])
+        "112198": ("Percentage of Vascular Calcification", [6142])
     },
     "PercentileRankingOfMeasurement": {
-        "121415": ("Percentile Ranking of " "measurement", [7465, 227, 221])
+        "121415": ("Percentile Ranking of measurement", [7465, 227, 221])
     },
     "PercutaneousCoronaryIntervention": {
-        "122061": ("Percutaneous Coronary " "Intervention", [3739])
+        "122061": ("Percutaneous Coronary Intervention", [3739])
     },
     "PercutaneousEntryAction": {"121156": ("Percutaneous Entry Action", [])},
     "PercutaneousSiliconeInjection": {
@@ -4581,7 +4580,7 @@ DCM_concepts = {
     },
     "PerformanceOfHighResolutionCTOfTheLungsInAdults": {
         "112186": (
-            "Performance " "of " "High-Resolution " "CT of the " "Lungs in " "Adults",
+            "Performance of High-Resolution CT of the Lungs in Adults",
             [6136],
         )
     },
@@ -4598,17 +4597,17 @@ DCM_concepts = {
         )
     },
     "PerformanceOfPediatricAndAdultThoracicCT": {
-        "112184": ("Performance of " "Pediatric and Adult " "Thoracic CT", [6136])
+        "112184": ("Performance of Pediatric and Adult Thoracic CT", [6136])
     },
     "PerformedImagingAgentAdministration": {
-        "130227": ("Performed Imaging Agent " "Administration", [])
+        "130227": ("Performed Imaging Agent Administration", [])
     },
     "PerformedProcedureStep": {"113016": ("Performed Procedure Step", [7012, 10000])},
     "PerformedProcedureStepSOPClassUID": {
-        "121127": ("Performed Procedure Step " "SOP Class UID", [])
+        "121127": ("Performed Procedure Step SOP Class UID", [])
     },
     "PerformedProcedureStepSOPInstanceUID": {
-        "121126": ("Performed Procedure Step " "SOP Instance UID", [10001])
+        "121126": ("Performed Procedure Step SOP Instance UID", [10001])
     },
     "Performing": {"121094": ("Performing", [7453])},
     "PerformingPhysician": {"121114": ("Performing Physician", [])},
@@ -4628,25 +4627,25 @@ DCM_concepts = {
     },
     "PerfusionAnalysisByIVIodinatedContrastCTTechnique": {
         "126301": (
-            "Perfusion " "analysis by " "IV " "Iodinated " "Contrast CT " "technique",
+            "Perfusion analysis by IV Iodinated Contrast CT technique",
             [4102, 4106],
         )
     },
     "PerfusionAnalysisByStableXenonCTTechnique": {
         "126300": (
-            "Perfusion analysis " "by Stable Xenon CT " "technique",
+            "Perfusion analysis by Stable Xenon CT technique",
             [4102, 4106],
         )
     },
     "PerfusionAnalysisBySusceptibilityMRTechnique": {
         "126303": (
-            "Perfusion " "analysis by " "Susceptibility " "MR technique",
+            "Perfusion analysis by Susceptibility MR technique",
             [4102, 4106],
         )
     },
     "PerfusionImageAnalysis": {"129104": ("Perfusion image analysis", [7203])},
     "PeriOperativePhotographicImaging": {
-        "112700": ("Peri-operative Photographic " "Imaging", [8131])
+        "112700": ("Peri-operative Photographic Imaging", [8131])
     },
     "PeriProceduralMIOccurred": {"122179": ("Peri-procedural MI occurred", [])},
     "PerilesionalWhiteMatter": {"110706": ("Perilesional White Matter", [7710, 8134])},
@@ -4666,11 +4665,11 @@ DCM_concepts = {
     "PeripheralSuperiorTemporal": {"111913": ("Peripheral-superior temporal", [4207])},
     "PeripheralTemporal": {"111914": ("Peripheral-temporal", [4207])},
     "PerivascularAdiposeTissueFatAttenuationIndex": {
-        "130408": ("Perivascular " "adipose tissue " "fat attenuation " "index", [])
+        "130408": ("Perivascular adipose tissue fat attenuation index", [])
     },
     "Person": {"121006": ("Person", [270])},
     "PersonAdministeringDrugContrast": {
-        "121152": ("Person administering " "drug/contrast", [])
+        "121152": ("Person administering drug/contrast", [])
     },
     "PersonID": {"113871": ("Person ID", [])},
     "PersonIDIssuer": {"113872": ("Person ID Issuer", [])},
@@ -4678,13 +4677,13 @@ DCM_concepts = {
     "PersonObserverLoginName": {"128774": ("Person Observer's Login Name", [])},
     "PersonObserverName": {"121008": ("Person Observer Name", [])},
     "PersonObserverOrganizationName": {
-        "121009": ("Person Observer's Organization " "Name", [])
+        "121009": ("Person Observer's Organization Name", [])
     },
     "PersonObserverRoleInTheOrganization": {
-        "121010": ("Person Observer's Role in " "the Organization", [])
+        "121010": ("Person Observer's Role in the Organization", [])
     },
     "PersonObserverRoleInThisProcedure": {
-        "121011": ("Person Observer's Role in " "this Procedure", [])
+        "121011": ("Person Observer's Role in this Procedure", [])
     },
     "PersonRoleInOrganization": {"113874": ("Person Role in Organization", [])},
     "PersonRoleInProcedure": {"113875": ("Person Role in Procedure", [])},
@@ -4706,7 +4705,7 @@ DCM_concepts = {
         )
     },
     "PersonalHistoryOfBreastCancerWithMastectomy": {
-        "111124": ("Personal history " "of breast cancer " "with mastectomy", [6051])
+        "111124": ("Personal history of breast cancer with mastectomy", [6051])
     },
     "PersonnelArrived": {"122041": ("Personnel Arrived", [3404])},
     "PersonnelDeparted": {"122042": ("Personnel Departed", [3404])},
@@ -4732,20 +4731,20 @@ DCM_concepts = {
     },
     "PhantomTumor": {"112123": ("Phantom tumor (pseudotumor)", [6102, 6104])},
     "PharmacologicAndExerciseStressTest": {
-        "121437": ("Pharmacologic and exercise " "stress test", [])
+        "121437": ("Pharmacologic and exercise stress test", [])
     },
     "PharmacologicalStressAgentDose": {
-        "122715": ("Pharmacological Stress Agent " "Dose", [])
+        "122715": ("Pharmacological Stress Agent Dose", [])
     },
     "PharmacologicalStressAgentDoseRate": {
-        "122705": ("Pharmacological Stress " "Agent Dose Rate", [])
+        "122705": ("Pharmacological Stress Agent Dose Rate", [])
     },
     "PhaseContrastIllumination": {"111747": ("Phase contrast illumination", [8123])},
     "PhaseOfAnimalHandling": {"127006": ("Phase of animal handling", [])},
     "PhasedBeamSteering": {"125259": ("Phased beam steering", [12034])},
     "Phonocardiogram": {"109114": ("Phonocardiogram", [3000])},
     "PhotogrammetricImaging3DCAMModel": {
-        "129020": ("Photogrammetric Imaging 3D " "CAM model", [7061])
+        "129020": ("Photogrammetric Imaging 3D CAM model", [7061])
     },
     "PhotonEnergy": {"110857": ("Photon Energy", [7182])},
     "PhotonFixedAperture": {"130344": ("Photon Fixed Aperture", [9541, 9545])},
@@ -4758,7 +4757,7 @@ DCM_concepts = {
     "PhysicalSupport": {"128492": ("Physical Support", [])},
     "Physician": {"121081": ("Physician", [])},
     "PhysicianDecisionToTerminateTreatment": {
-        "130452": ("Physician decision to " "terminate treatment", [])
+        "130452": ("Physician decision to terminate treatment", [])
     },
     "PhysicianNote": {"121173": ("Physician Note", [3401])},
     "PhysicianReviewInputUsed": {
@@ -4792,7 +4791,7 @@ DCM_concepts = {
     "Plan": {"PLAN": ("Plan", [33, 32])},
     "PlanComparisonInputUsed": {"128220": ("Plan Comparison Input Used", [7010])},
     "PlanQualityAssuranceInputUsed": {
-        "128215": ("Plan Quality Assurance Input " "Used", [7010, 7025])
+        "128215": ("Plan Quality Assurance Input Used", [7010, 7025])
     },
     "PlaneA": {"113620": ("Plane A", [10003])},
     "PlaneB": {"113621": ("Plane B", [10003])},
@@ -4814,20 +4813,20 @@ DCM_concepts = {
     "PlaneThroughSuperiorExtent": {"128120": ("Plane through Superior Extent", [1010])},
     "Planimetry": {"125220": ("Planimetry", [12229, 12227])},
     "PlannedImagingAgentAdministration": {
-        "130226": ("Planned Imaging Agent " "Administration", [])
+        "130226": ("Planned Imaging Agent Administration", [])
     },
     "PlannedImagingAgentAdministrationProcedureReport": {
         "130182": (
-            "Planned " "Imaging " "Agent " "Administration " "Procedure " "Report",
+            "Planned Imaging Agent Administration Procedure Report",
             [],
         )
     },
     "PlannedImagingAgentAdministrationSOPInstance": {
-        "130236": ("Planned Imaging " "Agent " "Administration " "SOP Instance", [])
+        "130236": ("Planned Imaging Agent Administration SOP Instance", [])
     },
     "PlanningImagingNote": {"130030": ("Planning Imaging Note", [])},
     "PlanningInformationForIntraoperativeUsage": {
-        "112367": ("Planning " "Information for " "Intraoperative " "Usage", [])
+        "112367": ("Planning Information for Intraoperative Usage", [])
     },
     "PlanningIntent": {"129013": ("Planning Intent", [7064])},
     "PlanningMethod": {"112375": ("Planning Method", [])},
@@ -4835,10 +4834,10 @@ DCM_concepts = {
     "PlaqueArea": {"122542": ("Plaque Area", [])},
     "PlaqueBurden": {"122354": ("Plaque Burden", [])},
     "PlaquePlusMediaCrossSectionalArea": {
-        "122334": ("Plaque plus Media " "Cross-Sectional Area", [3482])
+        "122334": ("Plaque plus Media Cross-Sectional Area", [3482])
     },
     "PlaquePlusMediaEccentricityIndex": {
-        "122344": ("Plaque plus Media " "Eccentricity Index", [3484])
+        "122344": ("Plaque plus Media Eccentricity Index", [3484])
     },
     "PlaquePlusMediaThickness": {"122331": ("Plaque Plus Media Thickness", [3481])},
     "PlaqueRupture": {"122363": ("Plaque Rupture", [3491])},
@@ -4847,7 +4846,7 @@ DCM_concepts = {
     "PointCloudAlgorithmic": {"114208": ("Point Cloud Algorithmic", [8201])},
     "PoiseuilleResistance": {"122549": ("Poiseuille Resistance", [])},
     "PolarToRectangularScanConversion": {
-        "113093": ("Polar to Rectangular Scan " "Conversion", [7203])
+        "113093": ("Polar to Rectangular Scan Conversion", [7203])
     },
     "PolarizingFilter": {"111607": ("Polarizing filter", [])},
     "PolatuzumabVedotin89Zr": {"126726": ("Polatuzumab vedotin ^89^Zr", [4021])},
@@ -4858,7 +4857,7 @@ DCM_concepts = {
     "PopulationAveragedAIF": {"126361": ("Population Averaged AIF", [4103, 4106])},
     "PopulationDescription": {"121405": ("Population description", [])},
     "PortableMediaImporterEquipment": {
-        "MEDIM": ("Portable Media Importer " "Equipment", [7005])
+        "MEDIM": ("Portable Media Importer Equipment", [7005])
     },
     "Portacath": {"112172": ("Portacath", [7151, 6138, 6404, 7193, 6102])},
     "PositionFrameOfReference": {"111708": ("Position Frame of Reference", [])},
@@ -4867,22 +4866,22 @@ DCM_concepts = {
     "PositionReferenceIndicator": {"127451": ("Position reference indicator", [])},
     "PositionSensor": {"POS": ("Position Sensor", [29, 33, 30])},
     "PositionerIsocenterDetectorRotationAngle": {
-        "128759": ("Positioner Isocenter " "Detector Rotation " "Angle", [])
+        "128759": ("Positioner Isocenter Detector Rotation Angle", [])
     },
     "PositionerIsocenterDetectorRotationEndAngle": {
-        "128762": ("Positioner " "Isocenter " "Detector Rotation " "End Angle", [])
+        "128762": ("Positioner Isocenter Detector Rotation End Angle", [])
     },
     "PositionerIsocenterPrimaryAngle": {
-        "128757": ("Positioner Isocenter Primary " "Angle", [])
+        "128757": ("Positioner Isocenter Primary Angle", [])
     },
     "PositionerIsocenterPrimaryEndAngle": {
-        "128760": ("Positioner Isocenter " "Primary End Angle", [])
+        "128760": ("Positioner Isocenter Primary End Angle", [])
     },
     "PositionerIsocenterSecondaryAngle": {
-        "128758": ("Positioner Isocenter " "Secondary Angle", [])
+        "128758": ("Positioner Isocenter Secondary Angle", [])
     },
     "PositionerIsocenterSecondaryEndAngle": {
-        "128761": ("Positioner Isocenter " "Secondary End Angle", [])
+        "128761": ("Positioner Isocenter Secondary End Angle", [])
     },
     "PositionerPrimaryAngle": {"112011": ("Positioner Primary Angle", [])},
     "PositionerPrimaryEndAngle": {"113739": ("Positioner Primary End Angle", [])},
@@ -4894,18 +4893,18 @@ DCM_concepts = {
         "PT": ("Positron emission tomography", [29, 33, 30])
     },
     "PostAdministrationMeasuredActivity": {
-        "113509": ("Post-Administration " "Measured Activity", [])
+        "113509": ("Post-Administration Measured Activity", [])
     },
     "PostCoordinatedMeasurements": {"125302": ("Post-coordinated Measurements", [])},
     "PostHyperventilation": {"130415": ("Post-hyperventilation", [3038])},
     "PostIntervention": {"109124": ("Post-intervention", [31])},
     "PostInterventionStenosisMeasurement": {
-        "122108": ("Post-Intervention " "Stenosis Measurement", [])
+        "122108": ("Post-Intervention Stenosis Measurement", [])
     },
     "PostInterventionTIMIFlow": {"122110": ("Post-Intervention TIMI Flow", [])},
     "PostMenopausalPatient": {"111554": ("Post menopausal patient", [6087, 6081])},
     "PostProcedureMammogramsForMarkerPlacement": {
-        "111120": ("Post Procedure " "Mammograms for " "Marker Placement", [6026])
+        "111120": ("Post Procedure Mammograms for Marker Placement", [6026])
     },
     "PostReductionMammoplasty": {
         "111291": ("Post reduction mammoplasty", [6030, 6031])
@@ -4913,7 +4912,7 @@ DCM_concepts = {
     "PostVoiding": {"109135": ("Post voiding", [91])},
     "PosteriorAcousticFeatures": {"111366": ("Posterior acoustic features", [])},
     "PosteriorCorneaSurfaceMeasurementMethod": {
-        "111759": ("Posterior Cornea " "Surface Measurement " "Method", [4242])
+        "111759": ("Posterior Cornea Surface Measurement Method", [4242])
     },
     "PosteriorEnhancement": {"111368": ("Posterior enhancement", [6155])},
     "PosteriorFirst": {"126832": ("posterior first", [21])},
@@ -4935,7 +4934,7 @@ DCM_concepts = {
     "Posttreatment": {"126074": ("Posttreatment", [6146])},
     "PowerDoppler": {"125230": ("Power Doppler", [])},
     "PreAdministrationMeasuredActivity": {
-        "113508": ("Pre-Administration Measured " "Activity", [])
+        "113508": ("Pre-Administration Measured Activity", [])
     },
     "PreCoordinatedMeasurements": {"125301": ("Pre-coordinated Measurements", [])},
     "PreEjectionPeriod": {"125321": ("Pre-ejection Period", [12307])},
@@ -4947,12 +4946,12 @@ DCM_concepts = {
     "PreProcedureLog": {"122072": ("Pre-procedure log", [3407])},
     "PreclinicalSmallAnimalImagingAcquisitionContext": {
         "127001": (
-            "Preclinical " "Small Animal " "Imaging " "Acquisition " "Context",
+            "Preclinical Small Animal Imaging Acquisition Context",
             [],
         )
     },
     "PredecessorContainingGroupOfImagingSubjects": {
-        "113130": ("Predecessor " "containing group " "of imaging " "subjects", [7202])
+        "113130": ("Predecessor containing group of imaging subjects", [7202])
     },
     "PregnancyStatus": {"111532": ("Pregnancy Status", [])},
     "PreliminaryReport": {"121362": ("Preliminary Report", [9233, 7009])},
@@ -4968,7 +4967,7 @@ DCM_concepts = {
     "Present": {"121053": ("Present", [])},
     "PresentationOptionalRenderingDeviceMayPresent": {
         "111151": (
-            "Presentation " "Optional: " "Rendering " "device may " "present",
+            "Presentation Optional: Rendering device may present",
             [6034],
         )
     },
@@ -4995,7 +4994,7 @@ DCM_concepts = {
     "PressureLimit": {"130193": ("Pressure Limit", [])},
     "PressureVsTime": {"130230": ("Pressure vs Time", [])},
     "PreviousFetalMalformationSyndrome": {
-        "111570": ("Previous fetal " "malformation/syndrome", [6087, 6088])
+        "111570": ("Previous fetal malformation/syndrome", [6087, 6088])
     },
     "PreviousFinding": {"121069": ("Previous Finding", [7002])},
     "PreviousFindings": {"121068": ("Previous Findings", [])},
@@ -5003,7 +5002,7 @@ DCM_concepts = {
     "PreviousProcedure": {"111531": ("Previous Procedure", [])},
     "PreviousRHNegativeOrBloodDyscrasiaAtBirth": {
         "111571": (
-            "Previous RH " "negative or blood " "dyscrasia at birth",
+            "Previous RH negative or blood dyscrasia at birth",
             [6087, 6088],
         )
     },
@@ -5011,7 +5010,7 @@ DCM_concepts = {
     "PreviousTreatmentNote": {"130029": ("Previous Treatment Note", [])},
     "PrimaryComplex": {"112059": ("Primary complex", [6102, 6104])},
     "PrimaryFluenceMonitoringSystemInterlock": {
-        "130475": ("Primary Fluence " "Monitoring System " "Interlock", [])
+        "130475": ("Primary Fluence Monitoring System Interlock", [])
     },
     "PrimaryInterventionDevice": {"122111": ("Primary Intervention Device", [])},
     "PrimaryLevel": {"128725": ("Primary level", [7016])},
@@ -5023,7 +5022,7 @@ DCM_concepts = {
     "PriorToVoiding": {"109134": ("Prior to voiding", [91])},
     "Probabilistic": {"113212": ("Probabilistic", [7262])},
     "ProbabilisticTrackingAlgorithm": {
-        "113212": ("Probabilistic Tracking " "Algorithm", [])
+        "113212": ("Probabilistic Tracking Algorithm", [])
     },
     "Probability": {"122157": ("Probability", [])},
     "ProbabilityOfCancer": {"111047": ("Probability of cancer", [6048])},
@@ -5034,7 +5033,7 @@ DCM_concepts = {
     "ProcedureDatetime": {"122146": ("Procedure DateTime", [])},
     "ProcedureDescription": {"121065": ("Procedure Description", [7002])},
     "ProcedureEnvironmentalCharacteristics": {
-        "122222": ("Procedure Environmental " "Characteristics", [])
+        "122222": ("Procedure Environmental Characteristics", [])
     },
     "ProcedureLogging": {"LOG": ("Procedure Logging", [30])},
     "ProcedureModifier": {"111464": ("Procedure Modifier", [])},
@@ -5065,26 +5064,26 @@ DCM_concepts = {
     "ProtonDensity": {"113058": ("Proton Density", [7469, 218, 7180])},
     "ProtonDensityWeightedMRSignalIntensity": {
         "110803": (
-            "Proton Density " "Weighted MR Signal " "Intensity",
+            "Proton Density Weighted MR Signal Intensity",
             [7469, 218, 7180],
         )
     },
     "ProximalFindingSite": {"121116": ("Proximal Finding Site", [])},
     "ProximalIsovelocitySurfaceArea": {
-        "125216": ("Proximal Isovelocity Surface " "Area", [12231, 12229, 12227])
+        "125216": ("Proximal Isovelocity Surface Area", [12231, 12229, 12227])
     },
     "ProximalReference": {"122380": ("Proximal Reference", [3486])},
     "ProximalStentMargin": {"122385": ("Proximal Stent Margin", [3487])},
     "PseudoangiomatousStromalHyperplasia": {
-        "111292": ("Pseudoangiomatous stromal " "hyperplasia", [6030, 6031])
+        "111292": ("Pseudoangiomatous stromal hyperplasia", [6030, 6031])
     },
     "Pseudoplaque": {"112068": ("Pseudoplaque", [6102, 6104])},
     "PulmonaryArterialContentFcpa": {
-        "122188": ("Pulmonary Arterial Content " "(FCpa)", [3529])
+        "122188": ("Pulmonary Arterial Content (FCpa)", [3529])
     },
     "PulmonaryFlow": {"122161": ("Pulmonary Flow", [3618])},
     "PulmonaryImagingSubjectMatter": {
-        "128729": ("Pulmonary imaging subject " "matter", [7017])
+        "128729": ("Pulmonary imaging subject matter", [7017])
     },
     "PulmonaryVenousContentFcpv": {
         "122189": ("Pulmonary Venous Content (FCpv)", [3529])
@@ -5111,10 +5110,10 @@ DCM_concepts = {
     "QualityIssue": {"113010": ("Quality Issue", [7010])},
     "QuantitativeAnalysis": {"122144": ("Quantitative Analysis", [])},
     "QuantitativeArteriographyReport": {
-        "122291": ("Quantitative Arteriography " "Report", [])
+        "122291": ("Quantitative Arteriography Report", [])
     },
     "QuantitativeVentriculographyReport": {
-        "122292": ("Quantitative " "Ventriculography Report", [])
+        "122292": ("Quantitative Ventriculography Report", [])
     },
     "QuantityAdministered": {"121382": ("Quantity administered", [3410])},
     "QuantityOfMaterial": {"121146": ("Quantity of Material", [])},
@@ -5130,7 +5129,7 @@ DCM_concepts = {
     "RCARegionInROAProjection": {"122465": ("RCA Region in ROA Projection", [])},
     "RCoefficient": {"113057": ("R-Coefficient", [7469, 218, 7180])},
     "RDSRFrameOfReferenceDescription": {
-        "130507": ("RDSR Frame of Reference " "Description", [])
+        "130507": ("RDSR Frame of Reference Description", [])
     },
     "RDSRFrameOfReferenceOrigin": {"130506": ("RDSR Frame of Reference Origin", [])},
     "RECIST": {"112022": ("RECIST", [])},
@@ -5178,88 +5177,88 @@ DCM_concepts = {
     "RTImage": {"RTIMAGE": ("RT Image", [29, 33, 30])},
     "RTMachineQA": {"121730": ("RT Machine QA", [9241])},
     "RTPatientPositionAcquisitionCTKv": {
-        "121707": ("RT Patient Position " "Acquisition, CT kV", [9242])
+        "121707": ("RT Patient Position Acquisition, CT kV", [9242])
     },
     "RTPatientPositionAcquisitionCTMV": {
-        "121708": ("RT Patient Position " "Acquisition, CT MV", [9242])
+        "121708": ("RT Patient Position Acquisition, CT MV", [9242])
     },
     "RTPatientPositionAcquisitionDualPlaneKv": {
-        "121705": ("RT Patient Position " "Acquisition, dual " "plane kV", [9242])
+        "121705": ("RT Patient Position Acquisition, dual plane kV", [9242])
     },
     "RTPatientPositionAcquisitionDualPlaneKvMV": {
-        "121706": ("RT Patient Position " "Acquisition, dual " "plane kV/MV", [9242])
+        "121706": ("RT Patient Position Acquisition, dual plane kV/MV", [9242])
     },
     "RTPatientPositionAcquisitionDualPlaneMV": {
-        "121703": ("RT Patient Position " "Acquisition, dual " "plane MV", [9242])
+        "121703": ("RT Patient Position Acquisition, dual plane MV", [9242])
     },
     "RTPatientPositionAcquisitionOptical": {
-        "121709": ("RT Patient Position " "Acquisition, Optical", [9242])
+        "121709": ("RT Patient Position Acquisition, Optical", [9242])
     },
     "RTPatientPositionAcquisitionSinglePlaneKv": {
-        "121704": ("RT Patient Position " "Acquisition, single " "plane kV", [9242])
+        "121704": ("RT Patient Position Acquisition, single plane kV", [9242])
     },
     "RTPatientPositionAcquisitionSinglePlaneMV": {
-        "121702": ("RT Patient Position " "Acquisition, single " "plane MV", [9242])
+        "121702": ("RT Patient Position Acquisition, single plane MV", [9242])
     },
     "RTPatientPositionAcquisitionSpatialFiducials": {
         "121711": (
-            "RT Patient " "Position " "Acquisition, " "Spatial " "Fiducials",
+            "RT Patient Position Acquisition, Spatial Fiducials",
             [9242],
         )
     },
     "RTPatientPositionAcquisitionUltrasound": {
-        "121710": ("RT Patient Position " "Acquisition, " "Ultrasound", [9242])
+        "121710": ("RT Patient Position Acquisition, Ultrasound", [9242])
     },
     "RTPatientPositionAdjustment": {
         "121722": ("RT Patient Position Adjustment", [9241])
     },
     "RTPatientPositionInTreatmentSessionReview": {
-        "121723": ("RT Patient Position " "In-treatment-session " "Review", [9241])
+        "121723": ("RT Patient Position In-treatment-session Review", [9241])
     },
     "RTPatientPositionRegistration2DOn3DReference": {
         "121718": (
-            "RT Patient " "Position " "Registration, 2D " "on 3D reference",
+            "RT Patient Position Registration, 2D on 3D reference",
             [9243],
         )
     },
     "RTPatientPositionRegistration3DCTGeneral": {
-        "121714": ("RT Patient Position " "Registration, 3D CT " "general", [9243])
+        "121714": ("RT Patient Position Registration, 3D CT general", [9243])
     },
     "RTPatientPositionRegistration3DCTMarkerBased": {
         "121715": (
-            "RT Patient " "Position " "Registration, 3D " "CT marker-based",
+            "RT Patient Position Registration, 3D CT marker-based",
             [9243],
         )
     },
     "RTPatientPositionRegistration3DCTVolumeBased": {
         "121716": (
-            "RT Patient " "Position " "Registration, 3D " "CT volume-based",
+            "RT Patient Position Registration, 3D CT volume-based",
             [9243],
         )
     },
     "RTPatientPositionRegistration3DOn2DReference": {
         "121717": (
-            "RT Patient " "Position " "Registration, 3D " "on 2D reference",
+            "RT Patient Position Registration, 3D on 2D reference",
             [9243],
         )
     },
     "RTPatientPositionRegistrationDualPlane": {
-        "121713": ("RT Patient Position " "Registration, dual " "plane", [9243])
+        "121713": ("RT Patient Position Registration, dual plane", [9243])
     },
     "RTPatientPositionRegistrationOptical": {
-        "121719": ("RT Patient Position " "Registration, Optical", [9243])
+        "121719": ("RT Patient Position Registration, Optical", [9243])
     },
     "RTPatientPositionRegistrationSinglePlane": {
-        "121712": ("RT Patient Position " "Registration, single " "plane", [9243])
+        "121712": ("RT Patient Position Registration, single plane", [9243])
     },
     "RTPatientPositionRegistrationSpatialFiducials": {
         "121721": (
-            "RT Patient " "Position " "Registration, " "Spatial " "Fiducials",
+            "RT Patient Position Registration, Spatial Fiducials",
             [9243],
         )
     },
     "RTPatientPositionRegistrationUltrasound": {
-        "121720": ("RT Patient Position " "Registration, " "Ultrasound", [9243])
+        "121720": ("RT Patient Position Registration, Ultrasound", [9243])
     },
     "RTPatientSetup": {"121701": ("RT Patient Setup", [9241])},
     "RTPlan": {"RTPLAN": ("RT Plan", [33, 32])},
@@ -5269,7 +5268,7 @@ DCM_concepts = {
     },
     "RTPlanningResult": {"128189": ("RT Planning Result", [7010, 7023])},
     "RTPreTreatmentConsistencyCheck": {
-        "121374": ("RT Pre-Treatment Consistency " "Check", [702, 701])
+        "121374": ("RT Pre-Treatment Consistency Check", [702, 701])
     },
     "RTPreTreatmentDoseCheck": {"121373": ("RT Pre-Treatment Dose Check", [702, 701])},
     "RTPrescriptionInputImages": {"130136": ("RT Prescription Input Images", [9509])},
@@ -5284,35 +5283,35 @@ DCM_concepts = {
         "128193": ("RT Treatment Course Summary", [7010, 7023])
     },
     "RTTreatmentPlanForThePositionBeingVerified": {
-        "121310": ("RT treatment plan " "for the position " "being verified", [7022])
+        "121310": ("RT treatment plan for the position being verified", [7022])
     },
     "RTTreatmentPlanningInputImages": {
-        "130137": ("RT Treatment Planning Input " "Images", [9510])
+        "130137": ("RT Treatment Planning Input Images", [9510])
     },
     "RTTreatmentPlanningInputUsed": {
         "128211": ("RT Treatment Planning Input Used", [7010, 7025])
     },
     "RTTreatmentQAByRTIonPlanDifferenceCheck": {
-        "121734": ("RT Treatment QA by RT " "Ion Plan Difference " "Check", [9241])
+        "121734": ("RT Treatment QA by RT Ion Plan Difference Check", [9241])
     },
     "RTTreatmentQAByRTIonPlanDoseCheck": {
-        "121733": ("RT Treatment QA by RT Ion " "Plan Dose Check", [9241])
+        "121733": ("RT Treatment QA by RT Ion Plan Dose Check", [9241])
     },
     "RTTreatmentQAByRTPlanDifferenceCheck": {
-        "121732": ("RT Treatment QA by RT " "Plan Difference Check", [9241])
+        "121732": ("RT Treatment QA by RT Plan Difference Check", [9241])
     },
     "RTTreatmentQAByRTPlanDoseCheck": {
-        "121731": ("RT Treatment QA by RT Plan " "Dose Check", [9241])
+        "121731": ("RT Treatment QA by RT Plan Dose Check", [9241])
     },
     "RTTreatmentQAResult": {"128194": ("RT Treatment QA Result", [7010, 7023])},
     "RTTreatmentQAWithExternalVerification": {
-        "121729": ("RT Treatment QA with " "External Verification", [9241])
+        "121729": ("RT Treatment QA with External Verification", [9241])
     },
     "RTTreatmentQAWithInternalVerification": {
-        "121728": ("RT Treatment QA with " "Internal Verification", [9241])
+        "121728": ("RT Treatment QA with Internal Verification", [9241])
     },
     "RTTreatmentQAWithRTIonPlanDifferenceCheck": {
-        "121734": ("RT Treatment QA " "with RT Ion Plan " "Difference Check", [])
+        "121734": ("RT Treatment QA with RT Ion Plan Difference Check", [])
     },
     "RTTreatmentRecord": {"RTRECORD": ("RT Treatment Record", [33, 32])},
     "RTTreatmentSessionResult": {
@@ -5323,27 +5322,27 @@ DCM_concepts = {
     },
     "RTTreatmentSimulationWithExternalVerification": {
         "121725": (
-            "RT Treatment " "Simulation with " "External " "Verification",
+            "RT Treatment Simulation with External Verification",
             [9241],
         )
     },
     "RTTreatmentSimulationWithInternalVerification": {
         "121724": (
-            "RT Treatment " "Simulation with " "Internal " "Verification",
+            "RT Treatment Simulation with Internal Verification",
             [9241],
         )
     },
     "RTTreatmentWithAdHocPlanning": {
-        "130444": ("RT Treatment with Ad Hoc " "Planning", [9241])
+        "130444": ("RT Treatment with Ad Hoc Planning", [9241])
     },
     "RTTreatmentWithExternalVerification": {
-        "121727": ("RT Treatment with " "External Verification", [9241])
+        "121727": ("RT Treatment with External Verification", [9241])
     },
     "RTTreatmentWithInternalVerification": {
-        "121726": ("RT Treatment with " "Internal Verification", [9241])
+        "121726": ("RT Treatment with Internal Verification", [9241])
     },
     "RTVAudioAndStereoVideoRendition": {
-        "130373": ("RTV Audio and Stereo Video " "Rendition", [7010, 7070])
+        "130373": ("RTV Audio and Stereo Video Rendition", [7010, 7070])
     },
     "RTVAudioAndVideoRendition": {
         "130371": ("RTV Audio and Video Rendition", [7010, 7070])
@@ -5354,60 +5353,60 @@ DCM_concepts = {
     "RWave": {"109043": ("R wave", [3339])},
     "RadialBScanPattern": {"128282": ("Radial B-scan pattern", [4272])},
     "RadialBasedWallMotionAnalysis": {
-        "122493": ("Radial Based Wall Motion " "Analysis", [])
+        "122493": ("Radial Based Wall Motion Analysis", [])
     },
     "RadialDiffusivity": {"113203": ("Radial Diffusivity", [7263])},
     "RadialKurtosis": {"113207": ("Radial Kurtosis", [7263])},
     "RadialPeripapillaryStructuralReflectanceMap": {
-        "128264": ("Radial " "peripapillary " "structural " "reflectance map", [4271])
+        "128264": ("Radial peripapillary structural reflectance map", [4271])
     },
     "RadialPeripapillaryVasculatureFlow": {
-        "128263": ("Radial peripapillary " "vasculature flow", [4271])
+        "128263": ("Radial peripapillary vasculature flow", [4271])
     },
     "RadialScar": {"111293": ("Radial scar", [])},
     "RadialShortening": {"122496": ("Radial Shortening", [])},
     "RadialUltrasoundTransducerGeometry": {
-        "125255": ("Radial ultrasound " "transducer geometry", [12033])
+        "125255": ("Radial ultrasound transducer geometry", [12033])
     },
     "RadiationApplied": {"122308": ("Radiation applied", [3412])},
     "RadiationCharacteristicsNote": {"130022": ("Radiation Characteristics Note", [])},
     "RadiationDoseCompositeParameters": {
-        "128436": ("Radiation Dose Composite " "Parameters", [])
+        "128436": ("Radiation Dose Composite Parameters", [])
     },
     "RadiationDoseEstimate": {"128402": ("Radiation Dose Estimate", [])},
     "RadiationDoseEstimateMethod": {"128476": ("Radiation Dose Estimate Method", [])},
     "RadiationDoseEstimateMethodReference": {
-        "128482": ("Radiation Dose Estimate " "Method Reference", [])
+        "128482": ("Radiation Dose Estimate Method Reference", [])
     },
     "RadiationDoseEstimateMethodType": {
-        "128477": ("Radiation Dose Estimate " "Method Type", [])
+        "128477": ("Radiation Dose Estimate Method Type", [])
     },
     "RadiationDoseEstimateMethodology": {
-        "128415": ("Radiation Dose Estimate " "Methodology", [])
+        "128415": ("Radiation Dose Estimate Methodology", [])
     },
     "RadiationDoseEstimateName": {"128403": ("Radiation Dose Estimate Name", [])},
     "RadiationDoseEstimateParameters": {
-        "128434": ("Radiation Dose Estimate " "Parameters", [])
+        "128434": ("Radiation Dose Estimate Parameters", [])
     },
     "RadiationDoseEstimateRepresentation": {
-        "128412": ("Radiation Dose Estimate " "Representation", [])
+        "128412": ("Radiation Dose Estimate Representation", [])
     },
     "RadiationDoseEstimationParameterType": {
-        "128464": ("Radiation Dose " "Estimation Parameter " "Type", [])
+        "128464": ("Radiation Dose Estimation Parameter Type", [])
     },
     "RadiationDoseNormalizationPoint": {
-        "130063": ("Radiation Dose Normalization " "Point", [9534])
+        "130063": ("Radiation Dose Normalization Point", [9534])
     },
     "RadiationDoseReferencePoint": {
         "130064": ("Radiation Dose Reference Point", [9534])
     },
     "RadiationDoseRepresentationData": {
-        "128414": ("Radiation Dose Representation " "Data", [])
+        "128414": ("Radiation Dose Representation Data", [])
     },
     "RadiationDoseShapingVolume": {"130061": ("Radiation Dose Shaping Volume", [9535])},
     "RadiationExposure": {"113921": ("Radiation Exposure", [])},
     "RadiationExposureAndProtectionInformation": {
-        "113923": ("Radiation Exposure " "and Protection " "Information", [])
+        "113923": ("Radiation Exposure and Protection Information", [])
     },
     "RadiationFieldArea": {"130516": ("Radiation Field Area", [])},
     "RadiationFieldOutline": {"130517": ("Radiation Field Outline", [])},
@@ -5416,20 +5415,20 @@ DCM_concepts = {
     "RadiationPhysicist": {"121105": ("Radiation Physicist", [])},
     "RadiationRemoved": {"122309": ("Radiation removed", [3412])},
     "RadiationSourceCharacteristics": {
-        "130508": ("Radiation Source " "Characteristics", [])
+        "130508": ("Radiation Source Characteristics", [])
     },
     "RadiationTechnique": {"130511": ("Radiation Technique", [])},
     "RadiationTherapyDevice": {"RT": ("Radiation Therapy Device", [30])},
     "RadiationTherapyParticle": {"130033": ("Radiation Therapy Particle", [])},
     "RadiationTransportBasedMethods": {
-        "130126": ("Radiation transport-based " "methods", [9537])
+        "130126": ("Radiation transport-based methods", [9537])
     },
     "RadiationTransportModelType": {"128420": ("Radiation Transport Model Type", [])},
     "RadioFrequencyAblationPower": {
         "109010": ("Radio frequency ablation, power", [3240])
     },
     "RadioactiveSubstanceAdministered": {
-        "113922": ("Radioactive Substance " "Administered", [])
+        "113922": ("Radioactive Substance Administered", [])
     },
     "Radiofluoroscopy": {"RF": ("Radiofluoroscopy", [29, 33, 30])},
     "Radiographer": {"121084": ("Radiographer", [])},
@@ -5437,35 +5436,35 @@ DCM_concepts = {
     "RadiographicImaging": {"RG": ("Radiographic imaging", [29, 33, 30])},
     "RadioisotopeGenerator": {"113543": ("Radioisotope Generator", [10041])},
     "RadionuclideResidualSyringeCounts": {
-        "123010": ("Radionuclide Residual " "Syringe Counts", [])
+        "123010": ("Radionuclide Residual Syringe Counts", [])
     },
     "RadionuclideSyringeCounts": {"123009": ("Radionuclide Syringe Counts", [])},
     "RadionuclideTotalDose": {"123006": ("Radionuclide Total Dose", [])},
     "RadionuclideVialIdentifier": {"113514": ("Radionuclide Vial Identifier", [])},
     "Radiopharmaceutical": {"123001": ("Radiopharmaceutical", [])},
     "RadiopharmaceuticalAdministration": {
-        "113502": ("Radiopharmaceutical " "Administration", [])
+        "113502": ("Radiopharmaceutical Administration", [])
     },
     "RadiopharmaceuticalAdministrationEventUID": {
-        "113503": ("Radiopharmaceutical " "Administration " "Event UID", [])
+        "113503": ("Radiopharmaceutical Administration Event UID", [])
     },
     "RadiopharmaceuticalDispenseUnitIdentifier": {
-        "113511": ("Radiopharmaceutical " "Dispense Unit " "Identifier", [])
+        "113511": ("Radiopharmaceutical Dispense Unit Identifier", [])
     },
     "RadiopharmaceuticalLotIdentifier": {
-        "113512": ("Radiopharmaceutical Lot " "Identifier", [])
+        "113512": ("Radiopharmaceutical Lot Identifier", [])
     },
     "RadiopharmaceuticalRadiationDoseReport": {
-        "113500": ("Radiopharmaceutical " "Radiation Dose Report", [])
+        "113500": ("Radiopharmaceutical Radiation Dose Report", [])
     },
     "RadiopharmaceuticalSpecificActivity": {
-        "123007": ("Radiopharmaceutical " "Specific Activity", [])
+        "123007": ("Radiopharmaceutical Specific Activity", [])
     },
     "RadiopharmaceuticalStartDatetime": {
-        "123003": ("Radiopharmaceutical Start " "DateTime", [])
+        "123003": ("Radiopharmaceutical Start DateTime", [])
     },
     "RadiopharmaceuticalStopDatetime": {
-        "123004": ("Radiopharmaceutical Stop " "DateTime", [])
+        "123004": ("Radiopharmaceutical Stop DateTime", [])
     },
     "RadiopharmaceuticalVolume": {"123005": ("Radiopharmaceutical Volume", [])},
     "RadiotherapyApplicator": {"130125": ("Radiotherapy Applicator", [9520, 9519])},
@@ -5485,7 +5484,7 @@ DCM_concepts = {
     "RatingOfPerceivedExertion": {"122706": ("Rating of Perceived Exertion", [])},
     "RatioOfAchievedToPredictedFunctionalCapacity": {
         "122771": (
-            "Ratio of " "achieved to " "predicted " "functional " "capacity",
+            "Ratio of achieved to predicted functional capacity",
             [3238],
         )
     },
@@ -5506,21 +5505,21 @@ DCM_concepts = {
     "RealTimeAcquisition": {"109080": ("Real time acquisition", [3104])},
     "RealWorldValueMap": {"RWV": ("Real World Value Map", [33, 32])},
     "RealWorldValueMapUsedForMeasurement": {
-        "126100": ("Real World Value Map used " "for measurement", [])
+        "126100": ("Real World Value Map used for measurement", [])
     },
     "ReasonForBiosafetyControls": {"127011": ("Reason for biosafety controls", [])},
     "ReasonForExam": {"122139": ("Reason for Exam", [])},
     "ReasonForProcedure": {"111401": ("Reason for Procedure", [])},
     "ReasonForProceeding": {"113907": ("Reason for Proceeding", [])},
     "ReasonForRejectingAcquisition": {
-        "130504": ("Reason for Rejecting " "Acquisition", [])
+        "130504": ("Reason for Rejecting Acquisition", [])
     },
     "ReasonForRepeatingAcquisition": {
-        "128552": ("Reason for Repeating " "Acquisition", [])
+        "128552": ("Reason for Repeating Acquisition", [])
     },
     "RecallForImagingFindings": {"111591": ("Recall for imaging findings", [6051])},
     "RecallForPatientSymptomsClinicalFindings": {
-        "111592": ("Recall for patient " "symptoms/ clinical " "findings", [6051])
+        "111592": ("Recall for patient symptoms/ clinical findings", [6051])
     },
     "RecallForTechnicalReasons": {"111590": ("Recall for technical reasons", [6051])},
     "RecentPhysicalActivity": {"113552": ("Recent Physical Activity", [])},
@@ -5539,7 +5538,7 @@ DCM_concepts = {
         "130120": ("Rectal Balloon", [7151, 7193, 9505, 7157, 9520, 9513])
     },
     "RecumbentPatientPositionWithRespectToGravity": {
-        "112228": ("Recumbent " "Patient Position " "with respect to " "gravity", [])
+        "112228": ("Recumbent Patient Position with respect to gravity", [])
     },
     "RecurrentMalignancy": {"111338": ("Recurrent malignancy", [6030, 6033])},
     "RedFilter": {"111602": ("Red filter", [])},
@@ -5557,49 +5556,49 @@ DCM_concepts = {
     "ReferencePointPosition": {"130526": ("Reference Point Position", [])},
     "ReferencePoints": {"122438": ("Reference Points", [])},
     "ReferenceToUncertaintyDeterminationMethod": {
-        "128511": ("Reference to " "Uncertainty " "Determination " "Method", [])
+        "128511": ("Reference to Uncertainty Determination Method", [])
     },
     "ReferencedBeamNumber": {"121389": ("Referenced Beam Number", [])},
     "ReferencedFrames": {"121190": ("Referenced Frames", [7250])},
     "ReferencedImagingAgentAdministrationPhaseIdentifier": {
         "130217": (
-            "Referenced " "Imaging " "Agent " "Administration " "Phase " "Identifier",
+            "Referenced Imaging Agent Administration Phase Identifier",
             [],
         )
     },
     "ReferencedImagingAgentAdministrationPhaseUID": {
-        "130262": ("Referenced " "Imaging Agent " "Administration " "Phase UID", [])
+        "130262": ("Referenced Imaging Agent Administration Phase UID", [])
     },
     "ReferencedImagingAgentAdministrationStepUID": {
-        "130216": ("Referenced " "Imaging Agent " "Administration " "Step UID", [])
+        "130216": ("Referenced Imaging Agent Administration Step UID", [])
     },
     "ReferencedImagingAgentIdentifier": {
-        "130255": ("Referenced Imaging Agent " "Identifier", [])
+        "130255": ("Referenced Imaging Agent Identifier", [])
     },
     "ReferencedRegionOfInterestIdentifier": {
-        "130489": ("Referenced Region of " "Interest Identifier", [])
+        "130489": ("Referenced Region of Interest Identifier", [])
     },
     "ReferencedSegment": {"121191": ("Referenced Segment", [7250])},
     "ReferencedSegmentationFrame": {"121214": ("Referenced Segmentation Frame", [])},
     "Referring": {"121095": ("Referring", [])},
     "ReflectionBasedCornealTopographer": {
-        "111946": ("Reflection-based corneal " "topographer", [4210])
+        "111946": ("Reflection-based corneal topographer", [4210])
     },
     "ReflectionIllumination": {"111742": ("Reflection illumination", [8123])},
     "RefractiveMeasurementsSOPInstance": {
-        "111783": ("Refractive Measurements SOP " "Instance", [4240])
+        "111783": ("Refractive Measurements SOP Instance", [4240])
     },
     "RegionInSpace": {"130488": ("Region in Space", [])},
     "RegionalAbnormalWallMotion": {"122417": ("Regional Abnormal Wall Motion", [])},
     "RegionalCerebralBloodFlow": {"113055": ("Regional Cerebral Blood Flow", [])},
     "RegionalCerebralBloodVolume": {"113056": ("Regional Cerebral Blood Volume", [])},
     "RegionalContributionToEjectionFraction": {
-        "122495": ("Regional Contribution " "to Ejection Fraction", [])
+        "122495": ("Regional Contribution to Ejection Fraction", [])
     },
     "Registrar": {"121087": ("Registrar", [])},
     "Registration": {"REG": ("Registration", [33, 32])},
     "RegistrationCreatedDuringTreatment": {
-        "129211": ("Registration created " "during Treatment", [7022])
+        "129211": ("Registration created during Treatment", [7022])
     },
     "RegistrationInput": {"125041": ("Registration Input", [7151, 7165, 7196])},
     "RegistrationMethod": {"128446": ("Registration Method", [])},
@@ -5614,18 +5613,18 @@ DCM_concepts = {
     "RegurgitationJetWidth": {"125333": ("Regurgitation Jet Width", [12304])},
     "ReinjectionState": {"109092": ("Reinjection State", [3101])},
     "RejectedForPatientSafetyReasons": {
-        "113037": ("Rejected for Patient Safety " "Reasons", [7010])
+        "113037": ("Rejected for Patient Safety Reasons", [7010])
     },
     "RejectedForQualityReasons": {"113001": ("Rejected for Quality Reasons", [7010])},
     "RelatedImplantationReports": {"112365": ("Related Implantation Reports", [])},
     "RelatedOphthalmicThicknessMap": {
-        "111933": ("Related ophthalmic thickness " "map", [4264])
+        "111933": ("Related ophthalmic thickness map", [4264])
     },
     "RelatedPatientDataNotUsedDuringPlanning": {
-        "112364": ("Related Patient Data " "Not Used During " "Planning", [])
+        "112364": ("Related Patient Data Not Used During Planning", [])
     },
     "RelatedToNonMacularSensitivity": {
-        "111842": ("Related to non macular " "sensitivity", [4252])
+        "111842": ("Related to non macular sensitivity", [4252])
     },
     "RelativeAmountOfExposure": {"111582": ("Relative amount of exposure", [6093])},
     "RelativeAmountOfUse": {"111583": ("Relative amount of use", [6093])},
@@ -5654,7 +5653,7 @@ DCM_concepts = {
     "RelevantIndicatedProblems": {"111514": ("Relevant Indicated Problems", [])},
     "RelevantPatientInformation": {"111517": ("Relevant Patient Information", [])},
     "RelevantPatientInformationForBreastImaging": {
-        "111511": ("Relevant Patient " "Information for " "Breast Imaging", [])
+        "111511": ("Relevant Patient Information for Breast Imaging", [])
     },
     "RelevantPreviousProcedures": {"111513": ("Relevant Previous Procedures", [])},
     "RelevantRiskFactors": {"111515": ("Relevant Risk Factors", [])},
@@ -5663,10 +5662,10 @@ DCM_concepts = {
     },
     "RemodelingIndex": {"122345": ("Remodeling Index", [3484])},
     "RemoteServiceOperationStarted": {
-        "110139": ("Remote Service Operation " "Started", [401, 403])
+        "110139": ("Remote Service Operation Started", [401, 403])
     },
     "RemoteServiceOperationStopped": {
-        "110140": ("Remote Service Operation " "Stopped", [401, 403])
+        "110140": ("Remote Service Operation Stopped", [401, 403])
     },
     "RenderingIntent": {"111056": ("Rendering Intent", [])},
     "ReplacedReport": {"121360": ("Replaced report", [7009])},
@@ -5674,22 +5673,22 @@ DCM_concepts = {
     "ReportVerification": {"110007": ("Report Verification", [9231])},
     "ReportedValueType": {"130510": ("Reported Value Type", [])},
     "RepresentativeOfEthicsCommittee": {
-        "128677": ("Representative of Ethics " "Committee", [7452, 7450])
+        "128677": ("Representative of Ethics Committee", [7452, 7450])
     },
     "RepresentativeOfProtocolCommittee": {
-        "128676": ("Representative of Protocol " "Committee", [7452, 7450])
+        "128676": ("Representative of Protocol Committee", [7452, 7450])
     },
     "Request": {"121062": ("Request", [])},
     "Requesting": {"121096": ("Requesting", [7453])},
     "Resident": {"121086": ("Resident", [])},
     "ResidualVolumeOfImagingAgentInContainer": {
-        "130206": ("Residual Volume of " "Imaging Agent in " "Container", [])
+        "130206": ("Residual Volume of Imaging Agent in Container", [])
     },
     "ResolvedByOverridingInterlock": {
-        "130454": ("Resolved by overriding " "Interlock", [])
+        "130454": ("Resolved by overriding Interlock", [])
     },
     "ResolvedByRepositioningPatient": {
-        "130455": ("Resolved by repositioning " "Patient", [])
+        "130455": ("Resolved by repositioning Patient", [])
     },
     "ResourceInadequate": {"110527": ("Resource inadequate", [9300, 71])},
     "ResourcePreEmpted": {"110526": ("Resource pre-empted", [9300, 9303])},
@@ -5700,13 +5699,13 @@ DCM_concepts = {
     "ResponseEvaluation": {"112020": ("Response Evaluation", [])},
     "ResponseEvaluationMethod": {"112021": ("Response Evaluation Method", [])},
     "RestTechnetiumStressTechnetium1DayProcedure": {
-        "122782": ("Rest " "technetium/stress " "technetium 1 day " "procedure", [3110])
+        "122782": ("Rest technetium/stress technetium 1 day procedure", [3110])
     },
     "RestTechnetiumStressTechnetium2DayProcedure": {
-        "122783": ("Rest " "technetium/stress " "technetium 2 day " "procedure", [3110])
+        "122783": ("Rest technetium/stress technetium 2 day procedure", [3110])
     },
     "RestThalliumStressTechnetiumProcedure": {
-        "122781": ("Rest thallium/stress " "technetium procedure", [3110])
+        "122781": ("Rest thallium/stress technetium procedure", [3110])
     },
     "RestenoticLesion": {"122393": ("Restenotic Lesion", [])},
     "ResultsCommunicated": {"121291": ("Results communicated", [])},
@@ -5715,7 +5714,7 @@ DCM_concepts = {
     "ResumeProcedureActionItem": {"121133": ("Resume Procedure Action Item", [])},
     "RetainDeviceIdentityOption": {"113109": ("Retain Device Identity Option", [7050])},
     "RetainInstitutionIdentityOption": {
-        "113112": ("Retain Institution Identity " "Option", [7050])
+        "113112": ("Retain Institution Identity Option", [7050])
     },
     "RetainLongitudinalTemporalInformationFullDatesOption": {
         "113106": (
@@ -5742,7 +5741,7 @@ DCM_concepts = {
         )
     },
     "RetainPatientCharacteristicsOption": {
-        "113108": ("Retain Patient " "Characteristics Option", [7050])
+        "113108": ("Retain Patient Characteristics Option", [7050])
     },
     "RetainSafePrivateOption": {"113111": ("Retain Safe Private Option", [7050])},
     "RetainUidsOption": {"113110": ("Retain UIDs Option", [7050])},
@@ -5752,17 +5751,17 @@ DCM_concepts = {
         "112065": ("Reticulonodular pattern", [6106, 6102, 6103, 6104])
     },
     "RetinaDepthEncodedStructuralReflectanceMap": {
-        "128258": ("Retina depth " "encoded structural " "reflectance map", [4271])
+        "128258": ("Retina depth encoded structural reflectance map", [4271])
     },
     "RetinaDepthEncodedVasculatureFlow": {
-        "128257": ("Retina depth encoded " "vasculature flow", [4271])
+        "128257": ("Retina depth encoded vasculature flow", [4271])
     },
     "RetinaStructuralReflectanceMap": {
-        "128260": ("Retina structural reflectance " "map", [4271])
+        "128260": ("Retina structural reflectance map", [4271])
     },
     "RetinaVasculatureFlow": {"128259": ("Retina vasculature flow", [4271])},
     "RetinalNerveFiberLayerThickness": {
-        "111925": ("Retinal nerve fiber layer " "thickness", [4262])
+        "111925": ("Retinal nerve fiber layer thickness", [4262])
     },
     "RetinalTopography": {"111924": ("Retinal topography", [4261])},
     "RetroOrbitalRoute": {"127070": ("Retro-orbital route", [11])},
@@ -5770,7 +5769,7 @@ DCM_concepts = {
     "RetrospectiveGating": {"109082": ("Retrospective gating", [3104])},
     "Reused": {"127178": ("Reused", [604])},
     "ReverseOsmosisPurifiedHclAcidifiedWater": {
-        "127291": ("Reverse osmosis " "purified, HCl " "acidified water", [610])
+        "127291": ("Reverse osmosis purified, HCl acidified water", [610])
     },
     "ReverseOsmosisPurifiedWater": {
         "127290": ("Reverse osmosis purified water", [610])
@@ -5801,10 +5800,10 @@ DCM_concepts = {
         "125319": ("Right Ventricle Anterior Wall", [12305])
     },
     "RightVentricleOutflowTractDistal": {
-        "125317": ("Right Ventricle Outflow " "Tract, Distal", [12305])
+        "125317": ("Right Ventricle Outflow Tract, Distal", [12305])
     },
     "RightVentricleOutflowTractProximal": {
-        "125318": ("Right Ventricle Outflow " "Tract, Proximal", [12305])
+        "125318": ("Right Ventricle Outflow Tract, Proximal", [12305])
     },
     "RightVentricularEjectionTime": {
         "122213": ("Right Ventricular ejection time", [3613])
@@ -5813,7 +5812,7 @@ DCM_concepts = {
         "122214": ("Right Ventricular filling time", [3613])
     },
     "RingUltrasoundTransducerGeometry": {
-        "125256": ("Ring ultrasound transducer " "geometry", [12033])
+        "125256": ("Ring ultrasound transducer geometry", [12033])
     },
     "RiseTime": {"130207": ("Rise Time", [])},
     "RiskFactorModifier": {"111530": ("Risk Factor modifier", [])},
@@ -5830,7 +5829,7 @@ DCM_concepts = {
     "RoomOxygenConcentration": {"122223": ("Room oxygen concentration", [])},
     "RoomTemperature": {"122224": ("Room temperature", [])},
     "RootAngularSecondMomentOfGLCM": {
-        "126061": ("Root Angular Second Moment of " "GLCM", [7468, 218, 7467])
+        "126061": ("Root Angular Second Moment of GLCM", [7468, 218, 7467])
     },
     "RotationAngle": {"130523": ("Rotation Angle", [])},
     "RotationPlaneNormalPoint": {"130522": ("Rotation Plane Normal Point", [])},
@@ -5838,7 +5837,7 @@ DCM_concepts = {
     "RunEntropy": {"128816": ("Run Entropy", [])},
     "RunLengthNonuniformity": {"128811": ("Run Length Nonuniformity", [])},
     "RunLengthNonuniformityNormalized": {
-        "128812": ("Run Length Nonuniformity " "Normalized", [])
+        "128812": ("Run Length Nonuniformity Normalized", [])
     },
     "RunLengthVariance": {"128815": ("Run Length Variance", [])},
     "RunPercentage": {"128813": ("Run Percentage", [])},
@@ -5861,26 +5860,26 @@ DCM_concepts = {
     "STElevationOnsetDatetime": {"122173": ("ST Elevation Onset DateTime", [])},
     "STHRIndex": {"122773": ("ST/HR Index", [3238])},
     "SUVBodySurfaceAreaCalculationMethod": {
-        "126412": ("SUV body surface area " "calculation method", [])
+        "126412": ("SUV body surface area calculation method", [])
     },
     "SUVBodyWeightCalculationMethod": {
-        "126410": ("SUV body weight calculation " "method", [])
+        "126410": ("SUV body weight calculation method", [])
     },
     "SUVIdealBodyWeightCalculationMethod": {
-        "126413": ("SUV ideal body weight " "calculation method", [])
+        "126413": ("SUV ideal body weight calculation method", [])
     },
     "SUVLeanBodyMassCalculationJanmahasatianMethod": {
         "126414": (
-            "SUV lean body " "mass " "calculation " "Janmahasatian " "method",
+            "SUV lean body mass calculation Janmahasatian method",
             [],
         )
     },
     "SUVLeanBodyMassCalculationMethod": {
-        "126411": ("SUV lean body mass " "calculation method", [])
+        "126411": ("SUV lean body mass calculation method", [])
     },
     "SUVLeanBodyMassCalculationMethodUsing128Multiplier": {
         "126415": (
-            "SUV lean " "body mass " "calculation " "method " "using 128 " "multiplier",
+            "SUV lean body mass calculation method using 128 multiplier",
             [],
         )
     },
@@ -5888,16 +5887,16 @@ DCM_concepts = {
     "Saliency": {"130404": ("Saliency", [217, 7469, 218, 7180])},
     "SalineImplant": {"111481": ("Saline implant", [6058, 6059])},
     "SameAcquisitionAtDifferentFocalDepth": {
-        "121352": ("Same acquisition at " "different focal depth", [8120])
+        "121352": ("Same acquisition at different focal depth", [8120])
     },
     "SameAcquisitionAtDifferentSpectralBand": {
-        "121353": ("Same acquisition at " "different spectral " "band", [8120])
+        "121353": ("Same acquisition at different spectral band", [8120])
     },
     "SameAcquisitionAtHigherResolution": {
-        "121351": ("Same acquisition at higher " "resolution", [8120])
+        "121351": ("Same acquisition at higher resolution", [8120])
     },
     "SameAcquisitionAtLowerResolution": {
-        "121350": ("Same acquisition at lower " "resolution", [8120])
+        "121350": ("Same acquisition at lower resolution", [8120])
     },
     "SameAnatomy": {"122401": ("Same Anatomy", [7210])},
     "SameIndication": {"122402": ("Same Indication", [7210])},
@@ -5922,16 +5921,16 @@ DCM_concepts = {
     "ScotopicLight": {"111627": ("Scotopic light", [4203])},
     "ScrubNurse": {"121090": ("Scrub nurse", [])},
     "SecondMeasureOfInformationCorrelationOfGLCM": {
-        "128799": ("Second Measure of " "Information " "Correlation of " "GLCM", [])
+        "128799": ("Second Measure of Information Correlation of GLCM", [])
     },
     "SecondaryFluenceMonitoringSystemInterlock": {
-        "130476": ("Secondary Fluence " "Monitoring System " "Interlock", [9568, 9561])
+        "130476": ("Secondary Fluence Monitoring System Interlock", [9568, 9561])
     },
     "SecondaryPulmonaryLobule": {
         "112054": ("Secondary pulmonary lobule", [7151, 6109, 9514, 6102, 7192, 6110])
     },
     "SectorUltrasoundTransducerGeometry": {
-        "125254": ("Sector ultrasound " "transducer geometry", [12033])
+        "125254": ("Sector ultrasound transducer geometry", [12033])
     },
     "SecureDigitalCard": {"110036": ("Secure Digital Card", [405])},
     "SecurityAlert": {"110113": ("Security Alert", [400])},
@@ -5983,7 +5982,7 @@ DCM_concepts = {
     "SeverityOfComplication": {"111466": ("Severity of Complication", [])},
     "Sewing": {"112319": ("Sewing", [7310])},
     "SexOfAnimalsWithinSameHousingUnit": {
-        "127144": ("Sex of animals within same " "housing unit", [])
+        "127144": ("Sex of animals within same housing unit", [])
     },
     "SexOfHandler": {"127145": ("Sex of handler", [])},
     "Shadow": {"112124": ("Shadow", [6102, 6104])},
@@ -5998,10 +5997,10 @@ DCM_concepts = {
     "ShelterType": {"127195": ("Shelter type", [])},
     "ShortLabel": {"125309": ("Short Label", [])},
     "ShortRunHighGrayLevelEmphasis": {
-        "128806": ("Short Run High Gray Level " "Emphasis", [])
+        "128806": ("Short Run High Gray Level Emphasis", [])
     },
     "ShortRunLowGrayLevelEmphasis": {
-        "128805": ("Short Run Low Gray Level " "Emphasis", [])
+        "128805": ("Short Run Low Gray Level Emphasis", [])
     },
     "ShortRunsEmphasis": {"128801": ("Short Runs Emphasis", [])},
     "ShutterSpeedModelSSM": {"126344": ("Shutter-Speed Model (SSM)", [4106, 4101])},
@@ -6015,7 +6014,7 @@ DCM_concepts = {
     "SignalToNoise": {"113060": ("Signal to noise", [7469, 218, 7180])},
     "SignalToNoiseRatio": {"111787": ("Signal to Noise Ratio", [4243])},
     "SignedCompleteAcquisitionContent": {
-        "113035": ("Signed Complete Acquisition " "Content", [7010])
+        "113035": ("Signed Complete Acquisition Content", [7010])
     },
     "SignedCompleteStudyContent": {"113033": ("Signed Complete Study Content", [7010])},
     "SignedManifest": {"113031": ("Signed Manifest", [7010])},
@@ -6029,16 +6028,16 @@ DCM_concepts = {
     "SimulationIntent": {"129017": ("Simulation Intent", [7064])},
     "SimulationNote": {"130032": ("Simulation Note", [])},
     "SimultaneousArterialPulseWaveform": {
-        "121306": ("Simultaneous Arterial Pulse " "Waveform", [7004])
+        "121306": ("Simultaneous Arterial Pulse Waveform", [7004])
     },
     "SimultaneousDoppler": {"121301": ("Simultaneous Doppler", [7004])},
     "SimultaneousECG": {"121303": ("Simultaneous ECG", [7004])},
     "SimultaneousHemodynamic": {"121302": ("Simultaneous Hemodynamic", [7004])},
     "SimultaneousPhonocardiographicWaveform": {
-        "121307": ("Simultaneous " "Phonocardiographic " "Waveform", [7004])
+        "121307": ("Simultaneous Phonocardiographic Waveform", [7004])
     },
     "SimultaneousRespiratoryWaveform": {
-        "121305": ("Simultaneous Respiratory " "Waveform", [7004])
+        "121305": ("Simultaneous Respiratory Waveform", [7004])
     },
     "SimultaneousVoiceNarrative": {"121304": ("Simultaneous Voice Narrative", [7004])},
     "SimultaneouslyAcquired": {"122400": ("Simultaneously Acquired", [7210])},
@@ -6046,31 +6045,31 @@ DCM_concepts = {
     "SingleImageFinding": {"111059": ("Single Image Finding", [])},
     "SingleImageFindingModifier": {"112024": ("Single Image Finding Modifier", [])},
     "SingleLADRegionInRAOProjection": {
-        "122466": ("Single LAD Region in RAO " "Projection", [3461])
+        "122466": ("Single LAD Region in RAO Projection", [3461])
     },
     "SingleLeaves": {"130333": ("Single Leaves", [9541])},
     "SingleLuminance": {"111840": ("Single luminance", [4252])},
     "SingleOrAnteriorLens": {"111778": ("Single or Anterior Lens", [4233])},
     "SinglePhotonEmissionComputedTomography": {
-        "ST": ("Single-photon emission " "computed tomography", [])
+        "ST": ("Single-photon emission computed tomography", [])
     },
     "SinglePlane": {"113622": ("Single Plane", [10003])},
     "SinglePlaneAngiography": {"122059": ("Single plane Angiography", [3748])},
     "SinglePlaneEllipse": {"125226": ("Single Plane Ellipse", [12228, 12227])},
     "SingleRCARegionInRAOProjection": {
-        "122467": ("Single RCA Region in RAO " "Projection", [3461])
+        "122467": ("Single RCA Region in RAO Projection", [3461])
     },
     "SingleShotEPI": {"113226": ("Single Shot EPI", [7260])},
     "SingleSubjectExtractedFromGroup": {
-        "113132": ("Single subject extracted from " "group", [7151, 7165, 7196])
+        "113132": ("Single subject extracted from group", [7151, 7165, 7196])
     },
     "SingleSubjectSelectedFromGroup": {
-        "113132": ("Single subject selected from " "group", [])
+        "113132": ("Single subject selected from group", [])
     },
     "SingleTensor": {"113231": ("Single Tensor", [7261])},
     "SingularValueDecompositionSVDDeconvolution": {
         "126311": (
-            "Singular Value " "Decomposition " "(SVD) " "deconvolution",
+            "Singular Value Decomposition (SVD) deconvolution",
             [4106, 4105],
         )
     },
@@ -6082,7 +6081,7 @@ DCM_concepts = {
     "SizeSpecificDoseEstimate": {"113930": ("Size Specific Dose Estimate", [])},
     "SizeSpecificDoseEstimateAtLongitudinalPositionZ": {
         "113993": (
-            "Size Specific " "Dose Estimate " "At " "Longitudinal " "Position Z",
+            "Size Specific Dose Estimate At Longitudinal Position Z",
             [],
         )
     },
@@ -6106,13 +6105,13 @@ DCM_concepts = {
     },
     "SkinOfInferiorPosteriorSurfaceOfThePinna": {
         "130308": (
-            "Skin of inferior " "posterior surface of " "the pinna",
+            "Skin of inferior posterior surface of the pinna",
             [8134, 4029],
         )
     },
     "SkinOfInfraalarGroove": {"130312": ("Skin of infraalar groove", [8134, 4029])},
     "SkinOfLateralPartOfDorsumOfFoot": {
-        "130309": ("Skin of lateral part of " "dorsum of foot", [8134, 4029])
+        "130309": ("Skin of lateral part of dorsum of foot", [8134, 4029])
     },
     "SkinOfLowerAntihelixOfEar": {
         "130310": ("Skin of lower antihelix of ear", [8134, 4029])
@@ -6124,7 +6123,7 @@ DCM_concepts = {
         "130304": ("Skin of lower paraspinal region", [8134, 4029])
     },
     "SkinOfMedialPartOfDorsumOfFoot": {
-        "130313": ("Skin of medial part of dorsum " "of foot", [8134, 4029])
+        "130313": ("Skin of medial part of dorsum of foot", [8134, 4029])
     },
     "SkinOfMidBack": {"130323": ("Skin of mid back", [8134, 4029])},
     "SkinOfMidParaspinalRegion": {
@@ -6132,27 +6131,27 @@ DCM_concepts = {
     },
     "SkinOfParanasalCheek": {"130314": ("Skin of paranasal cheek", [8134, 4029])},
     "SkinOfParaspinalAreaOfTheNeck": {
-        "130300": ("Skin of paraspinal area of the " "neck", [8134, 4029])
+        "130300": ("Skin of paraspinal area of the neck", [8134, 4029])
     },
     "SkinOfParaspinalAreaOfTheSuperiorBack": {
-        "130301": ("Skin of paraspinal area " "of the superior back", [8134, 4029])
+        "130301": ("Skin of paraspinal area of the superior back", [8134, 4029])
     },
     "SkinOfPosteriorHelixOfEar": {
         "130315": ("Skin of posterior helix of ear", [8134, 4029])
     },
     "SkinOfPosteriorLobuleOfTheEar": {
-        "130316": ("Skin of posterior lobule of the " "ear", [8134, 4029])
+        "130316": ("Skin of posterior lobule of the ear", [8134, 4029])
     },
     "SkinOfSoleOfForefoot": {"130317": ("Skin of sole of forefoot", [8134, 4029])},
     "SkinOfSuperiorAntihelixOfEar": {
-        "130318": ("Skin of superior antihelix of " "ear", [8134, 4029])
+        "130318": ("Skin of superior antihelix of ear", [8134, 4029])
     },
     "SkinOfSuperiorPosteriorHelixOfEar": {
-        "130319": ("Skin of superior posterior " "helix of ear", [8134, 4029])
+        "130319": ("Skin of superior posterior helix of ear", [8134, 4029])
     },
     "SkinOfSuperiorPosteriorSurfaceOfThePinna": {
         "130320": (
-            "Skin of superior " "posterior surface of " "the pinna",
+            "Skin of superior posterior surface of the pinna",
             [8134, 4029],
         )
     },
@@ -6166,7 +6165,7 @@ DCM_concepts = {
         "130302": ("Skin of upper paraspinal region", [8134, 4029])
     },
     "SliceContributionToEjectionFraction": {
-        "122498": ("Slice Contribution to " "Ejection Fraction", [])
+        "122498": ("Slice Contribution to Ejection Fraction", [])
     },
     "SliceThickness": {"112225": ("Slice Thickness", [])},
     "SlideIdentifier": {"121043": ("Slide Identifier", [])},
@@ -6183,15 +6182,15 @@ DCM_concepts = {
         "112125": ("Small irregular opacities", [6106, 6102, 6104])
     },
     "SmallLesserThan32Point0cmLateralThickness": {
-        "113601": ("Small: < 32.0 cm " "lateral thickness", [7041, 7042])
+        "113601": ("Small: < 32.0 cm lateral thickness", [7041, 7042])
     },
     "SmallRoundedOpacities": {"112126": ("Small rounded opacities", [6102, 6104])},
     "SmallZoneEmphasis": {"128821": ("Small Zone Emphasis", [])},
     "SmallZoneHighGrayLevelEmphasis": {
-        "128826": ("Small Zone High Gray Level " "Emphasis", [])
+        "128826": ("Small Zone High Gray Level Emphasis", [])
     },
     "SmallZoneLowGrayLevelEmphasis": {
-        "128825": ("Small Zone Low Gray Level " "Emphasis", [])
+        "128825": ("Small Zone Low Gray Level Emphasis", [])
     },
     "Smoothing": {"113087": ("Smoothing", [7203])},
     "SoftPlaque": {"122356": ("Soft plaque", [3491])},
@@ -6204,18 +6203,18 @@ DCM_concepts = {
     "Sonologist": {"121092": ("Sonologist", [7452, 7450])},
     "Sonovue": {"125906": ("SonoVue", [12030])},
     "SourceDeformableSpatialRegistration": {
-        "125028": ("Source Deformable Spatial " "Registration", [7060, 7013])
+        "125028": ("Source Deformable Spatial Registration", [7060, 7013])
     },
     "SourceDocument": {"121335": ("Source Document", [7006])},
     "SourceDoseForComposingCurrentDose": {
-        "121372": ("Source dose for composing " "current dose", [7221])
+        "121372": ("Source dose for composing current dose", [7221])
     },
     "SourceImage": {"121324": ("Source image", [7205, 7061, 7060])},
     "SourceImageDiffusionBValue": {
         "113240": ("Source image diffusion b-value", [9000, 7276])
     },
     "SourceImageForImageProcessingOperation": {
-        "121322": ("Source Image for Image " "Processing Operation", [7222, 7202, 4264])
+        "121322": ("Source Image for Image Processing Operation", [7222, 7202, 4264])
     },
     "SourceImageForMontage": {"121329": ("Source image for montage", [7202])},
     "SourceImageForSegmentation": {"121233": ("Source image for segmentation", [])},
@@ -6224,7 +6223,7 @@ DCM_concepts = {
     "SourceOfDoseInformation": {"113854": ("Source of Dose Information", [])},
     "SourceOfMeasurement": {"121112": ("Source of Measurement", [7003, 7552, 7551])},
     "SourcePositionToleranceViolation": {
-        "130473": ("Source Position Tolerance " "Violation", [9567])
+        "130473": ("Source Position Tolerance Violation", [9567])
     },
     "SourceRawData": {"128226": ("Source raw data", [7060, 7013])},
     "SourceRealWorldValueMap": {
@@ -6233,18 +6232,18 @@ DCM_concepts = {
     "SourceReport": {"128225": ("Source report", [7060, 7013])},
     "SourceRoleID": {"110153": ("Source Role ID", [402])},
     "SourceSeriesForImageProcessingOperation": {
-        "121323": ("Source series for " "image processing " "operation", [7210])
+        "121323": ("Source series for image processing operation", [7210])
     },
     "SourceSeriesForSegmentation": {"121232": ("Source series for segmentation", [])},
     "SpacingBetweenSlices": {"112226": ("Spacing between slices", [])},
     "SpatialDisplacementXComponent": {
-        "110822": ("Spatial Displacement X " "Component", [7469, 218, 7180])
+        "110822": ("Spatial Displacement X Component", [7469, 218, 7180])
     },
     "SpatialDisplacementYComponent": {
-        "110823": ("Spatial Displacement Y " "Component", [7469, 218, 7180])
+        "110823": ("Spatial Displacement Y Component", [7469, 218, 7180])
     },
     "SpatialDisplacementZComponent": {
-        "110824": ("Spatial Displacement Z " "Component", [7469, 218, 7180])
+        "110824": ("Spatial Displacement Z Component", [7469, 218, 7180])
     },
     "SpatialFiducials": {
         "128447": ("Spatial Fiducials", []),
@@ -6254,7 +6253,7 @@ DCM_concepts = {
     "SpatialRegistrationReference": {"128444": ("Spatial Registration Reference", [])},
     "SpatialResampling": {"113085": ("Spatial resampling", [7203])},
     "SpatiallyRelatedFramesExtractedFromTheVolume": {
-        "113091": ("Spatially-related " "frames extracted " "from the volume", [7203])
+        "113091": ("Spatially-related frames extracted from the volume", [7203])
     },
     "SpecialProcedureNote": {"130025": ("Special Procedure Note", [])},
     "SpecifiedConformationNumber": {
@@ -6262,7 +6261,7 @@ DCM_concepts = {
     },
     "SpecifiedConformityIndex": {"130074": ("Specified Conformity Index", [9500])},
     "SpecifiedHealthyTissueConformityIndex": {
-        "130075": ("Specified Healthy " "Tissue Conformity Index", [9500])
+        "130075": ("Specified Healthy Tissue Conformity Index", [9500])
     },
     "SpecifiedHomogeneityIndex": {"130077": ("Specified Homogeneity Index", [9500])},
     "SpecifiedRadiationDose": {"130019": ("Specified Radiation Dose", [])},
@@ -6280,7 +6279,7 @@ DCM_concepts = {
     "SpectralFilteredImage": {"121340": ("Spectral filtered image", [7201])},
     "Spectroscopy": {"121317": ("Spectroscopy", [7201])},
     "SpectroscopyDataForWaterPhaseCorrection": {
-        "121318": ("Spectroscopy Data for " "Water Phase " "Correction", [7215])
+        "121318": ("Spectroscopy Data for Water Phase Correction", [7215])
     },
     "SpeedOfSound": {"110832": ("Speed of sound", [7469, 218, 7180])},
     "Sphere": {"122485": ("Sphere", [4051, 7151, 7112, 7193, 7111, 3451, 8])},
@@ -6288,12 +6287,12 @@ DCM_concepts = {
     "SphericalProjection": {"111791": ("Spherical projection", [4245])},
     "Spiculated": {"112136": ("Spiculated", [6119])},
     "SpinTaggingPerfusionMRSignalIntensity": {
-        "110800": ("Spin Tagging Perfusion " "MR Signal Intensity", [7469, 218, 7180])
+        "110800": ("Spin Tagging Perfusion MR Signal Intensity", [7469, 218, 7180])
     },
     "SpontaneousAbortion": {"111566": ("Spontaneous Abortion", [6087, 6088])},
     "SpotMagnificationViews": {"111136": ("Spot magnification view(s)", [6028, 6029])},
     "SquamousCellCarcinomaOfTheNipple": {
-        "111340": ("Squamous cell carcinoma of " "the nipple", [6030, 6033])
+        "111340": ("Squamous cell carcinoma of the nipple", [6030, 6033])
     },
     "Stage0": {"111494": ("Stage 0", [6068])},
     "StageI": {"111495": ("Stage I", [6068])},
@@ -6320,28 +6319,28 @@ DCM_concepts = {
         )
     },
     "StandardDeviationOfAttenuationCoefficient": {
-        "112183": ("Standard Deviation " "of Attenuation " "Coefficient", [6141])
+        "112183": ("Standard Deviation of Attenuation Coefficient", [6141])
     },
     "StandardDeviationOfMeasurementsUsed": {
-        "111786": ("Standard Deviation of " "measurements used", [4243])
+        "111786": ("Standard Deviation of measurements used", [4243])
     },
     "StandardDeviationOfPopulation": {
-        "121414": ("Standard deviation of " "population", [7465, 226, 221])
+        "121414": ("Standard deviation of population", [7465, 226, 221])
     },
     "StandardFractionation": {"130097": ("Standard Fractionation", [9533])},
     "StandardToftsModel": {"126340": ("Standard Tofts Model", [4106, 4101])},
     "StandardizedAddedMetabolicActivity": {
-        "126037": ("Standardized Added " "Metabolic Activity", [7466])
+        "126037": ("Standardized Added Metabolic Activity", [7466])
     },
     "StandardizedAddedMetabolicActivityBackground": {
-        "126038": ("Standardized " "Added Metabolic " "Activity " "Background", [7466])
+        "126038": ("Standardized Added Metabolic Activity Background", [7466])
     },
     "StandardizedAddedMetabolicActivitySAM": {
-        "126037": ("Standardized Added " "Metabolic Activity " "(SAM)", [])
+        "126037": ("Standardized Added Metabolic Activity (SAM)", [])
     },
     "StandardizedAddedMetabolicActivitySAMBackground": {
         "126038": (
-            "Standardized " "Added " "Metabolic " "Activity " "(SAM) " "Background",
+            "Standardized Added Metabolic Activity (SAM) Background",
             [],
         )
     },
@@ -6351,25 +6350,25 @@ DCM_concepts = {
     "Standby": {"121101": ("Standby", [7453])},
     "StartOfAtrialContraction": {
         "109045": ("Start of atrial contraction", [3339]),
-        "109046": ("Start of atrial contraction " "(subsequent)", [3339]),
+        "109046": ("Start of atrial contraction (subsequent)", [3339]),
     },
     "StartOfContrastAgentAdministration": {
-        "125234": ("Start of contrast agent " "administration", [12031])
+        "125234": ("Start of contrast agent administration", [12031])
     },
     "StartOfDrugDoseAdministration": {
-        "125233": ("Start of drug dose " "administration", [12031])
+        "125233": ("Start of drug dose administration", [12031])
     },
     "StartOfExpiration": {"109029": ("Start of expiration", [3337])},
     "StartOfInspiration": {"109030": ("Start of inspiration", [3337])},
     "StartOfThermalCO": {"109031": ("Start of thermal CO", [3337])},
     "StartOfThermalCardiacOutputBolus": {
-        "109031": ("Start of thermal cardiac " "output bolus", [])
+        "109031": ("Start of thermal cardiac output bolus", [])
     },
     "StartOfXRayIrradiation": {"113809": ("Start of X-Ray Irradiation", [])},
     "StartProcedureAction": {"121130": ("Start Procedure Action", [3421])},
     "StartProcedureActionItem": {"121130": ("Start Procedure Action Item", [])},
     "StartingFlowRateOfAdministration": {
-        "130208": ("Starting Flow Rate of " "administration", [])
+        "130208": ("Starting Flow Rate of administration", [])
     },
     "Statement": {"122152": ("Statement", [])},
     "StatementModifier": {"122153": ("Statement Modifier", [])},
@@ -6418,11 +6417,11 @@ DCM_concepts = {
     "Streamline": {"113215": ("Streamline", [7262])},
     "StressProtocol": {"109056": ("Stress Protocol", [])},
     "StressTechnetiumRestTechnetium1DayProcedure": {
-        "122784": ("Stress " "technetium/rest " "technetium 1 day " "procedure", [3110])
+        "122784": ("Stress technetium/rest technetium 1 day procedure", [3110])
     },
     "StressTestScore": {"122760": ("Stress test score", [])},
     "StretchedExponentialDiffusionModel": {
-        "113254": ("Stretched exponential " "diffusion model", [7273])
+        "113254": ("Stretched exponential diffusion model", [7273])
     },
     "StripFilter": {"113650": ("Strip filter", [10007])},
     "Stripe": {"112094": ("Stripe", [7151, 6109, 9514, 6113, 6102, 7192, 6148])},
@@ -6431,7 +6430,7 @@ DCM_concepts = {
         "122756": ("Strongly positive - ST elevation", [3231])
     },
     "StructuralImageForImageProcessing": {
-        "128250": ("Structural image for image " "processing", [7202])
+        "128250": ("Structural image for image processing", [7202])
     },
     "StructureOfTheFindingSite": {"125311": ("Structure of the Finding Site", [12302])},
     "StructuredReportDocument": {"SR": ("Structured Report Document", [33, 32])},
@@ -6462,33 +6461,33 @@ DCM_concepts = {
     "SuccessfulDetections": {"111063": ("Successful Detections", [])},
     "SuggestiveOfMalignancyTakeAppropriateAction": {
         "111146": (
-            "Suggestive of " "malignancy - take " "appropriate " "action",
+            "Suggestive of malignancy - take appropriate action",
             [6028, 6029],
         )
     },
     "SumAverageOfGLCM": {"128787": ("Sum Average of GLCM", [])},
     "SumEntropyOfGLCM": {"128789": ("Sum Entropy of GLCM", [])},
     "SumOfSegmentedVoxelMethodForVolume": {
-        "126030": ("Sum of segmented voxel " "method for volume", [7474])
+        "126030": ("Sum of segmented voxel method for volume", [7474])
     },
     "SumVarianceOfGLCM": {"128788": ("Sum Variance of GLCM", [])},
     "Summary": {"121111": ("Summary", [])},
     "SummaryOfAnalyses": {"111065": ("Summary of Analyses", [])},
     "SummaryOfDetections": {"111064": ("Summary of Detections", [])},
     "SuperficialRetinaStructuralReflectanceMap": {
-        "128266": ("Superficial retina " "structural " "reflectance map", [4271])
+        "128266": ("Superficial retina structural reflectance map", [4271])
     },
     "SuperficialRetinaVasculatureFlow": {
-        "128265": ("Superficial retina " "vasculature flow", [4271])
+        "128265": ("Superficial retina vasculature flow", [4271])
     },
     "SuperiorLongitudinalFasciculusI": {
-        "110703": ("superior longitudinal " "fasciculus I", [7710, 8134, 7703])
+        "110703": ("superior longitudinal fasciculus I", [7710, 8134, 7703])
     },
     "SuperiorLongitudinalFasciculusII": {
-        "110704": ("superior longitudinal " "fasciculus II", [7710, 8134, 7703])
+        "110704": ("superior longitudinal fasciculus II", [7710, 8134, 7703])
     },
     "SuperiorLongitudinalFasciculusIII": {
-        "110705": ("superior longitudinal " "fasciculus III", [7710, 8134, 7703])
+        "110705": ("superior longitudinal fasciculus III", [7710, 8134, 7703])
     },
     "SuperolateralToInferomedial": {
         "111434": ("Superolateral to inferomedial", [6065])
@@ -6498,7 +6497,7 @@ DCM_concepts = {
     },
     "SupplementaryData": {"111414": ("Supplementary Data", [])},
     "SupplementaryDataForIntervention": {
-        "111463": ("Supplementary Data for " "Intervention", [])
+        "111463": ("Supplementary Data for Intervention", [])
     },
     "SupportingInformation": {"112359": ("Supporting Information", [])},
     "SurfaceBetweenInnerAndOuterSegmentsOfThePhotoreceptors": {
@@ -6520,7 +6519,7 @@ DCM_concepts = {
     },
     "SurfaceOfTheChoroidScleraInterface": {
         "128301": (
-            "Surface of the " "choroid-sclera interface",
+            "Surface of the choroid-sclera interface",
             [7151, 9514, 7192, 4273],
         )
     },
@@ -6718,7 +6717,7 @@ DCM_concepts = {
     "TableHeightPosition": {"113753": ("Table Height Position", [10008])},
     "TableHorizontalRotationAngle": {"113755": ("Table Horizontal Rotation Angle", [])},
     "TableHorizontalRotationEndAngle": {
-        "128764": ("Table Horizontal Rotation End " "Angle", [])
+        "128764": ("Table Horizontal Rotation End Angle", [])
     },
     "TableLateralEndPosition": {"113760": ("Table Lateral End Position", [10008])},
     "TableLateralPosition": {"113752": ("Table Lateral Position", [10008])},
@@ -6732,15 +6731,15 @@ DCM_concepts = {
     "TableOuterLiner": {"128461": ("Table Outer Liner", [10066])},
     "TablePad": {"128462": ("Table Pad", [10066])},
     "TableXEndPositionToIsocenter": {
-        "128769": ("Table X End Position to " "Isocenter", [10008])
+        "128769": ("Table X End Position to Isocenter", [10008])
     },
     "TableXPositionToIsocenter": {"128766": ("Table X Position to Isocenter", [10008])},
     "TableYEndPositionToIsocenter": {
-        "128770": ("Table Y End Position to " "Isocenter", [10008])
+        "128770": ("Table Y End Position to Isocenter", [10008])
     },
     "TableYPositionToIsocenter": {"128767": ("Table Y Position to Isocenter", [10008])},
     "TableZEndPositionToIsocenter": {
-        "128771": ("Table Z End Position to " "Isocenter", [10008])
+        "128771": ("Table Z End Position to Isocenter", [10008])
     },
     "TableZPositionToIsocenter": {"128768": ("Table Z Position to Isocenter", [10008])},
     "TabularDataAlgorithm": {"128479": ("Tabular Data Algorithm", [10068])},
@@ -6748,19 +6747,19 @@ DCM_concepts = {
     "TargestarP": {"125908": ("Targestar-P", [12030])},
     "Target": {"112162": ("Target", [6132])},
     "TargetCompletelyContainedInTheSpecimen": {
-        "111443": ("Target completely " "contained in the " "specimen", [])
+        "111443": ("Target completely contained in the specimen", [])
     },
     "TargetContainedInTheSpecimen": {
         "111443": ("Target contained in the specimen", [6066])
     },
     "TargetContentItemsAreRelatedContraLaterally": {
-        "111155": ("Target content " "items are related " "contra-laterally", [6035])
+        "111155": ("Target content items are related contra-laterally", [6035])
     },
     "TargetContentItemsAreRelatedSpatially": {
-        "111154": ("Target content items " "are related spatially", [6035])
+        "111154": ("Target content items are related spatially", [6035])
     },
     "TargetContentItemsAreRelatedTemporally": {
-        "111153": ("Target content items " "are related temporally", [6035])
+        "111153": ("Target content items are related temporally", [6035])
     },
     "TargetExposureIndex": {"113846": ("Target Exposure Index", [])},
     "TargetLesionAtBaseline": {"112074": ("Target Lesion at Baseline", [6145])},
@@ -6771,14 +6770,14 @@ DCM_concepts = {
         "112042": ("Target Lesion Partial Response", [6144, 6143])
     },
     "TargetLesionProgressiveDisease": {
-        "112043": ("Target Lesion Progressive " "Disease", [6144, 6143])
+        "112043": ("Target Lesion Progressive Disease", [6144, 6143])
     },
     "TargetLesionStableDisease": {
         "112044": ("Target Lesion Stable Disease", [6144, 6143])
     },
     "TargetNotInTheSpecimen": {"111445": ("Target not in the specimen", [6066])},
     "TargetPartiallyObtainedInTheSpecimen": {
-        "111444": ("Target partially " "obtained in the specimen", [6066])
+        "111444": ("Target partially obtained in the specimen", [6066])
     },
     "TargetRegion": {"123014": ("Target Region", [])},
     "Targeted": {"111127": ("Targeted", [6061, 6058, 6051])},
@@ -6816,7 +6815,7 @@ DCM_concepts = {
     "TeletherapyIsotope": {"130040": ("Teletherapy Isotope", [])},
     "TemperatureEncoded": {"113067": ("Temperature encoded", [7469, 218, 7180])},
     "TemporalDerivativeExceedsThreshold": {
-        "126373": ("Temporal Derivative " "Exceeds Threshold", [4104, 4106])
+        "126373": ("Temporal Derivative Exceeds Threshold", [4104, 4106])
     },
     "TemporalDerivativeThreshold": {
         "126374": ("Temporal Derivative Threshold", [7469, 4109, 218, 7180])
@@ -6839,34 +6838,34 @@ DCM_concepts = {
         "130176": ("Terminated due to air detected", [67, 71])
     },
     "TerminatedDueToConsumableRemoval": {
-        "130179": ("Terminated due to consumable " "removal", [67, 71])
+        "130179": ("Terminated due to consumable removal", [67, 71])
     },
     "TerminatedDueToCriticalBatteryLevel": {
-        "130178": ("Terminated due to " "critical battery level", [67, 71])
+        "130178": ("Terminated due to critical battery level", [67, 71])
     },
     "TerminatedDueToExcessiveDurationPause": {
-        "130158": ("Terminated due to " "excessive duration " "pause", [67, 71])
+        "130158": ("Terminated due to excessive duration pause", [67, 71])
     },
     "TerminatedDueToFlowRateAboveTerminationLimit": {
         "130157": (
-            "Terminated due " "to flow rate " "above " "termination " "limit",
+            "Terminated due to flow rate above termination limit",
             [67, 71],
         )
     },
     "TerminatedDueToInjectorCommunicationLoss": {
-        "130159": ("Terminated due to " "injector " "communication loss", [67, 71])
+        "130159": ("Terminated due to injector communication loss", [67, 71])
     },
     "TerminatedDueToPressureAboveTerminationLimit": {
         "130156": (
-            "Terminated due " "to pressure " "above " "termination " "limit",
+            "Terminated due to pressure above termination limit",
             [67, 71],
         )
     },
     "TerminatedDueToRequestFromOperator": {
-        "130154": ("Terminated due to request " "from operator", [67, 71])
+        "130154": ("Terminated due to request from operator", [67, 71])
     },
     "TerminatedDueToUnspecifiedInjectorFailure": {
-        "130160": ("Terminated due to " "unspecified " "injector failure", [67, 71])
+        "130160": ("Terminated due to unspecified injector failure", [67, 71])
     },
     "TerminatedHoldDueToTimeout": {"130269": ("Terminated hold due to timeout", [71])},
     "TerritoryRegionSeverity": {"122459": ("Territory Region Severity", [])},
@@ -6875,10 +6874,10 @@ DCM_concepts = {
     "Thermography": {"TG": ("Thermography", [29, 33, 30])},
     "ThickeningAnalysis": {"122607": ("Thickening Analysis", [])},
     "ThicknessDeviationCategoryFromNormativeData": {
-        "111931": ("Thickness " "deviation " "category from " "normative data", [4263])
+        "111931": ("Thickness deviation category from normative data", [4263])
     },
     "ThicknessDeviationFromNormativeData": {
-        "111932": ("Thickness deviation from " "normative data", [4263])
+        "111932": ("Thickness deviation from normative data", [4263])
     },
     "ThinningMyocardium": {"122114": ("Thinning Myocardium", [3704])},
     "ThoracicImagingSpecialty": {"128015": ("Thoracic Imaging Specialty", [7449])},
@@ -6891,29 +6890,29 @@ DCM_concepts = {
     "ThoraxDiameterSagittal": {"122221": ("Thorax diameter, sagittal", [])},
     "ThreeDimensionalMethod": {"112189": ("Three-dimensional method", [6140])},
     "ThresholdAttenuationCoefficient": {
-        "112032": ("Threshold Attenuation " "Coefficient", [])
+        "112032": ("Threshold Attenuation Coefficient", [])
     },
     "ThresholdRelated": {"111839": ("Threshold related", [4252])},
     "ThresholdValue": {"122411": ("Threshold Value", [])},
     "Time": {"110858": ("Time", [7182])},
     "TimeAfterTheStartOfInjection": {
-        "130194": ("Time after the start of " "injection", [])
+        "130194": ("Time after the start of injection", [])
     },
     "TimeCourseOfSignal": {"113066": ("Time course of signal", [7469, 218, 7180])},
     "TimeDomain": {"111920": ("Time domain", [4261])},
     "TimeIntervalSinceDetectionOfContrastBolus": {
-        "122668": ("Time interval since " "detection of " "contrast bolus", [])
+        "122668": ("Time interval since detection of contrast bolus", [])
     },
     "TimeIntervalSinceInjectionOfContrastMedia": {
-        "122665": ("Time interval since " "injection of " "contrast media", [])
+        "122665": ("Time interval since injection of contrast media", [])
     },
     "TimeOfFlight": {"114201": ("Time of flight", [8201])},
     "TimeOfFlightAngioMRSignalIntensity": {
-        "110802": ("Time Of Flight Angio MR " "Signal Intensity", [7469, 218, 7180])
+        "110802": ("Time Of Flight Angio MR Signal Intensity", [7469, 218, 7180])
     },
     "TimeOfLeadingHalfPeakConcentration": {
         "126372": (
-            "Time of Leading Half-Peak " "Concentration",
+            "Time of Leading Half-Peak Concentration",
             [7469, 4109, 218, 4104, 4106, 7180],
         )
     },
@@ -6933,62 +6932,62 @@ DCM_concepts = {
     "TissueSelectionMethod": {"112713": ("Tissue selection method", [])},
     "TissueVelocity": {"110827": ("Tissue Velocity", [7469, 218, 7180])},
     "Title21CFRSection900SubpartB": {
-        "111239": ("Title 21 CFR Section 900, " "Subpart B", [6045])
+        "111239": ("Title 21 CFR Section 900, Subpart B", [6045])
     },
     "Tmax": {"113084": ("Tmax", [7469, 218, 4108, 7180])},
     "TooSmall": {"112133": ("Too small", [6118])},
     "ToolFabrication": {"129014": ("Tool Fabrication", [7064])},
     "TopZLocationOfReconstructableVolume": {
-        "113895": ("Top Z Location of " "Reconstructable Volume", [])
+        "113895": ("Top Z Location of Reconstructable Volume", [])
     },
     "TopZLocationOfScanningLength": {
-        "113897": ("Top Z Location of Scanning " "Length", [])
+        "113897": ("Top Z Location of Scanning Length", [])
     },
     "TopographicBeam": {"130109": ("Topographic Beam", [9524, 9512])},
     "TotalAcquisitionTime": {"113855": ("Total Acquisition Time", [])},
     "TotalBodyIrradiation": {"130341": ("Total Body Irradiation", [9543])},
     "TotalCholesterolScoreSheetForMen": {
-        "122235": ("Total Cholesterol Score " "Sheet for Men", [3668])
+        "122235": ("Total Cholesterol Score Sheet for Men", [3668])
     },
     "TotalCholesterolScoreSheetForWomen": {
-        "122236": ("Total Cholesterol Score " "Sheet for Women", [3668])
+        "122236": ("Total Cholesterol Score Sheet for Women", [3668])
     },
     "TotalCorneaPowerMeasurementMethod": {
-        "111758": ("Total Cornea Power " "Measurement Method", [4242])
+        "111758": ("Total Cornea Power Measurement Method", [4242])
     },
     "TotalDurationInHousing": {"127150": ("Total duration in housing", [])},
     "TotalDurationOfLightDarkCycle": {
-        "127214": ("Total duration of light-dark " "cycle", [])
+        "127214": ("Total duration of light-dark cycle", [])
     },
     "TotalFluoroTime": {"113730": ("Total Fluoro Time", [10050])},
     "TotalInternalReflectionFluorescence": {
-        "111749": ("Total internal reflection " "fluorescence", [8123])
+        "111749": ("Total internal reflection fluorescence", [8123])
     },
     "TotalKeepVeinOpenVolumeAdministered": {
-        "130165": ("Total Keep Vein Open " "Volume Administered", [])
+        "130165": ("Total Keep Vein Open Volume Administered", [])
     },
     "TotalLesionGlycolysis": {"126033": ("Total Lesion Glycolysis", [7466])},
     "TotalLesionProliferation": {"126035": ("Total Lesion Proliferation", [7466])},
     "TotalNumberOfIrradiationEvents": {
-        "113812": ("Total Number of Irradiation " "Events", [])
+        "113812": ("Total Number of Irradiation Events", [])
     },
     "TotalNumberOfManuallyTriggeredInjections": {
-        "130242": ("Total number of " "manually triggered " "injections", [])
+        "130242": ("Total number of manually triggered injections", [])
     },
     "TotalNumberOfRadiographicFrames": {
-        "113731": ("Total Number of Radiographic " "Frames", [10050])
+        "113731": ("Total Number of Radiographic Frames", [10050])
     },
     "TotalPhaseVolumeAdministered": {"130240": ("Total Phase Volume Administered", [])},
     "TotalPlaqueVolume": {"122376": ("Total Plaque Volume", [3485])},
     "TotalPulmonaryResistance": {"122215": ("Total Pulmonary Resistance", [3619])},
     "TotalRetinalThicknessILMToBM": {
-        "111929": ("Total retinal thickness (ILM to " "BM)", [4262])
+        "111929": ("Total retinal thickness (ILM to BM)", [4262])
     },
     "TotalRetinalThicknessILMToISOS": {
-        "111927": ("Total retinal thickness (ILM " "to IS-OS)", [4262])
+        "111927": ("Total retinal thickness (ILM to IS-OS)", [4262])
     },
     "TotalRetinalThicknessILMToRPE": {
-        "111928": ("Total retinal thickness (ILM to " "RPE)", [4262])
+        "111928": ("Total retinal thickness (ILM to RPE)", [4262])
     },
     "TotalSkinIrradiation": {"130342": ("Total Skin Irradiation", [9543])},
     "TotalStepVolumeAdministered": {"130241": ("Total Step Volume Administered", [])},
@@ -7025,7 +7024,7 @@ DCM_concepts = {
     "TrigeminalNodeSet": {"130364": ("Trigeminal Node Set", [9556])},
     "TrueLumen": {"122360": ("True Lumen", [3494])},
     "TruncatedGaussianDiffusionModel": {
-        "113255": ("Truncated Gaussian diffusion " "model", [7273])
+        "113255": ("Truncated Gaussian diffusion model", [7273])
     },
     "TrustRegion": {"113266": ("Trust-Region", [7274])},
     "TubularShadow": {"112117": ("Tubular shadow", [6102, 6103])},
@@ -7036,7 +7035,7 @@ DCM_concepts = {
     "TurntableScanMethod": {"114209": ("Turntable Scan Method", [8202])},
     "TwoChamber": {"122565": ("Two Chamber", [3453])},
     "TwoCompartmentExchange2CXModel": {
-        "126347": ("Two Compartment Exchange (2CX) " "Model", [4106, 4101])
+        "126347": ("Two Compartment Exchange (2CX) Model", [4106, 4101])
     },
     "TwoDimensionalMethod": {"112188": ("Two-dimensional method", [6140])},
     "TypeOfContent": {"112009": ("Type of Content", [])},
@@ -7053,11 +7052,11 @@ DCM_concepts = {
     },
     "UltrasoundContact": {"111750": ("Ultrasound Contact", [4230])},
     "UltrasoundImagingSubjectMatter": {
-        "128736": ("Ultrasound imaging subject " "matter", [7017])
+        "128736": ("Ultrasound imaging subject matter", [7017])
     },
     "UltrasoundImmersion": {"111751": ("Ultrasound Immersion", [4230])},
     "UnavailabilityOfABeamModifier": {
-        "130466": ("Unavailability of a Beam " "Modifier", [9565])
+        "130466": ("Unavailability of a Beam Modifier", [9565])
     },
     "Unavailable": {"UNAVAILABLE": ("Unavailable", [50])},
     "UnclassifiedCombination": {"130081": ("Unclassified Combination", [9508])},
@@ -7074,7 +7073,7 @@ DCM_concepts = {
     "UnitedAllBreedRegistry": {"109217": ("United All Breed Registry", [7481])},
     "UnitedKennelClub": {"109218": ("United Kennel Club", [7481])},
     "UniversalKennelClubInternational": {
-        "109219": ("Universal Kennel Club " "International", [7481])
+        "109219": ("Universal Kennel Club International", [7481])
     },
     "UnknownFailure": {"111221": ("Unknown failure", [6041, 6135, 7011])},
     "UnknownSex": {"U": ("Unknown sex", [7455])},
@@ -7082,22 +7081,22 @@ DCM_concepts = {
     "UnsharpMask": {"113089": ("Unsharp mask", [7203])},
     "Unspecified": {"111176": ("Unspecified", [6040])},
     "UnspecifiedGynecologicalHormone": {
-        "111542": ("Unspecified gynecological " "hormone", [6080])
+        "111542": ("Unspecified gynecological hormone", [6080])
     },
     "UnspecifiedMethodOfCalculation": {
-        "112187": ("Unspecified method of " "calculation", [6140])
+        "112187": ("Unspecified method of calculation", [6140])
     },
     "UntrackableMeasurement": {"125304": ("Untrackable Measurement", [])},
     "UnusableQualityRendersImageUnusable": {
-        "111235": ("Unusable - Quality " "renders image unusable", [3114, 6044])
+        "111235": ("Unusable - Quality renders image unusable", [3114, 6044])
     },
     "Unused": {"127177": ("Unused", [604])},
     "UprightStandMount": {"113954": ("Upright Stand Mount", [10031])},
     "UsableDoesNotMeetTheQualityControlStandard": {
-        "111236": ("Usable - Does not " "meet the quality " "control standard", [6044])
+        "111236": ("Usable - Does not meet the quality control standard", [6044])
     },
     "UsableMeetsTheQualityControlStandard": {
-        "111237": ("Usable - Meets the " "quality control standard", [6044])
+        "111237": ("Usable - Meets the quality control standard", [6044])
     },
     "UseOfRestrictedFunction": {"110132": ("Use of Restricted Function", [401, 403])},
     "UsedSubstanceType": {"111546": ("Used Substance Type", [])},
@@ -7105,7 +7104,7 @@ DCM_concepts = {
     "UserChosenValue": {"121410": ("User chosen value", [224, 12301, 4241, 4252])},
     "UserDefinedAIFROI": {"126362": ("User-defined AIF ROI", [4103, 4106])},
     "UserSecurityAttributesChanged": {
-        "110137": ("User Security Attributes " "Changed", [401, 403])
+        "110137": ("User Security Attributes Changed", [401, 403])
     },
     "UserSelectedFiducial": {"112356": ("User Selected Fiducial", [])},
     "UserSelectedMethod": {"122575": ("User selected method", [3456])},
@@ -7138,7 +7137,7 @@ DCM_concepts = {
     "VariableCircularCollimator": {"130332": ("Variable Circular Collimator", [9541])},
     "VascularAndInterventionalImagingSubjectMatter": {
         "128734": (
-            "Vascular and " "interventional " "imaging subject " "matter",
+            "Vascular and interventional imaging subject matter",
             [7017],
         )
     },
@@ -7149,17 +7148,17 @@ DCM_concepts = {
         "122605": ("Vascular Morphological Analysis", [])
     },
     "VascularUltrasoundProcedureReport": {
-        "125100": ("Vascular Ultrasound " "Procedure Report", [])
+        "125100": ("Vascular Ultrasound Procedure Report", [])
     },
     "VascularVolumeMeasurementLength": {
-        "122336": ("Vascular Volume measurement " "length", [])
+        "122336": ("Vascular Volume measurement length", [])
     },
     "Vascularity": {"111372": ("Vascularity", [])},
     "VascularityNotAssessed": {"111374": ("Vascularity not assessed", [6157])},
     "VascularityNotPresent": {"111373": ("Vascularity not present", [6157])},
     "VascularityPresentImmediatelyAdjacentToLesion": {
         "111376": (
-            "Vascularity " "present " "immediately " "adjacent to " "lesion",
+            "Vascularity present immediately adjacent to lesion",
             [6157],
         )
     },
@@ -7176,13 +7175,13 @@ DCM_concepts = {
     "VentralDiencephalon": {"110700": ("Ventral Diencephalon", [7140])},
     "VentricularAnalysis": {"122601": ("Ventricular Analysis", [])},
     "VentricularEndDiastolicPressure": {
-        "122191": ("Ventricular End Diastolic " "pressure", [3611])
+        "122191": ("Ventricular End Diastolic pressure", [3611])
     },
     "VentricularPressureMeasurements": {
-        "122122": ("Ventricular pressure " "measurements", [])
+        "122122": ("Ventricular pressure measurements", [])
     },
     "VentricularSystolicBloodPressure": {
-        "122194": ("Ventricular Systolic blood " "pressure", [])
+        "122194": ("Ventricular Systolic blood pressure", [])
     },
     "Verbal": {"121004": ("Verbal", [])},
     "Verifying": {"121098": ("Verifying", [7453])},
@@ -7194,11 +7193,11 @@ DCM_concepts = {
     "VerticalPrismPower": {"111677": ("Vertical Prism Power", [])},
     "VerySmall": {"112132": ("Very small", [6118])},
     "VeryStrongFamilyHistoryOfBreastCancer": {
-        "111561": ("Very strong family " "history of breast " "cancer", [6087, 6081])
+        "111561": ("Very strong family history of breast cancer", [6087, 6081])
     },
     "VesselBranch": {"125101": ("Vessel Branch", [])},
     "VesselLumenCrossSectionalArea": {
-        "122480": ("Vessel Lumen Cross-Sectional " "Area", [])
+        "122480": ("Vessel Lumen Cross-Sectional Area", [])
     },
     "VesselMorphology": {"122134": ("Vessel Morphology", [])},
     "VideoTapeDigitized": {"110022": ("Video Tape Digitized", [7008])},
@@ -7206,7 +7205,7 @@ DCM_concepts = {
     "Videofluorography": {"VF": ("Videofluorography", [])},
     "ViewAndLateralityMarkerDoesNotHaveApprovedCodes": {
         "111179": (
-            "View and " "Laterality " "Marker does " "not have " "approved " "codes",
+            "View and Laterality Marker does not have approved codes",
             [6041],
         )
     },
@@ -7227,22 +7226,22 @@ DCM_concepts = {
         )
     },
     "ViewAndLateralityMarkerIsIncorrect": {
-        "111183": ("View and Laterality Marker " "is incorrect", [6041])
+        "111183": ("View and Laterality Marker is incorrect", [6041])
     },
     "ViewAndLateralityMarkerIsMissing": {
-        "111177": ("View and Laterality Marker " "is missing", [6041])
+        "111177": ("View and Laterality Marker is missing", [6041])
     },
     "ViewAndLateralityMarkerIsNotNearTheAxilla": {
-        "111180": ("View and Laterality " "Marker is not near " "the axilla", [6041])
+        "111180": ("View and Laterality Marker is not near the axilla", [6041])
     },
     "ViewAndLateralityMarkerIsOffImage": {
-        "111184": ("View and Laterality Marker " "is off image", [6041])
+        "111184": ("View and Laterality Marker is off image", [6041])
     },
     "ViewAndLateralityMarkerIsPartiallyObscured": {
-        "111182": ("View and " "Laterality Marker " "is partially " "obscured", [6041])
+        "111182": ("View and Laterality Marker is partially obscured", [6041])
     },
     "ViewAndLateralityMarkerOverlapsBreastTissue": {
-        "111181": ("View and " "Laterality Marker " "overlaps breast " "tissue", [6041])
+        "111181": ("View and Laterality Marker overlaps breast tissue", [6041])
     },
     "VirginalHyperplasia": {"111298": ("Virginal hyperplasia", [6030, 6031])},
     "ViscosityAt37C": {"130186": ("Viscosity at 37C", [])},
@@ -7261,10 +7260,10 @@ DCM_concepts = {
         "111800": ("Visual Field 24-2 Test Pattern", [4250])
     },
     "VisualField2LTDynamicTestStrategy": {
-        "111833": ("Visual Field 2LT-Dynamic " "Test Strategy", [4251])
+        "111833": ("Visual Field 2LT-Dynamic Test Strategy", [4251])
     },
     "VisualField2LTNormalTestStrategy": {
-        "111834": ("Visual Field 2LT-Normal Test " "Strategy", [4251])
+        "111834": ("Visual Field 2LT-Normal Test Strategy", [4251])
     },
     "VisualField2LTTestStrategy": {
         "111829": ("Visual Field 2-LT Test Strategy", [4251])
@@ -7280,34 +7279,34 @@ DCM_concepts = {
         "111836": ("Visual Field CLIP Test Strategy", [4251])
     },
     "VisualFieldCentral40PointTestPattern": {
-        "111805": ("Visual Field Central 40 " "Point Test Pattern", [4250])
+        "111805": ("Visual Field Central 40 Point Test Pattern", [4250])
     },
     "VisualFieldCentral76PointTestPattern": {
-        "111806": ("Visual Field Central 76 " "Point Test Pattern", [4250])
+        "111806": ("Visual Field Central 76 Point Test Pattern", [4250])
     },
     "VisualFieldCentralTestPattern": {
-        "111814": ("Visual Field Central Test " "Pattern", [4250])
+        "111814": ("Visual Field Central Test Pattern", [4250])
     },
     "VisualFieldDynamicTestStrategy": {
-        "111826": ("Visual Field Dynamic Test " "Strategy", [4251])
+        "111826": ("Visual Field Dynamic Test Strategy", [4251])
     },
     "VisualFieldFastThresholdTestStrategy": {
-        "111835": ("Visual Field Fast " "Threshold Test Strategy", [4251])
+        "111835": ("Visual Field Fast Threshold Test Strategy", [4251])
     },
     "VisualFieldFastpacTestStrategy": {
-        "111819": ("Visual Field FastPac Test " "Strategy", [4251])
+        "111819": ("Visual Field FastPac Test Strategy", [4251])
     },
     "VisualFieldFullField120PointTestPattern": {
-        "111809": ("Visual Field Full " "Field 120 Point Test " "Pattern", [4250])
+        "111809": ("Visual Field Full Field 120 Point Test Pattern", [4250])
     },
     "VisualFieldFullField81PointTestPattern": {
-        "111808": ("Visual Field Full " "Field 81 Point Test " "Pattern", [4250])
+        "111808": ("Visual Field Full Field 81 Point Test Pattern", [4250])
     },
     "VisualFieldFullFromPriorTestStrategy": {
-        "111820": ("Visual Field Full From " "Prior Test Strategy", [4251])
+        "111820": ("Visual Field Full From Prior Test Strategy", [4251])
     },
     "VisualFieldFullThresholdTestStrategy": {
-        "111818": ("Visual Field Full " "Threshold Test Strategy", [4251])
+        "111818": ("Visual Field Full Threshold Test Strategy", [4251])
     },
     "VisualFieldGATETestStrategy": {
         "111831": ("Visual Field GATE Test Strategy", [4251])
@@ -7322,52 +7321,52 @@ DCM_concepts = {
         "111830": ("Visual Field LVS Test Strategy", [4251])
     },
     "VisualFieldLossDueToDiffuseDefect": {
-        "111853": ("Visual Field Loss Due to " "Diffuse Defect", [4257])
+        "111853": ("Visual Field Loss Due to Diffuse Defect", [4257])
     },
     "VisualFieldLossDueToLocalDefect": {
-        "111854": ("Visual Field Loss Due to " "Local Defect", [4257])
+        "111854": ("Visual Field Loss Due to Local Defect", [4257])
     },
     "VisualFieldMTestPattern": {"111811": ("Visual Field M Test Pattern", [4250])},
     "VisualFieldMaculaTestPattern": {
         "111804": ("Visual Field Macula Test Pattern", [4250])
     },
     "VisualFieldNormalTestStrategy": {
-        "111827": ("Visual Field Normal Test " "Strategy", [4251])
+        "111827": ("Visual Field Normal Test Strategy", [4251])
     },
     "VisualFieldOptimaTestStrategy": {
-        "111821": ("Visual Field Optima Test " "Strategy", [4251])
+        "111821": ("Visual Field Optima Test Strategy", [4251])
     },
     "VisualFieldPeripheral60PointTestPattern": {
-        "111807": ("Visual Field " "Peripheral 60 Point " "Test Pattern", [4250])
+        "111807": ("Visual Field Peripheral 60 Point Test Pattern", [4250])
     },
     "VisualFieldQuantifyDefectsTestStrategy": {
-        "111824": ("Visual Field " "Quantify-Defects Test " "Strategy", [4251])
+        "111824": ("Visual Field Quantify-Defects Test Strategy", [4251])
     },
     "VisualFieldSITAFastTestStrategy": {
-        "111817": ("Visual Field SITA-Fast Test " "Strategy", [4251])
+        "111817": ("Visual Field SITA-Fast Test Strategy", [4251])
     },
     "VisualFieldSITASWAPTestStrategy": {
-        "111816": ("Visual Field SITA-SWAP Test " "Strategy", [4251])
+        "111816": ("Visual Field SITA-SWAP Test Strategy", [4251])
     },
     "VisualFieldSITAStandardTestStrategy": {
-        "111815": ("Visual Field " "SITA-Standard Test " "Strategy", [4251])
+        "111815": ("Visual Field SITA-Standard Test Strategy", [4251])
     },
     "VisualFieldTOPTestStrategy": {
         "111825": ("Visual Field TOP Test Strategy", [4251])
     },
     "VisualFieldThreeZoneTestStrategy": {
-        "111823": ("Visual Field Three-Zone Test " "Strategy", [4251])
+        "111823": ("Visual Field Three-Zone Test Strategy", [4251])
     },
     "VisualFieldTwoZoneTestStrategy": {
-        "111822": ("Visual Field Two-Zone Test " "Strategy", [4251])
+        "111822": ("Visual Field Two-Zone Test Strategy", [4251])
     },
     "VisualFixationQualityDuringAcquisition": {
-        "111696": ("Visual Fixation " "Quality During " "Acquisition", [])
+        "111696": ("Visual Fixation Quality During Acquisition", [])
     },
     "VisualFixationQualityProblem": {"111697": ("Visual Fixation Quality Problem", [])},
     "VisualMarkingOfSpecimen": {"111723": ("Visual Marking of Specimen", [])},
     "VitreousStructuralReflectanceMap": {
-        "128262": ("Vitreous structural " "reflectance map", [4271])
+        "128262": ("Vitreous structural reflectance map", [4271])
     },
     "VitreousVasculatureFlow": {"128261": ("Vitreous vasculature flow", [4271])},
     "Vo2femaleEqualsBSA138Point117Point04LogeAge0Point378Hrf": {
@@ -7400,10 +7399,10 @@ DCM_concepts = {
     "Voice": {"109110": ("Voice", [3000])},
     "VoltageMeasurement": {"109013": ("Voltage measurement", [3240])},
     "VoltageMeasurementByBasketCatheter": {
-        "109011": ("Voltage measurement by " "basket catheter", [3240])
+        "109011": ("Voltage measurement by basket catheter", [3240])
     },
     "VoltageMeasurementByMappingCatheter": {
-        "109012": ("Voltage measurement by " "mapping catheter", [3240])
+        "109012": ("Voltage measurement by mapping catheter", [3240])
     },
     "VolumeAdministered": {"122091": ("Volume administered", [3410])},
     "VolumeBasedMethod": {"122652": ("Volume Based Method", [3807])},
@@ -7420,7 +7419,7 @@ DCM_concepts = {
     },
     "VolumeEditing": {"113077": ("Volume editing", [7203])},
     "VolumeEstimatedFromSingle2DRegion": {
-        "121216": ("Volume estimated from " "single 2D region", [7472, 7469, 218, 3471])
+        "121216": ("Volume estimated from single 2D region", [7472, 7469, 218, 3471])
     },
     "VolumeEstimatedFromThreeOrMoreNonCoplanar2DRegions": {
         "121217": (
@@ -7435,7 +7434,7 @@ DCM_concepts = {
     },
     "VolumeEstimatedFromTwoNonCoplanar2DRegions": {
         "121218": (
-            "Volume estimated " "from two " "non-coplanar 2D " "regions",
+            "Volume estimated from two non-coplanar 2D regions",
             [7472, 7469, 218, 3471],
         )
     },
@@ -7443,7 +7442,7 @@ DCM_concepts = {
     "VolumeOccupancyImage": {"129328": ("Volume Occupancy Image", [])},
     "VolumeOfBoundingThreeDimensionalRegion": {
         "121219": (
-            "Volume of bounding " "three dimensional " "region",
+            "Volume of bounding three dimensional region",
             [7472, 7469, 218],
         )
     },
@@ -7456,7 +7455,7 @@ DCM_concepts = {
     "VolumeOfSphere": {"121222": ("Volume of sphere", [7472, 7469, 218])},
     "VolumeOfUse": {"111580": ("Volume of use", [6092])},
     "VolumeOfVascularCalcification": {
-        "112197": ("Volume of Vascular " "Calcification", [6142])
+        "112197": ("Volume of Vascular Calcification", [6142])
     },
     "VolumeRatio": {"113288": ("Volume Ratio", [7469, 218, 7271, 7180])},
     "VolumeRendering": {"113074": ("Volume rendering", [7203])},
@@ -7464,46 +7463,46 @@ DCM_concepts = {
     "VolumeScoringMethod": {"112056": ("Volume scoring method", [6140])},
     "VolumeSurface": {"121231": ("Volume Surface", [])},
     "VolumeUnadministeredOrDiscarded": {
-        "122096": ("Volume unadministered or " "discarded", [3410])
+        "122096": ("Volume unadministered or discarded", [3410])
     },
     "VolumetricDiffusionDxxComponent": {
         "110810": (
-            "Volumetric Diffusion Dxx " "Component",
+            "Volumetric Diffusion Dxx Component",
             [7186, 7469, 218, 7263, 7180, 7270],
         )
     },
     "VolumetricDiffusionDxyComponent": {
         "110811": (
-            "Volumetric Diffusion Dxy " "Component",
+            "Volumetric Diffusion Dxy Component",
             [7186, 7469, 218, 7263, 7180, 7270],
         )
     },
     "VolumetricDiffusionDxzComponent": {
         "110812": (
-            "Volumetric Diffusion Dxz " "Component",
+            "Volumetric Diffusion Dxz Component",
             [7186, 7469, 218, 7263, 7180, 7270],
         )
     },
     "VolumetricDiffusionDyyComponent": {
         "110813": (
-            "Volumetric Diffusion Dyy " "Component",
+            "Volumetric Diffusion Dyy Component",
             [7186, 7469, 218, 7263, 7180, 7270],
         )
     },
     "VolumetricDiffusionDyzComponent": {
         "110814": (
-            "Volumetric Diffusion Dyz " "Component",
+            "Volumetric Diffusion Dyz Component",
             [7186, 7469, 218, 7263, 7180, 7270],
         )
     },
     "VolumetricDiffusionDzzComponent": {
         "110815": (
-            "Volumetric Diffusion Dzz " "Component",
+            "Volumetric Diffusion Dzz Component",
             [7186, 7469, 218, 7263, 7180, 7270],
         )
     },
     "VoxelizedRadiationTransportModel": {
-        "128422": ("Voxelized Radiation " "Transport Model", [10065])
+        "128422": ("Voxelized Radiation Transport Model", [10065])
     },
     "VoxelwiseSelectionOfBValue": {
         "113285": ("Voxelwise selection of b-value", [7275])
@@ -7517,35 +7516,35 @@ DCM_concepts = {
     "WallStress": {"122448": ("Wall Stress", [])},
     "WallThickness": {"122445": ("Wall Thickness", [])},
     "WallThicknessRatioEndSystolicToEndDiastolic": {
-        "122624": ("Wall Thickness " "Ratio " "end-systolic to " "end-diastolic", [])
+        "122624": ("Wall Thickness Ratio end-systolic to end-diastolic", [])
     },
     "WallToSeptum": {"110877": ("Wall To Septum", [7185])},
     "WallVolume": {"122446": ("Wall Volume", [])},
     "WaterEquivalentDiameter": {"113980": ("Water Equivalent Diameter", [])},
     "WaterEquivalentDiameterAtLongitudinalPositionZ": {
         "113995": (
-            "Water " "Equivalent " "Diameter At " "Longitudinal " "Position Z",
+            "Water Equivalent Diameter At Longitudinal Position Z",
             [],
         )
     },
     "WaterEquivalentDiameterFromLimitedFOVImages": {
-        "113992": ("Water Equivalent " "Diameter From " "Limited FOV " "Images", [])
+        "113992": ("Water Equivalent Diameter From Limited FOV Images", [])
     },
     "WaterEquivalentDiameterFromLocalizer": {
-        "113984": ("Water Equivalent " "Diameter From Localizer", [10069, 10024])
+        "113984": ("Water Equivalent Diameter From Localizer", [10069, 10024])
     },
     "WaterEquivalentDiameterFromRawData": {
-        "113983": ("Water Equivalent Diameter " "From Raw Data", [10069, 10024])
+        "113983": ("Water Equivalent Diameter From Raw Data", [10069, 10024])
     },
     "WaterEquivalentDiameterIntegratedAcrossScanRange": {
         "113982": (
-            "Water " "Equivalent " "Diameter " "Integrated " "Across Scan " "Range",
+            "Water Equivalent Diameter Integrated Across Scan Range",
             [10069, 10024],
         )
     },
     "WaterEquivalentDiameterRepresentativeValue": {
         "113981": (
-            "Water Equivalent " "Diameter " "Representative " "Value",
+            "Water Equivalent Diameter Representative Value",
             [10069, 10024],
         )
     },
@@ -7554,7 +7553,7 @@ DCM_concepts = {
     "WaterFraction": {"129103": ("Water fraction", [7469, 218, 7180])},
     "WaveformAcquired": {"121143": ("Waveform Acquired", [])},
     "WeakFamilyHistoryOfBreastCancer": {
-        "111559": ("Weak family history of breast " "cancer", [6087, 6081])
+        "111559": ("Weak family history of breast cancer", [6087, 6081])
     },
     "WedgeFilter": {"113651": ("Wedge filter", [10007])},
     "Wedging": {"112321": ("Wedging", [7310])},
@@ -7569,7 +7568,7 @@ DCM_concepts = {
         "130119": ("Whole Body Pod", [7151, 7193, 9505, 7157, 9520, 9513])
     },
     "WholeEyeStructuralReflectanceMap": {
-        "128278": ("Whole eye structural " "reflectance map", [4271])
+        "128278": ("Whole eye structural reflectance map", [4271])
     },
     "WholeEyeVasculatureFlow": {"128277": ("Whole eye vasculature flow", [4271])},
     "WholeSlideImaging": {"112703": ("Whole Slide Imaging", [8131])},
@@ -7577,11 +7576,11 @@ DCM_concepts = {
     "WinstonLutzPointer": {"130353": ("Winston-Lutz Pointer", [9548])},
     "WireMarker": {"129305": ("Wire Marker", [7112, 7111])},
     "WorkingCanineAssociationOfCanada": {
-        "109220": ("Working Canine Association " "of Canada", [7481])
+        "109220": ("Working Canine Association of Canada", [7481])
     },
     "WorkitemAssignmentRejectedByAssignedResource": {
         "110530": (
-            "Workitem " "assignment " "rejected by " "assigned " "resource",
+            "Workitem assignment rejected by assigned resource",
             [9300, 9303],
         )
     },
@@ -7599,10 +7598,10 @@ DCM_concepts = {
     "XRayBeamAttenuator": {"128457": ("X-Ray Beam Attenuator", [])},
     "XRayBeamAttenuatorModel": {"128472": ("X-Ray Beam Attenuator Model", [])},
     "XRayBeamAttenuatorModelReference": {
-        "128474": ("X-Ray Beam Attenuator Model " "Reference", [])
+        "128474": ("X-Ray Beam Attenuator Model Reference", [])
     },
     "XRayBeamAttenuatorModelRegistration": {
-        "128475": ("X-Ray Beam Attenuator " "Model Registration", [])
+        "128475": ("X-Ray Beam Attenuator Model Registration", [])
     },
     "XRayDetectorDataAvailable": {"113945": ("X-Ray Detector Data Available", [])},
     "XRayFilterAluminumEquivalent": {
@@ -7623,7 +7622,7 @@ DCM_concepts = {
     "XRayReadingDevice": {"113942": ("X-Ray Reading Device", [7445])},
     "XRaySourceDataAvailable": {"113943": ("X-Ray Source Data Available", [])},
     "XRaySourceReferenceCoordinateSystem": {
-        "130519": ("X-Ray Source Reference " "Coordinate System", [])
+        "130519": ("X-Ray Source Reference Coordinate System", [])
     },
     "XRayTubeCurrent": {"113734": ("X-Ray Tube Current", [])},
     "Xmab557489Zr": {"126734": ("XmAb5574 ^89^Zr", [4021])},
@@ -7672,7 +7671,7 @@ DCM_concepts = {
     "ZoneSizeEntropy": {"128836": ("Zone Size Entropy", [])},
     "ZoneSizeNonuniformity": {"128831": ("Zone Size Nonuniformity", [])},
     "ZoneSizeNonuniformityNormalized": {
-        "128832": ("Zone Size Nonuniformity " "Normalized", [])
+        "128832": ("Zone Size Nonuniformity Normalized", [])
     },
     "ZoneSizeVariance": {"128835": ("Zone Size Variance", [])},
     "_10X": {"112716": ("10X", [8132])},
@@ -7682,7 +7681,7 @@ DCM_concepts = {
     "_152Terbium": {"126606": ("^152^Terbium", [4020])},
     "_15LeadECG": {"122062": ("15-Lead ECG", [])},
     "_15cmFromIsocenterTowardSource": {
-        "113860": ("15cm from Isocenter toward " "Source", [10025])
+        "113860": ("15cm from Isocenter toward Source", [10025])
     },
     "_15cmFromTableCenterline": {"113864": ("15cm from Table Centerline", [10025])},
     "_16OxygenNucleus": {"130144": ("^16^Oxygen nucleus", [9526])},
@@ -7698,11 +7697,11 @@ DCM_concepts = {
     "_2ndWeek": {"111393": ("2nd week", [6163])},
     "_30cmAboveTabletop": {"113863": ("30cm above Tabletop", [10025])},
     "_30cmInFrontOfImageInputSurface": {
-        "113861": ("30cm in Front of Image Input " "Surface", [10025])
+        "113861": ("30cm in Front of Image Input Surface", [10025])
     },
     "_35PercentOfThermalCO": {"109014": ("35% of thermal CO", [])},
     "_35PercentOfThermalDyeDilutionCO": {
-        "109014": ("35% of thermal/dye dilution " "CO", [3337])
+        "109014": ("35% of thermal/dye dilution CO", [3337])
     },
     "_3DDoseMap": {"128487": ("3D Dose Map", [10063])},
     "_3DGel": {"128701": ("3D Gel", [7026])},
@@ -7728,7 +7727,7 @@ DCM_concepts = {
     },
     "_5PointSegmentFindingScaleWithGradedHypokinesis": {
         "125225": (
-            "5 Point " "Segment " "Finding Scale " "With Graded " "Hypokinesis",
+            "5 Point Segment Finding Scale With Graded Hypokinesis",
             [12238],
         )
     },
@@ -7736,7 +7735,7 @@ DCM_concepts = {
     "_70Arsenic": {"126602": ("^70^Arsenic", [4020])},
     "_70PercentOfThermalCO": {"109015": ("70% of thermal CO", [])},
     "_70PercentOfThermalDyeDilutionCO": {
-        "109015": ("70% of thermal/dye dilution " "CO", [3337])
+        "109015": ("70% of thermal/dye dilution CO", [3337])
     },
     "_7D1289Zr": {"126751": ("7D12 ^89^Zr", [4021])},
     "_7E1189Zr": {"126750": ("7E11 ^89^Zr", [4021])},
