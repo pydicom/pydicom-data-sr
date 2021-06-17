@@ -286,7 +286,7 @@ def write_concept_files(concepts) -> None:
             #     <top_value>,
             # }
             f.write(f"{variable} = {{\n")
-            for name, middle_value in top_value.items:
+            for name, middle_value in top_value.items():
                 # name: str
                 # middle_value: Dict[str, Tuple[str, List[int]]]
                 # Write as:
@@ -294,7 +294,7 @@ def write_concept_files(concepts) -> None:
                 #         <middle_value>,
                 #     },
                 f.write(f'{top_indent}"{name}": {{\n')
-                for key, val in middle_value.items:
+                for key, val in middle_value.items():
                     # key: str
                     # val: Tuple[str, List[int]]
                     # Write as:

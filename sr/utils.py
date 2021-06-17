@@ -12,7 +12,7 @@ import requests
 LOGGER = logging.getLogger(__name__)
 
 
-def _fetch_uri(address: Tuple[Path, str, Path], timeout: int = 60) -> Path:
+def _fetch_uri(address: Tuple[Path, str, Path], timeout: int = 150) -> Path:
     """Download a file from an FTP server.
 
     Parameters
