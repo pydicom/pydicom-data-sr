@@ -23,4 +23,4 @@ jobs:
       run: |
         pip install -e .[dev]
         mkdir sr/temp
-        python sr/main.py --dev
+        python sr/main.py --dev --force-regeneration
