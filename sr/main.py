@@ -232,7 +232,7 @@ def write_cid_file(
             # cid_concepts[cid]: {
             #     <value>,
             # }
-            f.write(f"\nname_for_cid[{cid}] = '{name_for_cid[cid]}'\n")
+            f.write(f'\nname_for_cid[{cid}] = "{name_for_cid[cid]}"\n')
             f.write(f"cid_concepts[{cid}] = {{\n")
             for scheme, items in value.items():
                 # scheme: str
@@ -286,7 +286,7 @@ def write_concept_files(concepts) -> None:
             #     <top_value>,
             # }
             f.write(f"{variable} = {{\n")
-            for name, middle_value in top_value.items():
+            for name, middle_value in sorted(top_value.items(), key=lambda x: x[0]):
                 # name: str
                 # middle_value: Dict[str, Tuple[str, List[int]]]
                 # Write as:
@@ -302,7 +302,7 @@ def write_concept_files(concepts) -> None:
                     #             str, List[int],
                     #         ),
                     f.write(f'{middle_indent}"{key}": (\n')
-                    f.write(f'{bottom_indent}"{val[0]}", {val[1]},\n')
+                    f.write(f'{bottom_indent}"{val[0]}", {sorted(val[1])},\n')
                     f.write(f"{middle_indent}),\n")
 
                 f.write(f"{top_indent}}},\n")

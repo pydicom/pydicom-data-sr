@@ -24,7 +24,10 @@ jobs:
         pip install -e .[dev]
         mkdir sr/temp
         python sr/main.py --dev --force-regeneration
+        black sr/*py
+        black sr/tables/*.py
         git diff --output=gitdiff.txt
+    - name:
     - name: Upload artifacts
       if: ${{ success() }}
       uses: actions/upload-artifact@v2
