@@ -54,9 +54,10 @@ setup(
             "black==21.6b0",
             "mypy==0.902",
             "types-requests==0.1.11",
+            "pytest==6.2.4",
         ]
     },
     entry_points={
-        "pydicom.data.external_sources": "pydicom-data-sr = srdata:DataStore",
+        "pydicom.data.sr": "pydicom-data-sr = sr:foo",
     },
 )
