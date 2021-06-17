@@ -53,6 +53,7 @@ setup(
             "requests==2.25.1",
             "black==21.6b0",
             "mypy==0.902",
+            "types-requests==0.1.11",
         ]
     },
     entry_points={

@@ -4,7 +4,7 @@ from pathlib import Path
 import re
 import sys
 import time
-from typing import List, Callable, Tuple, Optional
+from typing import List, Callable, Tuple, Optional, cast, Dict
 
 from bs4 import BeautifulSoup
 
@@ -13,7 +13,7 @@ LOGGER = logging.getLogger(__name__)
 
 # The list of scheme designators is not complete.
 # For full list see table 8-1 in part 3.16 chapter 8:
-FHIR_LOOKUP = {
+FHIR_LOOKUP: Dict[str, str] = {
     "http://snomed.info/sct": "SCT",
     "http://dicom.nema.org/resources/ontology/DCM": "DCM",
     "http://loinc.org": "LN",
@@ -34,11 +34,23 @@ FHIR_LOOKUP = {
 }
 
 
+ConceptType = Dict[str, Dict[str, Dict[str, Tuple[str, List[int]]]]]
+SnomedType = List[Tuple[str, str, str]]
+CIDListType = Dict[int, Dict[str, List[str]]]
+NameForCIDType = Dict[int, str]
+ProcessReturnType = Tuple[
+    SnomedType,
+    ConceptType,
+    CIDListType,
+    NameForCIDType,
+]
+
+
 def process_source_data(
     cid_paths: List[Path],
     table_o1: Path,
     table_d1: Path,
-) -> None:
+) -> ProcessReturnType:
     """Process the downloaded souce data and generate the tables.
 
     Parameters
@@ -56,12 +68,11 @@ def process_source_data(
     -------
     """
     CID_REGEX = re.compile("^dicom-cid-([0-9]+)-[a-zA-Z]+")
-    concepts = {}
-    cid_lists = {}
-    # The
-    name_for_cid: Dict[int, str] = {}
+    concepts: ConceptType = {}
+    cid_lists: CIDListType = {}
+    name_for_cid: NameForCIDType = {}
 
-    for path in cid_paths:
+    for path in sorted(cid_paths, key=lambda x: int(x.stem.split('_')[-1])):
         with open(path, "r") as f:
             data = json.loads(f.read())
 
@@ -71,11 +82,11 @@ def process_source_data(
 
             # e.g. for 'dicom-cid-2-AnatomicModifier' -> cid = 2
             cid = int(match.group(1))
-            name_for_cid[cid] = data["name"]
+            name_for_cid[cid] = cast(str, data["name"])
 
-            cid_concepts = {}
+            cid_concepts: Dict[str, List[str]] = {}
             for group in data["compose"]["include"]:
-                system = group["system"]
+                system: str = group["system"]
                 try:
                     scheme_designator = FHIR_LOOKUP[system]
                 except KeyError:
@@ -87,10 +98,10 @@ def process_source_data(
                 if scheme_designator not in concepts:
                     concepts[scheme_designator] = dict()
 
-                for concept in group["concept"]:
+                for concept in cast(List[Dict[str, str]], group["concept"]):
                     name = keyword_from_meaning(concept["display"])
-                    code = concept["code"].strip()
-                    display = concept["display"].strip()
+                    code: str = concept["code"].strip()
+                    display: str = concept["display"].strip()
 
                     # If new name under this scheme, start dict of
                     #   codes/cids that use that code
@@ -107,6 +118,7 @@ def process_source_data(
                             # Meanings can only be different by symbols, etc.
                             #    because converted to same keyword.
                             #    Nevertheless, print as info
+                            # Need to maintain consistent display values though
                             LOGGER.info(
                                 f"'{name}': '{display}' in "
                                 f"cid_{cid}, previously '{prior[code][0]}' "
@@ -135,7 +147,10 @@ def process_source_data(
     return snomed, concepts, cid_lists, name_for_cid
 
 
-def process_table_o1(concepts, table: Path) -> Tuple[List[Tuple[str, str, str]]]:
+def process_table_o1(
+    concepts: ConceptType,
+    table: Path,
+) -> Tuple[List[Tuple[str, str, str]], ConceptType]:
     """Process the SNOMED table
 
     Parameters
@@ -179,7 +194,10 @@ def process_table_o1(concepts, table: Path) -> Tuple[List[Tuple[str, str, str]]]
     return codes, concepts
 
 
-def process_table_d1(concepts, table: Path) -> Tuple[List[Tuple[str, str, str, str]]]:
+def process_table_d1(
+    concepts: ConceptType,
+    table: Path,
+) -> Tuple[List[Tuple[str, str, str, str]], ConceptType]:
     """Process the DICOM table
 
     Parameters
@@ -288,7 +306,7 @@ def get_dicom_version(path: Path) -> str:
     with open(path, "rb") as f:
         doc = BeautifulSoup(f.read(), "html.parser")
         table = doc.find_all("table")[0]
-        version = table.tr.th.get_text().strip().split()[2]
+        version: str = table.tr.th.get_text().strip().split()[2]
 
         LOGGER.debug(f"DICOM version is '{version}'")
         return version

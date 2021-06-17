@@ -38,9 +38,7 @@ def _fetch_uri(address: Tuple[Path, str, Path], timeout: int = 150) -> Path:
     return filename
 
 
-def download_cid_files(
-    address: Tuple[str, str], dst: Path, workers: int = 64
-) -> List[Path]:
+def download_cid_files(address: Tuple[str, str], dst: Path, workers: int = 64) -> List[Path]:
     """Download CID files from the DICOM FTP server.
 
     Parameters
@@ -66,12 +64,12 @@ def download_cid_files(
     ftp.login(user)
 
     uris = ftp.nlst(path)
-    uris = [(dst, host, Path(uri)) for uri in uris]
+    addresses = [(dst, host, Path(uri)) for uri in uris]
 
     LOGGER.info(f"Downloading {len(uris)} *.json CID files from '{path}'...")
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        result = pool.map(_fetch_uri, uris)
+        result = pool.map(_fetch_uri, addresses)
 
     # Check we have downloaded all the files
     if len(uris) != len(list(dst.glob("*.json"))):
@@ -101,7 +99,7 @@ def download_file(url: str, dst: Path) -> None:
         f.write(r.content)
 
 
-def _hash_func(path: Path) -> str:
+def _hash_func(path: Path) -> Tuple[Path, str]:
     """Return a hash for the file at `path`."""
     return path, hashlib.md5(open(path, "rb").read()).hexdigest()
 

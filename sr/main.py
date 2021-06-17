@@ -4,7 +4,7 @@ import logging
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import time
-from typing import Optional, List, Tuple, Dict
+from typing import Optional, List, Tuple, Dict, Any
 
 from sr import (
     PACKAGE_DIR,
@@ -16,7 +16,14 @@ from sr import (
     VERSION_FILE,
     __version__,
 )
-from sr.process import process_source_data, get_dicom_version
+from sr.process import (
+    process_source_data,
+    get_dicom_version,
+    ConceptType,
+    SnomedType,
+    CIDListType,
+    NameForCIDType,
+)
 from sr.utils import (
     download_cid_files,
     download_file,
@@ -194,10 +201,7 @@ def write_snomed_file(codes: List[Tuple[str, str, str]]) -> None:
         f.write("}\n")
 
 
-def write_cid_file(
-    cid_lists: Dict[int, Dict[str, List[str]]],
-    name_for_cid: Dict[int, str],
-) -> None:
+def write_cid_file(cid_lists: CIDListType, name_for_cid: NameForCIDType) -> None:
     """Write the CID data to file.
 
     Parameters
@@ -254,7 +258,7 @@ def write_cid_file(
             f.write("}\n")
 
 
-def write_concept_files(concepts) -> None:
+def write_concept_files(concepts: ConceptType) -> None:
     """Write the CID concepts to file.
 
     Parameters
@@ -337,7 +341,7 @@ def write_version_file(dicom_version: str) -> None:
     LOGGER.info(f"Package version updated to '{new_version}'")
 
 
-def _setup_argparser():
+def _setup_argparser() -> Any:
     """Setup the command line arguments"""
     # Description
     parser = argparse.ArgumentParser(description="", usage="")
