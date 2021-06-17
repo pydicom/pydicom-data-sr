@@ -290,7 +290,7 @@ def get_dicom_version(path: Path) -> str:
     with open(path, "rb") as f:
         doc = BeautifulSoup(f.read(), "html.parser")
         table = doc.find_all("table")[0]
-        version = table.tbody.th.get_text().strip().split()[2]
+        version = table.tr.th.get_text().strip().split()[2]
 
         LOGGER.debug(f"DICOM version is '{version}'")
         return version

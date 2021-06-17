@@ -31,8 +31,10 @@ CID_HOST = "medical.nema.org"
 CID_PATH = "medical/dicom/resources/valuesets/fhir/json"
 
 PART_16 = "http://dicom.nema.org/medical/dicom/current/output/chtml/part16"
-TABLE_O1 = PART_16 + "/chapter_O.html#table_O-1"
-TABLE_D1 = PART_16 + "/chapter_D.html#table_D-1"
+TABLE_O1 = PART_16 + "/chapter_O.html"
+TABLE_D1 = PART_16 + "/chapter_D.html"
+
+WORKERS = 64
 
 
 def run(
@@ -74,7 +76,7 @@ def run(
         #   Tables O1 and D1 in Part 16 of the DICOM Standard
         start_time = time.time()
 
-        download_cid_files((CID_HOST, CID_PATH), src)
+        download_cid_files((CID_HOST, CID_PATH), src, WORKERS)
         download_file(TABLE_D1, src / "part16_d1.html")
         download_file(TABLE_O1, src / "part16_o1.html")
 
@@ -96,7 +98,7 @@ def run(
     table_o1 = src / "part16_o1.html"
     table_d1 = src / "part16_d1.html"
 
-    dicom_version = get_dicom_version(table_o1)
+    dicom_version = get_dicom_version(table_d1)
 
     # Rebuild the data tables
     snomed, concepts, cid_lists, name_for_cid = process_source_data(
@@ -374,13 +376,12 @@ def _setup_argparser():
 
 if __name__ == "__main__":
 
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.DEBUG)
     args = _setup_argparser()
 
     src = None
     if args.dev:
         src = PACKAGE_DIR / "temp"
-        logging.basicConfig(level=logging.DEBUG)
 
     if args.clean:
         pass

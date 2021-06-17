@@ -38,7 +38,9 @@ def _fetch_uri(address: Tuple[Path, str, Path], timeout: int = 60) -> Path:
     return filename
 
 
-def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
+def download_cid_files(
+    address: Tuple[str, str], dst: Path, workers: int = 64
+) -> List[Path]:
     """Download CID files from the DICOM FTP server.
 
     Parameters
@@ -47,6 +49,8 @@ def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
         The (host, path) to the root directory where the CID are located.
     dst : pathlib.Path
         The destination directory for the downloaded files.
+    workers : int, optional
+        The number of workers to use when downloading the files.
 
     Returns
     -------
@@ -66,7 +70,7 @@ def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
 
     LOGGER.info(f"Downloading {len(uris)} *.json CID files from '{path}'...")
 
-    with ThreadPoolExecutor(max_workers=32) as pool:
+    with ThreadPoolExecutor(max_workers=workers) as pool:
         result = pool.map(_fetch_uri, uris)
 
     # Check we have downloaded all the files
