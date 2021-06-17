@@ -21,5 +21,6 @@ jobs:
         python-version: 3.9
     - name: Download and check source data
       run: |
-        pip install .[dev]
+        pip install -e .[dev]
+        mkdir sr/temp
         python sr/main.py --dev
