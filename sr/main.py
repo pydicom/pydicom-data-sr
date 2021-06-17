@@ -155,12 +155,12 @@ def write_snomed_file(codes: List[Tuple[str, str, str]]) -> None:
     """
 
     LOGGER.info(f"Writing data to '{SNOMED_FILE}'")
-    timestamp = datetime.now().strftime("%Y%m%d %H:%M%s")
+    timestamp = datetime.now().strftime("%Y%m%d %H:%M:%S")
 
     with open(SNOMED_FILE, "w", encoding="utf8") as f:
         f.writelines(
             [
-                f"# Auto-generated on {timestamp}.\n",
+                f"# Auto-generated on {timestamp}\n",
                 "# -*- coding: utf-8 -*-\n",
                 "\n",
                 "# Dict with scheme designator keys; format is:\n",
@@ -175,7 +175,7 @@ def write_snomed_file(codes: List[Tuple[str, str, str]]) -> None:
         f.write("mapping = {}\n")
         # Write the SCT to SRT mappings
         f.write("\nmapping['SCT'] = {\n")
-        for sct, srt, meaning in sorted(codes, key=lambda x: x[0]):
+        for sct, srt, meaning in sorted(codes, key=lambda x: int(x[0])):
             f.write(f'    "{sct}": "{srt}",\n')
 
         f.write("}\n")
@@ -206,14 +206,14 @@ def write_cid_file(
     """
 
     LOGGER.info(f"Writing data to '{CID_FILE}'")
-    timestamp = datetime.now().strftime("%Y%m%d %H:%M%s")
+    timestamp = datetime.now().strftime("%Y%m%d %H:%M:%S")
 
     top_indent = " " * 4
     bottom_indent = " " * 8
     with open(CID_FILE, "w", encoding="utf8") as f:
         f.writelines(
             [
-                f"# Auto-generated on {timestamp}.\n",
+                f"# Auto-generated on {timestamp}\n",
                 "# -*- coding: utf-8 -*-\n",
                 "\n",
                 "# Dict with cid number as keys; value format is:\n",
@@ -260,9 +260,9 @@ def write_concept_files(concepts) -> None:
 
     LOGGER.info(f"Writing concept data files...")
 
-    timestamp = datetime.now().strftime("%Y%m%d %H:%M%s")
+    timestamp = datetime.now().strftime("%Y%m%d %H:%M:%S")
     header = [
-        f"# Auto-generated on {timestamp}.\n",
+        f"# Auto-generated on {timestamp}\n",
         "# -*- coding: utf-8 -*-\n",
         "\n",
     ]
@@ -321,6 +321,7 @@ def write_concept_files(concepts) -> None:
 
 def write_version_file(dicom_version: str) -> None:
     """Write a new _version.py file"""
+    return
 
     new_version = datetime.now().strftime("%Y.%m.%d")
     if new_version == __version__:

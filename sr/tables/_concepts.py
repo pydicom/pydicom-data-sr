@@ -1,4 +1,4 @@
-# Auto-generated on 20210617 17:081623913727.
+# Auto-generated on 20210617 17:16:30
 # -*- coding: utf-8 -*-
 
 from sr.tables._concepts_BARI import concepts_BARI
