@@ -76,9 +76,15 @@ def run(
         #   Tables O1 and D1 in Part 16 of the DICOM Standard
         start_time = time.time()
 
-        download_cid_files((CID_HOST, CID_PATH), src, WORKERS)
-        download_file(TABLE_D1, src / "part16_d1.html")
-        download_file(TABLE_O1, src / "part16_o1.html")
+        attempts = 0
+        while attempts < 5:
+            try:
+                download_cid_files((CID_HOST, CID_PATH), src, WORKERS)
+                download_file(TABLE_D1, src / "part16_d1.html")
+                download_file(TABLE_O1, src / "part16_o1.html")
+            except TimeoutError as exc:
+                LOGGER.exception(exc)
+                attempts += 1
 
         total_time = time.time() - start_time
         LOGGER.info(f"Source files downloaded in {total_time:.1f} s")
