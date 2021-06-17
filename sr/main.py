@@ -34,7 +34,7 @@ PART_16 = "http://dicom.nema.org/medical/dicom/current/output/chtml/part16"
 TABLE_O1 = PART_16 + "/chapter_O.html"
 TABLE_D1 = PART_16 + "/chapter_D.html"
 
-WORKERS = 64
+WORKERS = 32
 
 
 def run(
