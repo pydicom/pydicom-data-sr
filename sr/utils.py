@@ -67,7 +67,7 @@ def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
     LOGGER.info(f"Downloading {len(uris)} *.json CID files from '{path}'...")
 
     with ThreadPoolExecutor(max_workers=32) as pool:
-        result = pool(_fetch_uri, uris)
+        result = pool.map(_fetch_uri, uris)
 
     # Check we have downloaded all the files
     if len(uris) != len(list(dst.glob("*.json"))):
