@@ -35,7 +35,9 @@ FHIR_LOOKUP = {
 
 
 def process_source_data(
-    cid_paths: List[Path], table_o1: Path, table_d1: Path,
+    cid_paths: List[Path],
+    table_o1: Path,
+    table_d1: Path,
 ) -> None:
     """Process the downloaded souce data and generate the tables.
 
@@ -133,9 +135,7 @@ def process_source_data(
     return snomed, concepts, cid_lists, name_for_cid
 
 
-def process_table_o1(
-    concepts, table: Path
-) -> Tuple[List[Tuple[str, str, str]]]:
+def process_table_o1(concepts, table: Path) -> Tuple[List[Tuple[str, str, str]]]:
     """Process the SNOMED table
 
     Parameters
@@ -179,9 +179,7 @@ def process_table_o1(
     return codes, concepts
 
 
-def process_table_d1(
-    concepts, table: Path
-) -> Tuple[List[Tuple[str, str, str, str]]]:
+def process_table_d1(concepts, table: Path) -> Tuple[List[Tuple[str, str, str, str]]]:
     """Process the DICOM table
 
     Parameters

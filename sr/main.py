@@ -61,7 +61,7 @@ def run(
     have_data = False
 
     if isinstance(src, Path) and src.exists():
-        have_data = bool(list(src.glob('*')))
+        have_data = bool(list(src.glob("*")))
     elif src is None:
         t = TemporaryDirectory()
         src = Path(t.name)
@@ -269,8 +269,7 @@ def write_concept_files(concepts) -> None:
 
     imports = []
     top_indent = " " * 4
-    middle_indent = " " * 8
-    bottom_indent = " " * 12
+    m_indent = " " * 8
     for scheme, top_value in concepts.items():
         module = f"_concepts_{scheme}"
         variable = f"concepts_{scheme}"
@@ -298,12 +297,8 @@ def write_concept_files(concepts) -> None:
                     # key: str
                     # val: Tuple[str, List[int]]
                     # Write as:
-                    #         key: (
-                    #             str, List[int],
-                    #         ),
-                    f.write(f'{middle_indent}"{key}": (\n')
-                    f.write(f'{bottom_indent}"{val[0]}", {sorted(val[1])},\n')
-                    f.write(f"{middle_indent}),\n")
+                    #         key: (str, List[int]),
+                    f.write(f'{m_indent}"{key}": ("{val[0]}", {sorted(val[1])}),\n')
 
                 f.write(f"{top_indent}}},\n")
 
@@ -313,8 +308,8 @@ def write_concept_files(concepts) -> None:
     imports = sorted(imports, key=lambda x: x[0])
     with open(CONCEPTS_FILE, "w", encoding="utf8") as f:
         f.writelines(header)
-        for scheme, module, variable in imports:
-            # from sr._cid_concepts_scheme import scheme_concepts
+        for _, module, variable in imports:
+            # from sr.tables._cid_concepts_<scheme> import _concepts_<scheme>
             f.write(f"from sr.tables.{module} import {variable}\n")
 
         f.write("\n\n")
