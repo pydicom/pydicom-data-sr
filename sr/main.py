@@ -82,6 +82,7 @@ def run(
                 download_cid_files((CID_HOST, CID_PATH), src, WORKERS)
                 download_file(TABLE_D1, src / "part16_d1.html")
                 download_file(TABLE_O1, src / "part16_o1.html")
+                break
             except TimeoutError as exc:
                 LOGGER.exception(exc)
                 attempts += 1
