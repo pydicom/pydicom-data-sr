@@ -4123,7 +4123,7 @@ concepts_DCM = {
         "110829": ("Flow Variance", [218, 7180, 7469]),
     },
     "FlowVelocity": {
-        "110828": ("Flow velocity", [218, 7180, 7469, 12119, 12120]),
+        "110828": ("Flow Velocity", [218, 7180, 7469, 12119, 12120]),
     },
     "FlubatineF18": {
         "126503": ("Flubatine F^18^", [4021]),
@@ -9025,7 +9025,7 @@ concepts_DCM = {
         "111532": ("Pregnancy Status", []),
     },
     "PreliminaryReport": {
-        "121362": ("Preliminary Report", [7009, 9233]),
+        "121362": ("Preliminary report", [7009, 9233]),
     },
     "PreparationForImaging": {
         "127104": ("Preparation for imaging", [634]),
@@ -11126,7 +11126,7 @@ concepts_DCM = {
         "113240": ("Source image diffusion b-value", [7276, 9000]),
     },
     "SourceImageForImageProcessingOperation": {
-        "121322": ("Source Image for Image Processing Operation", [4264, 7202, 7222]),
+        "121322": ("Source image for image processing operation", [4264, 7202, 7222]),
     },
     "SourceImageForMontage": {
         "121329": ("Source image for montage", [7202]),

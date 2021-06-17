@@ -3162,7 +3162,7 @@ concepts_MDC = {
         "2:16128": ("P Axis", [3229]),
     },
     "PDurationGlobal": {
-        "2:16184": ("P duration, global", [3228, 3689]),
+        "2:16184": ("P duration global", [3228, 3689]),
     },
     "PDurationPerLead": {
         "2:6656": ("P duration per lead", [3228, 3687]),
@@ -3376,7 +3376,7 @@ concepts_MDC = {
         "2:16132": ("QRS axis", [3229]),
     },
     "QRSDurationGlobal": {
-        "2:16156": ("QRS duration, global", [3228, 3689]),
+        "2:16156": ("QRS duration global", [3228, 3689]),
     },
     "QRSDurationPerLead": {
         "2:7936": ("QRS duration per lead", [3228, 3687]),

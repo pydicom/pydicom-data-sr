@@ -79,7 +79,7 @@ concepts_UCUM = {
         "Hz": ("Hertz", [7181]),
     },
     "HounsfieldUnit": {
-        "[hnsf'U]": ("Hounsfield Unit", [83, 301, 7181]),
+        "[hnsf'U]": ("Hounsfield unit", [83, 301, 7181]),
     },
     "Hour": {
         "h": ("hour", [7456]),
@@ -145,7 +145,7 @@ concepts_UCUM = {
         "mmol/kg{WetWeight}": ("millimoles per kg wet weight", [7181]),
     },
     "Millisecond": {
-        "ms": ("Millisecond", [7181, 7183]),
+        "ms": ("millisecond", [7181, 7183]),
     },
     "Millitesla": {
         "mT": ("milliTesla", [7181]),
@@ -215,7 +215,7 @@ concepts_UCUM = {
         "s": ("s", [9557]),
     },
     "Second": {
-        "s": ("Second", [7181, 7183]),
+        "s": ("second", [7181, 7183]),
     },
     "SecondPerSquareMillimeter": {
         "s/mm2": ("second per square millimeter", [7181]),

@@ -76,16 +76,17 @@ def process_source_data(
         with open(path, "r") as f:
             data = json.loads(f.read())
 
+            # e.g. 'dicom-cid-2-AnatomicModifier'
             match = CID_REGEX.search(data["id"])
             if not match:
                 continue
 
-            # e.g. for 'dicom-cid-2-AnatomicModifier' -> cid = 2
             cid = int(match.group(1))
             name_for_cid[cid] = cast(str, data["name"])
 
             cid_concepts: Dict[str, List[str]] = {}
             for group in data["compose"]["include"]:
+                # e.g. "system":"http://dicom.nema.org/resources/ontology/DCM"
                 system: str = group["system"]
                 try:
                     scheme_designator = FHIR_LOOKUP[system]
@@ -99,43 +100,44 @@ def process_source_data(
                     concepts[scheme_designator] = dict()
 
                 for concept in cast(List[Dict[str, str]], group["concept"]):
-                    name = keyword_from_meaning(concept["display"])
-                    code: str = concept["code"].strip()
-                    display: str = concept["display"].strip()
+                    # "concept":[
+                    #     {
+                    #         "code":"14414005",
+                    #         "display":"Peripheral"
+                    #     },
+                    #     {
+                    #         "code":"57195005",
+                    #         "display":"Basal"
+                    #     },
+                    # ]
+                    # Not all display values are identical for the same code
+                    # Mostly differences in capitalisation and punctuation
+                    keyword = keyword_from_meaning(concept["display"])
+                    code = concept["code"].strip()
+                    display = concept["display"].strip()
 
                     # If new name under this scheme, start dict of
                     #   codes/cids that use that code
-                    if name not in concepts[scheme_designator]:
-                        concepts[scheme_designator][name] = {code: (display, [cid])}
+                    if keyword not in concepts[scheme_designator]:
+                        concepts[scheme_designator][keyword] = {code: (display, [cid])}
                     else:
-                        prior = concepts[scheme_designator][name]
+                        prior = concepts[scheme_designator][keyword]
                         if code in prior:
                             prior[code][1].append(cid)
                         else:
                             prior[code] = (display, [cid])
 
-                        if prior[code][0].lower() != display.lower():
-                            # Meanings can only be different by symbols, etc.
-                            #    because converted to same keyword.
-                            #    Nevertheless, print as info
-                            # Need to maintain consistent display values though
-                            LOGGER.info(
-                                f"'{name}': '{display}' in "
-                                f"cid_{cid}, previously '{prior[code][0]}' "
-                                f"in cids {prior[code][1]}"
-                            )
-
                     # Keep track of this cid referencing that name
                     if scheme_designator not in cid_concepts:
                         cid_concepts[scheme_designator] = []
 
-                    if name in cid_concepts[scheme_designator]:
+                    if keyword in cid_concepts[scheme_designator]:
                         LOGGER.warning(
-                            f"'{name}': '{concept['display']}' in "
+                            f"'{keyword}': '{concept['display']}' in "
                             f"cid_{cid} is duplicated!"
                         )
 
-                    cid_concepts[scheme_designator].append(name)
+                    cid_concepts[scheme_designator].append(keyword)
 
             cid_lists[cid] = cid_concepts
 

@@ -728,7 +728,7 @@ concepts_LN = {
         "11961-0": ("Cervix Length", [12011]),
     },
     "CisternaMagnaLength": {
-        "11860-4": ("Cisterna Magna length", [12005, 12007, 12279]),
+        "11860-4": ("Cisterna Magna Length", [12005, 12007, 12279]),
     },
     "ClavicleLength": {
         "11962-8": ("Clavicle length", [12006]),
@@ -2461,7 +2461,7 @@ concepts_LN = {
         "59098-4": ("Mitral Valve E-septal Separation", [12266, 12268]),
     },
     "MitralValveEToARatio": {
-        "18038-0": ("Mitral valve E-to-A ratio", [12207, 12300]),
+        "18038-0": ("Mitral Valve E to A Ratio", [12207, 12300]),
     },
     "MitralValveEWavePeakVelocity": {
         "18037-2": ("Mitral Valve E-Wave Peak Velocity", [12207]),
@@ -3339,7 +3339,7 @@ concepts_LN = {
     },
     "TimeAveragedMeanVelocity": {
         "20352-1": (
-            "Time Averaged Mean Velocity",
+            "Time averaged mean velocity",
             [
                 12119,
                 12120,
@@ -3376,7 +3376,7 @@ concepts_LN = {
     },
     "TimeAveragedPeakVelocity": {
         "11692-1": (
-            "Time Averaged Peak Velocity",
+            "Time averaged peak velocity",
             [
                 12119,
                 12120,
@@ -3692,7 +3692,7 @@ concepts_LN = {
     },
     "VolumeFlow": {
         "33878-0": (
-            "Volume Flow",
+            "Volume flow",
             [
                 12119,
                 12122,

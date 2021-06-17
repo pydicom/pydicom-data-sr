@@ -539,7 +539,7 @@ concepts_SCT = {
         "307429007": ("After menopause", [6086]),
     },
     "AfterProcedure": {
-        "303110006": ("After procedure", [61, 631, 633, 3815, 12002, 12102]),
+        "303110006": ("After Procedure", [61, 631, 633, 3815, 12002, 12102]),
     },
     "AfterValues": {
         "288563008": ("After values (qualifier value)", []),
@@ -1298,7 +1298,7 @@ concepts_SCT = {
         "31636006": ("Anterior chamber of eye structure (body structure)", []),
     },
     "AnteriorCommissure": {
-        "62872008": ("anterior commissure", [7101, 7111, 7705, 7710, 8134]),
+        "62872008": ("Anterior Commissure", [7101, 7111, 7705, 7710, 8134]),
     },
     "AnteriorCommunicatingArtery": {
         "8012006": (
@@ -2115,7 +2115,7 @@ concepts_SCT = {
     },
     "AtrialSeptalDefect": {
         "70142008": (
-            "Atrial Septal Defect",
+            "Atrial Septal defect",
             [
                 3610,
                 3630,
@@ -2957,7 +2957,7 @@ concepts_SCT = {
         "309606002": ("Before menopause", [6086]),
     },
     "BeforeProcedure": {
-        "307153007": ("Before procedure", [61, 631, 633, 12002, 12102]),
+        "307153007": ("Before Procedure", [61, 631, 633, 12002, 12102]),
     },
     "BeforeValues": {
         "272113006": ("Before values (qualifier value)", []),
@@ -4238,7 +4238,7 @@ concepts_SCT = {
         ),
     },
     "BrainStem": {
-        "119238007": ("Brain stem", [7140, 7151, 7153, 7192, 8134, 9514]),
+        "119238007": ("Brain Stem", [7140, 7151, 7153, 7192, 8134, 9514]),
     },
     "BrainStemPart": {
         "119238007": ("Brain stem part (body structure)", []),
@@ -5177,7 +5177,7 @@ concepts_SCT = {
         "42417005": ("Carbon^14^ triolein", [25]),
     },
     "CarbonDioxide": {
-        "31811003": ("Carbon Dioxide", [12, 13, 623, 624, 3850]),
+        "31811003": ("Carbon dioxide", [12, 13, 623, 624, 3850]),
     },
     "CarbonDioxideO15": {
         "129507008": ("Carbon dioxide O^15^", [4021]),
@@ -5418,7 +5418,7 @@ concepts_SCT = {
     "CardiacPacemaker": {
         "118378005": ("Cardiac Pacemaker", [6040, 6401, 7151, 7193]),
         "14106009": (
-            "Cardiac Pacemaker",
+            "Cardiac pacemaker",
             [1000, 3777, 6102, 6138, 6404, 7151, 7157, 7193],
         ),
     },
@@ -5444,7 +5444,7 @@ concepts_SCT = {
         "432554001": ("Cardiac stress recovery state", [3207, 12002]),
     },
     "CardiacStressState": {
-        "432655005": ("Cardiac stress state", [3101, 3207, 12002]),
+        "432655005": ("Cardiac Stress State", [3101, 3207, 12002]),
     },
     "CardiacSurgery": {
         "309971008": ("Cardiac Surgery", [7030]),
@@ -5852,7 +5852,7 @@ concepts_SCT = {
         "408726002": ("Caudal right anterior oblique projection (qualifier value)", []),
     },
     "CaudateNucleus": {
-        "11000004": ("Caudate nucleus", [7140, 7151, 7153, 7192, 8134, 9514]),
+        "11000004": ("Caudate Nucleus", [7140, 7151, 7153, 7192, 8134, 9514]),
     },
     "CaudateNucleusStructure": {
         "11000004": ("Caudate nucleus structure (body structure)", []),
@@ -6030,7 +6030,7 @@ concepts_SCT = {
     },
     "CerebellarWhiteMatter": {
         "33060004": (
-            "Cerebellar white matter",
+            "Cerebellar White Matter",
             [7140, 7151, 7153, 7192, 7710, 8134, 9514],
         ),
     },
@@ -6284,7 +6284,7 @@ concepts_SCT = {
         "413815006": ("Chest imaging (procedure)", []),
     },
     "ChestPain": {
-        "29857009": ("Chest pain", [3201, 3220, 3221, 12246]),
+        "29857009": ("Chest Pain", [3201, 3220, 3221, 12246]),
     },
     "ChestPainNotPresent": {
         "161971004": ("Chest pain not present", [3202, 3220, 3719]),
@@ -7036,7 +7036,7 @@ concepts_SCT = {
     },
     "CommonIliacArteryBifurcation": {
         "413896006": (
-            "Common Iliac Artery Bifurcation",
+            "Common iliac artery bifurcation",
             [1000, 1001, 1005, 3827, 7151, 7192, 8134, 9514, 12103, 12109],
         ),
     },
@@ -7197,7 +7197,7 @@ concepts_SCT = {
         "410688004": ("Concave noncontact fundus lens", [4205]),
     },
     "Concentric": {
-        "255465008": ("concentric", [3491, 3806]),
+        "255465008": ("Concentric", [3491, 3806]),
     },
     "CondenserAnnulus": {
         "445634000": ("Condenser annulus", [8124]),
@@ -7498,7 +7498,7 @@ concepts_SCT = {
         "232717009": ("Coronary artery bypass grafting (procedure)", []),
     },
     "CoronaryArteryDisease": {
-        "53741008": ("Coronary artery disease", [3201, 3700, 12246]),
+        "53741008": ("Coronary Artery Disease", [3201, 3700, 12246]),
     },
     "CoronaryArteryFeature": {
         "364092001": ("Coronary artery feature (observable entity)", []),
@@ -7508,7 +7508,7 @@ concepts_SCT = {
     },
     "CoronaryArteryGraft": {
         "264293000": (
-            "Coronary Artery Graft",
+            "Coronary artery graft",
             [
                 1000,
                 1001,
@@ -8943,7 +8943,7 @@ concepts_SCT = {
         "372695000": ("Diuretic", [621, 622]),
     },
     "Diverticulum": {
-        "31113003": ("Diverticulum", [3810, 6201]),
+        "31113003": ("diverticulum", [3810, 6201]),
     },
     "Dizziness": {
         "404640003": ("Dizziness", [3220]),
@@ -9462,7 +9462,7 @@ concepts_SCT = {
         "303111005": ("During menopause", [6086]),
     },
     "DuringProcedure": {
-        "307154001": ("During procedure", [61, 631, 633, 12002, 12102]),
+        "307154001": ("During Procedure", [61, 631, 633, 12002, 12102]),
     },
     "DuringValues": {
         "272114000": ("During values (qualifier value)", []),
@@ -9609,7 +9609,7 @@ concepts_SCT = {
         "131469003": ("Eastern Nuer cattle breed", [7480]),
     },
     "Eccentric": {
-        "255380003": ("eccentric", [3491, 3806]),
+        "255380003": ("Eccentric", [3491, 3806]),
     },
     "EccentricFixation": {
         "251786004": ("Eccentric Fixation", [4221, 4222]),
@@ -10444,7 +10444,7 @@ concepts_SCT = {
         "125272005": ("expanding aneurysm", [3808]),
     },
     "Expiration": {
-        "58322009": ("Expiration", [3823, 12234]),
+        "58322009": ("expiration", [3823, 12234]),
     },
     "Extension": {
         "24154002": ("Extension", [92]),
@@ -11629,7 +11629,7 @@ concepts_SCT = {
         ),
     },
     "FourthVentricle": {
-        "35918002": ("Fourth ventricle", [7140, 7151, 7153, 7192, 8134, 9514]),
+        "35918002": ("Fourth Ventricle", [7140, 7151, 7153, 7192, 8134, 9514]),
     },
     "FourthVentricleStructure": {
         "35918002": ("Fourth ventricle structure (body structure)", []),
@@ -12360,7 +12360,7 @@ concepts_SCT = {
         ),
     },
     "GlobusPallidus": {
-        "14738005": ("Globus pallidus", [7140, 7151, 7153, 7192, 8134, 9514]),
+        "14738005": ("Globus Pallidus", [7140, 7151, 7153, 7192, 8134, 9514]),
     },
     "GlobusPallidusStructure": {
         "14738005": ("Globus pallidus structure (body structure)", []),
@@ -13103,7 +13103,7 @@ concepts_SCT = {
         "56265001": ("heart disease", [3727]),
     },
     "HeartDiseaseCongenital": {
-        "13213009": ("heart disease - congenital", [3700, 3727, 3728]),
+        "13213009": ("heart disease, congenital", [3700, 3727, 3728]),
     },
     "HeartDiseaseRiskFactors": {
         "171224000": ("Heart disease risk factors", [3201, 12246]),
@@ -13121,7 +13121,7 @@ concepts_SCT = {
         "80891009": ("Heart structure (body structure)", []),
     },
     "HeartTransplant": {
-        "32413006": ("heart transplant", [3721, 3727]),
+        "32413006": ("Heart transplant", [3721, 3727]),
     },
     "HeartValveCalcification": {
         "373136005": ("Heart valve calcification (finding)", []),
@@ -13474,7 +13474,7 @@ concepts_SCT = {
     },
     "HipJoint": {
         "24136001": (
-            "Hip Joint",
+            "Hip joint",
             [
                 4,
                 1000,
@@ -13564,7 +13564,7 @@ concepts_SCT = {
         "161445009": ("History of Diabetes", [3756]),
     },
     "HistoryOfDiabetesMellitus": {
-        "161445009": ("History of - diabetes mellitus", [64, 6087, 6088]),
+        "161445009": ("History of diabetes mellitus", [64, 6087, 6088]),
     },
     "HistoryOfEclampsia": {
         "161806007": ("History of - eclampsia", [6087, 6088]),
@@ -13582,7 +13582,7 @@ concepts_SCT = {
         "414416008": ("History of hypercholesterolemia", [3756]),
     },
     "HistoryOfHypertension": {
-        "161501007": ("History of - hypertension", [64, 3756, 6087, 6088]),
+        "161501007": ("History of Hypertension", [64, 3756, 6087, 6088]),
     },
     "HistoryOfInfertility": {
         "161798008": ("History of infertility", [6087, 6088]),
@@ -13615,7 +13615,7 @@ concepts_SCT = {
         "1251000119106": ("History of melanoma in situ of the skin", [4403]),
     },
     "HistoryOfMyocardialInfarction": {
-        "399211009": ("History of myocardial infarction", [3201, 3756]),
+        "399211009": ("History of Myocardial Infarction", [3201, 3756]),
     },
     "HistoryOfObesity": {
         "161453001": ("History of - obesity", [6087, 6088]),
@@ -14833,7 +14833,7 @@ concepts_SCT = {
         "47030008": ("insoluble berlin blue stain", [8112]),
     },
     "Inspiration": {
-        "14910006": ("Inspiration", [3823, 12234]),
+        "14910006": ("inspiration", [3823, 12234]),
     },
     "InstrumentDevice": {
         "57134006": ("Instrument, device (physical object)", []),
@@ -16720,7 +16720,7 @@ concepts_SCT = {
         "399197002": ("Lateral rolling of breast (procedure)", []),
     },
     "LateralVentricle": {
-        "66720007": ("Lateral ventricle", [7140, 7151, 7153, 7192, 8134, 9514, 12022]),
+        "66720007": ("Lateral Ventricle", [7140, 7151, 7153, 7192, 8134, 9514, 12022]),
     },
     "LateralVentricleStructure": {
         "66720007": ("Lateral ventricle structure (body structure)", []),
@@ -17373,7 +17373,7 @@ concepts_SCT = {
     },
     "LeftVentricle": {
         "87878005": (
-            "Left Ventricle",
+            "Left ventricle",
             [
                 4,
                 3010,
@@ -17418,22 +17418,22 @@ concepts_SCT = {
         "264845002": ("left ventricle apical septal segment", [3717, 3718]),
     },
     "LeftVentricleBasalAnteriorSegment": {
-        "264850008": ("Left ventricle basal anterior segment", [3717, 3718, 12305]),
+        "264850008": ("left ventricle basal anterior segment", [3717, 3718, 12305]),
     },
     "LeftVentricleBasalAnterolateralSegment": {
-        "396654005": ("Left ventricle basal anterolateral segment", [3717, 12305]),
+        "396654005": ("left ventricle basal anterolateral segment", [3717, 12305]),
     },
     "LeftVentricleBasalAnteroseptalSegment": {
-        "396482007": ("Left ventricle basal anteroseptal segment", [3717, 12305]),
+        "396482007": ("left ventricle basal anteroseptal segment", [3717, 12305]),
     },
     "LeftVentricleBasalInferiorSegment": {
-        "264846001": ("Left ventricle basal inferior segment", [3717, 3718, 12305]),
+        "264846001": ("left ventricle basal inferior segment", [3717, 3718, 12305]),
     },
     "LeftVentricleBasalInferolateralSegment": {
-        "396652009": ("Left ventricle basal inferolateral segment", [3717, 12305]),
+        "396652009": ("left ventricle basal inferolateral segment", [3717, 12305]),
     },
     "LeftVentricleBasalInferoseptalSegment": {
-        "396646008": ("Left ventricle basal inferoseptal segment", [3717, 12305]),
+        "396646008": ("left ventricle basal inferoseptal segment", [3717, 12305]),
     },
     "LeftVentricleBasalLateralSegment": {
         "277631004": ("Left ventricle basal lateral segment (body structure)", []),
@@ -17457,29 +17457,29 @@ concepts_SCT = {
         "284358004": ("Left ventricle lateral segment", [3232]),
     },
     "LeftVentricleMidAnteriorSegment": {
-        "264848000": ("Left ventricle mid anterior segment", [3717, 12305]),
+        "264848000": ("left ventricle mid anterior segment", [3717, 12305]),
     },
     "LeftVentricleMidAnterolateralSegment": {
-        "396656007": ("Left ventricle mid anterolateral segment", [3717, 12305]),
+        "396656007": ("left ventricle mid anterolateral segment", [3717, 12305]),
     },
     "LeftVentricleMidAnteroseptalSegment": {
-        "396647004": ("Left ventricle mid anteroseptal segment", [3717, 12305]),
+        "396647004": ("left ventricle mid anteroseptal segment", [3717, 12305]),
     },
     "LeftVentricleMidInferiorSegment": {
-        "264847005": ("Left ventricle mid inferior segment", [3717, 12305]),
+        "264847005": ("left ventricle mid inferior segment", [3717, 12305]),
     },
     "LeftVentricleMidInferolateralSegment": {
-        "396655006": ("Left ventricle mid inferolateral segment", [3717, 12305]),
+        "396655006": ("left ventricle mid inferolateral segment", [3717, 12305]),
     },
     "LeftVentricleMidInferoseptalSegment": {
-        "396649001": ("Left ventricle mid inferoseptal segment", [3717, 12305]),
+        "396649001": ("left ventricle mid inferoseptal segment", [3717, 12305]),
     },
     "LeftVentricleMyocardium": {
         "49848007": ("Left Ventricle Myocardium", [12305]),
     },
     "LeftVentricleOutflowTract": {
         "13418002": (
-            "Left Ventricle Outflow Tract",
+            "Left ventricle outflow tract",
             [
                 4,
                 3010,
@@ -17538,7 +17538,7 @@ concepts_SCT = {
         ),
     },
     "LeftVentricularAssistDevice": {
-        "360066001": ("Left ventricular assist device", [3553, 3777, 7151, 7157, 7193]),
+        "360066001": ("Left Ventricular Assist Device", [3553, 3777, 7151, 7157, 7193]),
     },
     "LeftVentricularBasalSeptalSegment": {
         "277630003": ("Left ventricular basal septal segment (body structure)", []),
@@ -18232,7 +18232,7 @@ concepts_SCT = {
         "57349006": ("Long and short coat chihuahua dog breed", [7480]),
     },
     "LongAxis": {
-        "103339001": ("Long Axis", [6, 218, 501, 502, 6165, 6166, 7469, 7470]),
+        "103339001": ("Long axis", [6, 218, 501, 502, 6165, 6166, 7469, 7470]),
     },
     "LongCoatChihuahua": {
         "36611001": ("Long coat chihuahua (organism)", []),
@@ -18582,7 +18582,7 @@ concepts_SCT = {
     },
     "LymphNode": {
         "59441001": (
-            "Lymph node",
+            "Lymph Node",
             [
                 645,
                 6030,
@@ -20052,7 +20052,7 @@ concepts_SCT = {
         "132437005": ("Middle Asian Ovtcharka dog breed", [7480]),
     },
     "MiddleCardiacVein": {
-        "73580002": ("Middle Cardiac Vein", [3011, 3827, 3839, 7151, 7192, 8134, 9514]),
+        "73580002": ("Middle cardiac vein", [3011, 3827, 3839, 7151, 7192, 8134, 9514]),
     },
     "MiddleCerebellarPeduncle": {
         "33723005": (
@@ -22048,7 +22048,7 @@ concepts_SCT = {
         "371572003": ("Nuclear medicine procedure", [6028]),
     },
     "NucleusAccumbens": {
-        "427667007": ("Nucleus accumbens", [7140, 7151, 7153, 7192, 8134, 9514]),
+        "427667007": ("Nucleus Accumbens", [7140, 7151, 7153, 7192, 8134, 9514]),
     },
     "NuerCattleBreed": {
         "131510007": ("Nuer cattle breed", [7480]),
@@ -23267,7 +23267,7 @@ concepts_SCT = {
         "132972003": ("Patibarcina horse breed", [7480]),
     },
     "PatientCurrentlyPregnant": {
-        "77386006": ("patient currently pregnant", [1200, 1201, 6096]),
+        "77386006": ("Patient currently pregnant", [1200, 1201, 6096]),
     },
     "PatientHasPacemaker": {
         "441509002": ("Patient has pacemaker", [3205]),
@@ -24604,7 +24604,7 @@ concepts_SCT = {
         "279336005": ("Posterior cerebral commissure", [7151, 7153, 7192, 8134, 9514]),
     },
     "PosteriorCommissure": {
-        "279336005": ("posterior commissure", [7101, 7111, 7705, 7710]),
+        "279336005": ("Posterior Commissure", [7101, 7111, 7705, 7710]),
     },
     "PosteriorCommissureOfLabiumMajorum": {
         "4019005": ("Posterior commissure of labium majorum", [4029, 8134]),
@@ -25395,7 +25395,7 @@ concepts_SCT = {
         "251050008": ("Pulmonary to systemic flow ratio (observable entity)", []),
     },
     "PulmonaryTrunk": {
-        "45341000": ("Pulmonary Trunk", [6102, 6109, 6117, 8134, 12290]),
+        "45341000": ("Pulmonary trunk", [6102, 6109, 6117, 8134, 12290]),
     },
     "PulmonaryValve": {
         "39057004": (
@@ -27183,7 +27183,7 @@ concepts_SCT = {
     },
     "RightVentricleOutflowTract": {
         "44627009": (
-            "Right Ventricle Outflow Tract",
+            "Right ventricle outflow tract",
             [
                 4,
                 3010,
@@ -27601,12 +27601,12 @@ concepts_SCT = {
         "131640001": ("SRD goat breed", [7480]),
     },
     "STDepression": {
-        "26141007": ("ST Depression", [3230, 3233]),
+        "26141007": ("ST depression", [3230, 3233]),
         "429622005": ("ST Depression (observable entity)", []),
     },
     "STElevation": {
         "164931005": ("ST elevation (observable entity)", []),
-        "76388001": ("ST Elevation", [3230, 3233]),
+        "76388001": ("ST elevation", [3230, 3233]),
     },
     "STElevationMyocardialInfarction": {
         "401303003": ("ST Elevation Myocardial Infarction", [3723]),
@@ -28418,7 +28418,7 @@ concepts_SCT = {
         "367450005": ("short", [3831]),
     },
     "ShortAxis": {
-        "103340004": ("Short Axis", [6, 26, 27, 218, 501, 502, 6165, 6166, 7469, 7470]),
+        "103340004": ("Short axis", [6, 26, 27, 218, 501, 502, 6165, 6166, 7469, 7470]),
     },
     "ShortCoatChihuahua": {
         "15966002": ("Short coat chihuahua (organism)", []),
@@ -30019,7 +30019,7 @@ concepts_SCT = {
         "255811001": ("spore stain", [8112]),
     },
     "SpotCompression": {
-        "399055006": ("Spot compression", [4015, 6028, 6029]),
+        "399055006": ("Spot Compression", [4015, 6028, 6029]),
     },
     "SpotCompressionOfBreast": {
         "399055006": ("Spot compression of breast (procedure)", []),
@@ -33952,7 +33952,7 @@ concepts_SCT = {
         "399145009": ("Suprasternal short axis view (qualifier value)", []),
     },
     "SupraventricularTachycardia": {
-        "6456007": ("Supraventricular Tachycardia", [3201, 3230, 12246]),
+        "6456007": ("Supraventricular tachycardia", [3201, 3230, 12246]),
     },
     "Surface": {
         "410679008": ("Surface", [2, 5]),
@@ -34682,7 +34682,7 @@ concepts_SCT = {
         "128437008": ("Temperature waveform, function (observable entity)", []),
     },
     "TemporalBone": {
-        "60911003": ("Temporal bone", [1000, 1001, 1002, 4028, 7151, 7192, 8134, 9514]),
+        "60911003": ("Temporal Bone", [1000, 1001, 1002, 4028, 7151, 7192, 8134, 9514]),
     },
     "TemporalBoneStructure": {
         "60911003": ("Temporal bone structure (body structure)", []),
@@ -35283,7 +35283,7 @@ concepts_SCT = {
         "430856003": ("Tissue section", [8103]),
     },
     "TissueSpecimen": {
-        "119376003": ("Tissue specimen", [501, 4010, 8103]),
+        "119376003": ("tissue specimen", [501, 4010, 8103]),
     },
     "TissueSpecimenFromBreast": {
         "127457009": ("tissue specimen from breast", [4014]),
@@ -36686,7 +36686,7 @@ concepts_SCT = {
         "88619007": ("Vascular resistance, function (observable entity)", []),
     },
     "VascularSclerosis": {
-        "107671003": ("Vascular sclerosis", [3810, 7151, 7156, 7192, 8134, 9514]),
+        "107671003": ("vascular sclerosis", [3810, 7151, 7156, 7192, 8134, 9514]),
     },
     "VascularStentCrossSectionalArea": {
         "408705002": ("Vascular stent cross sectional area (observable entity)", []),
@@ -36883,7 +36883,7 @@ concepts_SCT = {
     },
     "VentricularSeptalDefect": {
         "30288003": (
-            "Ventricular Septal Defect",
+            "Ventricular Septal defect",
             [3610, 3630, 3700, 3728, 12236, 12244, 12248, 12249, 12286],
         ),
     },
