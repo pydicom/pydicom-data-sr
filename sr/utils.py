@@ -38,7 +38,6 @@ def _fetch_uri(address: Tuple[Path, str, Path], timeout: int = 60) -> Path:
     return filename
 
 
-# FIXME: switch to concurrent.futures.ThreadPoolExecutor
 def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
     """Download CID files from the DICOM FTP server.
 

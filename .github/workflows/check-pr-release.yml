@@ -1,8 +1,10 @@
 name: check-pull-request
 
-#on:
+on:
 #  schedule:
 #    - cron: '48 22 * * 0'
+  pull_request:
+    branches: [ master ]
 
 
 jobs:
@@ -17,9 +19,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
-    - name: Check source data
+    - name: Download and check source data
       run: |
         pip install .[dev]
-        python sr/main.py
-    - name: Commit changes
-      run: |
+        python sr/main.py --dev
