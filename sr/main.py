@@ -388,3 +388,6 @@ if __name__ == "__main__":
 
     result = run(src, args.force_download, args.force_regeneration)
     os.environ["env.PACKAGE_UPDATED"] = str(result)
+
+    for env in os.environ:
+        print(env)
