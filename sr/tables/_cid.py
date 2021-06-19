@@ -1581,18 +1581,18 @@ cid_concepts[76] = {
 name_for_cid[83] = "UnitsforRealWorldValueMapping"
 cid_concepts[83] = {
     "UCUM": [
-        "BecquerelsMilliliter",
-        "Centimeter",
-        "Centimeter2",
-        "Centimeter2Milliliter",
+        "BecquerelsPerMilliliter",
+        "CentimeterSquared",
+        "CentimeterSquaredPerMilliliter",
         "Counts",
         "CountsPerSecond",
         "HounsfieldUnit",
-        "MicromoleMilliliter",
-        "MicromoleMinuteMilliliter",
-        "MilligramsMinuteMilliliter",
-        "MilliliterGram",
-        "MilliliterMinuteGram",
+        "MicromolePerMilliliter",
+        "MicromolePerMinutePerMilliliter",
+        "MilligramsPerMinutePerMilliliter",
+        "MilliliterPerGram",
+        "MilliliterPerMinutePerGram",
+        "PerCentimeter",
         "Percent",
         "ProportionalToCounts",
         "ProportionalToCountsPerSecond",
@@ -1608,17 +1608,17 @@ cid_concepts[83] = {
 name_for_cid[84] = "PETUnits"
 cid_concepts[84] = {
     "UCUM": [
-        "BecquerelsMilliliter",
-        "Centimeter",
-        "Centimeter2",
-        "Centimeter2Milliliter",
+        "BecquerelsPerMilliliter",
+        "CentimeterSquared",
+        "CentimeterSquaredPerMilliliter",
         "Counts",
         "CountsPerSecond",
-        "MicromoleMilliliter",
-        "MicromoleMinuteMilliliter",
-        "MilligramsMinuteMilliliter",
-        "MilliliterGram",
-        "MilliliterMinuteGram",
+        "MicromolePerMilliliter",
+        "MicromolePerMinutePerMilliliter",
+        "MilligramsPerMinutePerMilliliter",
+        "MilliliterPerGram",
+        "MilliliterPerMinutePerGram",
+        "PerCentimeter",
         "Percent",
         "ProportionalToCounts",
         "ProportionalToCountsPerSecond",
@@ -2025,6 +2025,7 @@ cid_concepts[218] = {
         "R1",
         "R2",
         "R2Coefficient",
+        "R2star",
         "RCoefficient",
         "RGBBComponent",
         "RGBGComponent",
@@ -2057,6 +2058,9 @@ cid_concepts[218] = {
         "T2",
         "T2WeightedDynamicContrastEnhancedMRSignalIntensity",
         "T2WeightedMRSignalIntensity",
+        "T2star",
+        "T2starWeightedDynamicContrastEnhancedMRSignalIntensity",
+        "T2starWeightedMRSignalIntensity",
         "TemperatureEncoded",
         "TemporalDerivativeThreshold",
         "TimeCourseOfSignal",
@@ -2431,8 +2435,8 @@ cid_concepts[301] = {
         "ElectronDensity",
         "HounsfieldUnit",
         "Percent",
-        "mgcm3",
-        "mgml",
+        "mgPercm3",
+        "mgPerml",
     ],
 }
 
@@ -4014,6 +4018,7 @@ cid_concepts[3001] = {
         "ChestLeadPerV5AndV5RPlacement",
         "ChestLeadPerV6AndV6RPlacement",
         "ChestLeadPerV7AndV8RPlacement",
+        "ChestLeadSymmetricPlacement",
         "ChestManubriumLead",
         "ChestManubriumLeadPerV1Placement",
         "ChestManubriumLeadPerV2Placement",
@@ -5928,7 +5933,7 @@ name_for_cid[3212] = "TreadmillSpeed"
 cid_concepts[3212] = {
     "UCUM": [
         "Mph",
-        "kmH",
+        "kmPerH",
     ],
 }
 
@@ -6433,7 +6438,8 @@ cid_concepts[3337] = {
     "DCM": [
         "AWavePeakPressure",
         "AWavePressureAverage",
-        "BeatDetected",
+        "BeatDetectedAccepted",
+        "BeatDetectedRejected",
         "EndOfExpiration",
         "EndOfInspiration",
         "EndOfSystole",
@@ -6474,6 +6480,7 @@ cid_concepts[3339] = {
         "RWave",
         "SWave",
         "StartOfAtrialContraction",
+        "StartOfAtrialContractionSubsequent",
         "StimulationAtRate1Interval",
         "StimulationAtRate2Interval",
         "StimulationAtRate3Interval",
@@ -7457,9 +7464,9 @@ cid_concepts[3502] = {
 name_for_cid[3503] = "IndexedHemodynamicResistanceUnits"
 cid_concepts[3503] = {
     "UCUM": [
-        "DynScm5M2",
-        "PRUM2",
-        "WoodUM2",
+        "DynScm5PerM2",
+        "PRUPerM2",
+        "WoodUPerM2",
     ],
 }
 
@@ -12248,7 +12255,7 @@ name_for_cid[4244] = "OphthalmicAgentConcentrationUnits"
 cid_concepts[4244] = {
     "UCUM": [
         "Percent",
-        "mgml",
+        "mgPerml",
     ],
 }
 
@@ -12478,7 +12485,8 @@ cid_concepts[4270] = {
         "OCTAAmplitudeDecorrelation",
         "OCTAComplexVariance",
         "OCTACorrelationMapping",
-        "OCTAOneSidedRatio",
+        "OCTAOneSidedRatioGreater",
+        "OCTAOneSidedRatioLesser",
         "OCTASpeckleVariance",
     ],
 }
@@ -18714,6 +18722,7 @@ cid_concepts[7180] = {
         "R1",
         "R2",
         "R2Coefficient",
+        "R2star",
         "RCoefficient",
         "RGBBComponent",
         "RGBGComponent",
@@ -18745,6 +18754,9 @@ cid_concepts[7180] = {
         "T2",
         "T2WeightedDynamicContrastEnhancedMRSignalIntensity",
         "T2WeightedMRSignalIntensity",
+        "T2star",
+        "T2starWeightedDynamicContrastEnhancedMRSignalIntensity",
+        "T2starWeightedMRSignalIntensity",
         "TemperatureEncoded",
         "TemporalDerivativeThreshold",
         "TimeCourseOfSignal",
@@ -18804,10 +18816,10 @@ name_for_cid[7181] = "AbstractMultidimensionalImageModelComponentUnits"
 cid_concepts[7181] = {
     "UCUM": [
         "ArbitraryUnit",
-        "BecquerelsMilliliter",
+        "BecquerelsPerMilliliter",
         "Centimeter",
-        "Centimeter2Milliliter",
-        "CentimeterSecond",
+        "CentimeterPerSecond",
+        "CentimeterSquaredPerMilliliter",
         "Counts",
         "CountsPerSecond",
         "CubicCentimeter",
@@ -18817,39 +18829,40 @@ cid_concepts[7181] = {
         "Decibel",
         "DegreesCelsius",
         "DynScm5",
-        "DynScm5M2",
+        "DynScm5PerM2",
         "Gy",
         "Hertz",
         "HounsfieldUnit",
         "Kpa",
         "Micrometer",
-        "MicromoleMilliliter",
-        "MicromoleMinuteMilliliter",
-        "MilligramsMinuteMilliliter",
-        "MilliliterGram",
-        "MilliliterMinuteGram",
+        "MicromolePerMilliliter",
+        "MicromolePerMinutePerMilliliter",
+        "MilligramsPerMinutePerMilliliter",
         "MilliliterPer100GramPerMinute",
         "MilliliterPer100Milliliter",
+        "MilliliterPerGram",
         "MilliliterPerMinute",
+        "MilliliterPerMinutePerGram",
         "MilliliterPerSecond",
         "Millimeter",
-        "MillimeterSecond",
+        "MillimeterPerSecond",
         "MillimolesPerkgWetWeight",
         "Millisecond",
         "Millitesla",
-        "Min",
-        "Mm2S",
+        "Mm2PerS",
         "Mmhg",
         "NoUnits",
         "NumberParticlesPer100GramOfTissue",
         "PRU",
-        "PRUM2",
+        "PRUPerM2",
+        "PerCentimeter",
+        "PerMin",
+        "PerS",
         "Percent",
         "Ppm",
         "ProportionalToCounts",
         "ProportionalToCountsPerSecond",
         "Ratio",
-        "S",
         "Second",
         "SecondPerSquareMillimeter",
         "SquareCentimeter",
@@ -18862,11 +18875,11 @@ cid_concepts[7181] = {
         "StandardizedUptakeValueLeanBodyMassJames128Multiplier",
         "StandardizedUptakeValueLeanBodyMassJanma",
         "Sv",
-        "Um2S",
-        "Um2ms",
+        "Um2PerS",
+        "Um2Perms",
         "WoodU",
-        "WoodUM2",
-        "_106Mm2S",
+        "WoodUPerM2",
+        "_106Mm2PerS",
     ],
 }
 
@@ -20174,10 +20187,10 @@ cid_concepts[7276] = {
 name_for_cid[7277] = "UnitsofDiffusionRateAreaOverTime"
 cid_concepts[7277] = {
     "UCUM": [
-        "Mm2S",
-        "Um2S",
-        "Um2ms",
-        "_106Mm2S",
+        "Mm2PerS",
+        "Um2PerS",
+        "Um2Perms",
+        "_106Mm2PerS",
     ],
 }
 
@@ -20214,7 +20227,8 @@ cid_concepts[7302] = {
 name_for_cid[7303] = "ImplantTemplatesModifiedViewOrientations"
 cid_concepts[7303] = {
     "DCM": [
-        "AP45",
+        "APMinus45",
+        "APPlus45",
     ],
 }
 
@@ -20956,6 +20970,7 @@ cid_concepts[7469] = {
         "R1",
         "R2",
         "R2Coefficient",
+        "R2star",
         "RCoefficient",
         "RGBBComponent",
         "RGBGComponent",
@@ -20987,6 +21002,9 @@ cid_concepts[7469] = {
         "T2",
         "T2WeightedDynamicContrastEnhancedMRSignalIntensity",
         "T2WeightedMRSignalIntensity",
+        "T2star",
+        "T2starWeightedDynamicContrastEnhancedMRSignalIntensity",
+        "T2starWeightedMRSignalIntensity",
         "TemperatureEncoded",
         "TemporalDerivativeThreshold",
         "TimeCourseOfSignal",
@@ -28365,7 +28383,7 @@ cid_concepts[9549] = {
 name_for_cid[9550] = "CArmPhotonElectronDeliveryRateUnits"
 cid_concepts[9550] = {
     "UCUM": [
-        "MonitorUnitsSecond",
+        "MonitorUnitsPerSecond",
     ],
 }
 
@@ -28441,8 +28459,8 @@ cid_concepts[9557] = {
 name_for_cid[9558] = "TomotherapeuticDoseRateUnits"
 cid_concepts[9558] = {
     "UCUM": [
-        "GyS",
-        "MonitorUnitsS",
+        "GyPerS",
+        "MonitorUnitsPerS",
     ],
 }
 
@@ -28456,7 +28474,7 @@ cid_concepts[9559] = {
 name_for_cid[9560] = "RoboticDeliveryDeviceDoseRateUnits"
 cid_concepts[9560] = {
     "UCUM": [
-        "GyS",
+        "GyPerS",
     ],
 }
 

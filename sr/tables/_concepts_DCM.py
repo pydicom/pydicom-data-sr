@@ -84,9 +84,11 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "ANGPattern": {
         "109902": ("ANG Pattern", [8301]),
     },
-    "AP45": {
-        "112300": ("AP+45", [7303]),
+    "APMinus45": {
         "112301": ("AP-45", [7303]),
+    },
+    "APPlus45": {
+        "112300": ("AP+45", [7303]),
     },
     "ARWave": {
         "125323": ("AR-wave", [12307]),
@@ -1202,8 +1204,10 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "BeamTargetingToleranceViolation": {
         "130468": ("Beam Targeting Tolerance Violation", [9566]),
     },
-    "BeatDetected": {
+    "BeatDetectedAccepted": {
         "109018": ("Beat detected (accepted)", [3337]),
+    },
+    "BeatDetectedRejected": {
         "109019": ("Beat detected (rejected)", [3337]),
     },
     "BeatNumber": {
@@ -7552,9 +7556,11 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "OCTACorrelationMapping": {
         "128255": ("OCT-A correlation mapping", [4270]),
     },
-    "OCTAOneSidedRatio": {
-        "128304": ("OCT-A one-sided ratio (lesser)", [4270]),
+    "OCTAOneSidedRatioGreater": {
         "128305": ("OCT-A one-sided ratio (greater)", [4270]),
+    },
+    "OCTAOneSidedRatioLesser": {
+        "128304": ("OCT-A one-sided ratio (lesser)", [4270]),
     },
     "OCTASpeckleVariance": {
         "128254": ("OCT-A speckle variance", [4270]),
@@ -9371,10 +9377,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "R2": {
         "126394": ("R2", [218, 7180, 7469]),
-        "126395": ("R2*", [218, 7180, 7469]),
     },
     "R2Coefficient": {
         "126220": ("R2-Coefficient", [218, 7180, 7469]),
+    },
+    "R2star": {
+        "126395": ("R2*", [218, 7180, 7469]),
     },
     "RCARegionInLAOProjection": {
         "122471": ("RCA Region in LAO Projection", [3461]),
@@ -11362,6 +11370,8 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "StartOfAtrialContraction": {
         "109045": ("Start of atrial contraction", [3339]),
+    },
+    "StartOfAtrialContractionSubsequent": {
         "109046": ("Start of atrial contraction (subsequent)", [3339]),
     },
     "StartOfContrastAgentAdministration": {
@@ -11772,7 +11782,6 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "122367": ("T-1 Worst", [3493]),
     },
     "T2": {
-        "113064": ("T2*", [218, 7180, 7469]),
         "113065": ("T2", [218, 7180, 7469]),
     },
     "T2Secondary": {
@@ -11783,13 +11792,20 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
             "T2 Weighted Dynamic Contrast Enhanced MR Signal Intensity",
             [218, 7180, 7469],
         ),
+    },
+    "T2WeightedMRSignalIntensity": {
+        "110805": ("T2 Weighted MR Signal Intensity", [218, 7180, 7469]),
+    },
+    "T2star": {
+        "113064": ("T2*", [218, 7180, 7469]),
+    },
+    "T2starWeightedDynamicContrastEnhancedMRSignalIntensity": {
         "110818": (
             "T2* Weighted Dynamic Contrast Enhanced MR Signal Intensity",
             [218, 7180, 7469],
         ),
     },
-    "T2WeightedMRSignalIntensity": {
-        "110805": ("T2 Weighted MR Signal Intensity", [218, 7180, 7469]),
+    "T2starWeightedMRSignalIntensity": {
         "110806": ("T2* Weighted MR Signal Intensity", [218, 7180, 7469]),
     },
     "T3Secondary": {

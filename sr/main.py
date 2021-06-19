@@ -355,20 +355,14 @@ def _setup_argparser() -> Any:
     # General Options
     gen_opts = parser.add_argument_group("General Options")
     gen_opts.add_argument(
-        "-d",
-        "--dev",
-        help="enable dev mode",
-        action="store_true",
-    )
-    gen_opts.add_argument(
         "--force-download",
-        help="force downloading the data tables",
+        help="force downloading the data tables to a local directory",
         action="store_true",
         default=False,
     )
     gen_opts.add_argument(
         "--force-regeneration",
-        help="force regenerating the data tables",
+        help="force regenerating the data tables from local source data",
         action="store_true",
         default=False,
     )
@@ -381,8 +375,10 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     args = _setup_argparser()
 
+    LOCAL_DIR = PACKAGE_DIR / "temp"
+
     src = None
-    if args.dev:
-        src = PACKAGE_DIR / "temp"
+    if args.force_regeneration or args.force_download:
+        src = LOCAL_DIR
 
     run(src, args.force_download, args.force_regeneration)

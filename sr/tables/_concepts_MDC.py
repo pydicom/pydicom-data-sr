@@ -305,7 +305,6 @@ concepts_MDC: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "ChestLead": {
         "2:86": ("Chest lead", [3001]),
-        "2:98": ("Chest lead (symmetric placement)", [3001]),
     },
     "ChestLeadPerV1AndV1RPlacement": {
         "2:99": ("Chest lead per V1 and V1R placement", [3001]),
@@ -327,6 +326,9 @@ concepts_MDC: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "ChestLeadPerV7AndV8RPlacement": {
         "2:104": ("Chest lead per V7 and V8R placement", [3001]),
+    },
+    "ChestLeadSymmetricPlacement": {
+        "2:98": ("Chest lead (symmetric placement)", [3001]),
     },
     "ChestManubriumLead": {
         "2:105": ("Chest-manubrium lead", [3001]),

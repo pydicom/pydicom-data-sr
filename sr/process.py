@@ -112,16 +112,18 @@ def process_source_data(
                     # ]
                     # Not all display values are identical for the same code
                     # Mostly differences in capitalisation and punctuation
-                    keyword = keyword_from_meaning(concept["display"])
+                    attr = attr_from_meaning(
+                        concept["display"], scheme_designator == "UCUM"
+                    )
                     code = concept["code"].strip()
                     display = concept["display"].strip()
 
                     # If new name under this scheme, start dict of
                     #   codes/cids that use that code
-                    if keyword not in concepts[scheme_designator]:
-                        concepts[scheme_designator][keyword] = {code: (display, [cid])}
+                    if attr not in concepts[scheme_designator]:
+                        concepts[scheme_designator][attr] = {code: (display, [cid])}
                     else:
-                        prior = concepts[scheme_designator][keyword]
+                        prior = concepts[scheme_designator][attr]
                         if code in prior:
                             prior[code][1].append(cid)
                         else:
@@ -131,13 +133,13 @@ def process_source_data(
                     if scheme_designator not in cid_concepts:
                         cid_concepts[scheme_designator] = []
 
-                    if keyword in cid_concepts[scheme_designator]:
-                        LOGGER.warning(
-                            f"'{keyword}': '{concept['display']}' in "
-                            f"cid_{cid} is duplicated!"
+                    if attr in cid_concepts[scheme_designator]:
+                        LOGGER.error(
+                            f"'{attr}': '{concept['display']}' in "
+                            f"CID {cid} is duplicated!"
                         )
 
-                    cid_concepts[scheme_designator].append(keyword)
+                    cid_concepts[scheme_designator].append(attr)
 
             cid_lists[cid] = cid_concepts
 
@@ -183,7 +185,7 @@ def process_table_o1(
         [code, srt_code, meaning] = [
             cell.get_text().strip() for cell in row.find_all("td")
         ]
-        name = keyword_from_meaning(meaning)
+        name = attr_from_meaning(meaning)
         if name not in concepts[scheme]:
             concepts[scheme][name] = {code: (meaning, [])}
         else:
@@ -230,7 +232,7 @@ def process_table_d1(
         [code, meaning, definition, notes] = [
             cell.get_text().strip() for cell in row.find_all("td")
         ]
-        name = keyword_from_meaning(meaning)
+        name = attr_from_meaning(meaning)
         if name not in concepts[scheme]:
             concepts[scheme][name] = {code: (meaning, [])}
         else:
@@ -243,7 +245,7 @@ def process_table_d1(
     return codes, concepts
 
 
-def keyword_from_meaning(name: str) -> str:
+def attr_from_meaning(name: str, units: bool = False) -> str:
     """Return a camel case valid Python identifier"""
     # Try to adhere to keyword scheme in DICOM (CP850)
 
@@ -263,6 +265,24 @@ def keyword_from_meaning(name: str) -> str:
     name = name.replace(">", " Greater Than ")
     name = name.replace("=", " Equals ")
     name = name.replace("<", " Lesser Than ")
+
+    if units:
+        name = name.replace("/", " Per ")
+        name = name.replace("**2", " Squared ")
+
+    # Custom
+    name = name.replace("(symmetric placement)", "Symmetric Placement")
+    name = name.replace("Beat detected (rejected)", "Beat Detected Rejected")
+    name = name.replace("Beat detected (accepted)", "Beat Detected Accepted")
+    name = name.replace(
+        "atrial contraction (subsequent)", "atrial contraction subsequent"
+    )
+    name = name.replace("ratio (greater)", "ratio greater")
+    name = name.replace("ratio (lesser)", "ratio lesser")
+    name = name.replace("AP+45", "AP Plus 45")
+    name = name.replace("AP-45", "AP Minus 45")
+    name = name.replace("R2*", "R2Star")
+    name = name.replace("T2*", "T2Star")
 
     name = re.sub(r"([0-9]+)\.([0-9]+)", "\\1 Point \\2", name)
     name = re.sub(r"\s([0-9.]+)-([0-9.]+)\s", " \\1 To \\2 ", name)

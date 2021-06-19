@@ -11,21 +11,20 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Becquerel": {
         "Bq": ("becquerel", [3083]),
     },
-    "BecquerelsMilliliter": {
+    "BecquerelsPerMilliliter": {
         "Bq/ml": ("Becquerels/milliliter", [83, 84, 7181]),
     },
     "Centimeter": {
-        "/cm": ("/Centimeter", [83, 84, 7181]),
         "cm": ("centimeter", [7181, 7183, 7460]),
     },
-    "Centimeter2": {
+    "CentimeterPerSecond": {
+        "cm/s": ("centimeter/second", [7181]),
+    },
+    "CentimeterSquared": {
         "cm2": ("Centimeter**2", [83, 84]),
     },
-    "Centimeter2Milliliter": {
+    "CentimeterSquaredPerMilliliter": {
         "cm2/ml": ("Centimeter**2/milliliter", [83, 84, 7181]),
-    },
-    "CentimeterSecond": {
-        "cm/s": ("centimeter/second", [7181]),
     },
     "Counts": {
         "{counts}": ("Counts", [83, 84, 7181]),
@@ -63,7 +62,7 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "DynScm5": {
         "dyn.s.cm-5": ("dyn.s.cm-5", [3502, 7181]),
     },
-    "DynScm5M2": {
+    "DynScm5PerM2": {
         "dyn.s.cm-5/m2": ("dyn.s.cm-5/m2", [3503, 7181]),
     },
     "ElectronDensity": {
@@ -75,7 +74,7 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Gy": {
         "Gy": ("Gy", [7181, 10071]),
     },
-    "GyS": {
+    "GyPerS": {
         "Gy/s": ("Gy/s", [9558, 9560]),
     },
     "Hertz": {
@@ -108,23 +107,17 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Micrometer": {
         "um": ("micrometer", [4260, 4267, 7181, 7183, 7460]),
     },
-    "MicromoleMilliliter": {
+    "MicromolePerMilliliter": {
         "umol/ml": ("Micromole/milliliter", [83, 84, 7181]),
     },
-    "MicromoleMinuteMilliliter": {
+    "MicromolePerMinutePerMilliliter": {
         "umol/min/ml": ("Micromole/minute/milliliter", [83, 84, 7181]),
     },
     "Millicurie": {
         "mCi": ("millicurie", [3083]),
     },
-    "MilligramsMinuteMilliliter": {
+    "MilligramsPerMinutePerMilliliter": {
         "mg/min/ml": ("Milligrams/minute/milliliter", [83, 84, 7181]),
-    },
-    "MilliliterGram": {
-        "ml/g": ("Milliliter/gram", [83, 84, 7181]),
-    },
-    "MilliliterMinuteGram": {
-        "ml/min/g": ("Milliliter/minute/gram", [83, 84, 7181]),
     },
     "MilliliterPer100GramPerMinute": {
         "ml/[100]g/min": ("milliliter per 100 gram per minute", [7181]),
@@ -132,8 +125,14 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "MilliliterPer100Milliliter": {
         "ml/[100]ml": ("milliliter per 100 milliliter", [7181]),
     },
+    "MilliliterPerGram": {
+        "ml/g": ("Milliliter/gram", [83, 84, 7181]),
+    },
     "MilliliterPerMinute": {
         "ml/min": ("milliliter per minute", [7181]),
+    },
+    "MilliliterPerMinutePerGram": {
+        "ml/min/g": ("Milliliter/minute/gram", [83, 84, 7181]),
     },
     "MilliliterPerSecond": {
         "ml/s": ("milliliter per second", [7181]),
@@ -141,7 +140,7 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Millimeter": {
         "mm": ("millimeter", [7181, 7183, 7460]),
     },
-    "MillimeterSecond": {
+    "MillimeterPerSecond": {
         "mm/s": ("millimeter/second", [7181]),
     },
     "MillimolesPerkgWetWeight": {
@@ -153,13 +152,10 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Millitesla": {
         "mT": ("milliTesla", [7181]),
     },
-    "Min": {
-        "/min": ("/min", [7181]),
-    },
     "Minute": {
         "min": ("minute", [7456]),
     },
-    "Mm2S": {
+    "Mm2PerS": {
         "mm2/s": ("mm2/s", [7181, 7277]),
     },
     "Mmhg": {
@@ -168,10 +164,10 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "MonitorUnits": {
         "{MU}": ("Monitor Units", [9552, 9557, 9559]),
     },
-    "MonitorUnitsS": {
+    "MonitorUnitsPerS": {
         "{MU}/s": ("Monitor Units/s", [9558]),
     },
-    "MonitorUnitsSecond": {
+    "MonitorUnitsPerSecond": {
         "{MU}/s": ("Monitor Units/Second", [9550]),
     },
     "Month": {
@@ -192,8 +188,17 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "PRU": {
         "[PRU]": ("P.R.U.", [3502, 7181]),
     },
-    "PRUM2": {
+    "PRUPerM2": {
         "[PRU]/m2": ("P.R.U./m2", [3503, 7181]),
+    },
+    "PerCentimeter": {
+        "/cm": ("/Centimeter", [83, 84, 7181]),
+    },
+    "PerMin": {
+        "/min": ("/min", [7181]),
+    },
+    "PerS": {
+        "/s": ("/s", [7181]),
     },
     "Percent": {
         "%": ("Percent", [83, 84, 301, 4244, 7181]),
@@ -214,7 +219,6 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "{ratio}": ("ratio", [7181]),
     },
     "S": {
-        "/s": ("/s", [7181]),
         "s": ("s", [9557]),
     },
     "Second": {
@@ -268,10 +272,10 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Sv": {
         "Sv": ("Sv", [7181, 10071]),
     },
-    "Um2S": {
+    "Um2PerS": {
         "um2/s": ("um2/s", [7181, 7277]),
     },
-    "Um2ms": {
+    "Um2Perms": {
         "um2/ms": ("um2/ms", [7181, 7277]),
     },
     "Week": {
@@ -280,25 +284,25 @@ concepts_UCUM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "WoodU": {
         "[wood'U]": ("Wood U", [3502, 7181]),
     },
-    "WoodUM2": {
+    "WoodUPerM2": {
         "[wood'U]/m2": ("Wood U/m2", [3503, 7181]),
     },
     "Year": {
         "a": ("year", [6046, 7456]),
     },
-    "_106Mm2S": {
+    "_106Mm2PerS": {
         "10-6.mm2/s": ("10-6.mm2/s", [7181, 7277]),
     },
     "cm": {
         "cm": ("cm", [7063]),
     },
-    "kmH": {
+    "kmPerH": {
         "km/h": ("km/h", [3212]),
     },
-    "mgcm3": {
+    "mgPercm3": {
         "mg/cm3": ("mg/cm^3", [301]),
     },
-    "mgml": {
+    "mgPerml": {
         "mg/ml": ("mg/ml", [301, 4244]),
     },
     "mm": {
