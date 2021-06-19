@@ -51,7 +51,7 @@ def process_source_data(
     table_o1: Path,
     table_d1: Path,
 ) -> ProcessReturnType:
-    """Process the downloaded souce data and generate the tables.
+    """Process the downloaded souce data.
 
     Parameters
     ----------
@@ -66,6 +66,9 @@ def process_source_data(
 
     Returns
     -------
+    (list, dict, dict, dict)
+        The SNOMED mappings and concepts, CID list and CID to name
+        dictionaries.
     """
     CID_REGEX = re.compile("^dicom-cid-([0-9]+)-[a-zA-Z]+")
     concepts: ConceptType = {}
@@ -112,7 +115,7 @@ def process_source_data(
                     # ]
                     # Not all display values are identical for the same code
                     # Mostly differences in capitalisation and punctuation
-                    attr = attr_from_meaning(
+                    attr = identifier_from_meaning(
                         concept["display"], scheme_designator == "UCUM"
                     )
                     code = concept["code"].strip()
@@ -155,11 +158,12 @@ def process_table_o1(
     concepts: ConceptType,
     table: Path,
 ) -> Tuple[List[Tuple[str, str, str]], ConceptType]:
-    """Process the SNOMED table
+    """Process the Part 16, O-1 table and add the data to `concepts`
 
     Parameters
     ----------
-    concepts :
+    concepts : dict
+        A dict containing the processed CID files.
     table : pathlib.Path
         The path to the Part 16, Table O-1 HTML file, contains the
         'SNOMED Concept ID to SNOMED ID Mapping' data.
@@ -169,8 +173,8 @@ def process_table_o1(
     codes : List[Tuple[str, str, str]]
         A list of SNOMED codes as (Concept ID, SNOMED ID, SNOMED Fully
         Specified Name).
-    concepts :
-        FIXME
+    concepts : dict
+        A dict containing the processed CID files with added SNOMED concepts.
     """
     LOGGER.info(f"Processing 'SCT' table from '{table.name}'")
     scheme = "SCT"
@@ -185,7 +189,7 @@ def process_table_o1(
         [code, srt_code, meaning] = [
             cell.get_text().strip() for cell in row.find_all("td")
         ]
-        name = attr_from_meaning(meaning)
+        name = identifier_from_meaning(meaning)
         if name not in concepts[scheme]:
             concepts[scheme][name] = {code: (meaning, [])}
         else:
@@ -202,11 +206,12 @@ def process_table_d1(
     concepts: ConceptType,
     table: Path,
 ) -> Tuple[List[Tuple[str, str, str, str]], ConceptType]:
-    """Process the DICOM table
+    """Process the Part 16 D-1 table and add the data to `concepts`.
 
     Parameters
     ----------
-    concepts :
+    concepts : dict
+        A dict containing the processed CID files.
     table : pathlib.Path
         The path to the Part 16, Table D-1 HTML file, contains the
         'DICOM Controlled Terminology Definitions' data.
@@ -216,8 +221,8 @@ def process_table_d1(
     codes : List[Tuple[str, str, str, str]]
         A list of code values and meanings as (Code Value, Code Meaning,
         Definition, Notes).
-    concepts :
-        FIXME
+    concepts : dict
+        A dict containing the processed CID files with added DICOM concepts.
     """
     LOGGER.info(f"Processing 'DCM' table from '{table.name}'")
     scheme = "DCM"
@@ -232,7 +237,7 @@ def process_table_d1(
         [code, meaning, definition, notes] = [
             cell.get_text().strip() for cell in row.find_all("td")
         ]
-        name = attr_from_meaning(meaning)
+        name = identifier_from_meaning(meaning)
         if name not in concepts[scheme]:
             concepts[scheme][name] = {code: (meaning, [])}
         else:
@@ -245,8 +250,17 @@ def process_table_d1(
     return codes, concepts
 
 
-def attr_from_meaning(name: str, units: bool = False) -> str:
-    """Return a camel case valid Python identifier"""
+def identifier_from_meaning(name: str, units: bool = False) -> str:
+    """Return a camel case valid Python identifier.
+
+    Parameters
+    ----------
+    name : str
+        The meaning to convert to a valid Python identifier.
+    units : bool, optional
+        If ``True`` then treat `name` as containing scientific quantities or
+        units.
+    """
     # Try to adhere to keyword scheme in DICOM (CP850)
 
     # singular/plural alternative forms are made plural
@@ -281,8 +295,8 @@ def attr_from_meaning(name: str, units: bool = False) -> str:
     name = name.replace("ratio (lesser)", "ratio lesser")
     name = name.replace("AP+45", "AP Plus 45")
     name = name.replace("AP-45", "AP Minus 45")
-    name = name.replace("R2*", "R2Star")
-    name = name.replace("T2*", "T2Star")
+    name = name.replace("R2*", "R2 Star")
+    name = name.replace("T2*", "T2 Star")
 
     name = re.sub(r"([0-9]+)\.([0-9]+)", "\\1 Point \\2", name)
     name = re.sub(r"\s([0-9.]+)-([0-9.]+)\s", " \\1 To \\2 ", name)
@@ -300,10 +314,13 @@ def attr_from_meaning(name: str, units: bool = False) -> str:
     if re.match(r"[0-9]", name):
         name = "_" + name
 
+    assert name.isidentifier()
+
     return name
 
 
 def camel_case(s: str) -> str:
+    """Return a camel case version of `s`."""
     #  "us"?-doesn"t seem to be there, probably need others
     leave_alone = (
         "mm",
