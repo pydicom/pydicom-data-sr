@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      PACKAGE_UPDATED: "False"
+      PACKAGE_UPDATED: "True"
 
     steps:
     - uses: actions/checkout@v2
@@ -29,8 +29,6 @@ jobs:
         pip install -e .[dev]
         mkdir sr/temp
         python sr/main.py
-        echo ${{ env.PACKAGE_UPDATED }}
-        echo $PACKAGE_UPDATED
     - name: Blacken code, run tests and get diff
       if: ${{ env.PACKAGE_UPDATED == 'True' }}
       run: |
@@ -44,3 +42,12 @@ jobs:
       with:
         name: diff
         path: gitdiff.txt
+    - name: Create PR
+      if: ${{ env.PACKAGE_UPDATED == 'True' }}
+      uses: peter-evans/create-pull-request@v3
+      with:
+        committer: scaramallion <scaramallion@users.noreply.github.com>
+        author: scaramallion <scaramallion@users.noreply.github.com>
+        delete-branch: true
+        commit-message: "Update SR package"
+        title: "Update SR package"
