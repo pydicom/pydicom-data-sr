@@ -159,7 +159,7 @@ def write_hash_file(paths: List[Path]) -> None:
         else:
             LOGGER.warning("No checksums available to write to 'hashes.json'")
 
-        f.write("}")
+        f.write("}\n")
 
     LOGGER.info(f"'hashes.json' written with {len(checksums)} entries")
 
