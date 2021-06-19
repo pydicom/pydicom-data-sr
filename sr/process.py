@@ -338,21 +338,11 @@ def camel_case(s: str) -> str:
         "mg",
         "kg",
     )
-    words = re.split(r"\W", s, flags=re.UNICODE)
-    if s == "tau_m":
-        print(words)
-        w = words[0]
-        print(w.isalnum())
-
-    words = s if not words else words
     words = [
         w.capitalize() if w != w.upper() and w not in leave_alone else w
-        for w in words
+        for w in re.split(r"\W", s, flags=re.UNICODE)
         if w.isalnum()
     ]
-
-    if s == "tau_m":
-        print(words)
 
     return "".join(words)
 

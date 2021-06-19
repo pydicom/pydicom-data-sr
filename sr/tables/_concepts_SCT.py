@@ -20938,25 +20938,25 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "MytileneHorseBreed": {
         "132777001": ("Mytilene horse breed", [7480]),
     },
-    "N0NoRegionalLymphNodeMetastasisHistologicallyellipsis": {
+    "N0NoRegionalLymphNodeMetastasisHistologically": {
         "373151001": (
             "N0: No regional lymph node metastasis histologically...",
             [6161],
         ),
     },
-    "N1MetastasisIn1To3AxillaryLymphNodesellipsis": {
+    "N1MetastasisIn1To3AxillaryLymphNodes": {
         "373156006": ("N1: Metastasis in 1 to 3 axillary lymph nodes...", [6161]),
     },
-    "N2MetastasisIn4To9AxillaryLymphNodesellipsis": {
+    "N2MetastasisIn4To9AxillaryLymphNodes": {
         "373162001": ("N2: Metastasis in 4 to 9 axillary lymph nodes...", [6161]),
     },
-    "N2aMetastasisIn4To9AxillaryLymphNodesEllipsis2Point0mmEllipsis": {
+    "N2aMetastasisIn4To9AxillaryLymphNodes2Point0mm": {
         "373163006": (
             "N2a: Metastasis in 4 to 9 axillary lymph nodes (...2.0 mm)...",
             [6161],
         ),
     },
-    "N2bMetastasisInClinicallyApparentInternalellipsisNodesellipsis": {
+    "N2bMetastasisInClinicallyApparentInternalNodes": {
         "373164000": (
             "N2b: Metastasis in clinically apparent internal... nodes...",
             [6161],
@@ -20968,16 +20968,16 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
             [6161],
         ),
     },
-    "N3aMetastasisIn10OrMoreAxillaryLymphNodesellipsis": {
+    "N3aMetastasisIn10OrMoreAxillaryLymphNodes": {
         "373165004": ("N3a: Metastasis in 10 or more axillary lymph nodes...", [6161]),
     },
-    "N3bMetastasisInClinicallyApparentIpsilateralInternalellipsis": {
+    "N3bMetastasisInClinicallyApparentIpsilateralInternal": {
         "373167007": (
             "N3b: Metastasis in clinically apparent ipsilateral internal...",
             [6161],
         ),
     },
-    "N3cMetastasisInIpsilateralSupraclavicularLymphNodesellipsis": {
+    "N3cMetastasisInIpsilateralSupraclavicularLymphNodes": {
         "373166003": (
             "N3c: Metastasis in ipsilateral supraclavicular lymph nodes...",
             [6161],
@@ -21004,7 +21004,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "NSAID": {
         "372665008": ("NSAID", [621, 622]),
     },
-    "NXRegionalLymphNodesCannotBeAssessedellipsis": {
+    "NXRegionalLymphNodesCannotBeAssessed": {
         "373150000": ("NX: Regional lymph nodes cannot be assessed...", [6161]),
     },
     "NYHAClassI": {
@@ -34294,25 +34294,25 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "T1Tumor2cmOrLessInGreatestDimension": {
         "373172003": ("T1: Tumor 2 cm or less in greatest dimension (breast)", [6160]),
     },
-    "T1aTumorMoreThan0Point1cmButNotMoreThan0Point5Cmellipsis": {
+    "T1aTumorMoreThan0Point1cmButNotMoreThan0Point5cm": {
         "373180005": (
             "T1a: Tumor more than 0.1 cm but not more than 0.5 cm...",
             [6160],
         ),
     },
-    "T1bTumorMoreThan0Point5cmButNotMoreThan1Cmellipsis": {
+    "T1bTumorMoreThan0Point5cmButNotMoreThan1cm": {
         "373204007": ("T1b: Tumor more than 0.5 cm but not more than 1 cm...", [6160]),
     },
-    "T1cTumorMoreThan1cmButNotMoreThan2Cmellipsis": {
+    "T1cTumorMoreThan1cmButNotMoreThan2cm": {
         "373183007": ("T1c: Tumor more than 1 cm but not more than 2 cm...", [6160]),
     },
-    "T1micMicroinvasion0Point1cmOrLessInGreatestDimensionellipsis": {
+    "T1micMicroinvasion0Point1cmOrLessInGreatestDimension": {
         "373179007": (
             "T1mic: Microinvasion 0.1 cm or less in greatest dimension...",
             [6160],
         ),
     },
-    "T2TumorMoreThan2cmButNotMoreThan5Cmellipsis": {
+    "T2TumorMoreThan2cmButNotMoreThan5cm": {
         "373182002": ("T2: Tumor more than 2 cm but not more than 5 cm...", [6160]),
     },
     "T3TumorMoreThan5cmInGreatestDimension": {
@@ -34324,25 +34324,25 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "T4InflammatoryCarcinoma": {
         "373190002": ("T4: Inflammatory carcinoma (breast)", [6160]),
     },
-    "T4TumorOfAnySizeWithDirectExtensionToChestWallellipsis": {
+    "T4TumorOfAnySizeWithDirectExtensionToChestWall": {
         "373185000": (
             "T4: Tumor of any size with direct extension to chest wall...",
             [6160],
         ),
     },
-    "T4aTumorOfAnySizeWithExtensionToChestWallNotInclellipsis": {
+    "T4aTumorOfAnySizeWithExtensionToChestWallNotIncl": {
         "373186004": (
             "T4a: Tumor of any size with extension to chest wall, not incl...",
             [6160],
         ),
     },
-    "T4bTumorOfAnySizeWithEdemaIncludingPeauDOrangeEllipsis": {
+    "T4bTumorOfAnySizeWithEdemaIncludingPeauDOrange": {
         "373187008": (
             "T4b: Tumor of any size with edema (including peau d'orange) ...",
             [6160],
         ),
     },
-    "T4cTumorOfAnySizeWithDirectExtensionToChestWallellipsis": {
+    "T4cTumorOfAnySizeWithDirectExtensionToChestWall": {
         "373189006": (
             "T4c: Tumor of any size with direct extension to chest wall...",
             [6160],
