@@ -113,7 +113,7 @@ def run(
     if not checksums_match:
         LOGGER.info("Source data has changed - updating package")
     else:
-        LOGGER.debug("'--force-regeneration' used - updated package")
+        LOGGER.debug("'--force-regeneration' used - updating package")
 
     table_o1 = src / "part16_o1.html"
     table_d1 = src / "part16_d1.html"
