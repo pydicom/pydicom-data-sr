@@ -3,6 +3,7 @@ from datetime import datetime
 import logging
 import os
 from pathlib import Path
+import subprocess
 from tempfile import TemporaryDirectory
 import time
 from typing import Optional, List, Tuple, Dict, Any
@@ -387,8 +388,5 @@ if __name__ == "__main__":
         src = LOCAL_DIR
 
     result = run(src, args.force_download, args.force_regeneration)
-    envs = os.environ["GITHUB_ENV"]
-    os.environ["GITHUB_ENV"] = envs + "\nPACKAGE_UPDATED=True"
-
-    for env in sorted(os.environ):
-        print(env, os.environ[env])
+    if "GITHUB_ACTION" in os.environ:
+        subprocess.call(["echo", '"PACKAGE_UPDATED=True"', ">>", "$GITHUB_ENV"])
