@@ -1,11 +1,8 @@
 name: check-pull-request
 
 on:
-#  schedule:
-#    - cron: '48 22 * * 0'
-  pull_request:
-    branches: [ master ]
-
+  schedule:
+    - cron: '48 22 * * 0'
 
 jobs:
 
@@ -13,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      PACKAGE_UPDATED: "True"
+      PACKAGE_UPDATED: "False"
 
     steps:
     - uses: actions/checkout@v2
