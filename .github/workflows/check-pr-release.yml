@@ -28,7 +28,7 @@ jobs:
       run: |
         pip install -e .[dev]
         mkdir sr/temp
-        python sr/main.py --force-regeneration
+        python sr/main.py
         echo ${{ env.PACKAGE_UPDATED }}
         echo $PACKAGE_UPDATED
     - name: Blacken code, run tests and get diff
