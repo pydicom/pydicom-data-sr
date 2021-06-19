@@ -87,7 +87,7 @@ def run(
                 download_cid_files((CID_HOST, CID_PATH), src)
                 download_files(
                     [TABLE_D1, TABLE_O1],
-                    [src / "part16_d1.html", src / "part16_d1.html"],
+                    [src / "part16_d1.html", src / "part16_o1.html"],
                 )
                 break
             except TimeoutError as exc:
