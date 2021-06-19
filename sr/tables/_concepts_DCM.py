@@ -5,10 +5,6 @@ from typing import Dict, List, Tuple
 
 
 concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
-    "": {
-        "...": ("...", []),
-        "126330": ("tau_m", [218, 4107, 7180, 7469]),
-    },
     "AAPM204APDimension": {
         "113935": ("AAPM 204 AP Dimension", [10023]),
     },
@@ -3497,6 +3493,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "EligibleForReimbursementOnPerPatientBasis": {
         "128614": ("Eligible for reimbursement on per patient basis", [800]),
+    },
+    "Ellipsis": {
+        "...": ("...", []),
     },
     "Elliptic": {
         "112134": ("Elliptic", [6119]),
@@ -9381,7 +9380,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "R2Coefficient": {
         "126220": ("R2-Coefficient", [218, 7180, 7469]),
     },
-    "R2star": {
+    "R2Star": {
         "126395": ("R2*", [218, 7180, 7469]),
     },
     "RCARegionInLAOProjection": {
@@ -11787,6 +11786,18 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "T2Secondary": {
         "122368": ("T-2 Secondary", [3493]),
     },
+    "T2Star": {
+        "113064": ("T2*", [218, 7180, 7469]),
+    },
+    "T2StarWeightedDynamicContrastEnhancedMRSignalIntensity": {
+        "110818": (
+            "T2* Weighted Dynamic Contrast Enhanced MR Signal Intensity",
+            [218, 7180, 7469],
+        ),
+    },
+    "T2StarWeightedMRSignalIntensity": {
+        "110806": ("T2* Weighted MR Signal Intensity", [218, 7180, 7469]),
+    },
     "T2WeightedDynamicContrastEnhancedMRSignalIntensity": {
         "110817": (
             "T2 Weighted Dynamic Contrast Enhanced MR Signal Intensity",
@@ -11795,18 +11806,6 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "T2WeightedMRSignalIntensity": {
         "110805": ("T2 Weighted MR Signal Intensity", [218, 7180, 7469]),
-    },
-    "T2star": {
-        "113064": ("T2*", [218, 7180, 7469]),
-    },
-    "T2starWeightedDynamicContrastEnhancedMRSignalIntensity": {
-        "110818": (
-            "T2* Weighted Dynamic Contrast Enhanced MR Signal Intensity",
-            [218, 7180, 7469],
-        ),
-    },
-    "T2starWeightedMRSignalIntensity": {
-        "110806": ("T2* Weighted MR Signal Intensity", [218, 7180, 7469]),
     },
     "T3Secondary": {
         "122369": ("T-3 Secondary", [3493]),
@@ -12231,6 +12230,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
                 12274,
             ],
         ),
+    },
+    "TauM": {
+        "126330": ("tau_m", [218, 4107, 7180, 7469]),
     },
     "TaxonomicRankOfOrigin": {
         "127402": ("Taxonomic rank of origin", []),

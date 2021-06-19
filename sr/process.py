@@ -262,6 +262,7 @@ def identifier_from_meaning(name: str, units: bool = False) -> str:
         units.
     """
     # Try to adhere to keyword scheme in DICOM (CP850)
+    original = name
 
     # singular/plural alternative forms are made plural
     #     e.g., “Physician(s) of Record” becomes “PhysiciansOfRecord”
@@ -297,6 +298,8 @@ def identifier_from_meaning(name: str, units: bool = False) -> str:
     name = name.replace("AP-45", "AP Minus 45")
     name = name.replace("R2*", "R2 Star")
     name = name.replace("T2*", "T2 Star")
+    name = name.replace("tau_m", "tau m")
+    name = name.replace("...", "Ellipsis")
 
     name = re.sub(r"([0-9]+)\.([0-9]+)", "\\1 Point \\2", name)
     name = re.sub(r"\s([0-9.]+)-([0-9.]+)\s", " \\1 To \\2 ", name)
@@ -314,7 +317,8 @@ def identifier_from_meaning(name: str, units: bool = False) -> str:
     if re.match(r"[0-9]", name):
         name = "_" + name
 
-    assert name.isidentifier()
+    if not name.isidentifier():
+        raise ValueError(f"Invalid Python identifier: '{name}' from '{original}'")
 
     return name
 
@@ -332,12 +336,23 @@ def camel_case(s: str) -> str:
         "mg",
         "kg",
     )
+    words = re.split(r"\W", s, flags=re.UNICODE)
+    if s == "tau_m":
+        print(words)
+        w = words[0]
+        print(w.isalnum())
 
-    return "".join(
+    words = s if not words else words
+    words = [
         w.capitalize() if w != w.upper() and w not in leave_alone else w
-        for w in re.split(r"\W", s, flags=re.UNICODE)
+        for w in words
         if w.isalnum()
-    )
+    ]
+
+    if s == "tau_m":
+        print(words)
+
+    return "".join(words)
 
 
 def get_dicom_version(path: Path) -> str:
