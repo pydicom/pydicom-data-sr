@@ -51,3 +51,4 @@ jobs:
         delete-branch: true
         commit-message: "Update SR package"
         title: "Update SR package"
+        base: ${{ github.head_ref }}
