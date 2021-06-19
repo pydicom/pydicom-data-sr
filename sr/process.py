@@ -51,7 +51,7 @@ def process_source_data(
     table_o1: Path,
     table_d1: Path,
 ) -> ProcessReturnType:
-    """Process the downloaded souce data and generate the tables.
+    """Process the downloaded souce data.
 
     Parameters
     ----------
@@ -66,6 +66,9 @@ def process_source_data(
 
     Returns
     -------
+    (list, dict, dict, dict)
+        The SNOMED mappings and concepts, CID list and CID to name
+        dictionaries.
     """
     CID_REGEX = re.compile("^dicom-cid-([0-9]+)-[a-zA-Z]+")
     concepts: ConceptType = {}
@@ -112,16 +115,18 @@ def process_source_data(
                     # ]
                     # Not all display values are identical for the same code
                     # Mostly differences in capitalisation and punctuation
-                    keyword = keyword_from_meaning(concept["display"])
+                    attr = identifier_from_meaning(
+                        concept["display"], scheme_designator == "UCUM"
+                    )
                     code = concept["code"].strip()
                     display = concept["display"].strip()
 
                     # If new name under this scheme, start dict of
                     #   codes/cids that use that code
-                    if keyword not in concepts[scheme_designator]:
-                        concepts[scheme_designator][keyword] = {code: (display, [cid])}
+                    if attr not in concepts[scheme_designator]:
+                        concepts[scheme_designator][attr] = {code: (display, [cid])}
                     else:
-                        prior = concepts[scheme_designator][keyword]
+                        prior = concepts[scheme_designator][attr]
                         if code in prior:
                             prior[code][1].append(cid)
                         else:
@@ -131,13 +136,13 @@ def process_source_data(
                     if scheme_designator not in cid_concepts:
                         cid_concepts[scheme_designator] = []
 
-                    if keyword in cid_concepts[scheme_designator]:
-                        LOGGER.warning(
-                            f"'{keyword}': '{concept['display']}' in "
-                            f"cid_{cid} is duplicated!"
+                    if attr in cid_concepts[scheme_designator]:
+                        LOGGER.error(
+                            f"'{attr}': '{concept['display']}' in "
+                            f"CID {cid} is duplicated!"
                         )
 
-                    cid_concepts[scheme_designator].append(keyword)
+                    cid_concepts[scheme_designator].append(attr)
 
             cid_lists[cid] = cid_concepts
 
@@ -153,11 +158,12 @@ def process_table_o1(
     concepts: ConceptType,
     table: Path,
 ) -> Tuple[List[Tuple[str, str, str]], ConceptType]:
-    """Process the SNOMED table
+    """Process the Part 16, O-1 table and add the data to `concepts`
 
     Parameters
     ----------
-    concepts :
+    concepts : dict
+        A dict containing the processed CID files.
     table : pathlib.Path
         The path to the Part 16, Table O-1 HTML file, contains the
         'SNOMED Concept ID to SNOMED ID Mapping' data.
@@ -167,8 +173,8 @@ def process_table_o1(
     codes : List[Tuple[str, str, str]]
         A list of SNOMED codes as (Concept ID, SNOMED ID, SNOMED Fully
         Specified Name).
-    concepts :
-        FIXME
+    concepts : dict
+        A dict containing the processed CID files with added SNOMED concepts.
     """
     LOGGER.info(f"Processing 'SCT' table from '{table.name}'")
     scheme = "SCT"
@@ -183,7 +189,7 @@ def process_table_o1(
         [code, srt_code, meaning] = [
             cell.get_text().strip() for cell in row.find_all("td")
         ]
-        name = keyword_from_meaning(meaning)
+        name = identifier_from_meaning(meaning)
         if name not in concepts[scheme]:
             concepts[scheme][name] = {code: (meaning, [])}
         else:
@@ -200,11 +206,12 @@ def process_table_d1(
     concepts: ConceptType,
     table: Path,
 ) -> Tuple[List[Tuple[str, str, str, str]], ConceptType]:
-    """Process the DICOM table
+    """Process the Part 16 D-1 table and add the data to `concepts`.
 
     Parameters
     ----------
-    concepts :
+    concepts : dict
+        A dict containing the processed CID files.
     table : pathlib.Path
         The path to the Part 16, Table D-1 HTML file, contains the
         'DICOM Controlled Terminology Definitions' data.
@@ -214,8 +221,8 @@ def process_table_d1(
     codes : List[Tuple[str, str, str, str]]
         A list of code values and meanings as (Code Value, Code Meaning,
         Definition, Notes).
-    concepts :
-        FIXME
+    concepts : dict
+        A dict containing the processed CID files with added DICOM concepts.
     """
     LOGGER.info(f"Processing 'DCM' table from '{table.name}'")
     scheme = "DCM"
@@ -230,7 +237,10 @@ def process_table_d1(
         [code, meaning, definition, notes] = [
             cell.get_text().strip() for cell in row.find_all("td")
         ]
-        name = keyword_from_meaning(meaning)
+        if code == "...":
+            continue
+
+        name = identifier_from_meaning(meaning)
         if name not in concepts[scheme]:
             concepts[scheme][name] = {code: (meaning, [])}
         else:
@@ -243,9 +253,19 @@ def process_table_d1(
     return codes, concepts
 
 
-def keyword_from_meaning(name: str) -> str:
-    """Return a camel case valid Python identifier"""
+def identifier_from_meaning(name: str, units: bool = False) -> str:
+    """Return a camel case valid Python identifier.
+
+    Parameters
+    ----------
+    name : str
+        The meaning to convert to a valid Python identifier.
+    units : bool, optional
+        If ``True`` then treat `name` as containing scientific quantities or
+        units.
+    """
     # Try to adhere to keyword scheme in DICOM (CP850)
+    original = name
 
     # singular/plural alternative forms are made plural
     #     e.g., “Physician(s) of Record” becomes “PhysiciansOfRecord”
@@ -264,6 +284,25 @@ def keyword_from_meaning(name: str) -> str:
     name = name.replace("=", " Equals ")
     name = name.replace("<", " Lesser Than ")
 
+    if units:
+        name = name.replace("/", " Per ")
+        name = name.replace("**2", " Squared ")
+
+    # Custom
+    name = name.replace("(symmetric placement)", "Symmetric Placement")
+    name = name.replace("Beat detected (rejected)", "Beat Detected Rejected")
+    name = name.replace("Beat detected (accepted)", "Beat Detected Accepted")
+    name = name.replace(
+        "atrial contraction (subsequent)", "atrial contraction subsequent"
+    )
+    name = name.replace("ratio (greater)", "ratio greater")
+    name = name.replace("ratio (lesser)", "ratio lesser")
+    name = name.replace("AP+45", "AP Plus 45")
+    name = name.replace("AP-45", "AP Minus 45")
+    name = name.replace("R2*", "R2 Star")
+    name = name.replace("T2*", "T2 Star")
+    name = name.replace("tau_m", "tau m")
+
     name = re.sub(r"([0-9]+)\.([0-9]+)", "\\1 Point \\2", name)
     name = re.sub(r"\s([0-9.]+)-([0-9.]+)\s", " \\1 To \\2 ", name)
 
@@ -280,10 +319,14 @@ def keyword_from_meaning(name: str) -> str:
     if re.match(r"[0-9]", name):
         name = "_" + name
 
+    if not name.isidentifier():
+        raise ValueError(f"Invalid Python identifier: '{name}' from '{original}'")
+
     return name
 
 
 def camel_case(s: str) -> str:
+    """Return a camel case version of `s`."""
     #  "us"?-doesn"t seem to be there, probably need others
     leave_alone = (
         "mm",
@@ -295,12 +338,13 @@ def camel_case(s: str) -> str:
         "mg",
         "kg",
     )
-
-    return "".join(
+    words = [
         w.capitalize() if w != w.upper() and w not in leave_alone else w
         for w in re.split(r"\W", s, flags=re.UNICODE)
         if w.isalnum()
-    )
+    ]
+
+    return "".join(words)
 
 
 def get_dicom_version(path: Path) -> str:

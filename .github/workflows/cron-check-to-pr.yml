@@ -1,0 +1,44 @@
+name: check-pull-request
+
+on:
+  schedule:
+    - cron: '48 22 * * 0'
+
+jobs:
+
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PACKAGE_UPDATED: "False"
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        pip install -U pip
+    - name: Download and check source data
+      run: |
+        pip install -e .[dev]
+        mkdir sr/temp
+        python sr/main.py
+    - name: Blacken code, run tests and get diff
+      if: ${{ env.PACKAGE_UPDATED == 'True' }}
+      run: |
+        black sr/*py
+        black sr/tables/*.py
+        pytest
+    - name: Create PR
+      if: ${{ env.PACKAGE_UPDATED == 'True' }}
+      uses: peter-evans/create-pull-request@v3
+      with:
+        committer: scaramallion <scaramallion@users.noreply.github.com>
+        author: scaramallion <scaramallion@users.noreply.github.com>
+        delete-branch: true
+        commit-message: "Update SR package"
+        title: "Update SR package"
+        base: master

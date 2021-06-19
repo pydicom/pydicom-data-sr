@@ -1,17 +1,16 @@
-name: check-pull-request
+name: pull-request-test
 
 on:
-#  schedule:
-#    - cron: '48 22 * * 0'
   pull_request:
     branches: [ master ]
 
-
 jobs:
 
-  check-pr:
+  check:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      PACKAGE_UPDATED: "False"
 
     steps:
     - uses: actions/checkout@v2
@@ -19,17 +18,15 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
+    - name: Install dependencies
+      run: |
+        pip install -U pip
     - name: Download and check source data
       run: |
         pip install -e .[dev]
         mkdir sr/temp
-        python sr/main.py --dev --force-regeneration
-        black sr/*py
-        black sr/tables/*.py
-        git diff --output=gitdiff.txt
-    - name: Upload artifacts
-      if: ${{ success() }}
-      uses: actions/upload-artifact@v2
-      with:
-        name: diff
-        path: gitdiff.txt
+        python sr/main.py --force-regeneration
+    - name: Run tests
+      if: ${{ env.PACKAGE_UPDATED == 'True' }}
+      run: |
+        pytest

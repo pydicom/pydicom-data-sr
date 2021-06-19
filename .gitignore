@@ -25,3 +25,7 @@ build/*
 distribute*.egg
 distribute*.tar.gz
 __pycache__
+
+# Other
+.mypy_cache
+.pytest_cache
