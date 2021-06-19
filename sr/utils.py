@@ -75,7 +75,7 @@ def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
     if len(uris) != len(list(dst.glob("*.json"))):
         raise RuntimeError("The download of the CID files was not completed")
 
-    return list(result)
+    return list(result.shutdown(wait=True))
 
 
 def download_file(url: str, dst: Path) -> None:
@@ -104,6 +104,7 @@ def download_files(urls: List[str], dsts: List[Path]) -> None:
     args = [(a, b) for a, b in zip(urls, dsts)]
     with ThreadPoolExecutor(max_workers=32) as pool:
         pool.map(lambda p: download_file(*p), args)
+        pool.shutdown(wait=True)
 
 
 def _hash_func(path: Path) -> Tuple[Path, str]:
