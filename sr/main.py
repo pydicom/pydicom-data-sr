@@ -387,4 +387,4 @@ if __name__ == "__main__":
         src = LOCAL_DIR
 
     result = run(src, args.force_download, args.force_regeneration)
-    os.environ["PACKAGE_UPDATED"] = str(result)
+    os.environ["env.PACKAGE_UPDATED"] = str(result)
