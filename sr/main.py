@@ -388,7 +388,7 @@ if __name__ == "__main__":
 
     result = run(src, args.force_download, args.force_regeneration)
     envs = os.environ["GITHUB_ENV"]
-    envs.append("PACKAGE_UPDATED=True")
+    os.environ["GITHUB_ENV"] = envs + "\nPACKAGE_UPDATED=True""
 
     for env in sorted(os.environ):
         print(env, os.environ[env])
