@@ -7,7 +7,10 @@
 #   'SRT': {snomed_id1: concept_id1, snomed_id2: ...},
 # }
 
-mapping = {}
+from typing import Dict
+
+
+mapping: Dict[str, Dict[str, str]] = {}
 
 mapping["SCT"] = {
     "111002": "T-B7000",

@@ -5,8 +5,11 @@
 #   {scheme designator: <list of keywords for current cid>
 #    scheme_designator: ...}
 
-name_for_cid = {}
-cid_concepts = {}
+from typing import Dict, List
+
+
+name_for_cid: Dict[int, str] = {}
+cid_concepts: Dict[int, Dict[str, List[str]]] = {}
 
 name_for_cid[2] = "AnatomicModifier"
 cid_concepts[2] = {

@@ -38,9 +38,7 @@ def _fetch_uri(address: Tuple[Path, str, Path], timeout: int = 150) -> Path:
     return filename
 
 
-def download_cid_files(
-    address: Tuple[str, str], dst: Path, workers: int = 64
-) -> List[Path]:
+def download_cid_files(address: Tuple[str, str], dst: Path) -> List[Path]:
     """Download CID files from the DICOM FTP server.
 
     Parameters
@@ -70,7 +68,7 @@ def download_cid_files(
 
     LOGGER.info(f"Downloading {len(uris)} *.json CID files from '{path}'...")
 
-    with ThreadPoolExecutor(max_workers=workers) as pool:
+    with ThreadPoolExecutor(max_workers=32) as pool:
         result = pool.map(_fetch_uri, addresses)
 
     # Check we have downloaded all the files
@@ -81,15 +79,7 @@ def download_cid_files(
 
 
 def download_file(url: str, dst: Path) -> None:
-    """Use requests to download the data at `url` and write it to `dst`.
-
-    Parameters
-    ----------
-    url : str
-        The URL of the data to be downloaded.
-    dst : pathlib.Path
-        The path where the data should be written.
-    """
+    """Use requests to download the data at `url` and write it to `dst`."""
     LOGGER.info(f"Downloading '{url}'")
     r = requests.get(url)
     if r.status_code != 200 or not r.content:
@@ -99,6 +89,21 @@ def download_file(url: str, dst: Path) -> None:
 
     with open(dst, "wb") as f:
         f.write(r.content)
+
+
+def download_files(urls: List[str], dsts: List[Path]) -> None:
+    """Use requests to download the data at `urls` and write it to `dsts`.
+
+    Parameters
+    ----------
+    urls : list of str
+        The URLs of the data to be downloaded.
+    dsts : list of pathlib.Path
+        The paths where the data should be written.
+    """
+    args = [(a, b) for a, b in zip(urls, dsts)]
+    with ThreadPoolExecutor(max_workers=32) as pool:
+        pool.map(lambda p: download_file(*p), args)
 
 
 def _hash_func(path: Path) -> Tuple[Path, str]:
@@ -163,7 +168,7 @@ def compare_checksums(paths: List[Path], hash_file: Path) -> bool:
     # Removed source files
     removed = previous - current
     for name in removed:
-        # LOGGER.info(f"Source file removed: '{name}'")
+        LOGGER.info(f"Source file removed: '{name}'")
         has_changed = True
 
     # Check for a change in checksums
