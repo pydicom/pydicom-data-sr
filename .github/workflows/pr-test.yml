@@ -23,9 +23,9 @@ jobs:
         pip install -U pip
     - name: Download and check source data
       run: |
-        pip install -e .[dev] --force-regeneration
+        pip install -e .[dev]
         mkdir sr/temp
-        python sr/main.py
+        python sr/main.py --force-regeneration
     - name: Blacken code, run tests and get diff
       if: ${{ env.PACKAGE_UPDATED == 'True' }}
       run: |
