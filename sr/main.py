@@ -103,13 +103,13 @@ def run(
     paths = sorted(cid_paths + table_paths)
 
     # 1. Compare the data in `src` against the reference hashes
-    checksums_changed = compare_checksums(paths, HASH_FILE)
-    if checksums_changed and not force_regeneration:
+    checksums_match = compare_checksums(paths, HASH_FILE)
+    if checksums_match and not force_regeneration:
         LOGGER.info("No change in source data found, exiting...")
         return False
 
     # 2. Source data has changed, regenerate the tables and update the package
-    if not checksums_changed:
+    if not checksums_match:
         LOGGER.info("Source data has changed - updating package")
     else:
         LOGGER.debug("'--force-regeneration' used - updated package")
