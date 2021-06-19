@@ -35,13 +35,6 @@ jobs:
         black sr/*py
         black sr/tables/*.py
         pytest
-        git diff --output=gitdiff.txt
-    - name: Upload diff
-      if: ${{ env.PACKAGE_UPDATED == 'True' }}
-      uses: actions/upload-artifact@v2
-      with:
-        name: diff
-        path: gitdiff.txt
     - name: Create PR
       if: ${{ env.PACKAGE_UPDATED == 'True' }}
       uses: peter-evans/create-pull-request@v3
