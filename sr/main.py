@@ -389,4 +389,4 @@ if __name__ == "__main__":
 
     result = run(src, args.force_download, args.force_regeneration)
     if "GITHUB_ACTION" in os.environ:
-        subprocess.call(["echo", '"PACKAGE_UPDATED=True"', ">>", "$GITHUB_ENV"])
+        subprocess.run("echo 'PACKAGE_UPDATED=True' >> $GITHUB_ENV", shell=True)
