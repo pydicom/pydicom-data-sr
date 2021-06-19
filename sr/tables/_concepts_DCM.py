@@ -3494,9 +3494,6 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "EligibleForReimbursementOnPerPatientBasis": {
         "128614": ("Eligible for reimbursement on per patient basis", [800]),
     },
-    "Ellipsis": {
-        "...": ("...", []),
-    },
     "Elliptic": {
         "112134": ("Elliptic", [6119]),
     },

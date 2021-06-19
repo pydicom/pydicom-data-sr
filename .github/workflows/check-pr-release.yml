@@ -9,9 +9,11 @@ on:
 
 jobs:
 
-  check-pr:
+  check:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      PACKAGE_UPDATED: False
 
     steps:
     - uses: actions/checkout@v2
@@ -27,15 +29,16 @@ jobs:
         pip install -e .[dev]
         mkdir sr/temp
         python sr/main.py --force-regeneration
+    - name: Blacken code, run tests and get diff
+      if: ${{ env.PACKAGE_UPDATED == True }}
+      run: |
         black sr/*py
         black sr/tables/*.py
+        pytest
         git diff --output=gitdiff.txt
     - name: Upload diff
-      if: ${{ success() }}
+      if: ${{ env.PACKAGE_UPDATED == True }}
       uses: actions/upload-artifact@v2
       with:
         name: diff
         path: gitdiff.txt
-    - name: Run pytest
-      run: |
-        pytest

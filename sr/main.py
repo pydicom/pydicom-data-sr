@@ -1,6 +1,7 @@
 import argparse
 from datetime import datetime
 import logging
+import os
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import time
@@ -102,12 +103,16 @@ def run(
     paths = sorted(cid_paths + table_paths)
 
     # 1. Compare the data in `src` against the reference hashes
-    if compare_checksums(paths, HASH_FILE) and not force_regeneration:
+    checksums_changed = compare_checksums(paths, HASH_FILE)
+    if not checksums_changed and not force_regeneration:
         LOGGER.info("No change in source data found, exiting...")
         return False
 
     # 2. Source data has changed, regenerate the tables and update the package
-    LOGGER.info("Source data has changed - updating package")
+    if checksums_changed:
+        LOGGER.info("Source data has changed - updating package")
+    else:
+        LOGGER.debug("'--force-regeneration' used - updated package")
 
     table_o1 = src / "part16_o1.html"
     table_d1 = src / "part16_d1.html"
@@ -381,4 +386,5 @@ if __name__ == "__main__":
     if args.force_regeneration or args.force_download:
         src = LOCAL_DIR
 
-    run(src, args.force_download, args.force_regeneration)
+    result = run(src, args.force_download, args.force_regeneration)
+    os.environ["PACKAGE_UPDATED"] = str(result)

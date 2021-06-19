@@ -237,6 +237,9 @@ def process_table_d1(
         [code, meaning, definition, notes] = [
             cell.get_text().strip() for cell in row.find_all("td")
         ]
+        if code == "...":
+            continue
+
         name = identifier_from_meaning(meaning)
         if name not in concepts[scheme]:
             concepts[scheme][name] = {code: (meaning, [])}
@@ -299,7 +302,6 @@ def identifier_from_meaning(name: str, units: bool = False) -> str:
     name = name.replace("R2*", "R2 Star")
     name = name.replace("T2*", "T2 Star")
     name = name.replace("tau_m", "tau m")
-    name = name.replace("...", "Ellipsis")
 
     name = re.sub(r"([0-9]+)\.([0-9]+)", "\\1 Point \\2", name)
     name = re.sub(r"\s([0-9.]+)-([0-9.]+)\s", " \\1 To \\2 ", name)
