@@ -23,7 +23,7 @@ jobs:
         pip install -U pip
     - name: Download and check source data
       run: |
-        pip install -e .[dev]
+        pip install -e .[dev] --force-regeneration
         mkdir sr/temp
         python sr/main.py
     - name: Blacken code, run tests and get diff
@@ -34,7 +34,7 @@ jobs:
         pytest
         git diff --output=diff.txt
     - name: Upload diff
-      if: ${{ success() }}
+      if: ${{ env.PACKAGE_UPDATED == 'True' }}
       uses: actions/upload-artifact@v2
       with:
         name: diff
