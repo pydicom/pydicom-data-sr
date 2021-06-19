@@ -387,7 +387,7 @@ if __name__ == "__main__":
         src = LOCAL_DIR
 
     result = run(src, args.force_download, args.force_regeneration)
-    os.environ["env.PACKAGE_UPDATED"] = str(result)
+    os.environ["PACKAGE_UPDATED"] = str(True)
 
-    for env in os.environ:
-        print(env)
+    for env in sorted(os.environ):
+        print(env, os.environ[env])
