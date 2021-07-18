@@ -563,7 +563,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "132516004": ("Ainu dog breed", [7480]),
     },
     "Air": {
-        "15158005": ("Air", [12, 13, 3850, 6211]),
+        "15158005": ("Air", [12, 13, 3850, 6211, 6350]),
     },
     "AirHeatingPad": {
         "468192005": ("Air heating pad", [635]),
@@ -1110,6 +1110,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "AndeanHorseBreed": {
         "132956006": ("Andean horse breed", [7480]),
+    },
+    "AndrogenDeprivationTherapy": {
+        "707266006": ("Androgen Deprivation Therapy", [6323]),
     },
     "AnesthesiaFinishTime": {
         "398164008": ("Anesthesia finish time (observable entity)", []),
@@ -1804,6 +1807,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
                 218,
                 7469,
                 7471,
+                8136,
                 12253,
                 12257,
                 12258,
@@ -2187,6 +2191,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Atrium": {
         "59652004": ("Atrium", [4, 7151, 7192, 8134, 9514]),
     },
+    "Atrophy": {
+        "13331008": ("Atrophy", [6335, 6336, 6337, 6338]),
+    },
     "Atropine": {
         "73949004": ("Atropine", [10, 3204]),
         "771928002": ("Atropine", [4208]),
@@ -2390,7 +2397,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "131446001": ("Aweil Dinka cattle breed", [7480]),
     },
     "Axial": {
-        "24422004": ("Axial", [2, 26, 501]),
+        "24422004": ("Axial", [2, 26, 501, 6312]),
         "399061009": ("axial", [501, 4010]),
     },
     "AxialProjection": {
@@ -3096,6 +3103,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
             "Benign neoplasm of nipple of female breast (Nipple adenoma)",
             [6030, 6031],
         ),
+    },
+    "BenignProstateHyperplasia": {
+        "444808002": ("Benign Prostate Hyperplasia", [6313, 6335, 6336, 6337, 6338]),
     },
     "BentheimBlackPiedPigBreed": {
         "132355002": ("Bentheim Black Pied pig breed", [7480]),
@@ -4000,6 +4010,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "BonsmaraCattleBreed": {
         "131431008": ("Bonsmara cattle breed", [7480]),
     },
+    "BonyMetastasis": {
+        "94222008": ("Bony metastasis", [6347]),
+    },
     "BooroolaMerinoSheepBreed": {
         "132735001": ("Booroola Merino sheep breed", [7480]),
     },
@@ -4190,7 +4203,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "8887007": ("Brachiocephalic vein", [6102, 6109, 6117]),
     },
     "Brachytherapy": {
-        "384692006": ("Brachytherapy", [6051]),
+        "384692006": ("Brachytherapy", [6051, 6327]),
     },
     "BrachytherapyDevice": {
         "228748004": ("Brachytherapy Device", [3411, 3429]),
@@ -5914,6 +5927,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "CeliacLymphNode": {
         "47985009": ("celiac lymph node", [7600, 8134]),
     },
+    "Cell": {
+        "4421005": ("Cell", [8135]),
+    },
     "CementedComponentFixation": {
         "257771002": ("Cemented component fixation", [7310]),
     },
@@ -6590,7 +6606,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "263706005": ("Circumscribed", [6120]),
     },
     "CircumscribedLesion": {
-        "129738007": ("Circumscribed lesion", [6006, 6007]),
+        "129738007": ("Circumscribed lesion", [6006, 6007, 6335, 6341, 6342]),
     },
     "CiritHorseBreed": {
         "131907007": ("Cirit horse breed", [7480]),
@@ -7477,7 +7493,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "56917006": ("Cornish rex cat breed", [7480]),
     },
     "Coronal": {
-        "81654009": ("Coronal", [2, 6, 26, 501, 502]),
+        "81654009": ("Coronal", [2, 6, 26, 501, 502, 6312]),
     },
     "CoronaryAngiography": {
         "33367005": ("Coronary angiography (procedure)", []),
@@ -7909,7 +7925,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "133367009": ("Cyprus cattle breed", [7480]),
     },
     "Cyst": {
-        "367643001": ("Cyst", [7151, 7159, 7194]),
+        "367643001": ("Cyst", [6335, 6336, 6337, 6338, 7151, 7159, 7194]),
     },
     "CystOfBreast": {
         "399294002": ("Cyst of breast", [6030, 6031, 6054, 6064]),
@@ -8583,7 +8599,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "261004008": ("Diagnostic Intent", [3629, 7064]),
     },
     "DiagnosticProcedure": {
-        "103693007": ("Diagnostic procedure (procedure)", []),
+        "103693007": ("Diagnostic procedure", [6319]),
     },
     "DiagnosticProcedureOnBloodVessel": {
         "83422003": ("Diagnostic procedure on blood vessel (procedure)", []),
@@ -8759,7 +8775,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "442700003": ("Difference in Texture", [6134]),
     },
     "Diffuse": {
-        "19648000": ("Diffuse", [6128]),
+        "19648000": ("Diffuse", [6128, 6335, 6336, 6337]),
     },
     "DiffuseCalcificationDistribution": {
         "129764001": ("Diffuse calcification distribution", [6012, 6013]),
@@ -8787,6 +8803,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
             "Digital artery of hand",
             [3827, 7151, 7192, 8134, 9514, 12103, 12107],
         ),
+    },
+    "DigitalExaminationOfRectum": {
+        "410006001": ("Digital Examination of Rectum", [6321]),
     },
     "DigitalImager": {
         "468440006": ("Digital imager", [7026, 7027, 7151, 7193]),
@@ -9362,6 +9381,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "DreverDog": {
         "56984005": ("Drever dog", [7480]),
     },
+    "DropShaped": {
+        "1312007": ("Drop-shaped", [6335, 6339, 6340]),
+    },
     "Droperidol": {
         "387146001": ("Droperidol", [623, 625]),
     },
@@ -9832,6 +9854,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "EmptyVitreous": {
         "232077005": ("Empty vitreous (disorder)", []),
     },
+    "Encapsulated": {
+        "59135002": ("Encapsulated", [6335, 6341, 6342]),
+    },
     "EndDiastole": {
         "416190007": ("End diastole", [3337, 12233, 12307]),
     },
@@ -9993,6 +10018,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "EnlargedSeptalForamenOfHeart": {
         "287272002": ("Enlarged septal foramen of heart (disorder)", []),
+    },
+    "Entire": {
+        "255503000": ("Entire", [6347]),
     },
     "EntireAnulusFibrosusOfMitralOrifice": {
         "279174006": ("Entire anulus fibrosus of mitral orifice (body structure)", []),
@@ -10771,7 +10799,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "266897007": ("Family history of myocardial infarction", [3758]),
     },
     "FamilyHistoryUnknown": {
-        "407559004": ("Family history unknown", [3758]),
+        "407559004": ("Family history unknown", [3758, 6322]),
     },
     "FamilyHistoryWithExplicitContext": {
         "57177007": ("Family history with explicit context (situation)", []),
@@ -11036,6 +11064,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "FibrosingAdenosis": {
         "50916005": ("Fibrosing adenosis (morphologic abnormality)", []),
+    },
+    "Fibrosis": {
+        "112674009": ("Fibrosis", [6335, 6336, 6337, 6338]),
     },
     "Fibrous": {
         "255423002": ("fibrous", [3802, 3805]),
@@ -11491,7 +11522,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "456997008": ("Flutemetamol F^18^", [4021]),
     },
     "Focal": {
-        "87017008": ("Focal", [6128]),
+        "87017008": ("Focal", [6128, 6335, 6336, 6337]),
     },
     "FocalAsymmetricBreastTissue": {
         "129789007": ("Focal asymmetric breast tissue", [6016, 6017, 6054]),
@@ -11879,6 +11910,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "GadoDaTerraCattleBreed": {
         "133395009": ("Gado da Terra cattle breed", [7480]),
+    },
+    "Gadobutrol": {
+        "407976008": ("Gadobutrol", [12, 3850]),
     },
     "Gadodiamide": {
         "354088005": ("Gadodiamide", [12, 3850]),
@@ -13289,7 +13323,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "66857006": ("Hemoptysis", [12246]),
     },
     "Hemorrhage": {
-        "50960005": ("Hemorrhage", [7151, 7159, 7194]),
+        "50960005": ("Hemorrhage", [6335, 6336, 6337, 6338, 7151, 7159, 7194]),
     },
     "HemorrhagePostprocedure": {
         "110265006": ("Hemorrhage postprocedure", [6062]),
@@ -14224,6 +14258,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "ImplantationOfHeartValveWithTissueGraft": {
         "37153009": ("Implantation of heart valve with tissue graft", [12247]),
     },
+    "ImplantationOfRadioactiveSeedIntoProstate": {
+        "425767004": ("Implantation of radioactive seed into prostate", [6323]),
+    },
     "ImprovedRodopiCattleBreed": {
         "133439001": ("Improved Rodopi cattle breed", [7480]),
     },
@@ -14366,7 +14403,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         ),
     },
     "IndistinctLesion": {
-        "129741003": ("Indistinct lesion", [6006, 6007]),
+        "129741003": ("Indistinct lesion", [6006, 6007, 6335, 6341, 6342]),
     },
     "Indium111CapromabPendetide": {
         "446871009": ("Indium^111 Capromab Pendetide", [25]),
@@ -15521,7 +15558,10 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "228790005": ("Irradiated Volume", [9534]),
     },
     "Irregular": {
-        "49608001": ("Irregular", [3715, 6004, 6005, 6119]),
+        "49608001": (
+            "Irregular",
+            [3715, 6004, 6005, 6119, 6335, 6339, 6340, 6341, 6342],
+        ),
     },
     "IrregularBreathing": {
         "248585001": ("irregular breathing", [3416]),
@@ -17738,7 +17778,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "132302008": ("Leping pig breed", [7480]),
     },
     "Lesion": {
-        "52988006": ("Lesion", [3487, 4266]),
+        "52988006": ("Lesion", [3487, 4266, 6335, 6336, 6337]),
     },
     "LesionWithCircumscribedMargin": {
         "129738007": ("Lesion with circumscribed margin (finding)", []),
@@ -18596,6 +18636,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
                 6109,
                 6113,
                 6149,
+                6348,
                 7151,
                 7166,
                 7191,
@@ -18655,6 +18696,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "LymphNodeStructureOfTrunk": {
         "312502003": ("Lymph node structure of trunk (body structure)", []),
+    },
+    "Lymphadenopathy": {
+        "30746006": ("Lymphadenopathy", [6347]),
     },
     "LymphaticSystem": {
         "89890002": ("Lymphatic system", [7151, 7166, 7191]),
@@ -18881,7 +18925,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "MaleExternalUrethralSphincter": {
         "717027004": (
             "Male external urethral sphincter",
-            [6300, 6301, 6302, 6303, 6304],
+            [6300, 6301, 6302, 6303, 6304, 6348],
         ),
     },
     "MaleFirstCousin": {
@@ -19300,7 +19344,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "Mass": {
         "118538004": ("Mass", [12304]),
-        "4147007": ("Mass", [6102, 6104, 7151, 7159, 7194]),
+        "4147007": ("Mass", [6102, 6104, 6335, 6336, 6337, 7151, 7159, 7194]),
     },
     "MassAMeasureOfQuantityOfMatterProperty": {
         "118538004": (
@@ -20729,7 +20773,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "371803003": ("Multi vessel coronary artery disease.", [3728]),
     },
     "Multifocal": {
-        "524008": ("Multifocal", [6128]),
+        "524008": ("Multifocal", [6128, 6335, 6336, 6337]),
     },
     "MultifocalPrematureVentricularComplexes": {
         "10626002": ("Multifocal premature ventricular complexes (disorder)", []),
@@ -21654,7 +21698,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "255288007": ("Nodular", [6132]),
     },
     "Nodule": {
-        "27925004": ("Nodule", [6102, 6104, 7151, 7159, 7194]),
+        "27925004": ("Nodule", [6102, 6104, 6335, 6336, 6337, 7151, 7159, 7194]),
     },
     "Nolke": {
         "399002000": ("Nolke", [4012]),
@@ -22050,6 +22094,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "NuclearMedicineProcedure": {
         "371572003": ("Nuclear medicine procedure", [6028]),
     },
+    "Nucleus": {
+        "84640000": ("Nucleus", [8135]),
+    },
     "NucleusAccumbens": {
         "427667007": ("Nucleus Accumbens", [7140, 7151, 7153, 7192, 8134, 9514]),
     },
@@ -22102,7 +22149,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "131632007": ("Oberhasli goat breed", [7480]),
     },
     "Oblique": {
-        "21114003": ("Oblique", [6, 501, 502, 6121]),
+        "21114003": ("Oblique", [6, 501, 502, 6121, 6312]),
         "399182000": ("oblique", [501, 4010]),
         "399366008": ("oblique", [21]),
     },
@@ -22138,7 +22185,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "399182000": ("Oblique projection (qualifier value)", []),
     },
     "ObscuredLesion": {
-        "129740002": ("Obscured lesion", [6006, 6007]),
+        "129740002": ("Obscured lesion", [6006, 6007, 6335, 6341, 6342]),
     },
     "ObstetricHistory": {
         "248983002": ("Obstetric history (observable entity)", []),
@@ -22346,6 +22393,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "OperationOnHeartValve": {
         "73544002": ("Operation on heart valve", [3721]),
+    },
+    "OperativeProcedureOnPelvis": {
+        "12745006": ("Operative procedure on pelvis", [6320]),
     },
     "OperativeSite": {
         "43526002": ("Operative Site", [6201]),
@@ -22655,7 +22705,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "125099002": ("Ovis aries", [7454]),
     },
     "OvoidShape": {
-        "84360004": ("Ovoid shape (qualifier value)", []),
+        "84360004": ("Ovoid shape", [6335, 6339, 6340]),
     },
     "OvoidShapeOval": {
         "84360004": ("Ovoid shape (Oval)", [6004, 6005]),
@@ -23252,7 +23302,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "224944003": ("Paternal", [6097]),
     },
     "PathologicCalcification": {
-        "18115005": ("pathologic calcification", [3802]),
+        "18115005": ("pathologic calcification", [3802, 6335, 6336, 6337, 6338]),
     },
     "PathologicCalcificationCalcifiedStructure": {
         "18115005": (
@@ -25051,6 +25101,15 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
             ],
         ),
     },
+    "ProstateCancer": {
+        "254900004": ("Prostate cancer", [6313]),
+    },
+    "ProstateCancerAntigenMeasurement": {
+        "63476009": ("Prostate Cancer Antigen Measurement", [6321]),
+    },
+    "Prostatectomy": {
+        "90470006": ("Prostatectomy", [6320, 6323]),
+    },
     "ProstaticStructure": {
         "41216001": ("Prostatic structure (body structure)", []),
     },
@@ -25059,6 +25118,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "ProstaticUrethraStructure": {
         "71553001": ("Prostatic urethra structure (body structure)", []),
+    },
+    "Prostatitis": {
+        "9713002": ("Prostatitis", [6313, 6335, 6336, 6337, 6338]),
     },
     "Prosthesis": {
         "53350007": ("Prosthesis", [6102, 6138, 6202, 6203, 6404, 7151, 7193]),
@@ -26100,6 +26162,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
                 6202,
                 6204,
                 6210,
+                6348,
                 7151,
                 7160,
                 7192,
@@ -26257,6 +26320,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "RegionOfNasopharynx": {
         "360955006": ("Region of nasopharynx (body structure)", []),
+    },
+    "Regional": {
+        "410674003": ("Regional", [6335, 6336, 6337]),
     },
     "RegionalAnesthesia": {
         "27372005": ("Regional anesthesia", [611, 612]),
@@ -27492,6 +27558,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "RoughFellSheepBreed": {
         "131816007": ("Rough Fell sheep breed", [7480]),
     },
+    "Round": {
+        "42700002": ("Round", [6335, 6339, 6340]),
+    },
     "RoundShape": {
         "42700002": ("Round shape", [6004, 6005, 6119]),
     },
@@ -27705,7 +27774,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "406988004": ("safranin stain", [8112]),
     },
     "Sagittal": {
-        "30730003": ("Sagittal", [2, 6, 26, 501, 502, 4010]),
+        "30730003": ("Sagittal", [2, 6, 26, 501, 502, 4010, 6312]),
     },
     "SagittalObliqueAxial": {
         "399273000": ("Sagittal-oblique axial", [26, 501]),
@@ -28195,7 +28264,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "SeminalVesicle": {
         "64739004": (
             "Seminal Vesicle",
-            [6202, 6204, 6300, 7151, 7160, 7192, 8134, 9514],
+            [6202, 6204, 6300, 6348, 7151, 7160, 7192, 8134, 9514],
         ),
     },
     "SeminalVesicleStructure": {
@@ -28346,7 +28415,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "132335003": ("Shanxi Black pig breed", [7480]),
     },
     "Shape": {
-        "300842002": ("Shape (attribute)", []),
+        "300842002": ("Shape", [6333, 6334]),
     },
     "ShapeFinding": {
         "107644003": ("Shape finding (qualifier value)", []),
@@ -29900,7 +29969,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "132680008": ("Sphynx cat breed", [7480]),
     },
     "SpiculatedLesion": {
-        "129742005": ("Spiculated lesion", [6006, 6007]),
+        "129742005": ("Spiculated lesion", [6006, 6007, 6335, 6341, 6342]),
     },
     "SpiegelSheepBreed": {
         "132794004": ("Spiegel sheep breed", [7480]),
@@ -30104,6 +30173,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "Stage5": {
         "261617005": ("Stage 5", [3778]),
+    },
+    "Staging": {
+        "373825000": ("Staging", [6327]),
     },
     "StagingIntent": {
         "373825000": ("Staging intent", [3629]),
@@ -33991,7 +34063,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "63289001": ("Surgical metal nail, device (physical object)", []),
     },
     "SurgicalProcedure": {
-        "387713003": ("Surgical procedure (procedure)", []),
+        "387713003": ("Surgical procedure", [6319]),
     },
     "SurgicalScar": {
         "63130001": ("Surgical scar", [6056]),
@@ -34857,7 +34929,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "262202000": ("Therapeutic Intent", [3629]),
     },
     "TherapeuticProcedure": {
-        "277132007": ("Therapeutic procedure (procedure)", []),
+        "277132007": ("Therapeutic procedure", [6319]),
     },
     "TherapeuticRadioisotope": {
         "439007": ("Therapeutic radioisotope", [25]),
@@ -37289,7 +37361,7 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "289925000": ("Waste Material", [7151, 7165, 7196]),
     },
     "Water": {
-        "11713004": ("Water", [12, 13, 218, 300, 3850, 7180, 7469]),
+        "11713004": ("Water", [12, 13, 218, 300, 3850, 6350, 7180, 7469]),
     },
     "WaterBagProsthesisForImagingProcedure": {
         "102323003": ("Water bag prosthesis for imaging procedure", [5]),
@@ -37347,6 +37419,9 @@ concepts_SCT: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "WedgeMethod": {
         "128579004": ("Wedge method", [3241]),
+    },
+    "WedgeShaped": {
+        "20446002": ("Wedge-shaped", [6335, 6339, 6340]),
     },
     "WeightBearing": {
         "87731000": ("Weight bearing", [91]),

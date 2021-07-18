@@ -14,25 +14,212 @@ concepts_RADLEX: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "ACRCategory3ActionableFinding": {
         "RID49482": ("ACR Category 3 Actionable Finding", [7035]),
     },
+    "BariumSulfateSuspension": {
+        "RID11588": ("Barium sulfate suspension", [6350]),
+    },
     "BeamHardeningArtifact": {
         "RID11327": ("Beam-hardening artifact", [6135]),
+    },
+    "ChemicalShiftArtifact": {
+        "RID11374": ("Chemical shift artifact", [6315, 6316]),
+    },
+    "DelayedPhase": {
+        "RID11081": ("Delayed phase", [6335, 6345, 6346]),
     },
     "DiagnosticQuality": {
         "RID12": ("Diagnostic quality", [7036]),
     },
+    "DiffusionWeightedHypersensitivity": {
+        "RID39536": ("Diffusion-weighted hypersensitivity", [6335, 6343, 6344]),
+    },
+    "EarlyPhaseWashIn": {
+        "RID49530": ("Early phase wash-in", [6335, 6345, 6346]),
+    },
+    "EndorectalCoil": {
+        "RID10809": ("Endorectal coil", [6349]),
+    },
+    "EnhancementPattern": {
+        "RID6058": ("Enhancement pattern", [6333, 6334]),
+    },
+    "ErasedCharcoalSign": {
+        "RID49497": ("Erased charcoal sign", [6335, 6341, 6342]),
+    },
+    "FerromagneticImplantMagneticSusceptibilityEffect": {
+        "RID11370": (
+            "Ferromagnetic implant magnetic susceptibility effect",
+            [6315, 6316],
+        ),
+    },
+    "Ghost": {
+        "RID11426": ("Ghost", [6315, 6316]),
+    },
+    "Heterogeneous": {
+        "RID6060": ("Heterogeneous", [6335, 6343, 6344]),
+    },
+    "Hyperintense": {
+        "RID35805": ("Hyperintense", [6335, 6343, 6344]),
+    },
+    "Hypointense": {
+        "RID35804": ("Hypointense", [6335, 6343, 6344]),
+    },
     "IonicIodinatedContrastAgent": {
         "RID11585": ("Ionic iodinated contrast agent", [12, 3850]),
+    },
+    "Isointense": {
+        "RID6053": ("Isointense", [6335, 6343, 6344]),
+    },
+    "Lenticular": {
+        "RID49495": ("Lenticular", [6335, 6339, 6340]),
     },
     "LimitedQuality": {
         "RID13": ("Limited quality", [7036]),
     },
+    "MarkedlyHypointense": {
+        "RID49500": ("Markedly hypointense", [6335, 6343, 6344]),
+    },
+    "MotionRelatedArtifact": {
+        "RID11423": ("Motion related artifact", [6315, 6316]),
+    },
     "NMHeadPerfusionBrainPETCTAV45": {
         "RPID5427": ("NM head perfusion brain PET-CT AV-45", [100]),
+    },
+    "NeurovascularBundleOfProstate": {
+        "RID43492": ("Neurovascular bundle of prostate", [6348]),
+    },
+    "NonCircumscribedMargin": {
+        "RID34355": ("Non-circumscribed margin", [6335, 6341, 6342]),
     },
     "NonDiagnosticQuality": {
         "RID14": ("Non-diagnostic quality", [7036]),
     },
     "NonIonicIodinatedContrastAgent": {
         "RID38696": ("Non-ionic iodinated contrast agent", [12, 3850]),
+    },
+    "NonUniformSignalIntensityArtifact": {
+        "RID11408": ("Non-uniform signal intensity artifact", [6315, 6316]),
+    },
+    "OrganizedChaos": {
+        "RID49499": ("Organized chaos", [6335, 6343, 6344]),
+    },
+    "PIRADS1DWIVeryLow": {
+        "RID50314": ("PI-RADS 1 - DWI Very low", [6331]),
+    },
+    "PIRADS1T2WIPZVeryLow": {
+        "RID50302": ("PI-RADS 1 - T2WI PZ Very low", [6329]),
+    },
+    "PIRADS1T2WITZVeryLow": {
+        "RID50308": ("PI-RADS 1 - T2WI TZ Very low", [6330]),
+    },
+    "PIRADS1VeryLow": {
+        "RID50289": ("PI-RADS 1 - Very low", [6324, 6325]),
+        "RID50296": ("PI-RADS 1 - Very low (lesion)", [6328]),
+    },
+    "PIRADS2DWILow": {
+        "RID50315": ("PI-RADS 2 - DWI Low", [6331]),
+    },
+    "PIRADS2Low": {
+        "RID50290": ("PI-RADS 2 - Low", [6324, 6325]),
+        "RID50297": ("PI-RADS 2 - Low (lesion)", [6328]),
+    },
+    "PIRADS2T2WIPZLow": {
+        "RID50303": ("PI-RADS 2 - T2WI PZ Low", [6329]),
+    },
+    "PIRADS2T2WITZLow": {
+        "RID50309": ("PI-RADS 2 - T2WI TZ Low", [6330]),
+    },
+    "PIRADS3DWIIntermediate": {
+        "RID50316": ("PI-RADS 3 - DWI Intermediate", [6331]),
+    },
+    "PIRADS3Intermediate": {
+        "RID50291": ("PI-RADS 3 - Intermediate", [6324, 6325]),
+        "RID50298": ("PI-RADS 3 - Intermediate (lesion)", [6328]),
+    },
+    "PIRADS3T2WIPZIntermediate": {
+        "RID50304": ("PI-RADS 3 - T2WI PZ Intermediate", [6329]),
+    },
+    "PIRADS3T2WITZIntermediate": {
+        "RID50310": ("PI-RADS 3 - T2WI TZ Intermediate", [6330]),
+    },
+    "PIRADS4DWIHigh": {
+        "RID50317": ("PI-RADS 4 - DWI High", [6331]),
+    },
+    "PIRADS4High": {
+        "RID50292": ("PI-RADS 4 - High", [6324, 6325]),
+        "RID50299": ("PI-RADS 4 - High (lesion)", [6328]),
+    },
+    "PIRADS4T2WIPZHigh": {
+        "RID50305": ("PI-RADS 4 - T2WI PZ High", [6329]),
+    },
+    "PIRADS4T2WITZHigh": {
+        "RID50311": ("PI-RADS 4 - T2WI TZ High", [6330]),
+    },
+    "PIRADS5DWIVeryHigh": {
+        "RID50318": ("PI-RADS 5 - DWI Very high", [6331]),
+    },
+    "PIRADS5T2WIPZVeryHigh": {
+        "RID50306": ("PI-RADS 5 - T2WI PZ Very high", [6329]),
+    },
+    "PIRADS5T2WITZVeryHigh": {
+        "RID50312": ("PI-RADS 5 - T2WI TZ Very high", [6330]),
+    },
+    "PIRADS5VeryHigh": {
+        "RID50293": ("PI-RADS 5 - Very high", [6324, 6325]),
+        "RID50300": ("PI-RADS 5 - Very high (lesion)", [6328]),
+    },
+    "PIRADSDCEVe": {
+        "RID50320": ("PI-RADS DCE -ve", [6332]),
+        "RID50321": ("PI-RADS DCE +ve", [6332]),
+    },
+    "PIRADSXDCEInadequateOrAbsent": {
+        "RID50327": ("PI-RADS X - DCE Inadequate or absent", [6332]),
+    },
+    "PIRADSXDWIInadequateOrAbsent": {
+        "RID50326": ("PI-RADS X - DWI Inadequate or absent", [6331]),
+    },
+    "PIRADSXInadequateOrAbsent": {
+        "RID50322": ("PI-RADS X - Inadequate or absent", [6324, 6325]),
+        "RID50323": ("PI-RADS X - Inadequate or absent (lesion)", [6328]),
+    },
+    "PIRADSXT2WIPZInadequateOrAbsent": {
+        "RID50324": ("PI-RADS X - T2WI PZ Inadequate or absent", [6329]),
+    },
+    "PIRADSXT2WITZInadequateOrAbsent": {
+        "RID50325": ("PI-RADS X - T2WI TZ Inadequate or absent", [6330]),
+    },
+    "ParallelImagingArtifact": {
+        "RID11464": ("Parallel imaging artifact", [6315, 6316]),
+    },
+    "PersistentDelayedPhase": {
+        "RID34331": ("Persistent delayed phase", [6335, 6345, 6346]),
+    },
+    "PhaseWraparoundArtifact": {
+        "RID11395": ("Phase wraparound artifact", [6315, 6316]),
+    },
+    "PlateauDelayedPhase": {
+        "RID34332": ("Plateau delayed phase", [6335, 6345, 6346]),
+    },
+    "RestrictedDiffusion": {
+        "RID43349": ("Restricted diffusion", [6335, 6343, 6344]),
+    },
+    "SignalCharacteristic": {
+        "RID6049": ("Signal characteristic", [6333, 6334]),
+    },
+    "Smearing": {
+        "RID11424": ("Smearing", [6315, 6316]),
+    },
+    "SuboptimalPatientPositioning": {
+        "RID11281": ("Suboptimal patient positioning", [6314]),
+    },
+    "T2Hyperintensity": {
+        "RID39467": ("T2 Hyperintensity", [6335, 6343, 6344]),
+    },
+    "T2Hypointensity": {
+        "RID49501": ("T2 hypointensity", [6335, 6343, 6344]),
+    },
+    "TissueMagneticSusceptibilityEffect": {
+        "RID11372": ("Tissue magnetic susceptibility effect", [6315, 6316]),
+    },
+    "WashoutDelayedPhase": {
+        "RID34333": ("Washout delayed phase", [6335, 6345, 6346]),
     },
 }

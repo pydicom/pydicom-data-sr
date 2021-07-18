@@ -59,6 +59,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "ACRStandardCTMedicalPhysicsPerformanceMonitoring": {
         "112249": ("ACR Standard, CT medical physics performance monitoring", [6208]),
     },
+    "ADCHyperintense": {
+        "130595": ("ADC Hyperintense", [6335, 6343, 6344]),
+    },
+    "ADCHypointense": {
+        "130596": ("ADC Hypointense", [6335, 6343, 6344]),
+    },
     "AGN15099889Zr": {
         "126729": ("AGN-150998 ^89^Zr", [4021]),
     },
@@ -274,6 +280,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "ActiveIngredientUndilutedConcentration": {
         "121380": ("Active Ingredient Undiluted Concentration", [4050]),
+    },
+    "ActiveSurveillanceOfProstateCancer": {
+        "130589": ("Active surveillance of prostate cancer", [6327]),
     },
     "ActivityMeasurementDevice": {
         "113540": ("Activity Measurement Device", []),
@@ -557,6 +566,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "AnatomicalAxisOfFemur": {
         "112302": ("Anatomical axis of femur", [7305, 7306]),
     },
+    "AnatomyCoverageIncomplete": {
+        "130576": ("Anatomy coverage incomplete", [6315]),
+    },
     "Anechoic": {
         "111361": ("Anechoic", [6154]),
     },
@@ -681,7 +693,10 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "110872": ("Apex To Base", [7185]),
     },
     "ApparentDiffusionCoefficient": {
-        "113041": ("Apparent Diffusion Coefficient", [218, 7180, 7263, 7272, 7469]),
+        "113041": (
+            "Apparent Diffusion Coefficient",
+            [218, 6311, 7180, 7263, 7272, 7469],
+        ),
     },
     "ApparentKurtosisCoefficient": {
         "113206": ("Apparent Kurtosis Coefficient", [7263]),
@@ -824,6 +839,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "Assembly": {
         "112355": ("Assembly", []),
+    },
+    "AssessChange": {
+        "130590": ("Assess change", [6327]),
     },
     "AssessmentByComparison": {
         "121375": ("Assessment By Comparison", [703]),
@@ -2053,6 +2071,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "CoilMarker": {
         "129301": ("Coil Marker", [7111, 7112]),
     },
+    "CoilPlacementConcern": {
+        "130571": ("Coil placement concern", [6314]),
+    },
+    "CoilSelectionConcern": {
+        "130572": ("Coil selection concern", [6314]),
+    },
     "Coin": {
         "112178": ("Coin", [6102, 6138, 6202, 6203, 6404, 7151, 7193]),
     },
@@ -2121,6 +2145,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "CompleteStudyContent": {
         "113032": ("Complete Study Content", [7010]),
+    },
+    "CompletelyEncapsulated": {
+        "130594": ("Completely encapsulated", [6335, 6341, 6342]),
     },
     "Complex": {
         "111363": ("Complex", [6154]),
@@ -3034,6 +3061,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "DifficultPhysicalClinicalExamination": {
         "111479": ("Difficult physical/clinical examination", [6055]),
     },
+    "DiffuseContrastEnhancement": {
+        "130603": ("Diffuse Contrast Enhancement", [6335, 6345, 6346]),
+    },
     "DiffuseDirectIllumination": {
         "111625": ("Diffuse direct illumination", [4203]),
     },
@@ -3056,7 +3086,10 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "129106": ("Diffusion tractography", [7203]),
     },
     "DiffusionWeighted": {
-        "113043": ("Diffusion weighted", [218, 7180, 7270, 7469]),
+        "113043": ("Diffusion weighted", [218, 6311, 7180, 7270, 7469]),
+    },
+    "DiffusionWeightedAcquisitionHighestBValueImage": {
+        "130566": ("Diffusion-weighted Acquisition Highest b-value image", [6311]),
     },
     "DigitalFluoroscopy": {
         "DF": ("Digital fluoroscopy", []),
@@ -3172,6 +3205,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "DistanceFromChestWall": {
         "121244": ("Distance from chest wall", [6165]),
     },
+    "DistanceFromNeurovascularBundle": {
+        "130557": ("Distance from neurovascular bundle", [6351]),
+    },
     "DistanceFromNipple": {
         "121242": ("Distance from nipple", [6165]),
     },
@@ -3198,6 +3234,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "DistortedImplant": {
         "111506": ("Distorted implant", [6072]),
+    },
+    "DistortionArtifactInTheAreaOfInterest": {
+        "130586": ("Distortion artifact in the area of interest", [6315, 6318]),
     },
     "DistributedDiffusionCoefficient": {
         "113298": ("Distributed Diffusion Coefficient", [218, 7180, 7272, 7469]),
@@ -3353,6 +3392,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "DwConversionFactorCoefficients": {
         "113991": ("Dw Conversion Factor Coefficients", []),
     },
+    "DynamicContrastEnhancedAcquisition": {
+        "130567": ("Dynamic Contrast-Enhanced Acquisition", [6311]),
+    },
+    "DynamicContrastEnhancedAcquisitionSubtractionImage": {
+        "130568": ("Dynamic Contrast-Enhanced Acquisition Subtraction image", [6311]),
+    },
     "DynamicContrastMRMeasurementReport": {
         "126002": ("Dynamic Contrast MR Measurement Report", [7021]),
     },
@@ -3394,6 +3439,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "EPProcedurePhase": {
         "109061": ("EP Procedure Phase", []),
+    },
+    "ESUR2012ProstateMRIAcquisitionRequirements": {
+        "130606": ("ESUR 2012 prostate MRI acquisition requirements", [6326, 6353]),
+    },
+    "EarlyContrastEnhancement": {
+        "130602": ("Early Contrast Enhancement", [6335, 6345, 6346]),
     },
     "EarlyGestation": {
         "125009": ("Early Gestation", []),
@@ -3721,6 +3772,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "ExogenousSubstance": {
         "127400": ("Exogenous substance", []),
     },
+    "ExpectedADCMapIsMissing": {
+        "130585": ("Expected ADC map is missing", [6315, 6318]),
+    },
+    "ExpectedBValueIsMissing": {
+        "130583": ("Expected b-value is missing", [6315, 6318]),
+    },
     "Explantation": {
         "111510": ("Explantation", [6072]),
     },
@@ -3831,7 +3888,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "130480": ("Family history of non-melanoma skin cancer", []),
     },
     "FamilyHistoryOfProstateCancer": {
-        "111562": ("Family history of prostate cancer", [6081, 6087]),
+        "111562": ("Family history of prostate cancer", [6081, 6087, 6322, 6327]),
     },
     "FamilyHistoryUnknown": {
         "111563": ("Family history unknown", [6081, 6087]),
@@ -4164,6 +4221,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "FlushAdministration": {
         "130251": ("Flush Administration", [72]),
+    },
+    "FocalAbnormality": {
+        "Focal abnormality": ("Focal abnormality", [6335, 6336, 6337]),
+    },
+    "FocalContrastEnhancement": {
+        "130604": ("Focal Contrast Enhancement", [6335, 6345, 6346]),
     },
     "FocalPlaneZOffset": {
         "112708": ("Focal plane Z offset", []),
@@ -4847,7 +4910,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "128455": ("Homogeneity Factor", [10069]),
     },
     "Homogeneous": {
-        "112160": ("Homogeneous (uniform opacity)", [6131]),
+        "112160": ("Homogeneous", [6131, 6335, 6343, 6344]),
     },
     "HomogeneousFatEchotexture": {
         "111351": ("Homogeneous fat echotexture", [6151]),
@@ -5380,6 +5443,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "InadequateCompression": {
         "111196": ("Inadequate compression", [6041]),
     },
+    "InadequateContrastEnhancement": {
+        "130580": ("Inadequate contrast enhancement", [6315, 6317]),
+    },
     "InappropriateForTheDevice": {
         "128618": ("Inappropriate for the device", [800]),
     },
@@ -5397,6 +5463,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "IncisionMade": {
         "111440": ("Incision made", []),
+    },
+    "IncompleteStudy": {
+        "130574": ("Incomplete study", [6314]),
     },
     "InconsistentWithLabelingOfTheDevice": {
         "128622": ("Inconsistent with labeling of the device", [800]),
@@ -5543,7 +5612,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "InstitutionallyDefinedQualityControlStandard": {
         "111240": (
             "Institutionally defined quality control standard",
-            [6045, 6136, 6208],
+            [6045, 6136, 6208, 6326, 6353],
         ),
     },
     "InstrumentApproach": {
@@ -5989,7 +6058,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "111555": ("Late child bearing (after 30)", [6081, 6087]),
     },
     "LateContrastEnhancement": {
-        "122664": ("Late Contrast Enhancement", []),
+        "122664": ("Late Contrast Enhancement", [6335, 6345, 6346]),
     },
     "LeadID": {
         "122148": ("Lead ID", []),
@@ -6093,6 +6162,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "LesionBoundary": {
         "111357": ("Lesion boundary", []),
     },
+    "LesionCapsularContactLength": {
+        "130558": ("Lesion capsular contact length", [6351]),
+    },
     "LesionCentered": {
         "111902": ("Lesion centered", [4207]),
     },
@@ -6160,7 +6232,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "121227": ("Line segment length", [218, 6165, 7469, 7470]),
     },
     "Linear": {
-        "112150": ("Linear", [6123]),
+        "112150": ("Linear", [6123, 6335, 6339, 6340]),
     },
     "LinearCellKillFactor": {
         "130088": ("Linear Cell Kill Factor", []),
@@ -6202,7 +6274,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "112158": ("Lobar", [6128, 6129, 8134]),
     },
     "Lobulated": {
-        "112135": ("Lobulated", [6119]),
+        "112135": ("Lobulated", [6119, 6335, 6339, 6340]),
     },
     "LocalEffectModel": {
         "130128": ("Local Effect Model", [9538]),
@@ -6464,7 +6536,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "111036": ("Mammography CAD Report", []),
     },
     "MammographyQualityControlManual1999ACR": {
-        "111238": ("Mammography Quality Control Manual 1999, ACR", [6045]),
+        "111238": ("Mammography Quality Control Manual 1999, ACR", [6045, 6326]),
     },
     "Manifest": {
         "113030": ("Manifest", [7010]),
@@ -6498,6 +6570,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "Margetuximab89Zr": {
         "126740": ("Margetuximab ^89^Zr", [4021]),
+    },
+    "Margin": {
+        "Margin": ("Margin", [6333, 6334]),
     },
     "Margins": {
         "111037": ("Margins", []),
@@ -7162,6 +7237,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "NeedleLocalizationAndBiopsy": {
         "111144": ("Needle localization and biopsy", [6028, 6029, 6051, 6058, 6061]),
     },
+    "NegativeDCE": {
+        "130601": ("Negative DCE", [6335, 6345, 6346]),
+    },
     "NegativeEnhancementIntegral": {
         "113054": ("Negative enhancement integral", [218, 7180, 7469]),
     },
@@ -7258,6 +7336,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "NoEmptyTileSuppression": {
         "112721": ("No empty tile suppression", [8133]),
     },
+    "NoFamilyHistoryOfProstateCancer": {
+        "130587": ("No family history of prostate cancer", [6322]),
+    },
     "NoFilter": {
         "111609": ("No filter", [4204, 8124, 10007]),
     },
@@ -7320,6 +7401,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "NonFlatteningFilterBeam": {
         "130356": ("Non-Flattening Filter Beam", [9549]),
+    },
+    "NonFocalAbnormality": {
+        "Non-focal abnormality": ("Non-focal abnormality", [6335, 6336, 6337]),
     },
     "NonImagingDopplerUltrasoundTransducerGeometry": {
         "125251": ("Non-imaging Doppler ultrasound transducer geometry", [12033]),
@@ -7945,6 +8029,18 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "PGreaterThan5Percent": {
         "111935": ("p>5%", [4265]),
     },
+    "PIRADS2Point0ProstateMRIAcquisitionRequirements": {
+        "130607": ("PI-RADS 2.0 prostate MRI acquisition requirements", [6326, 6353]),
+    },
+    "PIRADS2Point1ProstateMRIAcquisitionRequirements": {
+        "130608": ("PI-RADS 2.1 prostate MRI acquisition requirements", [6326, 6353]),
+    },
+    "PIRADSV2Point0": {
+        "130564": ("PI-RADS v2.0", [6310]),
+    },
+    "PIRADSV2Point1": {
+        "130565": ("PI-RADS v2.1", [6310]),
+    },
     "PISARadius": {
         "125331": ("PISA Radius", [12304]),
     },
@@ -8064,6 +8160,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "PartialReport": {
         "121363": ("Partial report", [7009]),
+    },
+    "PartiallyEncapsulated": {
+        "130593": ("Partially encapsulated", [6335, 6341, 6342]),
     },
     "PartiallySucceeded": {
         "111223": ("Partially Succeeded", [6042]),
@@ -8426,6 +8525,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "PercutaneousSiliconeInjection": {
         "111483": ("Percutaneous silicone injection", [6058, 6059]),
     },
+    "Perfluorocarbon": {
+        "130605": ("Perfluorocarbon", [6350]),
+    },
     "PerformanceOfCTForDetectionOfPulmonaryEmbolismInAdults": {
         "112185": (
             "Performance of CT for Detection of Pulmonary Embolism in Adults",
@@ -8525,6 +8627,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "PerivascularAdiposeTissueFatAttenuationIndex": {
         "130408": ("Perivascular adipose tissue fat attenuation index", []),
+    },
+    "PersistentDelayedPhaseType1Curve": {
+        "130597": ("Persistent delayed phase: Type 1 curve", [6335, 6345, 6346]),
     },
     "Person": {
         "121006": ("Person", [270]),
@@ -8828,6 +8933,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "PlasmaDisplay": {
         "109993": ("Plasma Display", [8303]),
     },
+    "PlateauDelayedPhaseType2Curve": {
+        "130598": ("Plateau delayed phase: Type 2 curve", [6335, 6345, 6346]),
+    },
     "Pleonemia": {
         "112081": ("Pleonemia", [6108]),
     },
@@ -8852,8 +8960,17 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "PolyurethaneImplant": {
         "111482": ("Polyurethane implant", [6058, 6059]),
     },
+    "PoorContrastTiming": {
+        "130579": ("Poor contrast timing", [6315, 6317]),
+    },
+    "PoorFOVSelection": {
+        "130577": ("Poor FOV selection", [6315]),
+    },
     "PoorImageQuality": {
         "122742": ("Poor image quality", [3114]),
+    },
+    "PoorSNR": {
+        "130578": ("Poor SNR", [6315]),
     },
     "PoorlyDemarcated": {
         "112141": ("Poorly demarcated", [6120]),
@@ -8917,6 +9034,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "Positioning": {
         "111209": ("Positioning", [6041, 6135, 7011]),
+    },
+    "PositiveDCE": {
+        "130600": ("Positive DCE", [6335, 6345, 6346]),
     },
     "PositiveInfinity": {
         "114002": ("Positive Infinity", [42, 43]),
@@ -8995,6 +9115,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "PreAdministrationMeasuredActivity": {
         "113508": ("Pre-Administration Measured Activity", []),
+    },
+    "PreBiopsyLocalizationOfProstateLesion": {
+        "130588": ("Pre-biopsy localization of prostate lesion", [6327]),
     },
     "PreCoordinatedMeasurements": {
         "125301": ("Pre-coordinated Measurements", []),
@@ -9238,6 +9361,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "ProstheticShaftAugment": {
         "112316": ("Prosthetic Shaft Augment", [7307, 7308]),
+    },
+    "ProtocolNotFollowed": {
+        "130570": ("Protocol not followed", [6314]),
     },
     "ProtocolStage": {
         "109055": ("Protocol Stage", []),
@@ -10360,7 +10486,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "127290": ("Reverse osmosis purified water", [610]),
     },
     "ReviewOfAnOutsideStudy": {
-        "111418": ("Review of an outside study", [6051]),
+        "111418": ("Review of an outside study", [6051, 6327]),
     },
     "RibScaleneTubercle": {
         "112096": ("Rib Scalene Tubercle", [6115, 8134]),
@@ -10719,6 +10845,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "SessionStop": {
         "110146": ("Session stop", [401, 403]),
+    },
+    "SevereDistortionInTheAreaOfInterest": {
+        "130584": ("Severe distortion in the area of interest", [6315, 6318]),
     },
     "SeverelyJaundiced": {
         "113563": ("Severely Jaundiced", [64, 10045]),
@@ -11543,6 +11672,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "StudyInstanceUID": {
         "110180": ("Study Instance UID", [404, 10001]),
     },
+    "StudyPerformedDidNotMatchRequest": {
+        "130573": ("Study performed did not match request", [6314]),
+    },
     "StudyTime": {
         "111061": ("Study Time", []),
     },
@@ -11582,6 +11714,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "SuboptimalContrastTiming": {
         "128554": ("Suboptimal contrast timing", [10034]),
     },
+    "SuboptimalPatientPreparation": {
+        "130575": ("Suboptimal patient preparation", [6314]),
+    },
     "Subpleural": {
         "112153": ("Subpleural", [6124, 6126]),
     },
@@ -11593,6 +11728,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "SubstanceUseHistory": {
         "111545": ("Substance Use History", []),
+    },
+    "SubtractionImageMissing": {
+        "130581": ("Subtraction image missing", [6315, 6317]),
     },
     "Succeeded": {
         "111222": ("Succeeded", [6042]),
@@ -11772,7 +11910,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         ),
     },
     "T1WeightedMRSignalIntensity": {
-        "110804": ("T1 Weighted MR Signal Intensity", [218, 7180, 7469]),
+        "110804": ("T1 Weighted MR Signal Intensity", [218, 6311, 7180, 7469]),
     },
     "T1Worst": {
         "122367": ("T-1 Worst", [3493]),
@@ -11802,7 +11940,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         ),
     },
     "T2WeightedMRSignalIntensity": {
-        "110805": ("T2 Weighted MR Signal Intensity", [218, 7180, 7469]),
+        "110805": ("T2 Weighted MR Signal Intensity", [218, 6311, 7180, 7469]),
     },
     "T3Secondary": {
         "122369": ("T-3 Secondary", [3493]),
@@ -12430,7 +12568,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "110827": ("Tissue Velocity", [218, 7180, 7469]),
     },
     "Title21CFRSection900SubpartB": {
-        "111239": ("Title 21 CFR Section 900, Subpart B", [6045]),
+        "111239": ("Title 21 CFR Section 900, Subpart B", [6045, 6326]),
     },
     "Tmax": {
         "113084": ("Tmax", [218, 4108, 7180, 7469]),
@@ -12746,6 +12884,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Unused": {
         "127177": ("Unused", [604]),
     },
+    "UnwantedSubtractionImages": {
+        "130582": ("Unwanted subtraction images", [6315, 6317]),
+    },
     "UprightStandMount": {
         "113954": ("Upright Stand Mount", [10031]),
     },
@@ -12781,6 +12922,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "UterineMalformations": {
         "111565": ("Uterine malformations", [6087, 6088]),
+    },
+    "UtricleCyst": {
+        "130569": ("Utricle cyst", [6313]),
     },
     "VMAT": {
         "130107": ("VMAT", [9511, 9524]),
@@ -13321,6 +13465,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "WallVolume": {
         "122446": ("Wall Volume", []),
+    },
+    "WashoutDelayedPhaseType3Curve": {
+        "130599": ("Washout delayed phase: Type 3 curve", [6335, 6345, 6346]),
     },
     "WaterEquivalentDiameter": {
         "113980": ("Water Equivalent Diameter", []),
