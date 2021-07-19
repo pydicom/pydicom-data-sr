@@ -655,6 +655,7 @@ cid_concepts[12] = {
         "ChloriodizedOil",
         "ContrastAgent",
         "Diatrizoate",
+        "Gadobutrol",
         "Gadodiamide",
         "Gadolinium",
         "GadopentetateDimeglumine",
@@ -9849,6 +9850,7 @@ cid_concepts[3850] = {
         "ContrastAgent",
         "Dextran",
         "Diatrizoate",
+        "Gadobutrol",
         "Gadodiamide",
         "Gadolinium",
         "GadopentetateDimeglumine",
@@ -16446,6 +16448,692 @@ cid_concepts[6304] = {
         "RightPosteromedialBasalPeripheralZoneOfProstate",
         "RightPosteromedialMiddlePeripheralZoneOfProstate",
         "RightSeminalVesicle",
+    ],
+}
+
+name_for_cid[6310] = "ProstateReportingSystems"
+cid_concepts[6310] = {
+    "DCM": [
+        "PIRADSV2Point0",
+        "PIRADSV2Point1",
+    ],
+}
+
+name_for_cid[6311] = "MRSignalIntensity"
+cid_concepts[6311] = {
+    "DCM": [
+        "ApparentDiffusionCoefficient",
+        "DiffusionWeighted",
+        "DiffusionWeightedAcquisitionHighestBValueImage",
+        "DynamicContrastEnhancedAcquisition",
+        "DynamicContrastEnhancedAcquisitionSubtractionImage",
+        "T1WeightedMRSignalIntensity",
+        "T2WeightedMRSignalIntensity",
+    ],
+}
+
+name_for_cid[6312] = "CrosssectionalScanPlaneOrientation"
+cid_concepts[6312] = {
+    "SCT": [
+        "Axial",
+        "Coronal",
+        "Oblique",
+        "Sagittal",
+    ],
+}
+
+name_for_cid[6313] = "HistoryofProstateDisease"
+cid_concepts[6313] = {
+    "DCM": [
+        "UtricleCyst",
+    ],
+    "SCT": [
+        "BenignProstateHyperplasia",
+        "ProstateCancer",
+        "Prostatitis",
+    ],
+}
+
+name_for_cid[6314] = "ProstateMRIStudyQualityFindings"
+cid_concepts[6314] = {
+    "DCM": [
+        "CoilPlacementConcern",
+        "CoilSelectionConcern",
+        "IncompleteStudy",
+        "ProtocolNotFollowed",
+        "StudyPerformedDidNotMatchRequest",
+        "SuboptimalPatientPreparation",
+    ],
+    "RADLEX": [
+        "SuboptimalPatientPositioning",
+    ],
+}
+
+name_for_cid[6315] = "ProstateMRISeriesQualityFindings"
+cid_concepts[6315] = {
+    "DCM": [
+        "AnatomyCoverageIncomplete",
+        "DistortionArtifactInTheAreaOfInterest",
+        "ExpectedADCMapIsMissing",
+        "ExpectedBValueIsMissing",
+        "InadequateContrastEnhancement",
+        "PoorContrastTiming",
+        "PoorFOVSelection",
+        "PoorSNR",
+        "SevereDistortionInTheAreaOfInterest",
+        "SubtractionImageMissing",
+        "UnwantedSubtractionImages",
+    ],
+    "RADLEX": [
+        "ChemicalShiftArtifact",
+        "FerromagneticImplantMagneticSusceptibilityEffect",
+        "Ghost",
+        "MotionRelatedArtifact",
+        "NonUniformSignalIntensityArtifact",
+        "ParallelImagingArtifact",
+        "PhaseWraparoundArtifact",
+        "Smearing",
+        "TissueMagneticSusceptibilityEffect",
+    ],
+}
+
+name_for_cid[6316] = "MRImagingArtifacts"
+cid_concepts[6316] = {
+    "RADLEX": [
+        "ChemicalShiftArtifact",
+        "FerromagneticImplantMagneticSusceptibilityEffect",
+        "Ghost",
+        "MotionRelatedArtifact",
+        "NonUniformSignalIntensityArtifact",
+        "ParallelImagingArtifact",
+        "PhaseWraparoundArtifact",
+        "Smearing",
+        "TissueMagneticSusceptibilityEffect",
+    ],
+}
+
+name_for_cid[6317] = "ProstateDCEMRIQualityFindings"
+cid_concepts[6317] = {
+    "DCM": [
+        "InadequateContrastEnhancement",
+        "PoorContrastTiming",
+        "SubtractionImageMissing",
+        "UnwantedSubtractionImages",
+    ],
+}
+
+name_for_cid[6318] = "ProstateDWIMRIQualityFindings"
+cid_concepts[6318] = {
+    "DCM": [
+        "DistortionArtifactInTheAreaOfInterest",
+        "ExpectedADCMapIsMissing",
+        "ExpectedBValueIsMissing",
+        "SevereDistortionInTheAreaOfInterest",
+    ],
+}
+
+name_for_cid[6319] = "AbdominalInterventionTypes"
+cid_concepts[6319] = {
+    "SCT": [
+        "DiagnosticProcedure",
+        "SurgicalProcedure",
+        "TherapeuticProcedure",
+    ],
+}
+
+name_for_cid[6320] = "AbdominalInterventions"
+cid_concepts[6320] = {
+    "NCIt": [
+        "Cryoablation",
+        "FocusedUltrasoundAblation",
+        "IrreversibleElectroporation",
+    ],
+    "SCT": [
+        "OperativeProcedureOnPelvis",
+        "Prostatectomy",
+    ],
+}
+
+name_for_cid[6321] = "ProstateCancerDiagnosticProcedures"
+cid_concepts[6321] = {
+    "SCT": [
+        "DigitalExaminationOfRectum",
+        "ProstateCancerAntigenMeasurement",
+    ],
+}
+
+name_for_cid[6322] = "ProstateCancerFamilyHistory"
+cid_concepts[6322] = {
+    "DCM": [
+        "FamilyHistoryOfProstateCancer",
+        "NoFamilyHistoryOfProstateCancer",
+    ],
+    "SCT": [
+        "FamilyHistoryUnknown",
+    ],
+}
+
+name_for_cid[6323] = "ProstateCancerTherapy"
+cid_concepts[6323] = {
+    "SCT": [
+        "AndrogenDeprivationTherapy",
+        "ImplantationOfRadioactiveSeedIntoProstate",
+        "Prostatectomy",
+    ],
+}
+
+name_for_cid[6324] = "ProstateMRIAssessment"
+cid_concepts[6324] = {
+    "RADLEX": [
+        "PIRADS1VeryLow",
+        "PIRADS2Low",
+        "PIRADS3Intermediate",
+        "PIRADS4High",
+        "PIRADS5VeryHigh",
+        "PIRADSXInadequateOrAbsent",
+    ],
+}
+
+name_for_cid[6325] = "OverallAssessmentfromPIRADS®"
+cid_concepts[6325] = {
+    "RADLEX": [
+        "PIRADS1VeryLow",
+        "PIRADS2Low",
+        "PIRADS3Intermediate",
+        "PIRADS4High",
+        "PIRADS5VeryHigh",
+        "PIRADSXInadequateOrAbsent",
+    ],
+}
+
+name_for_cid[6326] = "ImageQualityControlStandards"
+cid_concepts[6326] = {
+    "DCM": [
+        "ESUR2012ProstateMRIAcquisitionRequirements",
+        "InstitutionallyDefinedQualityControlStandard",
+        "MammographyQualityControlManual1999ACR",
+        "PIRADS2Point0ProstateMRIAcquisitionRequirements",
+        "PIRADS2Point1ProstateMRIAcquisitionRequirements",
+        "Title21CFRSection900SubpartB",
+    ],
+}
+
+name_for_cid[6327] = "ProstateImagingIndications"
+cid_concepts[6327] = {
+    "DCM": [
+        "ActiveSurveillanceOfProstateCancer",
+        "AssessChange",
+        "FamilyHistoryOfProstateCancer",
+        "PreBiopsyLocalizationOfProstateLesion",
+        "ReviewOfAnOutsideStudy",
+    ],
+    "SCT": [
+        "Brachytherapy",
+        "Staging",
+    ],
+}
+
+name_for_cid[6328] = "PIRADS®v2LesionAssessmentCategory"
+cid_concepts[6328] = {
+    "RADLEX": [
+        "PIRADS1VeryLow",
+        "PIRADS2Low",
+        "PIRADS3Intermediate",
+        "PIRADS4High",
+        "PIRADS5VeryHigh",
+        "PIRADSXInadequateOrAbsent",
+    ],
+}
+
+name_for_cid[6329] = "PIRADS®v2T2WIPZLesionAssessmentCategory"
+cid_concepts[6329] = {
+    "RADLEX": [
+        "PIRADS1T2WIPZVeryLow",
+        "PIRADS2T2WIPZLow",
+        "PIRADS3T2WIPZIntermediate",
+        "PIRADS4T2WIPZHigh",
+        "PIRADS5T2WIPZVeryHigh",
+        "PIRADSXT2WIPZInadequateOrAbsent",
+    ],
+}
+
+name_for_cid[6330] = "PIRADS®v2T2WITZLesionAssessmentCategory"
+cid_concepts[6330] = {
+    "RADLEX": [
+        "PIRADS1T2WITZVeryLow",
+        "PIRADS2T2WITZLow",
+        "PIRADS3T2WITZIntermediate",
+        "PIRADS4T2WITZHigh",
+        "PIRADS5T2WITZVeryHigh",
+        "PIRADSXT2WITZInadequateOrAbsent",
+    ],
+}
+
+name_for_cid[6331] = "PIRADS®v2DWILesionAssessmentCategory"
+cid_concepts[6331] = {
+    "RADLEX": [
+        "PIRADS1DWIVeryLow",
+        "PIRADS2DWILow",
+        "PIRADS3DWIIntermediate",
+        "PIRADS4DWIHigh",
+        "PIRADS5DWIVeryHigh",
+        "PIRADSXDWIInadequateOrAbsent",
+    ],
+}
+
+name_for_cid[6332] = "PIRADS®v2DCELesionAssessmentCategory"
+cid_concepts[6332] = {
+    "RADLEX": [
+        "PIRADSDCEVe",
+        "PIRADSXDCEInadequateOrAbsent",
+    ],
+}
+
+name_for_cid[6333] = "mpMRIAssessmentTypes"
+cid_concepts[6333] = {
+    "DCM": [
+        "Margin",
+    ],
+    "NCIt": [
+        "Abnormality",
+    ],
+    "SCT": [
+        "Shape",
+    ],
+    "RADLEX": [
+        "EnhancementPattern",
+        "SignalCharacteristic",
+    ],
+}
+
+name_for_cid[6334] = "mpMRIAssessmentTypesfromPIRADS®"
+cid_concepts[6334] = {
+    "DCM": [
+        "Margin",
+    ],
+    "NCIt": [
+        "Abnormality",
+    ],
+    "SCT": [
+        "Shape",
+    ],
+    "RADLEX": [
+        "EnhancementPattern",
+        "SignalCharacteristic",
+    ],
+}
+
+name_for_cid[6335] = "mpMRIAssessmentValues"
+cid_concepts[6335] = {
+    "DCM": [
+        "ADCHyperintense",
+        "ADCHypointense",
+        "CompletelyEncapsulated",
+        "DiffuseContrastEnhancement",
+        "EarlyContrastEnhancement",
+        "FocalAbnormality",
+        "FocalContrastEnhancement",
+        "Homogeneous",
+        "LateContrastEnhancement",
+        "Linear",
+        "Lobulated",
+        "NegativeDCE",
+        "NonFocalAbnormality",
+        "PartiallyEncapsulated",
+        "PersistentDelayedPhaseType1Curve",
+        "PlateauDelayedPhaseType2Curve",
+        "PositiveDCE",
+        "WashoutDelayedPhaseType3Curve",
+    ],
+    "NCIt": [
+        "IndexLesion",
+    ],
+    "SCT": [
+        "Atrophy",
+        "BenignProstateHyperplasia",
+        "CircumscribedLesion",
+        "Cyst",
+        "Diffuse",
+        "DropShaped",
+        "Encapsulated",
+        "Fibrosis",
+        "Focal",
+        "Hemorrhage",
+        "IndistinctLesion",
+        "Irregular",
+        "Lesion",
+        "Mass",
+        "Multifocal",
+        "Nodule",
+        "ObscuredLesion",
+        "OvoidShape",
+        "PathologicCalcification",
+        "Prostatitis",
+        "Regional",
+        "Round",
+        "SpiculatedLesion",
+        "WedgeShaped",
+    ],
+    "RADLEX": [
+        "DelayedPhase",
+        "DiffusionWeightedHypersensitivity",
+        "EarlyPhaseWashIn",
+        "ErasedCharcoalSign",
+        "Heterogeneous",
+        "Hyperintense",
+        "Hypointense",
+        "Isointense",
+        "Lenticular",
+        "MarkedlyHypointense",
+        "NonCircumscribedMargin",
+        "OrganizedChaos",
+        "PersistentDelayedPhase",
+        "PlateauDelayedPhase",
+        "RestrictedDiffusion",
+        "T2Hyperintensity",
+        "T2Hypointensity",
+        "WashoutDelayedPhase",
+    ],
+}
+
+name_for_cid[6336] = "MRIAbnormalities"
+cid_concepts[6336] = {
+    "DCM": [
+        "FocalAbnormality",
+        "NonFocalAbnormality",
+    ],
+    "NCIt": [
+        "IndexLesion",
+    ],
+    "SCT": [
+        "Atrophy",
+        "BenignProstateHyperplasia",
+        "Cyst",
+        "Diffuse",
+        "Fibrosis",
+        "Focal",
+        "Hemorrhage",
+        "Lesion",
+        "Mass",
+        "Multifocal",
+        "Nodule",
+        "PathologicCalcification",
+        "Prostatitis",
+        "Regional",
+    ],
+}
+
+name_for_cid[6337] = "mpMRIProstateAbnormalitiesfromPIRADS®"
+cid_concepts[6337] = {
+    "DCM": [
+        "FocalAbnormality",
+        "NonFocalAbnormality",
+    ],
+    "NCIt": [
+        "IndexLesion",
+    ],
+    "SCT": [
+        "Atrophy",
+        "BenignProstateHyperplasia",
+        "Cyst",
+        "Diffuse",
+        "Fibrosis",
+        "Focal",
+        "Hemorrhage",
+        "Lesion",
+        "Mass",
+        "Multifocal",
+        "Nodule",
+        "PathologicCalcification",
+        "Prostatitis",
+        "Regional",
+    ],
+}
+
+name_for_cid[6338] = "mpMRIBenignProstateAbnormalitiesfromPIRADS®"
+cid_concepts[6338] = {
+    "SCT": [
+        "Atrophy",
+        "BenignProstateHyperplasia",
+        "Cyst",
+        "Fibrosis",
+        "Hemorrhage",
+        "PathologicCalcification",
+        "Prostatitis",
+    ],
+}
+
+name_for_cid[6339] = "MRIShapeCharacteristics"
+cid_concepts[6339] = {
+    "DCM": [
+        "Linear",
+        "Lobulated",
+    ],
+    "SCT": [
+        "DropShaped",
+        "Irregular",
+        "OvoidShape",
+        "Round",
+        "WedgeShaped",
+    ],
+    "RADLEX": [
+        "Lenticular",
+    ],
+}
+
+name_for_cid[6340] = "ProstateMRIShapeCharacteristicsfromPIRADS®"
+cid_concepts[6340] = {
+    "DCM": [
+        "Linear",
+        "Lobulated",
+    ],
+    "SCT": [
+        "DropShaped",
+        "Irregular",
+        "OvoidShape",
+        "Round",
+        "WedgeShaped",
+    ],
+    "RADLEX": [
+        "Lenticular",
+    ],
+}
+
+name_for_cid[6341] = "MRIMarginCharacteristics"
+cid_concepts[6341] = {
+    "DCM": [
+        "CompletelyEncapsulated",
+        "PartiallyEncapsulated",
+    ],
+    "SCT": [
+        "CircumscribedLesion",
+        "Encapsulated",
+        "IndistinctLesion",
+        "Irregular",
+        "ObscuredLesion",
+        "SpiculatedLesion",
+    ],
+    "RADLEX": [
+        "ErasedCharcoalSign",
+        "NonCircumscribedMargin",
+    ],
+}
+
+name_for_cid[6342] = "ProstateMRIMarginCharacteristicsfromPIRADS®"
+cid_concepts[6342] = {
+    "DCM": [
+        "CompletelyEncapsulated",
+        "PartiallyEncapsulated",
+    ],
+    "SCT": [
+        "CircumscribedLesion",
+        "Encapsulated",
+        "IndistinctLesion",
+        "Irregular",
+        "ObscuredLesion",
+        "SpiculatedLesion",
+    ],
+    "RADLEX": [
+        "ErasedCharcoalSign",
+        "NonCircumscribedMargin",
+    ],
+}
+
+name_for_cid[6343] = "MRISignalCharacteristics"
+cid_concepts[6343] = {
+    "DCM": [
+        "ADCHyperintense",
+        "ADCHypointense",
+        "Homogeneous",
+    ],
+    "RADLEX": [
+        "DiffusionWeightedHypersensitivity",
+        "Heterogeneous",
+        "Hyperintense",
+        "Hypointense",
+        "Isointense",
+        "MarkedlyHypointense",
+        "OrganizedChaos",
+        "RestrictedDiffusion",
+        "T2Hyperintensity",
+        "T2Hypointensity",
+    ],
+}
+
+name_for_cid[6344] = "ProstateMRISignalCharacteristicsfromPIRADS®"
+cid_concepts[6344] = {
+    "DCM": [
+        "ADCHyperintense",
+        "ADCHypointense",
+        "Homogeneous",
+    ],
+    "RADLEX": [
+        "DiffusionWeightedHypersensitivity",
+        "Heterogeneous",
+        "Hyperintense",
+        "Hypointense",
+        "Isointense",
+        "MarkedlyHypointense",
+        "OrganizedChaos",
+        "RestrictedDiffusion",
+        "T2Hyperintensity",
+        "T2Hypointensity",
+    ],
+}
+
+name_for_cid[6345] = "MRIEnhancementPatterns"
+cid_concepts[6345] = {
+    "DCM": [
+        "DiffuseContrastEnhancement",
+        "EarlyContrastEnhancement",
+        "FocalContrastEnhancement",
+        "LateContrastEnhancement",
+        "NegativeDCE",
+        "PersistentDelayedPhaseType1Curve",
+        "PlateauDelayedPhaseType2Curve",
+        "PositiveDCE",
+        "WashoutDelayedPhaseType3Curve",
+    ],
+    "RADLEX": [
+        "DelayedPhase",
+        "EarlyPhaseWashIn",
+        "PersistentDelayedPhase",
+        "PlateauDelayedPhase",
+        "WashoutDelayedPhase",
+    ],
+}
+
+name_for_cid[6346] = "ProstateMRIEnhancementPatternsfromPIRADS®"
+cid_concepts[6346] = {
+    "DCM": [
+        "DiffuseContrastEnhancement",
+        "EarlyContrastEnhancement",
+        "FocalContrastEnhancement",
+        "LateContrastEnhancement",
+        "NegativeDCE",
+        "PersistentDelayedPhaseType1Curve",
+        "PlateauDelayedPhaseType2Curve",
+        "PositiveDCE",
+        "WashoutDelayedPhaseType3Curve",
+    ],
+    "RADLEX": [
+        "DelayedPhase",
+        "EarlyPhaseWashIn",
+        "PersistentDelayedPhase",
+        "PlateauDelayedPhase",
+        "WashoutDelayedPhase",
+    ],
+}
+
+name_for_cid[6347] = "ProstateMRIExtraprostaticFindings"
+cid_concepts[6347] = {
+    "SCT": [
+        "BonyMetastasis",
+        "Entire",
+        "Lymphadenopathy",
+    ],
+}
+
+name_for_cid[6348] = "ProstateMRIAssessmentofExtraprostaticAnatomicSites"
+cid_concepts[6348] = {
+    "SCT": [
+        "LymphNode",
+        "MaleExternalUrethralSphincter",
+        "Rectum",
+        "SeminalVesicle",
+    ],
+    "RADLEX": [
+        "NeurovascularBundleOfProstate",
+    ],
+}
+
+name_for_cid[6349] = "MRCoilTypes"
+cid_concepts[6349] = {
+    "RADLEX": [
+        "EndorectalCoil",
+    ],
+}
+
+name_for_cid[6350] = "EndorectalCoilFillSubstances"
+cid_concepts[6350] = {
+    "DCM": [
+        "Perfluorocarbon",
+    ],
+    "SCT": [
+        "Air",
+        "Water",
+    ],
+    "RADLEX": [
+        "BariumSulfateSuspension",
+    ],
+}
+
+name_for_cid[6351] = "ProstateRelationalMeasurements"
+cid_concepts[6351] = {
+    "DCM": [
+        "DistanceFromNeurovascularBundle",
+        "LesionCapsularContactLength",
+    ],
+}
+
+name_for_cid[6352] = "ProstateCancerDiagnosticBloodLabMeasurements"
+cid_concepts[6352] = {
+    "LN": [
+        "ProstateCancerAntigen",
+        "ProstateSpecificAntigenDensity",
+    ],
+    "NCIt": [
+        "_4kscore",
+    ],
+}
+
+name_for_cid[6353] = "ProstateImagingTypesofQualityControlStandard"
+cid_concepts[6353] = {
+    "DCM": [
+        "ESUR2012ProstateMRIAcquisitionRequirements",
+        "InstitutionallyDefinedQualityControlStandard",
+        "PIRADS2Point0ProstateMRIAcquisitionRequirements",
+        "PIRADS2Point1ProstateMRIAcquisitionRequirements",
     ],
 }
 
@@ -25161,7 +25849,7 @@ cid_concepts[8115] = {
     ],
 }
 
-name_for_cid[8120] = "WSIReferencedImagePurposesofReference"
+name_for_cid[8120] = "WholeSlideMicroscopyImageReferencedImagePurposesofReference"
 cid_concepts[8120] = {
     "DCM": [
         "ImagedContainerLabel",
@@ -26602,6 +27290,21 @@ cid_concepts[8134] = {
     "UMLS": [
         "DistalPhalanx",
         "UnknownPrimaryNeoplasiaSite",
+    ],
+}
+
+name_for_cid[8135] = "MicroscopyAnnotationPropertyTypes"
+cid_concepts[8135] = {
+    "SCT": [
+        "Cell",
+        "Nucleus",
+    ],
+}
+
+name_for_cid[8136] = "MicroscopyMeasurementTypes"
+cid_concepts[8136] = {
+    "SCT": [
+        "Area",
     ],
 }
 

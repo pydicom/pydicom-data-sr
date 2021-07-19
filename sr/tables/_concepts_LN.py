@@ -2868,6 +2868,12 @@ concepts_LN: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "PriorProcedureDescriptions": {
         "55114-3": ("Prior Procedure Descriptions", [7001]),
     },
+    "ProstateCancerAntigen": {
+        "2857-1": ("Prostate Cancer Antigen", [6352]),
+    },
+    "ProstateSpecificAntigenDensity": {
+        "15325-4": ("Prostate specific Antigen Density", [6352]),
+    },
     "PulmVeinADurationToMVADurationDifference": {
         "59114-9": ("Pulm Vein A duration to MV A duration difference", [12261, 12263]),
     },

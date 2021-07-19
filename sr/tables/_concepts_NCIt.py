@@ -5,6 +5,9 @@ from typing import Dict, List, Tuple
 
 
 concepts_NCIt: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
+    "Abnormality": {
+        "C9440": ("Abnormality", [6333, 6334]),
+    },
     "AdLibitum": {
         "C64636": ("ad libitum", [609]),
     },
@@ -16,6 +19,9 @@ concepts_NCIt: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "CardiotonicAgent": {
         "C78322": ("Cardiotonic agent", [10]),
+    },
+    "Cryoablation": {
+        "C15215": ("Cryoablation", [6320]),
     },
     "DCFBCF18": {
         "C96234": ("DCFBC F^18^", [4021]),
@@ -41,11 +47,20 @@ concepts_NCIt: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Fibrate": {
         "C98150": ("Fibrate", [3761]),
     },
+    "FocusedUltrasoundAblation": {
+        "C68681": ("Focused ultrasound ablation", [6320]),
+    },
+    "IndexLesion": {
+        "C110961": ("Index lesion", [6335, 6336, 6337]),
+    },
     "IntraepithelialRoute": {
         "C38244": ("Intraepithelial route", [11]),
     },
     "Ion": {
         "C597": ("Ion", [9526]),
+    },
+    "IrreversibleElectroporation": {
+        "C131483": ("Irreversible electroporation", [6320]),
     },
     "Middle": {
         "C25569": ("Middle", [211, 212, 3019, 6024, 6025, 12116, 12117, 12281]),
@@ -97,5 +112,8 @@ concepts_NCIt: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "_166Holmium": {
         "C1943": ("^166^Holmium", [18]),
+    },
+    "_4kscore": {
+        "C142184": ("4Kscore", [6352]),
     },
 }
