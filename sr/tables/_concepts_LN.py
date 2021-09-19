@@ -1043,8 +1043,14 @@ concepts_LN: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "EFWByGAHansmann1986": {
         "33163-7": ("EFW by GA, Hansmann 1986", [12012, 12015]),
     },
+    "EFWDiscordance": {
+        "98031-8": ("EFW Discordance", [12019]),
+    },
     "EFWPercentileRank": {
         "11767-1": ("EFW percentile rank", [12019]),
+    },
+    "EFWRatio": {
+        "98032-6": ("EFW Ratio", [12019]),
     },
     "EVelocityToAnnulusEVelocityRatio": {
         "59111-5": (

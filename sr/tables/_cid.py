@@ -920,9 +920,9 @@ cid_concepts[25] = {
         "Technetium99mStannousColloid",
         "TechnetiumTc99cAlbuminMicrospheres",
         "TechnetiumTc99mAggregatedAlbumin",
+        "TechnetiumTc99mBicisate",
         "TechnetiumTc99mDepreotide",
         "TechnetiumTc99mDisofenin",
-        "TechnetiumTc99mEthylCysteinateDimerInjection",
         "TechnetiumTc99mExametazime",
         "TechnetiumTc99mIronAscorbate",
         "TechnetiumTc99mLidofenin",
@@ -1708,7 +1708,6 @@ name_for_cid[100] = "QuantitativeDiagnosticImagingProcedures"
 cid_concepts[100] = {
     "DCM": [
         "MultiparametricMRI",
-        "MultiparametricMRIOfProstate",
         "MultiparametricMRIOfWholeBody",
     ],
     "LN": [
@@ -1725,6 +1724,7 @@ cid_concepts[100] = {
         "DynamicMagneticResonanceImagingOfPelvis",
         "ImagingProcedure",
         "MagneticResonanceImagingGuidance",
+        "MultiparametricMRIOfProstate",
         "PETCTFDGImagingOfWholeBody",
         "PETCTMETImagingOfWholeBody",
     ],
@@ -2167,6 +2167,8 @@ cid_concepts[220] = {
 name_for_cid[221] = "MeasurementRangeConcepts"
 cid_concepts[221] = {
     "DCM": [
+        "InterquartileRangeOfPopulation",
+        "InterquartileRangeToMedianRatioOfPopulation",
         "PercentileRankingOfMeasurement",
         "StandardDeviationOfPopulation",
         "ZScoreOfMeasurement",
@@ -2226,6 +2228,8 @@ cid_concepts[225] = {
 name_for_cid[226] = "PopulationStatisticalDescriptors"
 cid_concepts[226] = {
     "DCM": [
+        "InterquartileRangeOfPopulation",
+        "InterquartileRangeToMedianRatioOfPopulation",
         "StandardDeviationOfPopulation",
         "_2SigmaDeviationOfPopulation",
     ],
@@ -8776,7 +8780,7 @@ cid_concepts[3716] = {
     ],
 }
 
-name_for_cid[3717] = "MyocardialWallSegments"
+name_for_cid[3717] = "LeftVentricleMyocardialWall17Segments"
 cid_concepts[3717] = {
     "SCT": [
         "ApexOfLeftVentricle",
@@ -9292,6 +9296,102 @@ cid_concepts[3778] = {
         "Stage3",
         "Stage4",
         "Stage5",
+    ],
+}
+
+name_for_cid[3780] = "LeftVentricleMyocardialWall16Segments"
+cid_concepts[3780] = {
+    "SCT": [
+        "LeftVentricleApicalAnteriorSegment",
+        "LeftVentricleApicalInferiorSegment",
+        "LeftVentricleApicalLateralSegment",
+        "LeftVentricleApicalSeptalSegment",
+        "LeftVentricleBasalAnteriorSegment",
+        "LeftVentricleBasalAnterolateralSegment",
+        "LeftVentricleBasalAnteroseptalSegment",
+        "LeftVentricleBasalInferiorSegment",
+        "LeftVentricleBasalInferolateralSegment",
+        "LeftVentricleBasalInferoseptalSegment",
+        "LeftVentricleMidAnteriorSegment",
+        "LeftVentricleMidAnterolateralSegment",
+        "LeftVentricleMidAnteroseptalSegment",
+        "LeftVentricleMidInferiorSegment",
+        "LeftVentricleMidInferolateralSegment",
+        "LeftVentricleMidInferoseptalSegment",
+    ],
+}
+
+name_for_cid[3781] = "LeftVentricleMyocardialWall18Segments"
+cid_concepts[3781] = {
+    "DCM": [
+        "LeftVentricleApicalAnterolateralSegment",
+        "LeftVentricleApicalAnteroseptalSegment",
+        "LeftVentricleApicalInferolateralSegment",
+        "LeftVentricleApicalInferoseptalSegment",
+    ],
+    "SCT": [
+        "LeftVentricleApicalAnteriorSegment",
+        "LeftVentricleApicalInferiorSegment",
+        "LeftVentricleBasalAnteriorSegment",
+        "LeftVentricleBasalAnterolateralSegment",
+        "LeftVentricleBasalAnteroseptalSegment",
+        "LeftVentricleBasalInferiorSegment",
+        "LeftVentricleBasalInferolateralSegment",
+        "LeftVentricleBasalInferoseptalSegment",
+        "LeftVentricleMidAnteriorSegment",
+        "LeftVentricleMidAnterolateralSegment",
+        "LeftVentricleMidAnteroseptalSegment",
+        "LeftVentricleMidInferiorSegment",
+        "LeftVentricleMidInferolateralSegment",
+        "LeftVentricleMidInferoseptalSegment",
+    ],
+}
+
+name_for_cid[3782] = "LeftVentricleBasalWall6Segments"
+cid_concepts[3782] = {
+    "SCT": [
+        "LeftVentricleBasalAnteriorSegment",
+        "LeftVentricleBasalAnterolateralSegment",
+        "LeftVentricleBasalAnteroseptalSegment",
+        "LeftVentricleBasalInferiorSegment",
+        "LeftVentricleBasalInferolateralSegment",
+        "LeftVentricleBasalInferoseptalSegment",
+    ],
+}
+
+name_for_cid[3783] = "LeftVentricleMidlevelWall6Segments"
+cid_concepts[3783] = {
+    "SCT": [
+        "LeftVentricleMidAnteriorSegment",
+        "LeftVentricleMidAnterolateralSegment",
+        "LeftVentricleMidAnteroseptalSegment",
+        "LeftVentricleMidInferiorSegment",
+        "LeftVentricleMidInferolateralSegment",
+        "LeftVentricleMidInferoseptalSegment",
+    ],
+}
+
+name_for_cid[3784] = "LeftVentricleApicalWall4Segments"
+cid_concepts[3784] = {
+    "SCT": [
+        "LeftVentricleApicalAnteriorSegment",
+        "LeftVentricleApicalInferiorSegment",
+        "LeftVentricleApicalLateralSegment",
+        "LeftVentricleApicalSeptalSegment",
+    ],
+}
+
+name_for_cid[3785] = "LeftVentricleApicalWall6Segments"
+cid_concepts[3785] = {
+    "DCM": [
+        "LeftVentricleApicalAnterolateralSegment",
+        "LeftVentricleApicalAnteroseptalSegment",
+        "LeftVentricleApicalInferolateralSegment",
+        "LeftVentricleApicalInferoseptalSegment",
+    ],
+    "SCT": [
+        "LeftVentricleApicalAnteriorSegment",
+        "LeftVentricleApicalInferiorSegment",
     ],
 }
 
@@ -13925,6 +14025,7 @@ cid_concepts[6058] = {
         "NeedleLocalizationAndBiopsy",
         "PalpationGuided",
         "PercutaneousSiliconeInjection",
+        "PointShearWaveElastography",
         "PolyurethaneImplant",
         "PrePectoralImplant",
         "QualityControl",
@@ -13933,6 +14034,8 @@ cid_concepts[6058] = {
         "Survey",
         "Targeted",
         "VacuumAssisted",
+        "_2DShearWaveElastography",
+        "_3DShearWaveElastography",
     ],
     "SCT": [
         "BMode",
@@ -18096,6 +18199,8 @@ cid_concepts[7151] = {
         "_3rdMarginalCoronaryArteryLaterals",
     ],
     "DCM": [
+        "AbdominalCompressionArch",
+        "AbdominalCompressionBelt",
         "AnteriorJunctionLine",
         "AnteriorSurfaceOfTheRPE",
         "AorticKnob",
@@ -18107,6 +18212,7 @@ cid_concepts[7151] = {
         "BrachytherapyChannelShield",
         "BrachytherapySourceApplicator",
         "BreastBoard",
+        "BreastBridge",
         "CarinaAngle",
         "Cast",
         "CentralLine",
@@ -18118,6 +18224,7 @@ cid_concepts[7151] = {
         "DiodeArray",
         "FiducialMark",
         "HeadAndNeckMask",
+        "HeadFixationBoard",
         "HeadMask",
         "Headframe",
         "Hiatus",
@@ -18412,6 +18519,7 @@ cid_concepts[7151] = {
         "FirstLumbarArtery",
         "FissureOfLung",
         "Flank",
+        "Floor",
         "FontanelOfSkull",
         "Foot",
         "Forearm",
@@ -18574,6 +18682,7 @@ cid_concepts[7151] = {
         "LymphNode",
         "LymphaticSystem",
         "LymphaticVessel",
+        "LymphoidTissue",
         "MOSFETRadiationTherapyDosimetrySystemDosimeter",
         "MaleExternalGenitalia",
         "MaleInternalGenitalia",
@@ -18796,6 +18905,7 @@ cid_concepts[7151] = {
         "SternocleidomastoidMuscle",
         "Sternum",
         "Stomach",
+        "Stretcher",
         "SubarachnoidSpace",
         "SubclavianArtery",
         "SubclavianVein",
@@ -18912,6 +19022,7 @@ cid_concepts[7151] = {
         "VertebralColumnAndCranium",
         "VomerBone",
         "Vulva",
+        "Wall",
         "WasteMaterial",
         "WhiteMatter",
         "WristJoint",
@@ -19101,13 +19212,17 @@ cid_concepts[7156] = {
 name_for_cid[7157] = "DeviceSegmentationTypes"
 cid_concepts[7157] = {
     "DCM": [
+        "AbdominalCompressionArch",
+        "AbdominalCompressionBelt",
         "BodyFrame",
         "BrachytherapyChannel",
         "BrachytherapyChannelShield",
         "BrachytherapySourceApplicator",
         "BreastBoard",
+        "BreastBridge",
         "Cast",
         "HeadAndNeckMask",
+        "HeadFixationBoard",
         "HeadMask",
         "Headframe",
         "Mold",
@@ -19124,13 +19239,16 @@ cid_concepts[7157] = {
         "Chair",
         "Defibrillator",
         "DentalProsthesis",
+        "Floor",
         "Headrest",
         "InlayDentalRestoration",
         "LeftVentricularAssistDevice",
         "Needle",
         "RadioactiveImplant",
         "Stent",
+        "Stretcher",
         "Table",
+        "Wall",
     ],
 }
 
@@ -19251,6 +19369,7 @@ cid_concepts[7166] = {
         "LymphNode",
         "LymphaticSystem",
         "LymphaticVessel",
+        "LymphoidTissue",
         "Meniscus",
         "Muscle",
         "Nerve",
@@ -19686,6 +19805,7 @@ cid_concepts[7191] = {
         "LymphNode",
         "LymphaticSystem",
         "LymphaticVessel",
+        "LymphoidTissue",
         "Meniscus",
         "Muscle",
         "Nerve",
@@ -20417,11 +20537,14 @@ cid_concepts[7192] = {
 name_for_cid[7193] = "PhysicalObjectSegmentationPropertyTypes"
 cid_concepts[7193] = {
     "DCM": [
+        "AbdominalCompressionArch",
+        "AbdominalCompressionBelt",
         "BodyFrame",
         "BrachytherapyChannel",
         "BrachytherapyChannelShield",
         "BrachytherapySourceApplicator",
         "BreastBoard",
+        "BreastBridge",
         "Cast",
         "CentralLine",
         "ChestTube",
@@ -20431,6 +20554,7 @@ cid_concepts[7193] = {
         "DiodeArray",
         "FiducialMark",
         "HeadAndNeckMask",
+        "HeadFixationBoard",
         "HeadMask",
         "Headframe",
         "IonChamber",
@@ -20474,6 +20598,7 @@ cid_concepts[7193] = {
         "EmbolizationParticulate",
         "EndotrachealTube",
         "FeedingTube",
+        "Floor",
         "ForeignBody",
         "Glue",
         "GuidingCatheter",
@@ -20497,12 +20622,14 @@ cid_concepts[7193] = {
         "RotationalAtherectomyDevice",
         "Staple",
         "Stent",
+        "Stretcher",
         "Suture",
         "Table",
         "ThermoluminescentRadiationDosimeter",
         "Tracheotomy",
         "UretericStent",
         "VenaCavaFilter",
+        "Wall",
     ],
 }
 
@@ -21374,6 +21501,8 @@ cid_concepts[7464] = {
 name_for_cid[7465] = "MeasurementsDerivedFromMultipleROIMeasurements"
 cid_concepts[7465] = {
     "DCM": [
+        "InterquartileRangeOfPopulation",
+        "InterquartileRangeToMedianRatioOfPopulation",
         "PercentileRankingOfMeasurement",
         "StandardDeviationOfPopulation",
         "ZScoreOfMeasurement",
@@ -27872,10 +28001,14 @@ cid_concepts[9504] = {
 name_for_cid[9505] = "FixationorPositioningDevices"
 cid_concepts[9505] = {
     "DCM": [
+        "AbdominalCompressionArch",
+        "AbdominalCompressionBelt",
         "BodyFrame",
         "BreastBoard",
+        "BreastBridge",
         "Cast",
         "HeadAndNeckMask",
+        "HeadFixationBoard",
         "HeadMask",
         "Headframe",
         "Mold",
@@ -27887,8 +28020,11 @@ cid_concepts[9505] = {
     "SCT": [
         "BiteBlock",
         "Chair",
+        "Floor",
         "Headrest",
+        "Stretcher",
         "Table",
+        "Wall",
     ],
 }
 
@@ -27965,10 +28101,14 @@ cid_concepts[9512] = {
 name_for_cid[9513] = "FixationDevices"
 cid_concepts[9513] = {
     "DCM": [
+        "AbdominalCompressionArch",
+        "AbdominalCompressionBelt",
         "BodyFrame",
         "BreastBoard",
+        "BreastBridge",
         "Cast",
         "HeadAndNeckMask",
+        "HeadFixationBoard",
         "HeadMask",
         "Headframe",
         "Mold",
@@ -28701,7 +28841,10 @@ name_for_cid[9515] = "RTPatientSupportDevices"
 cid_concepts[9515] = {
     "SCT": [
         "Chair",
+        "Floor",
+        "Stretcher",
         "Table",
+        "Wall",
     ],
 }
 
@@ -28739,6 +28882,8 @@ cid_concepts[9519] = {
 name_for_cid[9520] = "SegmentedRTAccessoryDevices"
 cid_concepts[9520] = {
     "DCM": [
+        "AbdominalCompressionArch",
+        "AbdominalCompressionBelt",
         "AccessoryTray",
         "ApertureBlock",
         "BodyFrame",
@@ -28746,8 +28891,10 @@ cid_concepts[9520] = {
         "BrachytherapyChannelShield",
         "BrachytherapySourceApplicator",
         "BreastBoard",
+        "BreastBridge",
         "Cast",
         "HeadAndNeckMask",
+        "HeadFixationBoard",
         "HeadMask",
         "Headframe",
         "Mold",
@@ -28760,10 +28907,13 @@ cid_concepts[9520] = {
     "SCT": [
         "BiteBlock",
         "Chair",
+        "Floor",
         "Headrest",
         "ShieldingBlock",
+        "Stretcher",
         "SurfaceBolus",
         "Table",
+        "Wall",
     ],
 }
 
@@ -29317,6 +29467,128 @@ cid_concepts[9570] = {
     ],
 }
 
+name_for_cid[9571] = "PatientTreatmentPreparationMethods"
+cid_concepts[9571] = {
+    "DCM": [
+        "ControlledSSDSetupMethod",
+        "IsocentricSetupMethod",
+        "OcularGazeSetupMethod",
+        "SkinAppositionSetupMethod",
+        "StereotacticSetupMethod",
+        "TBISetupMethod",
+    ],
+}
+
+name_for_cid[9572] = "PatientShieldingDevices"
+cid_concepts[9572] = {
+    "DCM": [
+        "CavityRadiationShield",
+        "IndependentRadiationShield",
+    ],
+    "SCT": [
+        "EyeRadiationShield",
+        "GonadRadiationShield",
+    ],
+}
+
+name_for_cid[9573] = "PatientTreaqtmentPreparationDevices"
+cid_concepts[9573] = {
+    "DCM": [
+        "AbdominalCompressionArch",
+        "AbdominalCompressionBelt",
+        "BodyFrame",
+        "BreastBoard",
+        "BreastBridge",
+        "Cast",
+        "CoachingDevice",
+        "CombinedStructuredLightThermalImager",
+        "HeadAndNeckMask",
+        "HeadFixationBoard",
+        "HeadMask",
+        "Headframe",
+        "InfraredMarker",
+        "LaserCrossHairs",
+        "LaserSurfaceScan",
+        "MechanicalPointer",
+        "Mold",
+        "OcularFixationLight",
+        "OpticalDistanceMeter",
+        "OpticalSurfaceScanner",
+        "PatientDistractionDevice",
+        "RadioactiveMarker",
+        "RadiofrequencyTransponder",
+        "RectalBalloon",
+        "ThermalImager",
+        "VacuumMold",
+        "VaginalCylinder",
+        "WholeBodyPod",
+    ],
+    "SCT": [
+        "BiteBlock",
+        "Headrest",
+    ],
+}
+
+name_for_cid[9574] = "PatientPositionDisplacementReferencePoints"
+cid_concepts[9574] = {
+    "DCM": [
+        "IsocentricTreatmentLocationPoint",
+        "MoveableLaserPatientSetupPoint",
+        "PatientSetupPoint",
+        "RoomLaserPatientSetupPoint",
+    ],
+}
+
+name_for_cid[9575] = "PatientAlignmentDevices"
+cid_concepts[9575] = {
+    "DCM": [
+        "CombinedStructuredLightThermalImager",
+        "InfraredMarker",
+        "LaserCrossHairs",
+        "LaserSurfaceScan",
+        "MechanicalPointer",
+        "OcularFixationLight",
+        "OpticalDistanceMeter",
+        "OpticalSurfaceScanner",
+        "RadioactiveMarker",
+        "RadiofrequencyTransponder",
+        "ThermalImager",
+    ],
+}
+
+name_for_cid[9576] = "ReasonsforRTRadiationTreatmentOmission"
+cid_concepts[9576] = {
+    "DCM": [
+        "RTRadiationPreviouslyDelivered",
+        "TreatmentExceedsPatientTolerance",
+        "TreatmentUnnecessary",
+    ],
+}
+
+name_for_cid[9577] = "PatientTreatmentPreparationMethods"
+cid_concepts[9577] = {
+    "DCM": [
+        "CollisionChecks",
+        "PatientAlignmentProcedure",
+        "PatientFixationProcedure",
+        "PatientMotionManagementSetupProcedure",
+        "PatientShieldingProcedure",
+    ],
+    "SCT": [
+        "PlacingRestraint",
+        "Sedation",
+        "VitalSignsMonitoring",
+    ],
+}
+
+name_for_cid[9578] = "MotionManagementSetupDevices"
+cid_concepts[9578] = {
+    "DCM": [
+        "CoachingDevice",
+        "PatientDistractionDevice",
+    ],
+}
+
 name_for_cid[10000] = "ScopeofAccumulation"
 cid_concepts[10000] = {
     "DCM": [
@@ -29491,6 +29763,7 @@ cid_concepts[10017] = {
         "NoGrid",
         "ParallelGrid",
         "ReciprocatingGrid",
+        "VirtualGrid",
     ],
 }
 
@@ -30568,7 +30841,9 @@ name_for_cid[12019] = "OBGYNFetusSummary"
 cid_concepts[12019] = {
     "LN": [
         "CompositeUltrasoundAge",
+        "EFWDiscordance",
         "EFWPercentileRank",
+        "EFWRatio",
         "EstimatedWeight",
         "FetalHeartRate",
         "GestationalAge",
@@ -31927,6 +32202,11 @@ cid_concepts[12223] = {
 
 name_for_cid[12224] = "UltrasoundImageModes"
 cid_concepts[12224] = {
+    "DCM": [
+        "PointShearWaveElastography",
+        "_2DShearWaveElastography",
+        "_3DShearWaveElastography",
+    ],
     "SCT": [
         "BMode",
         "DopplerColorFlow",
@@ -34537,6 +34817,10 @@ cid_concepts[12304] = {
 name_for_cid[12305] = "BasicEchoAnatomicSites"
 cid_concepts[12305] = {
     "DCM": [
+        "LeftVentricleApicalAnterolateralSegment",
+        "LeftVentricleApicalAnteroseptalSegment",
+        "LeftVentricleApicalInferolateralSegment",
+        "LeftVentricleApicalInferoseptalSegment",
         "RightVentricleAnteriorWall",
         "RightVentricleOutflowTractDistal",
         "RightVentricleOutflowTractProximal",
@@ -34546,6 +34830,8 @@ cid_concepts[12305] = {
         "AorticSinotubularJunction",
         "AorticValve",
         "AorticValveRing",
+        "ApexOfLeftVentricle",
+        "ApexOfRightVentricle",
         "AscendingAorta",
         "InferiorVenaCava",
         "InterventricularSeptum",
@@ -34553,6 +34839,10 @@ cid_concepts[12305] = {
         "LeftAtrium",
         "LeftPulmonaryArtery",
         "LeftVentricle",
+        "LeftVentricleApicalAnteriorSegment",
+        "LeftVentricleApicalInferiorSegment",
+        "LeftVentricleApicalLateralSegment",
+        "LeftVentricleApicalSeptalSegment",
         "LeftVentricleBasalAnteriorSegment",
         "LeftVentricleBasalAnterolateralSegment",
         "LeftVentricleBasalAnteroseptalSegment",
@@ -34614,5 +34904,18 @@ cid_concepts[12307] = {
         "VentricularEjectionSWave",
         "VentricularIsovolumicContraction",
         "VentricularIsovolumicRelaxation",
+    ],
+}
+
+name_for_cid[12308] = "UltrasoundShearWaveMeasurements"
+cid_concepts[12308] = {
+    "DCM": [
+        "Elasticity",
+        "ROIDepth",
+        "ShearWaveDispersionSlope",
+        "ShearWaveSpeed",
+    ],
+    "SCT": [
+        "AreaOfDefinedRegion",
     ],
 }
