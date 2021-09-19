@@ -113,6 +113,27 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "AWavePressureAverage": {
         "109017": ("A wave pressure, average", [3337]),
     },
+    "AbdominalCompressionArch": {
+        "130655": (
+            "Abdominal Compression Arch",
+            [7151, 7157, 7193, 9505, 9513, 9520, 9573],
+        ),
+    },
+    "AbdominalCompressionBelt": {
+        "130654": (
+            "Abdominal Compression Belt",
+            [7151, 7157, 7193, 9505, 9513, 9520, 9573],
+        ),
+    },
+    "AbdominalCompressionBeltLength": {
+        "130660": ("Abdominal Compression Belt Length", []),
+    },
+    "AbdominalCompressionBeltPressure": {
+        "130661": ("Abdominal Compression Belt Pressure", []),
+    },
+    "AbdominalCompressionPlatePositionNumber": {
+        "130659": ("Abdominal Compression Plate Position Number", []),
+    },
     "AbdominalImagingSpecialty": {
         "128006": ("Abdominal Imaging Specialty", [7449]),
     },
@@ -634,6 +655,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "AnimalRoomType": {
         "127121": ("Animal room type", []),
+    },
+    "Annotation": {
+        "ANN": ("Annotation", []),
     },
     "AnodeTargetMaterial": {
         "111632": ("Anode Target Material", []),
@@ -1399,7 +1423,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "122563": ("Boak", [3453]),
     },
     "BodyFrame": {
-        "130117": ("Body Frame", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130117": ("Body Frame", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "BodyHabitusAttenuation": {
         "122743": ("Body habitus attenuation", [3115]),
@@ -1486,7 +1510,10 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "111350": ("Breast background echotexture", []),
     },
     "BreastBoard": {
-        "130116": ("Breast Board", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130116": ("Breast Board", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
+    },
+    "BreastBridge": {
+        "130653": ("Breast Bridge", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "BreastComposition": {
         "111006": ("Breast composition", []),
@@ -1856,7 +1883,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "113959": ("Cassette-based Projection Radiography System", [10032]),
     },
     "Cast": {
-        "130114": ("Cast", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130114": ("Cast", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "CathLabProcedureLog": {
         "121120": ("Cath Lab Procedure Log", [3400]),
@@ -1875,6 +1902,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "CavityExtentAsPercentOfVolume": {
         "112017": ("Cavity extent as percent of volume", [6142]),
+    },
+    "CavityRadiationShield": {
+        "130640": ("Cavity radiation shield", [9572]),
     },
     "Center": {
         "111010": ("Center", [219]),
@@ -2062,6 +2092,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "CmabU3689Zr": {
         "126746": ("cMAb U36 ^89^Zr", [4021]),
     },
+    "CoachingDevice": {
+        "130650": ("Coaching Device", [9573, 9578]),
+    },
     "Coalescent": {
         "112157": ("Coalescent", [6128]),
     },
@@ -2098,6 +2131,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Collimator": {
         "111173": ("Collimator", []),
     },
+    "CollisionChecks": {
+        "130652": ("Collision Checks", [9577]),
+    },
     "ColonCADReport": {
         "112220": ("Colon CAD Report", []),
     },
@@ -2115,6 +2151,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "CombinedPosteriorEnhancementAndShadowing": {
         "111370": ("Combined posterior enhancement and shadowing", [6155]),
+    },
+    "CombinedStructuredLightThermalImager": {
+        "130648": ("Combined Structured Light/Thermal Imager", [9573, 9575]),
     },
     "Comment": {
         "121106": ("Comment", [12101]),
@@ -2374,6 +2413,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "ContrastVolumeLimit": {
         "130228": ("Contrast Volume Limit", []),
     },
+    "ControlledSSDSetupMethod": {
+        "130631": ("Controlled SSD Setup Method", [9571]),
+    },
     "ConversionFactor": {
         "128528": ("Conversion Factor", []),
     },
@@ -2449,6 +2491,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "CorrelationToOtherFindings": {
         "111380": ("Correlation to other Findings", []),
     },
+    "CouchIndexLabel": {
+        "130657": ("Couch Index Label", []),
+    },
     "CountryOfLanguage": {
         "121046": ("Country of Language", []),
     },
@@ -2463,6 +2508,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "CrossBScanPattern": {
         "128283": ("Cross B-scan pattern", [4272]),
+    },
+    "CrossSectionalScanPlaneOrientation": {
+        "130546": ("Cross-sectional scan plane orientation", []),
     },
     "CrossedGrid": {
         "111645": ("Crossed grid", [10017]),
@@ -3398,6 +3446,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "DynamicContrastEnhancedAcquisitionSubtractionImage": {
         "130568": ("Dynamic Contrast-Enhanced Acquisition Subtraction image", [6311]),
     },
+    "DynamicContrastEnhancedTemporalResolution": {
+        "130547": ("Dynamic contrast-enhanced temporal resolution", []),
+    },
     "DynamicContrastMRMeasurementReport": {
         "126002": ("Dynamic Contrast MR Measurement Report", [7021]),
     },
@@ -3501,7 +3552,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "130085": ("Effective Z per A", []),
     },
     "Elasticity": {
-        "110830": ("Elasticity", [218, 7180, 7469]),
+        "110830": ("Elasticity", [218, 7180, 7469, 12308]),
     },
     "ElectricalFailure": {
         "111217": ("Electrical failure", [6041, 6135, 7011]),
@@ -3604,6 +3655,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "Endoleak": {
         "122680": ("endoleak", [3813]),
+    },
+    "EndorectalCoilType": {
+        "130544": ("Endorectal coil type", []),
+    },
+    "EndorectalCoilUsed": {
+        "130543": ("Endorectal coil used", []),
     },
     "EndorectalTransducer": {
         "125264": ("Endorectal Transducer", [12035]),
@@ -3826,6 +3883,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "ExtraAbdominalDesmoid": {
         "111260": ("Extra abdominal desmoid", []),
+    },
+    "ExtraProstaticFinding": {
+        "130559": ("Extra-prostatic Finding", []),
     },
     "ExtractionOfIndividualSubjectFromGroup": {
         "113131": ("Extraction of individual subject from group", [7203]),
@@ -4098,6 +4158,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "FirstPassLeakageProfileFPLPModel": {
         "126343": ("First Pass Leakage Profile (FPLP) Model", [4101, 4106]),
     },
+    "FixationDeviceAngle": {
+        "130658": ("Fixation Device Angle", []),
+    },
     "FixationOrPositioningDevice": {
         "130044": ("Fixation or Positioning Device", [9502]),
     },
@@ -4223,6 +4286,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "130251": ("Flush Administration", [72]),
     },
     "FocalAbnormality": {
+        "130591": ("Focal abnormality", []),
         "Focal abnormality": ("Focal abnormality", [6335, 6336, 6337]),
     },
     "FocalContrastEnhancement": {
@@ -4501,6 +4565,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "GeneticModificationsDescription": {
         "127415": ("Genetic modifications description", []),
     },
+    "GenitourinaryHistory": {
+        "130548": ("Genitourinary History", []),
+    },
     "GenitourinaryImagingSubjectMatter": {
         "128732": ("Genitourinary imaging subject matter", [7017]),
     },
@@ -4739,13 +4806,16 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "128008": ("Head and Neck Imaging Specialty", [7449]),
     },
     "HeadAndNeckMask": {
-        "130112": ("Head and Neck Mask", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130112": ("Head and Neck Mask", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
+    },
+    "HeadFixationBoard": {
+        "130656": ("Head Fixation Board", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "HeadFootAxis": {
         "110861": ("Head-Foot Axis", [7184]),
     },
     "HeadMask": {
-        "130111": ("Head Mask", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130111": ("Head Mask", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "HeadNodeSet": {
         "130362": ("Head Node Set", [9556]),
@@ -4760,7 +4830,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "110868": ("Head To Foot", [7185]),
     },
     "Headframe": {
-        "130110": ("Headframe", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130110": ("Headframe", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "HeadframePresent": {
         "130460": ("Headframe Present", [9564]),
@@ -5383,8 +5453,14 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "ImagingProcedureRoom": {
         "127372": ("Imaging procedure room", [603]),
     },
+    "ImagingSeriesQuality": {
+        "130550": ("Imaging Series Quality", []),
+    },
     "ImagingStartDatetime": {
         "122712": ("Imaging Start DateTime", []),
+    },
+    "ImagingStudyQuality": {
+        "130549": ("Imaging Study Quality", []),
     },
     "ImpairedRenalFunction": {
         "128144": ("Impaired Renal Function", []),
@@ -5482,6 +5558,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "IncorrectWorklistEntrySelected": {
         "110514": ("Incorrect worklist entry selected", [9300, 9301, 9302]),
     },
+    "IndependentRadiationShield": {
+        "130641": ("Independent radiation shield", [9572]),
+    },
     "Index": {
         "121425": ("Index", []),
     },
@@ -5555,6 +5634,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "Infiltrate": {
         "112121": ("Infiltrate", [6102, 6104]),
     },
+    "InflatableEndorectalCoilFillSubstance": {
+        "130545": ("Inflatable endorectal coil fill substance", []),
+    },
     "InflowAngle": {
         "122546": ("Inflow Angle", []),
     },
@@ -5566,6 +5648,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "InfraredFilter": {
         "111606": ("Infrared filter", []),
+    },
+    "InfraredMarker": {
+        "130645": ("Infrared Marker", [9573, 9575]),
     },
     "InfraredReflectorMarker": {
         "129309": ("Infrared Reflector Marker", [7111, 7112]),
@@ -5674,6 +5759,15 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "InterpretationRequiresSpecialistExpertise": {
         "110532": ("Interpretation requires specialist expertise", [9303]),
+    },
+    "InterquartileRangeOfPopulation": {
+        "130614": ("Interquartile Range of population", [221, 226, 7465]),
+    },
+    "InterquartileRangeToMedianRatioOfPopulation": {
+        "130615": (
+            "Interquartile Range to Median ratio of population",
+            [221, 226, 7465],
+        ),
     },
     "InterventionAction": {
         "122090": ("Intervention Action", []),
@@ -5856,8 +5950,11 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "IsocentricPatientSupportVerticalPosition": {
         "126817": ("Isocentric Patient Support Vertical Position", [9569, 9570]),
     },
+    "IsocentricSetupMethod": {
+        "130630": ("Isocentric Setup Method", [9571]),
+    },
     "IsocentricTreatmentLocationPoint": {
-        "130073": ("Isocentric Treatment Location Point", [9504, 9553]),
+        "130073": ("Isocentric Treatment Location Point", [9504, 9553, 9574]),
     },
     "Isodose": {
         "128484": ("Isodose", [10063]),
@@ -6037,7 +6134,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "128827": ("Large Zone Low Gray Level Emphasis", []),
     },
     "LaserCrossHairs": {
-        "128151": ("Laser Cross-hairs", [1015]),
+        "128151": ("Laser Cross-hairs", [1015, 9573, 9575]),
     },
     "LaserScan": {
         "LS": ("Laser Scan", [29, 30, 33]),
@@ -6049,7 +6146,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "129021": ("Laser Scanning 3D CAM model", [7061]),
     },
     "LaserSurfaceScan": {
-        "LS": ("Laser surface scan", []),
+        "LS": ("Laser Surface Scan", [9573, 9575]),
     },
     "LastChordOfAbnormalRegion": {
         "122453": ("Last Chord of Abnormal Region", []),
@@ -6113,6 +6210,18 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "LeftToRightFlow": {
         "122227": ("Left to Right Flow", []),
+    },
+    "LeftVentricleApicalAnterolateralSegment": {
+        "130623": ("left ventricle apical anterolateral segment", [3781, 3785, 12305]),
+    },
+    "LeftVentricleApicalAnteroseptalSegment": {
+        "130620": ("left ventricle apical anteroseptal segment", [3781, 3785, 12305]),
+    },
+    "LeftVentricleApicalInferolateralSegment": {
+        "130622": ("left ventricle apical inferolateral segment", [3781, 3785, 12305]),
+    },
+    "LeftVentricleApicalInferoseptalSegment": {
+        "130621": ("left ventricle apical inferoseptal segment", [3781, 3785, 12305]),
     },
     "LeftVentricleMassByAreaLength": {
         "125270": ("Left Ventricle Mass by Area Length", [12227, 12232]),
@@ -6284,6 +6393,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "LocalServiceOperationStopped": {
         "110142": ("Local Service Operation Stopped", [401, 403]),
+    },
+    "LocalizedProstateFinding": {
+        "130555": ("Localized Prostate Finding", []),
     },
     "Localizer": {
         "121311": ("Localizer", [4264, 7201, 8120]),
@@ -6485,6 +6597,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "MacularGridThicknessAndVolumeReport": {
         "111690": ("Macular Grid Thickness and Volume Report", []),
+    },
+    "MagneticFieldStrength": {
+        "130542": ("Magnetic field strength", []),
     },
     "MagneticResonance": {
         "MR": ("Magnetic Resonance", [29, 30, 33]),
@@ -6775,6 +6890,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "MechanicalFailure": {
         "111216": ("Mechanical failure", [6041, 6135, 7011]),
     },
+    "MechanicalPointer": {
+        "130643": ("Mechanical Pointer", [9573, 9575]),
+    },
     "MediaCreationDevice": {
         "MCD": ("Media Creation Device", [30]),
     },
@@ -7031,7 +7149,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "126738": ("Mogamulizumab ^89^Zr", [4021]),
     },
     "Mold": {
-        "130113": ("Mold", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130113": ("Mold", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "MonoExponentialApparentDiffusionCoefficient": {
         "113290": (
@@ -7082,7 +7200,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "127854": ("Mouse Tau preformed fibrils", [638, 640]),
     },
     "MoveableLaserPatientSetupPoint": {
-        "130071": ("Moveable Laser Patient Setup Point", [9504]),
+        "130071": ("Moveable Laser Patient Setup Point", [9504, 9574]),
     },
     "MultiEnergyProportionalWeighting": {
         "113097": ("Multi-energy proportional weighting", [7203]),
@@ -7109,7 +7227,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "126020": ("Multiparametric MRI", [100]),
     },
     "MultiparametricMRIOfProstate": {
-        "126021": ("Multiparametric MRI of prostate", [100]),
+        "126021": ("Multiparametric MRI of prostate", []),
     },
     "MultiparametricMRIOfWholeBody": {
         "126022": ("Multiparametric MRI of whole body", [100]),
@@ -7403,6 +7521,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "130356": ("Non-Flattening Filter Beam", [9549]),
     },
     "NonFocalAbnormality": {
+        "130592": ("Non-focal abnormality", []),
         "Non-focal abnormality": ("Non-focal abnormality", [6335, 6336, 6337]),
     },
     "NonImagingDopplerUltrasoundTransducerGeometry": {
@@ -7708,6 +7827,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
             [6030, 6033],
         ),
     },
+    "OcularFixationLight": {
+        "130649": ("Ocular Fixation Light", [9573, 9575]),
+    },
+    "OcularGazeSetupMethod": {
+        "130635": ("Ocular Gaze Setup Method", [9571]),
+    },
     "OfInterest": {
         "113000": ("Of Interest", [7010]),
     },
@@ -7813,6 +7938,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "OpticalCoherenceTomography": {
         "OCT": ("Optical Coherence Tomography", [29, 30, 33]),
     },
+    "OpticalDistanceMeter": {
+        "130642": ("Optical Distance Meter", [9573, 9575]),
+    },
     "OpticalFilterType": {
         "112712": ("Optical filter type", []),
     },
@@ -7820,7 +7948,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "111856": ("Optical Fixation Measurements", [4257]),
     },
     "OpticalSurfaceScanner": {
-        "OSS": ("Optical Surface Scanner", [29, 30, 33]),
+        "OSS": ("Optical Surface Scanner", [29, 30, 33, 9573, 9575]),
     },
     "OptimizedForTheDeviceInstance": {
         "128608": ("Optimized for the device instance", [800]),
@@ -7969,6 +8097,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "OverallImpressionRecommendationAnalysis": {
         "111234": ("Overall Impression / Recommendation Analysis", [6043]),
     },
+    "OverallProstateFinding": {
+        "130554": ("Overall Prostate Finding", []),
+    },
     "OverallStudyQuality": {
         "122739": ("Overall study quality", []),
     },
@@ -8034,6 +8165,18 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "PIRADS2Point1ProstateMRIAcquisitionRequirements": {
         "130608": ("PI-RADS 2.1 prostate MRI acquisition requirements", [6326, 6353]),
+    },
+    "PIRADSDCELesionAssessment": {
+        "130563": ("PI-RADS DCE Lesion Assessment", []),
+    },
+    "PIRADSDWILesionAssessment": {
+        "130562": ("PI-RADS DWI Lesion Assessment", []),
+    },
+    "PIRADSLocalizedAbnormalityAssessment": {
+        "130560": ("PI-RADS Localized Abnormality Assessment", []),
+    },
+    "PIRADST2WILesionAssessment": {
+        "130561": ("PI-RADS T2WI Lesion Assessment", []),
     },
     "PIRADSV2Point0": {
         "130564": ("PI-RADS v2.0", [6310]),
@@ -8201,6 +8344,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "PatientAlert": {
         "122025": ("Patient alert", [3402]),
     },
+    "PatientAlignmentProcedure": {
+        "130638": ("Patient Alignment Procedure", [9577]),
+    },
     "PatientAllergicToMediaContrast": {
         "110503": ("Patient allergic to media/contrast", [64, 9300, 9301]),
     },
@@ -8261,6 +8407,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "PatientDisoriented": {
         "122020": ("Patient disoriented", [3402]),
     },
+    "PatientDistractionDevice": {
+        "130651": ("Patient Distraction Device", [9573, 9578]),
+    },
     "PatientElevation": {
         "130412": ("Patient elevation", [3034]),
     },
@@ -8269,6 +8418,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "PatientExposureToIonizingRadiation": {
         "121290": ("Patient exposure to ionizing radiation", []),
+    },
+    "PatientFixationProcedure": {
+        "130637": ("Patient Fixation Procedure", [9577]),
     },
     "PatientGivenPostProcedureInstruction": {
         "122036": ("Patient given post-procedure instruction", [3402]),
@@ -8308,6 +8460,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "PatientMotionInterlock": {
         "130479": ("Patient Motion Interlock", [9561, 9568]),
+    },
+    "PatientMotionManagementSetupProcedure": {
+        "130639": ("Patient Motion Management Setup Procedure", [9577]),
     },
     "PatientMovement": {
         "110518": ("Patient Movement", [4221, 4222, 9561]),
@@ -8397,13 +8552,16 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "130028": ("Patient Setup Note", []),
     },
     "PatientSetupPoint": {
-        "130069": ("Patient Setup Point", [9504]),
+        "130069": ("Patient Setup Point", [9504, 9574]),
     },
     "PatientSetupVerificationInputUsed": {
         "128217": ("Patient Setup Verification Input Used", [7010, 7025]),
     },
     "PatientSetupVerificationResult": {
         "128191": ("Patient Setup Verification Result", [7010, 7023]),
+    },
+    "PatientShieldingProcedure": {
+        "130636": ("Patient Shielding Procedure", [9577]),
     },
     "PatientState": {
         "109054": ("Patient State", []),
@@ -8942,6 +9100,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "PointCloudAlgorithmic": {
         "114208": ("Point Cloud Algorithmic", [8201]),
     },
+    "PointShearWaveElastography": {
+        "130616": ("Point Shear Wave Elastography", [6058, 12224]),
+    },
     "PoiseuilleResistance": {
         "122549": ("Poiseuille Resistance", []),
     },
@@ -9356,6 +9517,15 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "ProspectiveGating": {
         "109081": ("Prospective gating", [3104]),
     },
+    "ProstateImagingFindings": {
+        "130553": ("Prostate Imaging Findings", []),
+    },
+    "ProstateMRIRelevantProcedureInformation": {
+        "130552": ("Prostate MRI relevant procedure information", []),
+    },
+    "ProstateRelationalMeasurements": {
+        "130556": ("Prostate relational measurements", []),
+    },
     "ProstheticFabrication": {
         "129015": ("Prosthetic Fabrication", [7064]),
     },
@@ -9557,6 +9727,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "RO695894818F": {
         "126757": ("RO6958948 ^18^F", [4021]),
     },
+    "ROIDepth": {
+        "130613": ("ROI Depth", [12308]),
+    },
     "RRInterval": {
         "122182": (
             "R-R interval",
@@ -9698,6 +9871,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "RTPrescriptionResult": {
         "128185": ("RT Prescription Result", [7010, 7023]),
         "128186": ("RT Prescription Result", [9510]),
+    },
+    "RTRadiationPreviouslyDelivered": {
+        "130663": ("RT Radiation previously delivered", [9576]),
     },
     "RTStructureSet": {
         "RTSTRUCT": ("RT Structure Set", [32, 33]),
@@ -9903,11 +10079,17 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "RadioFrequencyAblationPower": {
         "109010": ("Radio frequency ablation, power", [3240]),
     },
+    "RadioactiveMarker": {
+        "130646": ("Radioactive Marker", [9573, 9575]),
+    },
     "RadioactiveSubstanceAdministered": {
         "113922": ("Radioactive Substance Administered", []),
     },
     "Radiofluoroscopy": {
         "RF": ("Radiofluoroscopy", [29, 30, 33]),
+    },
+    "RadiofrequencyTransponder": {
+        "130644": ("Radiofrequency Transponder", [9573, 9575]),
     },
     "Radiographer": {
         "121084": ("Radiographer", []),
@@ -9968,6 +10150,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "RadiotherapyDose": {
         "RTDOSE": ("Radiotherapy Dose", []),
+    },
+    "RadiotherapyFiducial": {
+        "130666": ("Radiotherapy Fiducial", []),
     },
     "RadiotherapyImage": {
         "RTIMAGE": ("Radiotherapy Image", []),
@@ -10087,7 +10272,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "109096": ("Recovery state", []),
     },
     "RectalBalloon": {
-        "130120": ("Rectal Balloon", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130120": ("Rectal Balloon", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "RecumbentPatientPositionWithRespectToGravity": {
         "112228": ("Recumbent Patient Position with respect to gravity", []),
@@ -10157,6 +10342,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "ReferencedImagingAgentIdentifier": {
         "130255": ("Referenced Imaging Agent Identifier", []),
+    },
+    "ReferencedPatientAlignmentReference": {
+        "130662": ("Referenced Patient Alignment Reference", []),
     },
     "ReferencedRegionOfInterestIdentifier": {
         "130489": ("Referenced Region of Interest Identifier", []),
@@ -10340,6 +10528,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "ReportedValueType": {
         "130510": ("Reported Value Type", []),
+    },
+    "ReportingSystem": {
+        "130551": ("Reporting system", []),
     },
     "RepresentativeOfEthicsCommittee": {
         "128677": ("Representative of Ethics Committee", [7450, 7452]),
@@ -10564,7 +10755,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "121121": ("Room identification", []),
     },
     "RoomLaserPatientSetupPoint": {
-        "130070": ("Room Laser Patient Setup Point", [9504]),
+        "130070": ("Room Laser Patient Setup Point", [9504, 9574]),
     },
     "RoomOrigin": {
         "130536": ("Room Origin", [10074]),
@@ -10882,6 +11073,12 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "SharplyDemarcated": {
         "112140": ("Sharply demarcated", [6120]),
     },
+    "ShearWaveDispersionSlope": {
+        "130612": ("Shear Wave Dispersion Slope", [12308]),
+    },
+    "ShearWaveSpeed": {
+        "130611": ("Shear Wave Speed", [12308]),
+    },
     "SheetFilmDigitized": {
         "110020": ("Sheet Film Digitized", [7008]),
     },
@@ -11073,6 +11270,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "Skewness": {
         "126051": ("Skewness", [7464]),
+    },
+    "SkinAppositionSetupMethod": {
+        "130634": ("Skin Apposition Setup Method", [9571]),
     },
     "SkinConditionClammy": {
         "122275": ("skin condition Clammy", [3446]),
@@ -11591,6 +11791,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "StereotacticCoordinates": {
         "127450": ("Stereotactic coordinates", []),
     },
+    "StereotacticSetupMethod": {
+        "130633": ("Stereotactic Setup Method", [9571]),
+    },
     "StimulationAtRate1Interval": {
         "109047": ("Stimulation at rate 1 interval", [3339]),
     },
@@ -11950,6 +12153,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "T807F18": {
         "126502": ("T807 F^18^", [4021]),
+    },
+    "TBISetupMethod": {
+        "130632": ("TBI Setup Method", [9571]),
     },
     "TEND": {
         "113216": ("TEND", [7262]),
@@ -12453,6 +12659,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "TextureMap": {
         "TEXTUREMAP": ("Texture Map", [32, 33]),
     },
+    "ThermalImager": {
+        "130647": ("Thermal Imager", [9573, 9575]),
+    },
     "Thermography": {
         "TG": ("Thermography", [29, 30, 33]),
     },
@@ -12712,6 +12921,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "TreatmentDeliveryType": {
         "121740": ("Treatment Delivery Type", [9250]),
     },
+    "TreatmentExceedsPatientTolerance": {
+        "130665": ("Treatment exceeds patient tolerance", [9576]),
+    },
     "TreatmentMachineIsocenter": {
         "130359": ("Treatment Machine Isocenter", [9544, 9554]),
     },
@@ -12720,6 +12932,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "TreatmentTerminated": {
         "130453": ("Treatment Terminated", [9563]),
+    },
+    "TreatmentUnnecessary": {
+        "130664": ("Treatment unnecessary", [9576]),
     },
     "TreeInBudSign": {
         "112127": ("Tree-in-bud sign", [6102, 6104]),
@@ -12960,10 +13175,10 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "111490": ("Vacuum assisted", [6058, 6060]),
     },
     "VacuumMold": {
-        "130118": ("Vacuum Mold", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130118": ("Vacuum Mold", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "VaginalCylinder": {
-        "130121": ("Vaginal Cylinder", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130121": ("Vaginal Cylinder", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "ValueBasedImage": {
         "129322": ("Value-based Image", []),
@@ -13141,6 +13356,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "VirginalHyperplasia": {
         "111298": ("Virginal hyperplasia", [6030, 6031]),
+    },
+    "VirtualGrid": {
+        "111640": ("Virtual grid", [10017]),
     },
     "ViscosityAt37C": {
         "130186": ("Viscosity at 37C", []),
@@ -13530,7 +13748,7 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
         "109941": ("White Pattern", [8301]),
     },
     "WholeBodyPod": {
-        "130119": ("Whole Body Pod", [7151, 7157, 7193, 9505, 9513, 9520]),
+        "130119": ("Whole Body Pod", [7151, 7157, 7193, 9505, 9513, 9520, 9573]),
     },
     "WholeEyeStructuralReflectanceMap": {
         "128278": ("Whole eye structural reflectance map", [4271]),
@@ -13775,6 +13993,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     "_28H189Zr": {
         "126752": ("28H1 ^89^Zr", [4021]),
     },
+    "_2DShearWaveElastography": {
+        "130609": ("2D Shear Wave Elastography", [6058, 12224]),
+    },
     "_2FAF18": {
         "126713": ("2FA F^18^", [4021]),
     },
@@ -13807,6 +14028,9 @@ concepts_DCM: Dict[str, Dict[str, Tuple[str, List[int]]]] = {
     },
     "_3DMode": {
         "125231": ("3D mode", []),
+    },
+    "_3DShearWaveElastography": {
+        "130610": ("3D Shear Wave Elastography", [6058, 12224]),
     },
     "_3HeliumNucleus": {
         "130141": ("^3^Helium nucleus", [9526]),
